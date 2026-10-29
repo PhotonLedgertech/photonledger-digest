@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-27",
+  "items": [
+    {
+      "match_title": "Moonshot AI merilis Kimi K3.1 Pro, model open-weight 2.8T parameter dengan konteks 1 juta token, unggul di benchmark coding/agentic meski open weights baru rilis November — SiliconANGLE, agent5.news.",
+      "lead": "Model baru Moonshot AI ini mempersempit jarak antara model terbuka dan model komersial tertutup hingga nyaris menyentuh level frontier, dan itu mengubah hitungan bagi siapa saja yang membangun aplikasi AI tanpa bergantung pada lab besar Amerika.",
+      "points": [
+        "Kimi K3.1 Pro adalah model arsitektur mixture-of-experts kelas 3 triliun parameter, dengan 2,8 triliun total parameter dan sekitar 104 miliar yang aktif per langkah inferensi.",
+        "Model ini membawa context window 1 juta token, cukup untuk menelan kodebasis besar atau tumpukan dokumen finansial dalam satu percakapan.",
+        "Di indeks Artificial Analysis Intelligence Index, K3.1 Pro debut di posisi ke-4 dunia dengan skor 55, naik 11 poin dari pendahulunya Kimi K3, dan hanya terpaut sekitar satu poin dari Claude Opus 5.5 pada benchmark coding agentic.",
+        "Moonshot juga merilis varian K3.1 Pro Highspeed yang diklaim 2-3 kali lebih cepat untuk penggunaan API.",
+        "Bobot model versi lengkap dijanjikan akan dibuka pada 4 November 2026, sehingga siapa pun bisa mengunduh dan menjalankannya sendiri.",
+        "Model ini digambarkan multimodal dengan pemahaman visual native, dan diklaim kuat untuk coding, pembuatan konten 3D, serta riset finansial."
+      ],
+      "explain": "Yang terjadi sederhananya begini: Moonshot AI, perusahaan di balik chatbot Kimi asal Tiongkok, baru saja memperkenalkan model AI bernama Kimi K3.1 Pro. Angka '2,8T' merujuk pada ukuran model — semacam ukuran otaknya — yang menempatkannya di kelas model raksasa yang selama ini cuma dimiliki segelintir lab tertutup seperti model-model Anthropic atau Google. Yang menarik, arsitekturnya bertipe mixture-of-experts, artinya dari triliunan parameter itu hanya sekitar 104 miliar yang 'bangun' untuk memproses tiap permintaan, sehingga ongkos komputasinya jauh lebih hemat ketimbang model padat berukuran sama.\n\nKenapa ini penting? Karena janji 'open weights' pada 4 November 2026 berarti bobot modelnya akan bisa diunduh publik. Kalau performanya benar-benar setara model frontier komersial — seperti yang ditunjukkan skornya di Artificial Analysis Intelligence Index — maka perusahaan, peneliti, bahkan pemerintah bisa membangun layanan AI canggih tanpa menyewa API lab Amerika, tanpa risiko vendor lock-in, dan dengan kendali penuh atas data mereka. Selanjutnya, yang perlu dipantau adalah apakah janji rilis bobot benar-benar diktepati dan bagaimana harga API-nya bersaing; kalau keduanya menguntungkan pengguna, tekanan harga pada penyedia model tertutup kemungkinan besar ikut menurun.",
+      "background": "Moonshot AI adalah perusahaan AI Tiongkok yang dikenal lewat chatbot Kimi dan sudah beberapa kali mengguncang pasar dengan model open-weight. Rilis ini melanjutkan seri Kimi K3 dan jadi taruhan terbesar mereka di segmen model terbuka, bersaing dengan lab AS seperti Anthropic, OpenAI, dan Google."
+    },
+    {
+      "match_title": "Google Gemini 4 Argon kini tersedia global sebagai model frontier terkuat Google, dengan API output limit 1M token — ZeroHour.",
+      "lead": "Setelah sempat dibatasi aksesnya, model paling tangguh Google kini bisa dipakai siapa saja di seluruh dunia — lengkap dengan batas output 1 juta token yang jadi rekor industri, sesuatu yang mengubah kelayakan proyek AI berskala dokumen super panjang.",
+      "points": [
+        "Gemini 4 Argon diposisikan Google sebagai model frontier barunya, unggul untuk tugas coding kompleks, pekerjaan enterprise seperti hukum dan keuangan, serta pertahanan siber.",
+        "Model ini kini tersedia global lewat Gemini API dan AI Studio, untuk pengguna Google AI Ultra di Antigravity, serta pelanggan AI Ultra dan Pro di aplikasi Gemini dan AI Mode di Search.",
+        "Batas output token dinaikkan dari 64 ribu menjadi 1 juta token, diklaim sebagai yang tertinggi di industri untuk satu respons model.",
+        "Harga intro $2 per 1 juta token input dan $10 per 1 juta token output, dengan token input yang di-cache dipotong hingga 95%.",
+        "Sebagian kemampuan model diluncurkan bertahap: akses awal untuk pembela siber terpilih lewat program Fairwind, sementara Google mengikuti proses akses pra-rilis sukarela bersama pemerintah AS.",
+        "Di benchmark domain, model ini dilaporkan memimpin pada Harvey's Legal Agent Benchmark untuk riset dan penyusunan dokumen hukum."
+      ],
+      "explain": "Google sedang melonggarkan kerannya: Gemini 4 Argon, model paling pintar buatan mereka, sekarang dibuka untuk publik global melalui API dan berbagai produk Google. Kata 'frontier' di sini artinya model yang ada di garis depan kemampuan AI saat ini — dipakai untuk pekerjaan yang berat seperti menulis perangkat lunak kompleks, membedah kasus hukum, menganalisis keuangan, sampai mencari celah keamanan siber.\n\nFitur yang paling ramai dibicarakan adalah batas output 1 juta token per respons. Analoginya: kalau model biasa cuma bisa 'menulis' beberapa puluh halaman dalam sekali jalan, Argon bisa menghasilkan seluruh buku atau kodebasis lengkap sekali jalan — penting untuk agen AI yang harus menyelesaikan pekerjaan panjang tanpa terpotong-potong. Harganya juga agresif: $2 per juta token input dan $10 per juta output, dengan diskon besar untuk input berulang. Yang perlu diikuti ke depan adalah persaingan harga dan performa dengan Claude Opus 5.5 dan Kimi K3.1 Pro, karena tiga model ini bakal saling menjegal di segmen yang sama — dan pengguna akhirnya yang menikmati perang harga ini.",
+      "background": "Gemini adalah keluarga model AI andalan Google yang bersaing langsung dengan OpenAI dan Anthropic. Rilis global Argon ini mempertegas strategi Google: tarik pelanggan enterprise dengan kemampuan frontier sekaligus harga yang makin murah."
+    },
+    {
+      "match_title": "Bitcoin stagnan di kisaran $80.000 setelah ETF spot BTC catat inflow mingguan $304,77 juta, sementara dominasi BTC mencapai 57%, tertinggi sejak November 2022 — Coinotag/NewsNow.",
+      "lead": "Pasar kripto sedang dalam mode bertahan: dana institusi masih masuk lewat ETF Bitcoin, tapi harga tak kunjung bergerak, dan semua mata tampaknya tertuju pada satu aset saja — Bitcoin.",
+      "points": [
+        "ETF spot Bitcoin di AS mencatat net inflow mingguan $304,77 juta, meski ada satu hari dengan outflow $635,49 juta — yang terbesar sejak akhir Juni.",
+        "Bitcoin sendiri bergerak stagnan di kisaran $80.000, tak mampu menembus ke atas meski ada arus masuk institusi.",
+        "Dominasi BTC — porsi kapitalisasi pasar Bitcoin terhadap seluruh kripto — mencapai 57%, level tertinggi sejak November 2022.",
+        "Dominasi setinggi itu menandakan investor menarik uang dari altcoin dan memarkirnya di Bitcoin, di tengah ketidakpastian makro dan geopolitik.",
+        "Arus keluar besar dalam sehari menunjukkan sentimen institusi masih rapuh: masuk dan keluar cukup dalam minggu yang sama."
+      ],
+      "explain": "Bayangkan pasar kripto seperti mall yang sepi: orang masih datang, tapi cuma masuk ke satu toko. ETF spot Bitcoin — semacam reksa dana yang memegang Bitcoin asli dan bisa dibeli di bursa saham AS — masih menyerap uang segar $304,77 juta dalam sepekan. Itu tanda investor besar (institusi) tidak benar-benar kabur dari kripto. Tapi harganya sendiri terkatung di sekitar $80.000 tanpa arah jelas.\n\nAngka yang paling bercerita adalah dominasi BTC 57%, tertinggi sejak November 2022 — masa yang dikenang sebagai dasar bear market terakhir. Artinya, dari semua uang yang ada di kripto, lebih dari separuh kini terkonsentrasi di Bitcoin saja. Ini pola klasik saat investor takut risiko: altcoin dan token-tokenspesulatif ditinggalkan dulu, sementara Bitcoin dianggap 'pelabuhan relatif' di dunia kripto. Satu hari outflow $635,49 juta — terbesar sejak akhir Juni — juga menunjukkan betapa tipisnya keyakinan saat ini. Ke depannya, harga Bitcoin kemungkinan akan tetap tertekan sampai ada kejelasan dari suku bunga The Fed, harga minyak, dan situasi geopolitik; begitu sentimen membaik, uang biasanya baru lari dari BTC ke altcoin.",
+      "background": "ETF spot Bitcoin mulai beroperasi di AS sejak awal 2024 dan sejak itu jadi barometer utama arus dana institusi ke kripto. Dominasi BTC menjadi indikator klasik untuk mengukur apakah pasar sedang 'risk-on' (altcoin naik) atau 'risk-off' (berlindung di Bitcoin)."
+    },
+    {
+      "match_title": "FCA Inggris usulkan pengecekan wallet pribadi dalam panduan kripto non-mengikat, sementara Kanada ajukan konsultasi 60 hari soal stablecoin dengan tetap melarang yield — CryptoSlate.",
+      "lead": "Dua negara maju memindahkan regulasi kripto dari bicara ke praktik: Inggris mengusulkan perusahaan mengecek dompet kripto pribadi penggunanya, sementara Kanada membuka konsultasi aturan stablecoin yang melarang imbal hasil bagi pemegang token.",
+      "points": [
+        "FCA, regulator keuangan Inggris, memasukkan due diligence untuk transfer ke unhosted wallet (dompet pribadi di luar bursa) sebagai praktik baik dalam draf panduan konsultatif yang bersifat non-mengikat.",
+        "Draf panduan FCA juga mengkritik skor risiko pihak ketiga yang tidak bisa dijelaskan dan aturan pelacakan transaksi yang kaku.",
+        "Konsultasi FCA dibuka 21 Oktober 2026 dan ditutup 18 November 2026, terkait perluasan perimeter regulasi kripto yang berlaku efektif mulai 25 Oktober 2027.",
+        "Kanada membuka konsultasi publik 60 hari (berakhir 23 Desember) untuk draf aturan stablecoin non-bank, menyusul Stablecoin Act yang disetujui pada Maret 2026.",
+        "Draf aturan Kanada melarang penerbit stablecoin membayar imbal hasil (yield) ke pemegang token dan mewajibkan penerbit non-bank menyimpan cadangan di lembaga keuangan Kanada.",
+        "Aturan Kanada juga mengharuskan penerbit menukarkan stablecoin kembali ke uang fiat dalam tiga hari kerja tanpa minimum penukaran."
+      ],
+      "explain": "Dua kabur regulasi ini menandai fase baru: kripto tidak lagi diperlakukan sebagai wilayah abu-abu, tapi mulai masuk ke kerangka hukum keuangan formal. Di Inggris, FCA mengusulkan agar perusahaan kripto melakukan pengecekan saat pengguna menarik aset ke dompet pribadi mereka sendiri — semacam bertanya 'dompet ini punya siapa?' sebelum uang keluar. Karena bersifat panduan non-mengikat, perusahaan punya ruang menerapkan sesuai rasionalitas, bukan kotak centang kaku. Menariknya, FCA juga menegur praktik skor risiko otomatis dari pihak ketiga yang tak transparan.\n\nDi Kanada, pemerintah menindaklanjuti Stablecoin Act-nya dengan draf aturan konkret: stablecoin harus punya cadangan yang disimpan di lembaga keuangan Kanada, bisa ditukar kembali ke fiat dalam tiga hari kerja, dan — poin yang paling diperebutkan — tidak boleh membayar bunga ke pemegang token. Larangan yield ini disalin dari pendekatan AS lewat GENIUS Act, dengan alasan menjaga stablecoin sebagai alat pembayaran, bukan produk investasi. Bagi industri, aturan seperti ini menambah kejelasan tapi juga biaya kepatuhan; bagi pengguna, artinya stablecoin akan makin aman tapi kehilangan fitur 'bunga' yang selama ini jadi daya tarik. Implementasi penuh di Inggris sendiri baru berlaku Oktober 2027, jadi masa transisi masih panjang.",
+      "background": "FCA (Financial Conduct Authority) adalah regulator jasa keuangan Inggris yang sedang membangun rezim kripto lengkap berdasarkan Cryptoassets Regulations 2026. Kanada mengikuti jejak AS yang sudah mengesahkan undang-undang stablecoin (GENIUS Act) lebih dulu."
+    },
+    {
+      "match_title": "SpaceX menjalankan static-fire booster Super Heavy B22 (25 Okt) sebagai persiapan Starship Flight Test 15 — Space.com.",
+      "lead": "Tahap uji darat paling menentukan untuk penerbangan Starship ke-15 sudah lewat: 33 mesin Raptor booster B22 menyala penuh sesuai durasi rencana, membuka jalan bagi misi ambisius berikutnya dari Texas.",
+      "points": [
+        "Static fire dilakukan Minggu, 25 Oktober 2026, di Starbase, Texas, dengan Super Heavy Booster 22 (B22) yang ditetapkan untuk Starship Flight Test 15.",
+        "Seluruh 33 mesin Raptor menyala secara bersamaan dalam uji full-duration, sesuai konfirmasi resmi SpaceX berikutnya.",
+        "Uji ini menjadi bagian rangkaian kampanye uji darat terakhir sebelum roket dipasangkan dengan kapal luar angkasanya (ship) untuk penerbangan.",
+        "Ship pendamping booster, S42, masih menjalani rangkaian pengujian tersendiri.",
+        "Flight Test 15 berikutnya ditargetkan mencoba manuver penangkapan booster kembali oleh menara launch tower, memperluas kesuksesan teknik 'chopstick catch' SpaceX."
+      ],
+      "explain": "Sebelum roket boleh terbang, mesinnya harus dibuktikan menyala dengan aman di tempatnya. Itulah yang disebut static fire: roket dipatok di landasan, semua mesin dinyalakan sekejap, dan insinyur memeriksa apakah semuanya bekerja seperti seharusnya. Pada 25 Oktober, SpaceX berhasil menyalakan seluruh 33 mesin Raptor di booster B22 dengan durasi penuh di Starbase, Texas — lompatan uji darat terbesar menuju penerbangan Starship ke-15.\n\nKenapa penting? Karena Starship adalah roket terbesar dan paling kuat yang pernah dibangun, dan rencana besarnya adalah agar bisa dipakai berulang kali seperti pesawat. Setiap booster yang lolos uji static fire berarti satu langkah lebih dekat ke penerbangan uji berikutnya — yang kabarnya akan mencoba penangkapan booster oleh menara peluncur raksasa berlengan mekanis, teknik unik SpaceX untuk menghemat waktu dan biaya perakitan ulang. Berikutnya, ship S42 yang jadi 'pasangan' B22 juga harus lolos uji serupa sebelum keduanya digabung. Jadwal persisnya belum diumumkan, tapi keberhasilan uji ini menempatkan Flight 15 di jalur peluncuran dalam beberapa pekan ke depan.",
+      "background": "Starship adalah program roket SpaceX yang dikembangkan di Starbase, Texas, untuk misi Bulan dan Mars. Sejak 2024 SpaceX rutin menangkap booster Super Heavy dengan menara peluncur, dan setiap flight test menambah ambisi teknik yang dicoba."
+    },
+    {
+      "match_title": "NASA rilis data & citra sains Artemis II, serta memaparkan rencana uji terbang lander bulan Artemis III meski tanggal pasti belum diumumkan — Space.com/NASA Science.",
+      "lead": "Sambil menunggu langkah besar berikutnya ke Bulan, NASA membagikan buah misi Artemis II kepada publik — dan menggarisbawahi bahwa misi Artemis III masih menjadi uji terbang kritis, tanpa menancapkan tanggal peluncuran.",
+      "points": [
+        "NASA merilis data dan citra sains dari misi Artemis II, termasuk foto Bulan, rekaman audio, catatan pengamatan, dan sketsa yang dibuat awak di dalam kapsul Orion.",
+        "Artemis II diluncurkan April 2026 dan menjadi penerbangan berawak pertama wahana Orion, menempuh perjalanan hampir 10 hari mengitari Bulan sebelum mendarat kembali di Samudra Pasifik pada 10 April.",
+        "Awak Artemis II terdiri dari empat astronaut yang bergantian memotret, memberi anotasi, dan merekam pengamatan ilmiah selama flyby Bulan di hari keenam misi.",
+        "Rilis ini dikemas sebagai Artemis II Preliminary Lunar Science Report, dokumen ilmiah awal yang bisa diakses publik.",
+        "NASA juga memaparkan rencana uji terbang terkait operasi lander bulan untuk Artemis III, yang akan membawa empat astronaut menguji sistem kritis untuk pendaratan Bulan berikutnya — tetapi tanggal peluncuran pasti belum diumumkan."
+      ],
+      "explain": "Ketika astronaut Artemis II mengitari Bulan bulan April lalu, mereka bukan cuma menikmati pemandangan: setiap foto, rekaman suara, dan catatan tulisan tangan mereka adalah data ilmiah. Sekarang NASA membuka arsip itu untuk publik lewat Artemis II Preliminary Lunar Science Report — semacam album dan buku catatan lapangan resmi dari misi berawak pertama ke Bulan sejak era Apollo.\n\nDi sisi lain, NASA juga memberi kabar soal Artemis III, misi yang jadi langkah berikutnya menuju pendaratan manusia di Bulan. Perlu dicatat, rencananya Artemis III kini difokuskan sebagai uji terbang di orbit Bumi rendah untuk membuktikan sistem-sistem kritis yang dibutuhkan operasi lander bulan — tanpa menyebut tanggal pasti. Sikap 'belum patok tanggal' ini lazim untuk program berisiko tinggi: NASA memilih menyelesaikan uji darat dan integrasi hardware dulu (seperti penyusunan booster dan core stage roket SLS yang tengah berlangsung di Kennedy Space Center), baru mengumumkan jadwal yang bisa dipegang. Buat peneliti bulan dan penggemar antariksa, rilis data Artemis II adalah hadiah kecil yang memberi gambaran terbaik tentang kondisi Bulan dari mata manusia modern.",
+      "background": "Artemis adalah program NASA untuk mengembalikan manusia ke Bulan, bekerja sama dengan industri melalui kontrak SpaceX dan lainnya. Artemis II (April 2026) menguji kapsul Orion berawak mengitari Bulan, dan pengalaman itu kini dibuka sebagai data ilmiah publik."
+    },
+    {
+      "match_title": "Kapasitas energi terbarukan Korea Selatan melampaui batu bara untuk pertama kalinya, mencapai 41.040 MW per 21 Oktober — geoharvey.com.",
+      "lead": "Tonggak simbolis bagi negara industri berat: kapasitas terpasang energi terbarukan Korea Selatan akhirnya melampaui batu bara, menutup era dominasi bahan bakar paling kotor di negeri ginseng itu.",
+      "points": [
+        "Per 21 Oktober 2026, kapasitas terpasang energi terbarukan Korea Selatan mencapai 41.040 MW, mengalahkan batu bara yang berada di 40.757 MW — selisih tipis 283 MW.",
+        "Ini pertama kalinya terbarukan melampaui batu bara sejak pencatatan, menjadikannya sumber kapasitas terbesar kedua setelah LNG (46.788 MW).",
+        "Terbarukan kini menyumbang 25,4% dari total kapasitas pembangkit terpasang negara itu.",
+        "Pertumbuhan kapasitas terbarukan rata-rata sekitar 3.504 MW per tahun (2020-2025), sekitar 4,3 kali lipat laju penambahan kapasitas LNG.",
+        "Kalau tren berlanjut, Korea Power Exchange memperkirakan terbarukan bisa melampaui LNG dalam dua-tiga tahun dan jadi sumber kapasitas terbesar.",
+        "Catatan penting: angka ini merujuk kapasitas terpasang, bukan jumlah listrik yang benar-benar dibangkitkan — faktor kapasitas surya dan angin lebih rendah dari pembangkit termal."
+      ],
+      "explain": "Untuk pertama kalinya, kapasitas pembangkit listrik dari energi terbarukan di Korea Selatan — 41.040 MW per 21 Oktober — melampaui batu bara yang tercatat 40.757 MW. Selisihnya memang cuma 283 MW, tapi simbolnya besar: negara yang ekonominya lama digerakkan pembangkit batu bara dan reaktor nuklir itu kini punya lebih banyak pembangkit bersih daripada pembangkit paling polutif.\n\nMeski begitu, ada catatan jujur yang sering terlewat: ini angka kapasitas terpasang, bukan listrik yang benar-benar mengalir ke jaringan. Panel surya dan turbin angin tidak bekerja 24 jam, jadi porsi terbarukan dalam konsumsi listrik riil masih lebih kecil dari 25,4%-nya. Tapi arah trennya jelas — terbarukan bertambah rata-rata 3.504 MW per tahun, empat kali lipat laju LNG — dan operator pasar listrik Korea memprediksi terbarukan bisa merebut posisi puncak dari LNG dalam dua-tiga tahun. Pemerintah sendiri sudah menarget 100 GW terbarukan pada 2030 dan sedang membenahi jaringan transmisi agar sanggup menampungnya. Tantangan berikutnya bagi Korea jadi jelas: bukan lagi membangun pembangkit bersih, tapi membangun jaringan dan penyimpanan energi agar listrik bersih itu bisa dipakai saat dibutuhkan.",
+      "background": "Korea Power Exchange (KPX) adalah operator pasar listrik Korea Selatan yang mencatat data kapasitas pembangkit nasional. Tonggak ini tercapai di tengah rencana pemerintah memperluas jaringan untuk menampung lebih dari 100 GW terbarukan pada 2030."
+    },
+    {
+      "match_title": "Solar mendorong pangsa terbarukan Australia (NEM) ke rekor 80,4% pada Q3 2026, sekaligus menekan harga listrik grosir ke level terendah 5 tahun — reneweconomy.com.au.",
+      "lead": "Bukti nyata bahwa listrik murah dan bersih bisa berjalan bersama: jaringan listrik utama Australia menyentuh rekor 80,4% pasokan terbarukan dalam kuartal ini, dan harga listrik grosirnya turun ke titik terendah lima tahun.",
+      "points": [
+        "Pangsa energi terbarukan dan penyimpanan dalam pembangkitan listrik National Electricity Market (NEM) Australia mencapai rekor 80,4% pada kuartal tiga 2026.",
+        "Surya menjadi mesin utama: solar atap (rooftop) memimpin, sementara solar skala utilitas dan terdistribusi sama-sama mencetak rekor output baru.",
+        "Harga listrik grosir turun ke level terendah lima tahun, terbantu kombinasi solar atap, baterai rumah, angin, solar skala besar, dan penyimpanan energi.",
+        "Pencapaian ini terjadi meski permintaan listrik riil NEM mencetak rekor tertinggi selama kuartal musim dingin.",
+        "Data berasal dari penilaian kuartalan AEMO (Q3 2026) serta laporan pasar energi Australia yang juga mencatat rencana investasi besar lanjutan."
+      ],
+      "explain": "Angka 80,4% ini berarti sepanjang kuartal Juli-September 2026, lebih dari empat per lima listrik yang dibangkitkan di jaringan utama Australia timur (NEM) berasal dari energi terbarukan — didominasi surya, baik dari panel di atap rumah warga maupun ladang surya skala besar. Yang membuatnya istimewa: rekor ini dicapai justru di kuartal musim dingin ketika permintaan listrik memecahkan rekor tertinggi. Dulu, musim dingin selalu jadi alasan untuk menambal listrik dengan pembangkit batu bara dan gas.\n\nEfek domino yang paling dirasakan warga ada di tagihan dan harga grosir: harga listrik grosir jatuh ke level terendah lima tahun. Logikanya, listrik dari matahari dan angin punya biaya bakar nol — begitu infrastrukturnya terpasang, tambahan pasokan menekan harga pasar. Baterai rumah dan baterai skala jaringan juga berperan menyimpan kelebihan solar siang hari untuk dipakai malam hari, meratakan kurva permintaan. Pelajaran bagi negara lain: transisi energi bukan cuma soal emisi, tapi soal ekonomi — dan Australia kini jadi laboratorium hidupnya. Tantangan berikutnya adalah menjaga keandalan saat matahari tenggelam dan menangani pendapatan proyek baterai yang mulai saling bersaing, seiring kapasitas yang terus menumpuk.",
+      "background": "National Electricity Market (NEM) adalah jaringan listrik yang menghubungkan lima negara bagian/teluk timur Australia, diawasi AEMO. Australia lama disebut tertinggal dalam iklim, tapi kini jadi salah satu pasar adopsi solar atap tertinggi di dunia."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-26",
+  "items": [
+    {
+      "match_title": "Google resmi merilis Gemini 4 Argon secara global via API",
+      "lead": "Google akhirnya membuka akses global ke model terbarunya, Gemini 4 Argon, dan ini penting karena model ini langsung dijuluki sebagai model frontier paling kuat yang pernah mereka buat — dengan kemampuan menulis output hingga 1 juta token.",
+      "points": [
+        "Gemini 4 Argon resmi tersedia global via API di AI Studio dan Gemini platform, serta untuk pelanggan Google AI Ultra di aplikasi Gemini, AI Mode di Search, dan Google Antigravity.",
+        "Google mengklaim Argon unggul untuk pekerjaan kompleks multi-langkah di bidang coding, keuangan, hukum, keamanan siber, dan sains.",
+        "Model ini menduduki peringkat #1 di Vals Index, benchmark yang mengukur performa model di sektor ekonomi kritis seperti keuangan, coding, hukum, dan pajak.",
+        "Harga perkenalan: $2 per juta token input dan $10 per juta token output, dengan token input dari cache didiskon 95%.",
+        "Batas output hingga 1 juta token menjadikannya cocok untuk pekerjaan dokumen panjang dan analisis berskala besar."
+      ],
+      "explain": "Yang terjadi sederhananya: Google menaikkan taruhannya di perlombaan model AI papan atas. Gemini 4 Argon bukan sekadar versi update biasa, melainkan model yang diposisikan untuk pekerjaan berat — riset hukum, analisis finansial, coding proyek besar, sampai keamanan siber. Kuncinya ada di dua hal: kemampuan mengerjakan tugas multi-langkah tanpa kehilangan arah, dan kapasitas output yang bisa mencapai 1 juta token. Artinya, satu kali permintaan bisa menghasilkan dokumen atau kode yang panjangnya setara dengan buku kecil.\n\nKenapa ini penting buat orang awam? Karena harga dan aksesnya. Dengan $2 per juta token input dan $10 per juta output — plus diskon 95% untuk data yang di-cache — Google menekan biaya bagi perusahaan yang mau membangun aplikasi AI serius. Selanjutnya, bisa diperkirakan pesaing seperti Anthropic dan OpenAI akan merespons dengan rilis atau penurunan harga, dan pengguna akhirnya yang menikmati persaingan ini dalam bentuk layanan yang lebih murah dan lebih pintar.",
+      "background": "Gemini adalah keluarga model AI frontier dari Google DeepMind yang bersaing langsung dengan OpenAI dan Anthropic. Rilis global Argon lewat API diumumkan awal Oktober 2026 lewat blog resmi Google, ditandatangani Koray Kavukcuoglu, SVP Google DeepMind."
+    },
+    {
+      "match_title": "Moonshot AI meluncurkan Kimi K3.1 Pro",
+      "lead": "Moonshot AI dari Tiongkok kembali mengejar para raksasa AI Barat dengan Kimi K3.1 Pro — model raksasa 2,8 triliun parameter dengan konteks 1 juta token yang diklaim nyaris setara Claude Opus 5.5 di coding agentic, dan bobot open-source-nya akan dibuka November ini.",
+      "points": [
+        "Kimi K3.1 Pro adalah model MoE (Mixture of Experts) dengan total 2,8 triliun parameter, sekitar 104 miliar di antaranya aktif per inferensi, plus jendela konteks 1 juta token.",
+        "Model ini adalah versi post-trained dari Kimi K3, dilatih ulang dengan reinforcement learning di ratusan domain, khususnya coding, pembuatan 3D, dan riset finansial.",
+        "Di benchmark coding berbasis terminal, Moonshot mengklaim K3.1 Pro hanya tertinggal kurang dari 1 poin dari Claude Opus 5.5 dan mengalahkan GPT-6 Astra.",
+        "Model sudah aktif di aplikasi Kimi, Kimi Code, dan Kimi API; bobot open-weight penuh menyusul pada 4 November 2026.",
+        "Moonshot sengaja membuang data pelatihan terkait keamanan siber sebelum rilis open-weight.",
+        "Ada varian cepat bernama K3.1 Pro Highspeed untuk kasus yang butuh latensi rendah."
+      ],
+      "explain": "Inti beritanya: laboratorium AI dari Tiongkok makin dekat dengan pemimpin pasar. Kimi K3.1 Pro dibangun di atas Kimi K3, lalu di-latih ulang ekstra keras lewat reinforcement learning di banyak domain sekaligus. Hasilnya menurut Moonshot adalah model yang bisa mengerjakan proyek coding panjang multi-langkah — termasuk mendiagnosis kegagalannya sendiri, bukan cuma mencoba ulang buta. Salah satu demo mereka menunjukkan model membangun simulasi jalan manusia 3D lengkap dengan ratusan komponen tulang dan otot.\n\nBuat pengguna biasa dan developer, dampaknya konkret: harga API-nya lebih murah dari Kimi K3 sebelumnya, dan karena bobotnya akan dibuka 4 November, siapa pun bisa mengunduh dan menjalankannya sendiri. Ini bagian dari gelombang open-weight 2026 yang mengikis keunggulan model tertutup dari OpenAI dan Anthropic. Yang perlu dicatat: di benchmark penalaran murni dan pengetahuan, K3.1 Pro masih tertinggal dari model frontier tertutup — jadi keunggulannya di coding agentic dan harga, bukan segalanya.",
+      "background": "Moonshot AI adalah perusahaan AI Tiongkok yang terkenal lewat keluarga model Kimi. Seri K3-nya berbasis arsitektur Mixture of Experts yang hanya mengaktifkan sebagian parameter per permintaan agar hemat komputasi. Rilis K3.1 Pro ini terjadi pada akhir Oktober 2026."
+    },
+    {
+      "match_title": "Bitcoin sempat jatuh di bawah $80.000 usai ETF spot BTC AS catat outflow $636 juta dalam sehari",
+      "lead": "Bitcoin sempat menyentuh di bawah $80.000 karena dana institusi menarik $636 juta dari ETF spot BTC AS dalam satu hari, tapi berbalik naik ke $84.500 setelah regulator perbankan AS memfinalisasi aturan stablecoin GENIUS Act.",
+      "points": [
+        "ETF spot Bitcoin di AS mencatat outflow bersih $636 juta dalam sehari, menghapus inflow hari sebelumnya.",
+        "Tekanan jual ini membuat harga Bitcoin sempat turun di bawah level psikologis $80.000.",
+        "Harga kemudian pulih dan reclaim $84.500 setelah berita regulasi positif keluar.",
+        "OCC (Office of the Comptroller of the Currency) resmi menerbitkan final rule implementasi GENIUS Act untuk stablecoin pembayaran, berlaku 18 Januari 2027.",
+        "Aturan itu mengikat bank nasional, federal savings associations, cabang asing, penerbit stablecoin nonbank yang disetujui federal, serta penerbit stablecoin asing yang beroperasi di yurisdiksi OCC."
+      ],
+      "explain": "Berita ini menggambarkan dua gaya yang menarik pasar kripto berlawanan arah. Di satu sisi, dana besar keluar dari ETF spot Bitcoin — instrumen yang biasanya dipakai investor institusi seperti dana pensiun dan manajer aset. Outflow $636 juta dalam sehari sinyalnya jelas: investor besar sedang berhati-hati, kemungkinan karena suhu makro dan geopolitik yang bikin mereka memilih aset yang lebih aman. Ketika dana keluar begitu cepat, harga Bitcoin ikut jatuh sampai di bawah $80.000.\n\nTapi sisi lainnya menunjukkan kenapa pasar cepat pulih: regulator AS akhirnya menuntaskan aturan main untuk stablecoin lewat GENIUS Act yang final rule-nya diterbitkan OCC dan baru berlaku 18 Januari 2027. Bagi institusi, kepastian aturan seperti ini adalah izin hijau — mereka tahu gimana cara main yang legal. Itulah kenapa pasar bereaksi positif dan Bitcoin naik lagi ke $84.500. Ke depannya, penerbit stablecoin yang diawasi OCC akan masuk masa persiapan kepatuhan sebelum aturan efektif awal 2027.",
+      "background": "ETF spot Bitcoin mulai diperdagangkan di AS sejak 2024 dan jadi barometer utama arus dana institusi ke kripto. Sementara GENIUS Act adalah undang-undang stablecoin AS yang menjadi kerangka regulasi formal penerbit stablecoin pembayaran; implementasinya diawasi OCC, lembaga pengawas bank nasional AS."
+    },
+    {
+      "match_title": "Solana mengaktifkan upgrade Alpenglow di mainnet",
+      "lead": "Upgrade terbesar dalam sejarah Solana, Alpenglow, resmi aktif di mainnet pada 21 Oktober — memangkas waktu finalitas transaksi dari 12,8 detik menjadi sekitar 150 milidetik, hampir secepat kedipan mata.",
+      "points": [
+        "Alpenglow diaktifkan di Solana mainnet pada 21 Oktober 2026, bertepatan dengan awal epoch 1064.",
+        "Finalitas transaksi dipangkas dari sekitar 12,8 detik menjadi target sekitar 150 milidetik — percepatan hingga 99%.",
+        "Perubahan intinya: suara validator dipindahkan keluar dari chain (off-chain votes), sehingga blok bisa difinalisasi jauh lebih cepat.",
+        "Biaya per-vote yang lama diganti dengan fee flat 0,8 SOL per epoch untuk validator.",
+        "Upgrade ini digarap Anza, tim pengembang inti Solana, dan sudah diuji di community test cluster sejak Mei 2026 dengan sekitar 100 validator independen — termasuk beberapa kali gagal migrasi dan satu rollback sebelum akhirnya sukses.",
+        "Bagi pengguna DeFi dan trader, finalitas 150ms membuat pengalaman on-chain nyaris seperti transaksi server sentral."
+      ],
+      "explain": "Apa yang terjadi? Solana menulis ulang cara komputernya mencapai kesepakatan. Dalam blockchain, 'finality' adalah momen ketika sebuah transaksi resmi tidak bisa dibatalkan — seperti tinta yang sudah kering. Selama ini Solana butuh sekitar 12,8 detik untuk sampai ke titik itu. Dengan Alpenglow, trik utamanya adalah memindahkan voting validator keluar dari blockchain itu sendiri, sehingga jaringan bisa menyepakati blok dalam sekitar 150 milidetik. Juga ada perubahan ekonomi: validator tidak lagi membayar biaya per suara, tapi bayar flat 0,8 SOL per epoch.\n\nKenapa ini berita besar? Karena kecepatan finalitas adalah garis depan persaingan blockchain — makin cepat final, makin banyak aplikasi finansial yang realistis jalan di atasnya, dari DEX sampai pembayaran. Yang menarik, sebelum aktif di mainnet, upgrade ini sudah 'disiksa' di cluster uji komunitas: cluster yang dimulai Mei 2026 itu sempat mengalami enam kali re-genesis, satu migrasi gagal, dan satu rollback — contoh bagaimana infrastruktur finansial terdesentralisasi diuji sebelum uang riil dipertaruhkan. Setelah ini, mata pasar akan memantau stabilitas jaringan dan reaksi harga SOL di tengah sentimen makro yang masih negatif.",
+      "background": "Solana adalah blockchain berperforma tinggi yang dikenal dengan transaksi murah dan cepat, rival utama Ethereum. Alpenglow dirancang oleh Anza, tim pengembang inti Solana, dan disebut sebagai perubahan protokol terbesar sejak jaringan diluncurkan."
+    },
+    {
+      "match_title": "NASA & SpaceX meluncurkan Crew-13 ke ISS",
+      "lead": "Pergantian pasukan di stasiun ruang angkasa internasional sedang berlangsung: NASA dan SpaceX meluncurkan misi Crew-13 membawa 4 astronot dari 3 negara untuk tugas sekitar 6 bulan, sementara Crew-12 baru saja kembali ke Bumi setelah 7 bulan bertugas.",
+      "points": [
+        "Misi Crew-13 diluncurkan NASA bersama SpaceX menggunakan wahana Dragon untuk mengantar 4 astronot ke ISS.",
+        "Kru-nya terdiri dari 4 astronot yang mewakili 3 negara — melanjutkan tradisi misi multinasional di ISS.",
+        "Misi ini direncanakan berlangsung sekitar 6 bulan di stasiun.",
+        "Bareng peluncuran itu, kru Crew-12 menjalani splashdown atau pendaratan di laut setelah sekitar 7 bulan bertugas di orbit.",
+        "Rotasi kru ini menjaga keberadaan manusia tanpa henti di ISS sejak tahun 2000."
+      ],
+      "explain": "Ini momen rutin tapi krusial dalam kehidupan ISS: ganti jaga. Sebelum kru lama pulang, kru baru harus sudah sampai — supaya selalu ada astronaut yang merawat stasiun senilai miliaran dolar itu dan melanjutkan ratusan eksperimen di dalamnya. Crew-13 naik dengan kapsul Dragon milik SpaceX, sesuai skema Commercial Crew NASA yang sejak beberapa tahun lalu menggantikan tugas roket Rusia. Kru-nya internasional: 4 orang dari 3 negara, wujud nyata kerja sama antariksa damai.\n\nYang sekaligus terjadi adalah kembalinya Crew-12 lewat splashdown — pendaratan dengan parasut di laut — setelah sekitar 7 bulan. Tubuh astronaut yang selama itu melayang dalam gravitasi nol akan menjalani program pemulihan berbulan-bulan, dan data kesehatan mereka jadi bahan riset untuk misi yang lebih jauh seperti ke Bulan dan Mars. Selanjutnya, fokus operasi berlanjut ke riset kesehatan manusia, teknologi baru, dan persiapan deorbitasi ISS di akhir dekade ini.",
+      "background": "Program Commercial Crew NASA mempercayakan transportasi astronaut ke SpaceX (Dragon) dan Boeing (Starliner) sejak 2020. ISS sendiri adalah laboratorium orbit yang dihuni manusia tanpa henti sejak November 2000, dioperasikan bersama AS, Rusia, Eropa, Jepang, dan Kanada."
+    },
+    {
+      "match_title": "NASA menggelar konferensi pers soal update misi Artemis III & IV",
+      "lead": "NASA mengadakan konferensi pers 'Artemis Acceleration' dari Kennedy Space Center, memaparkan jalan menuju pendaratan manusia kembali di Bulan — dengan target baru tahun 2028 dan pertarungan sengit dengan Tiongkok sebagai latar belakangnya.",
+      "points": [
+        "Konferensi pers bertajuk 'Artemis Acceleration' digelar Jumat, 23 Oktober, disiarkan langsung dari Kennedy Space Center, Florida, pukul 14.00 EDT.",
+        "Tiga pejabat top NASA memaparkan: Administrator Jared Isaacman, Associate Administrator Amit Kshatriya, dan Manager Program Artemis Jeremy Parsons.",
+        "Artemis III ditargetkan pertengahan 2027: 4 astronot ke orbit bulan untuk menguji rendezvous dan docking antara kapsul Orion dengan lander swasta.",
+        "Artemis IV diproyeksikan mendaratkan astronot di Kutub Selatan Bulan pada awal 2028 — pendaratan berawak pertama sejak Apollo 17 tahun 1972.",
+        "NASA bermitra dengan SpaceX (Starship) dan Blue Origin (Blue Moon), tapi pilihan lander untuk Artemis IV belum diputuskan.",
+        "Rencana jangka panjangnya membangun pangkalan permanen di Bulan, di tengah persaingan dengan program bulan Tiongkok."
+      ],
+      "explain": "Yang dibahas NASA bukan sekadar jadwal, tapi strategi percepatan. Artemis III, yang dijadwalkan pertengahan 2027, adalah ujian kunci: 4 astronot akan terbang ke orbit Bulan dan menguji pertemuan serta docking antara kapsul Orion dengan wahana pendarat swasta — keterampilan yang harus lancar sebelum manusia benar-benar mendarat. Pesawat pendaratnya sendiri datang dari dua kandidat swasta: Starship milik SpaceX dan Blue Moon milik Blue Origin.\n\nKalau Artemis III lancar, giliran Artemis IV yang diincar: mendarat di Kutub Selatan Bulan awal 2028, lokasi yang dipilih karena diduga kaya es air — sumber daya vital untuk pangkalan permanen. Kalau berhasil, itu jadi jejak manusia pertama di Bulan sejak Apollo 17 pada 1972, artinya jeda lebih dari 50 tahun. Ada juga warna geopolitik yang tidak bisa diabaikan: Tiongkok punya target pendaratan berawak di Bulan yang serupa, dan pejabat AS secara terbuka mengaitkan perlombaan ini dengan siapa yang menetapkan norma di antariksa. Langkah nyata berikutnya yang bisa dipantau: integrasi roket SLS dan hasil uji teknis lander kedua perusahaan.",
+      "background": "Artemis adalah program NASA untuk mengembalikan manusia ke Bulan, dimulai sejak 2017 dengan uji tanpa awak Artemis I pada 2022 dan misi berawak mengelilingi Bulan Artemis II sebagai penerusnya. Mitra utamanya adalah industri swasta AS melalui kontrak Human Landing System."
+    },
+    {
+      "match_title": "Nordex menembus pasar turbin angin Selandia Baru",
+      "lead": "Produsen turbin angin Jerman Nordex baru saja mencatat sejarah: order pertamanya di Selandia Baru — 192 MW dari utilitas Mercury untuk ladang angin di Pulau Selatan, lengkap dengan kontrak servis 30 tahun.",
+      "points": [
+        "Nordex Group menerima order pertamanya dari Selandia Baru: Mercury memesan 40 turbin N133/4.8 dengan total kapasitas 192 MW.",
+        "Proyeknya adalah ladang angin Puke Kapo Hau di kaki timur Lammermoor Range, wilayah Otago, Pulau Selatan, dengan kecepatan angin rata-rata di atas 8 meter per detik.",
+        "Nordex dan Mercury menandatangani perjanjian servis komprehensif selama 30 tahun.",
+        "Pemasangan turbin pertama pada menara baja tubular setinggi 90 meter dijadwalkan awal 2028, dengan komisioning unit pertama pertengahan 2028.",
+        "Mercury mencatat sudah membangun 5 dari 6 ladang angin yang dibangun di Selandia Baru dalam lima tahun terakhir.",
+        "Nordex akan memakai kontraktor lokal untuk jasa crane, pemasangan turbin, dan pekerjaan akhir sebagai bagian dari pembangunan kapabilitas di negara itu."
+      ],
+      "explain": "Ini berita tentang peta kekuatan industri angin dunia yang bergeser. Nordex adalah pemain tua — sejak 1985 mereka sudah memasang lebih dari 67 GW kapasitas angin di lebih dari 40 pasar — tapi Selandia Baru selama ini bukan wilayah kekuasaannya. Order 192 MW dari Mercury membuka pintu itu, dan yang lebih menarik adalah bentuk kontraknya: servis 30 tahun. Artinya Nordex tidak hanya menjual mesin, tapi mengikat pendapatan jasa pemeliharaan selama tiga dekade ke depan — model yang bikin penghasilan mereka stabil, bukan bergantung gelombang order.\n\nBuat Selandia Baru, ini bagian dari dorongan lebih besar ke energi terbarukan: Mercury adalah generator yang seluruh asetnya sudah 100% terbarukan — hidro, panas bumi, dan angin. Lokasi Puke Kapo Hau di Otago dipilih karena anginnya konsisten di atas 8 meter per detik, kondisi ideal untuk turbin. Yang bisa diantisipasi selanjutnya: masuknya Nordex berarti kompetisi pemasok bertambah, dan kemungkinan besar proyek angin lain di Selandia Baru akan ikut jadi target ekspansi mereka setelah 2028.",
+      "background": "Nordex Group adalah produsen turbin angin onshore Jerman yang tercatat di bursa Frankfurt dengan penjualan sekitar EUR 7,6 miliar pada 2025 dan lebih dari 11.100 karyawan. Mercury adalah perusahaan pembangkit dan pengecer listrik besar Selandia Baru."
+    },
+    {
+      "match_title": "Fraunhofer ISE klaim sel baterai litium berbasis silikon tetap mempertahankan >83% kapasitas setelah 1.000 siklus penuh",
+      "lead": "Institut riset Jerman Fraunhofer ISE membuktikan hambatan terbesar baterai silikon bisa diatasi: sel litium beranoda kaya silikon mereka tetap menyimpan lebih dari 83% kapasitas setelah 1.000 siklus penuh — target yang dianggap pintu masuk industri.",
+      "points": [
+        "Dalam proyek 'StrOboBatt', Fraunhofer ISE mengoperasikan sel pouch buatan sendiri berkapasitas 25 Ah dengan anoda kaya silikon selama lebih dari 1.000 siklus penuh.",
+        "Sel-sel itu mempertahankan lebih dari 83% kapasitas awal — di atas ambang 80% yang jadi target kunci industri.",
+        "Kepadatan energi gravimetri mencapai 280 Wh/kg di format sel riset PrecISE, dan sekitar 330 Wh/kg diproyeksikan untuk format pouch industri yang teroptimasi.",
+        "Anodanya pakai komposit silikon-karbon (51% dari materi aktif anoda) dengan kapasitas spesifik di atas 1.000 mAh/g, dipadukan katoda oksida nikel-kaya.",
+        "Silikon punya kapasitas spesifik teoretis 10 kali lebih tinggi dari grafit yang dipakai saat ini, dan bisa mengurangi ketergantungan global pada grafit — membuka peluang rantai pasok di Uni Eropa.",
+        "Sel multilapis 40 layer dibuat di lini produksi semi-otomatis cleanroom milik Fraunhofer ISE memakai foil elektroda komersial."
+      ],
+      "explain": "Kenapa 1.000 siklus itu angka ajaib? Karena anoda silikon adalah janji lama yang selalu gagal di satu titik: silikon mengembang hingga beberapa kali lipat ukurannya setiap kali diisi listrik, sehingga material cepat remuk dan baterai cepat habis. Selama ini itulah yang menahan baterai silikon keluar dari lab. Yang dilakukan tim Fraunhofer ISE adalah merancang struktur dan permukaan anoda — lewat proyek StrOboBatt — supaya sel tetap hidup lewat 1.000 siklus penuh sambil tetap menyimpan 83% kapasitasnya, plus kepadatan energi 280 Wh/kg yang tinggi untuk sel riset.\n\nArtinya apa buat kita? Baterai yang lebih kecil tapi lebih tahan lama — relevan buat mobil listrik yang bisa melaju lebih jauh tanpa menambah berat, drone dan aplikasi kedirgantaraan, sampai penyimpanan energi di rumah dan jaringan listrik. Catatan penting: ini sel riset, bukan produk komersial, jadi antara hasil lab dan pabrik masih ada jarak yang harus dilalui industri. Tapi karena selnya dibuat dengan foil elektroda komersial dan format industri standar, jalan menuju produksi terasa lebih pendek. Langkah berikutnya biasanya berupa kerja sama dengan produsen sel untuk skala besar.",
+      "background": "Fraunhofer ISE adalah institusi riset energi surya terbesar di Eropa, berbasis di Freiburg, Jerman, dengan fasilitas lengkap dari pembuatan elektroda sampai karakterisasi baterai. Riset ini dipublikasikan 20 Oktober 2026 dan dipimpin antara lain Dr. Lukas Dold dari tim teknologi material baterai."
+    }
+  ]
+}

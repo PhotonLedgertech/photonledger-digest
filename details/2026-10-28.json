@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-28",
+  "items": [
+    {
+      "match_title": "SpaceX uji nyala 33 mesin Super Heavy demi \"double catch\" Starship",
+      "lead": "SpaceX baru saja menuntaskan uji paling krusial sebelum misi bersejarah: menangkap kedua bagian roket raksasa Starship sekaligus dengan menara peluncur — sesuatu yang belum pernah dilakukan siapa pun di dunia.",
+      "points": [
+        "Booster 22 untuk misi Starship Flight 15 berhasil menjalankan static-fire seluruh 33 mesin Raptor 3 selama sekitar 15-16 detik penuh di Starbase, Texas, pada 25 Oktober.",
+        "Uji ini digelar tiga hari setelah Elon Musk menyatakan dalam earnings call 20 Oktober bahwa Flight 15 akan mencoba menangkap booster DAN ship sekaligus dengan lengan mekanis menara peluncur.",
+        "Booster 22 nantinya dipasangkan dengan upper stage Ship 42, yang masih harus menyelesaikan uji mesin sendiri sebelum keduanya siap diluncurkan.",
+        "Gwynne Shotwell, presiden dan COO SpaceX, menilai lisensi FAA untuk Flight 15 akan mencakup kembali ke tempat peluncur dan penangkapan kedua tahap roket.",
+        "Jika penangkapan ganda berhasil, Starship akan menjadi kendaraan peluncur orbital pertama yang pulang utuh dan pulih sepenuhnya, membuka jalan menuju reusabilitas penuh.",
+        "Jendela peluncur Flight 15 diperkirakan pertengahan hingga akhir November 2026, meski tanggal resmi belum diumumkan."
+      ],
+      "explain": "Yang terjadi: SpaceX menyalakan seluruh 33 mesin Raptor pada booster Super Heavy bernomor 22 sambil tetap dikunci di pad peluncuran — uji statis berdurasi penuh yang memastikan mesin dan sistem bahan bakar bekerja mulus sebelum terbang sungguhan. Poin pentingnya bukan sekadar uji mesin biasa, melainkan bahwa booster ini ditakdirkan untuk misi Flight 15, di mana Musk berjanji akan mencoba sesuatu yang baru: menangkap booster di satu sisi dan ship (tahap atas) di sisi lain dengan lengan raksasa menara — yang sejauh ini baru tahap booster saja yang pernah tertangkap.\n\nKenapa ini penting bagi orang awam? Bayangkan roket sebesar gedung bertingkat yang biasanya hancur atau terjun bebas ke laut setelah sekali pakai. Kalau kedua bagiannya bisa ditangkap dan dipakai lagi, biaya meluncur bisa anjlok drastis — mirip bedanya pesawat yang dibuang tiap penerbangan versus pesawat yang terbang puluhan ribu kali. Dampaknya menjalar ke segalanya: harga satelit, ambisi misi Bulan-Mars, hingga persaingan industri antariksa global. Langkah berikutnya: ship 42 menjalani uji sendiri, lalu menunggu persetujuan lisensi FAA yang menurut Shotwell akan mencakup skema penangkapan ganda ini.",
+      "background": "Starship adalah roket dua tahap terbesar di dunia buatan SpaceX, dikembangkan di Starbase, Texas, dengan tujuan akhir kerangka yang bisa dipakai ulang penuh. Sejak 2023 program ini menjalani uji terbang bertahap, dan penangkapan booster dengan menara sudah pernah berhasil sebelumnya — namun penangkapan ship masih rekor yang belum terpecahkan."
+    },
+    {
+      "match_title": "Astroscale usul armada satelit \"bodyguard\" lawan serangan orbital",
+      "lead": "Perusahaan pembersih sampah antariksa Astroscale ingin memutar meja: teknologi yang selama ini dipakai menangkap sampah orbit kini diusulkan jadi satelit pengawal yang melindungi aset strategis negara dari serangan musuh.",
+      "points": [
+        "Alex Godfrey, kepala divisi pertahanan Astroscale, menyatakan satelit pelindung bisa siap diluncurkan dalam waktu kurang dari tiga tahun.",
+        "Konsep ini memodifikasi teknologi docking presisi milik perusahaan — yang biasa dipakai menangkap sampah antariksa atau mengisi bahan bakar satelit — untuk mencegat satelit musuh yang mendekat berbahaya.",
+        "Biaya satu misi bodyguard diklaim hanya sekitar satu persen dari nilai konstelasi komunikasi militer seperti Skynet milik Inggris yang senilai £8,4 miliar.",
+        "Godfrey mengusulkan armada patroli pan-Eropa: satu satelit pelindung menjaga dua-tiga aset sekutu di satu wilayah, negara lain mengambil alih di wilayah berbeda — analogi kapal induk yang selalu diiringi eskor kecil.",
+        "Usulan ini muncul di tengah kekhawatiran soal satelit Rusia yang memantau radar satelit Barat dan indikasi uji antisatelit yang terlihat berbulan-bulan di orbit.",
+        "Astroscale mengaku sudah berdiskusi dengan perusahaan dan pelanggan di seluruh Eropa, tetapi belum ada kontrak yang ditandatangani; pemerintah Inggris menjanjikan pendanaan pengembangan pengendalian ruang angkasa mulai 2030."
+      ],
+      "explain": "Apa yang terjadi: Astroscale — perusahaan yang selama ini dikenal sebagai tukang sampah antariksa — mengajukan gagasan bahwa kemampuan docking super presisinya bisa dipakai untuk pertahanan. Satelit pengawalnya akan berpatroli dekat satelit penting dan memastikan tidak ada penyusup yang terlalu mendekat, persis seperti bodyguard yang menghalangi orang asing mendekati kliennya.\n\nKenapa sekarang? Karena orbit Bumi makin memanas secara geopolitik: ada laporan satelit Rusia yang mengikuti satelit radar Eropa dari dekat, dan tren uji antisatelit yang memicu kekhawatiran negara-negara Barat. Masalahnya, melindungi satu satelit itu mahal, dan satu pengawal tidak bisa menjaga seluruh konstelasi yang tersebar — makanya Godfrey mendorong kolaborasi antarnegara Eropa. Dampaknya kalau jadi nyata: ruang angkasa yang selama ini dianggap netral akan punya \"polisi lalu lintas\" militer secara resmi, membuka babak baru perlombaan senjata orbit. Namun realistisnya, proposal ini masih tahap wacana: belum ada kontrak, dan pertanyaan teknis soal bagaimana cara menghalau satelit musuh bahkan belum dijawab.",
+      "background": "Astroscale adalah perusahaan asal Jepang yang spesialis pembersihan debris dan servis satelit di orbit, beroperasi sejak 2013 dan sudah memperlihatkan teknologi penangkapan objek di orbit secara nyata. Minat pertahanannya naik seiring meningkatnya ancaman jamming dan manuver agresif satelit asing terhadap aset militer dan sipil Barat."
+    },
+    {
+      "match_title": "OpenAI rilis GPT-6.1 Terra, harga API turun 50%",
+      "lead": "OpenAI memperkenalkan GPT-6.1 Terra — model yang menembus dinding biaya AI: performa naik 15 poin di benchmark agen profesional, tapi harganya malah dipotong separuh.",
+      "points": [
+        "GPT-6.1 Terra rilis 26 Oktober, tersedia untuk semua pengguna ChatGPT Plus, Pro, Enterprise, dan Edu di ChatGPT Work dan Codex, serta via API dengan nama gpt-6.1-terra.",
+        "Di Agents' Last Exam (benchmark tugas komputer profesional), Terra mencetak skor 15 poin persentase lebih tinggi dari GPT-5.6 Terra dengan biaya hanya sepertiganya.",
+        "Error rate pada prompt sulit anjlok dari 53,6% menjadi 16,7%, dan di Terminal-Bench 4.0 model ini menyelesaikan 50,3% tugas dibanding 21,5% pada versi sebelumnya.",
+        "Harga API standar: $1 per juta token input, $0,05 per juta token input yang di-cache, dan $5 per juta token output — 50% lebih murah dari GPT-5.6 Terra.",
+        "OpenAI mengklaim Terra setara performa dengan model frontier GPT-6 Astra di beberapa tugas komputer, tapi hanya sepersepuluh harganya per token dan lebih dari tiga kali lebih cepat menyelesaikan tugas.",
+        "Fokus model ini adalah visual reasoning dan computer use: membaca gambar teknis, mengisi formulir, mengoperasikan aplikasi desktop, serta menulis yang lebih natural."
+      ],
+      "explain": "Yang terjadi: OpenAI merilis anggota baru keluarga Terra — model yang ditujukan bukan untuk jadi model terpintar di dunia, melainkan jadi pekerja keras yang murah dan cepat. Angka-angkanya berani: skor benchmark agen naik signifikan, tingkat kesalahan pada tugas sulit turun dari lebih separuh menjadi di bawah 17%, dan harga API dipangkas 50% dibanding pendahulunya.\n\nKenapa ini menarik? Karena arah persaingan AI sedang bergeser dari \"siapa paling pintar\" ke \"siapa paling hemat\". Untuk pekerjaan seperti memproses ribuan invoice, membaca gambar teknis, atau mengoperasikan aplikasi komputer secara otomatis, biaya per tugas adalah penentu — dan di sini Terra mengklaim biaya per tugas sekitar sembilan kali lebih murah dibanding pesaing kelas atas seperti Claude Opus 5.5. Bagi pengembang dan bisnis di mana pun, ini berarti otomatisasi yang sebelumnya tidak masuk akal secara ekonomi kini jadi layak. Langkah selanjutnya tinggal melihat apakah pesaing mengikuti perang harga ini, dan apakah klaim benchmark terbukti di dunia nyata.",
+      "background": "GPT-6.1 Terra adalah penyempurna dari GPT-5.6 Terra dalam keluarga model OpenAI yang menitikberatkan efisiensi biaya untuk tugas kerja sehari-hari, dirilis bersama lineup GPT-6 lain seperti Astra dan Sol. Segmentasi model seperti ini — frontier versus efisien — menjadi pola umum lab AI besar sejak 2025."
+    },
+    {
+      "match_title": "Alibaba luncurkan Qwen3.8-27B untuk laptop, tanpa cloud",
+      "lead": "Alibaba membalas tantangan Meta dengan model AI 27 miliar parameter yang diklaim sebanding dengan model sepuluh kali lebih besar — dan bisa jalan langsung di laptop tanpa internet atau biaya langganan.",
+      "points": [
+        "Qwen3.8-27B adalah model open-weight 27 miliar parameter yang diklaim Alibaba setara performa model 10x ukurannya di bidang coding, riset, pekerjaan profesional, dan tugas agen jangka panjang.",
+        "Model ini menggantikan Qwen3.6-27B, berlisensi Apache 2.0, punya konteks 262.144 token, pemahaman gambar dan video bawaan, serta berjalan di satu GPU konsumen — sekitar 17 GB saat kuantisasi 4-bit.",
+        "Bersamaan dengan itu, Alibaba membuka bobot Qwen3.8 Max, model terkuatnya, yang bisa diunduh dan dijalankan gratis.",
+        "Data Hugging Face mencatat model berbasis Qwen kini punya 151.448 turunan — 2,6 kali lipat total jejak Meta di platform yang sama.",
+        "Peluncuran ini menjawab langkah Meta yang seminggu sebelumnya mengumumkan model laptop-ready bernama Muse Glimmer (30 miliar parameter) dan rencana open-source model terkuatnya.",
+        "Qwen3.8-27B menghabiskan 3 juta unduhan di Hugging Face hanya dalam tiga hari dan menjadi model paling trending di platform itu."
+      ],
+      "explain": "Apa yang terjadi: Alibaba merilis Qwen3.8-27B, model kecil-kecil-headliner yang bisa berjalan di perangkat keras konsumen biasa — laptop kelas atas atau PC gaming dengan satu kartu grafis — tanpa perlu kirim data ke cloud. Klaim besarnya: performanya menyaingi model yang berukuran sepuluh kali lipat lebih besar, terutama di coding dan tugas agen.\n\nKenapa ini penting? Karena medan perang AI sedang pindah dari data center ke genggaman. Kalau model canggih bisa jalan lokal, pengguna bisa memproses dokumen rahasia tanpa mengirimnya ke server siapa pun, tanpa biaya langganan, dan tanpa takut layanan mati. Ini pula yang membuat Persaingan Alibaba-Meta menarik: Meta ingin jadi alternatif AS yang open-source, sementara Alibaba sudah jauh di depan dari sisi ekosistem — terbukti dari 151 ribu turunan Qwen di Hugging Face yang jauh meninggalkan jejak Meta. Sisi skeptisnya: benchmark yang dipakai Alibaba untuk membandingkan diri dengan Claude Opus 4.6 disusun sendiri, bukan uji netral, jadi klaim performa perlu dicerna dengan sedikit garam. Yang jelas, bagi pengguna biasa, arus ini bagus: pilihan model lokal yang makin kuat dan makin murah.",
+      "background": "Qwen adalah keluarga model open-weight milik Alibaba yang telah memimpin pasar open-source selama beberapa tahun, dengan ratusan ribu turunan komunitas di Hugging Face. Rilis ini terjadi di tengah duel open-weight panas antara lab Tiongkok dan Meta yang tengah memposisikan diri sebagai alternatif AS melawan OpenAI dan Anthropic yang tertutup."
+    }
+  ]
+}

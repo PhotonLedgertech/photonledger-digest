@@ -31,6 +31,18 @@ border-left:3px solid var(--cyan)}
 .src a:hover{text-decoration:underline}
 .score{display:inline-block;background:#1c2740;color:var(--cyan);font-size:11px;
 padding:2px 10px;border-radius:20px;margin-top:6px}
+details.more{margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none}
+details.more summary::before{content:"▸ ";}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:4px 0}
+details.more .explain{font-size:13.5px;color:var(--txt);margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:8px 0;background:#0f1422;
+border-radius:8px;padding:10px 12px}
+details.more .bg b{color:var(--gold)}
 .nav{text-align:center;margin:32px 0 0}
 .nav a{display:inline-block;background:var(--card);border:1px solid var(--line);
 color:var(--txt);padding:8px 20px;border-radius:24px;margin:4px;text-decoration:none;font-size:13px}
@@ -46,6 +58,123 @@ footer a{color:var(--cyan);text-decoration:none}
 <div class="day-card">
 <img class="hero" src="assets/poster_space_dualcatch.jpg" alt="PhotonLedger poster" loading="lazy">
 <div class="day-title">📅 25 Oct 2026</div>
+<div class="topic">Berita</div>
+<div class="news">
+<h3>Moonshot AI merilis Kimi K3.1 Pro, model 2.8T parameter dengan konteks 1M token, mampu</h3>
+<p>coding proyek penuh &amp; pemodelan 3D — bobot terbuka menyusul 4 November. (AI Briefing, aiapphunters.com/news)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Raksasa AI Tiongkok Moonshot baru saja meluncurkan model terkuatnya sejauh ini dan mengklaim bisa menyaingi model papan atas OpenAI serta Anthropic — dengan janji bobot terbuka yang bisa diunduh siapa saja pada 4 November.</div>
+<ul><li>Kimi K3.1 Pro adalah model arsitektur Mixture-of-Experts dengan total 2,8 triliun parameter, tapi hanya 104 miliar yang aktif per permintaan sehingga biaya komputasi tetap terkendali.</li><li>Model ini punya jendela konteks 1 juta token dan bersifat multimodal, plus varian lebih cepat bernama K3.1 Pro Highspeed.</li><li>Moonshot menargetkan kemampuan coding proyek utuh — termasuk membuat game di Unreal, Unity, dan Godot — serta pemodelan 3D parametrik di Blender dan CAD.</li><li>Dalam pekerjaan keuangan, Moonshot klaim tingkat halusinasi turun 65% dibanding versi sebelumnya.</li><li>Pada benchmark coding, agentic, dan pengetahuan, model ini diklaim setara dengan Claude Opus 5.5 dan GPT-6 Astra, dengan harga yang lebih murah.</li><li>Bobot lengkap dijadwalkan terbuka untuk publik pada 4 November 2026; Moonshot bahkan sengaja menghapus data serangan siber dari pelatihan agar kemampuan hacking model tidak tersebar bebas.</li></ul>
+<div class="explain">Pengumuman ini penting karena lanskap AI saat ini didominasi model tertutup dari perusahaan AS, sementara Moonshot bergerak ke arah sebaliknya: membuat model kelas frontier lalu membukanya untuk umum. Model ini bisa langsung dipakai lewat aplikasi Kimi, Kimi Code, dan API — bahkan ada paket gratis terbatas — jadi pengembang mana pun sudah bisa mencobanya hari ini tanpa menunggu bobotnya dirilis. Strategi arsitektur MoE-nya juga menarik: meski total parameternya 2,8 triliun, yang benar-benar menyala setiap kali kita bertanya hanya 104 miliar, sehingga model raksasa ini tetap bisa berjalan dengan biaya yang masuk akal.
+
+Yang perlu dicermati adalah jeda antara peluncuran API dan rilis bobot pada 4 November. Selama itu belum terjadi, klaim &#x27;terbuka&#x27; masih sebatas janji — dan ketika bobotnya nanti benar-benar beredar, tidak ada yang bisa menariknya kembali. Karena itu Moonshot lebih dulu membersihkan data terkait serangan siber dari proses pelatihannya, meski pihak lain berpotensi tetap bisa melepas penjagaan bawaan model. Bagi industri, kehadiran alternatif kuat dan murah dari Tiongkok menambah tekanan kompetisi, dan keputusan lisensi final akan menentukan seberapa luas model ini diadopsi komunitas open-source.
+
+</div>
+<div class="bg"><b>Konteks:</b> Moonshot AI adalah startup AI Tiongkok di balik chatbot Kimi, yang sejak Juli 2026 punya model dasar K3 berarsitektur MoE. K3.1 Pro adalah versi hasil post-training intensif dari K3 dan menjadi pembuka seri K3.1.</div>
+</details>
+</div>
+<div class="news">
+<h3>OpenAI membuka Decisions API (respons 100-180ms) untuk semua pelanggan, versi cepat dari model ChatGPT Luna</h3>
+<p>aiapphunters.com/news)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">OpenAI kini membuka akses umum ke Decisions API, layanan yang mengerahkan model GPT-6 Luna bukan untuk menulis jawaban panjang, melainkan untuk mengambil keputusan sekejap — hanya dalam hitungan ratusan milidetik.</div>
+<ul><li>Decisions API resmi masuk tahap ketersediaan umum (GA) dan memakai model gpt-6-luna, satu-satunya model yang didukung saat ini.</li><li>OpenAI mengklaim API ini memproses teks, gambar, dan data terstruktur hingga 10 kali lebih cepat dibanding memakai GPT-6 Luna lewat Responses API biasa.</li><li>Cara kerjanya sederhana: pengembang mendefinisikan pertanyaan dan pilihan jawabannya, lalu API mengembalikan salah satu dari tiga tipe hasil — probabilitas, pilihan, atau skor.</li><li>Perusahaan layanan pelanggan Sierra melaporkan pemakaian di bawah 280 ms (p95), sekitar 3 kali lebih cepat dan 90% lebih murah per panggilan dibanding pendekatan lamanya.</li><li>Dalam integrasi GPT-Live untuk pembelajaran bahasa, waktu antar aksi terpangkas lebih dari 90%, dari 1,4 detik menjadi 0,13 detik.</li><li>Harganya sangat murah untuk ukuran AI: $0,10 per juta token input, dan hanya $0,01 per juta token jika input sudah ter-cache.</li></ul>
+<div class="explain">Decisions API adalah contoh arah baru AI: bukan chatbot yang bercerita, tapi komponen &#x27;otak keputusan&#x27; untuk aplikasi. Banyak interaksi digital sesungguhnya hanya butuh jawaban biner atau kategori — apakah foto ini ada kerusakannya, kelompok mana pesan ini, urutan mana permintaan ini. Untuk tugas-tugas itu, model bahasa besar yang mencecerkan jawaban panjang justru boros dan lambat. OpenAI memecahnya dengan API khusus yang memberi jawaban terstruktur dalam waktu nyaris real-time, sehingga aplikasi dan agen AI bisa bereaksi seketika saat pengguna masih di tengah percakapan atau sesi kerja.
+
+Dampaknya paling terasa di produk yang sensitif jeda: dukungan pelanggan langsung, aplikasi pembelajaran bahasa, routing permintaan, dan penyaringan konten. Kalau dulu menambahkan kecerdasan AI ke keputusan mikro berarti menanggung latensi satu detik lebih dan biaya besar, sekarang harganya hanya seperseratus dolar per juta token input — relatif sangat murah. Ini juga sinyal bahwa perebutan pasar API bergeser dari sekadar &#x27;model paling pintar&#x27; ke &#x27;model paling pas untuk peran spesifik&#x27;, dan kompetitor besar pasti akan mengikuti dengan produk sejenis.
+
+</div>
+<div class="bg"><b>Konteks:</b> Decisions API diumumkan OpenAI dalam bentuk terbatas sebelum akhirnya dibuka untuk semua pelanggan di akhir Oktober 2026, dibangun di atas model GPT-6 Luna. Layanan ini tersedia lewat endpoint khusus dan juga di Azure OpenAI.</div>
+</details>
+</div>
+<div class="news">
+<h3>Whale memindahkan $771,5 juta BTC dari Wintermute di tengah klaim aksi beli besar</h3>
+<p>Bitcoin sendiri bertahan di sekitar $80-84 ribu. (crypto.news)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Sebanyak 9.458 Bitcoin senilai sekitar $771,5 juta berpindah dari dompet market maker Wintermute ke 40 dompet baru sejak awal Oktober — dan komentator pasar berebut menafsirkan apakah ini whale besar sedang akumulasi, atau cuma rapat internal.</div>
+<ul><li>Pelacak on-chain Lookonchain mencatat 9.458 BTC (≈$771,5 juta) ditarik dari alamat berlabel Wintermute ke 40 dompet yang baru dibuat sejak 1 Oktober 2026.</li><li>Nilai tersirat per koin sekitar $81.571, tapi itu hanya penilaian snapshot — tidak ada bukti harga beli aktual para penerima.</li><li>Komentator Ash Crypto menyebut total akumulasi bulan ini mendekati $780 juta, membagikan rekaman transfer tunggal senilai lebih dari $20 juta, termasuk pengiriman 306, 307, dan 364 BTC.</li><li>Sebuah klaim terpisah dari komentator &#x27;Lucky&#x27; menyebut inflow harian 32.380 BTC senilai ±$2,6 miliar, pembacaan terbesar sejak April.</li><li>Namun transfer dari market maker tidak membuktikan pembelian baru — bisa jadi penyelesaian OTC, perpindahan custody, atau manajemen inventaris rutin.</li><li>Semua ini terjadi saat Bitcoin tertekan di kisaran $80.000-an, dengan ETF BTC juga mencatat arus keluar signifikan dalam beberapa hari.</li></ul>
+<div class="explain">Kenapa gerakan dompet yang sebenarnya tidak menjual maupun membeli apa pun bisa menggerakkan sentimen pasar? Karena dalam kripto, perpindahan koin dari dompet market maker besar seperti Wintermute sering dibaca sebagai sinyal: kalau koin keluar dari bursa ke dompet dingin, artinya seseorang berniat menahan jangka panjang, bukan menjual. Saat harga Bitcoin tertekan mendekati $80.000, narasi &#x27;whale membeli di titik ketakutan&#x27; itu menenangkan investor. Tapi para analis lebih hati-hati: 40 dompet baru belum tentu 40 orang berbeda — bisa satu institusi yang memecah custody — dan tidak ada catatan yang membuktikan koin-koin itu baru dibeli minggu ini.
+
+Pelajaran praktisnya, data on-chain itu transparan tapi menyesatkan kalau dibaca berlebihan. Yang sudah terverifikasi hanyalah jumlah dan nilai transfernya; niat di baliknya masih tebak-tebakan. Pertanyaan yang akan menjawab segalanya sederhana: apakah 9.458 BTC itu diam di tempat dalam beberapa bulan ke depan (tanda akumulasi sungguhan) atau berpindah lagi ke pasar (tanda operasi rutin market maker). Selama itu belum jelas, angka $771,5 juta lebih tepat dilihat sebagai misteri besar, bukan sinyal beli yang pasti.
+
+</div>
+<div class="bg"><b>Konteks:</b> Wintermute adalah salah satu market maker kripto terbesar di dunia yang memfasilitasi perdagangan di banyak bursa. Klaim akumulasi whale ini dipantau lewat Lookonchain dan ramai diperbincangkan sepanjang pertengahan Oktober 2026 saat harga Bitcoin lemah.</div>
+</details>
+</div>
+<div class="news">
+<h3>JPMorgan memperluas produk tokenized money market fund ke jaringan Solana untuk investor</h3>
+<p>AS — sinyal adopsi institusional makin dalam. (news.bitcoin.com)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Bank raksasa AS itu membawa dua dana pasar uang bertoken, MONY dan JLTXX, ke blockchain Solana — jaringan publik kedua mereka setelah Ethereum, dan ini salah satu tangan besar Wall Street yang paling nyata di ekosistem Solana.</div>
+<ul><li>Pengumuman J.P. Morgan Asset Management keluar 22 Oktober 2026: dana MONY dan JLTXX kini tersedia di Solana untuk investor AS yang memenuhi syarat kualifikasi.</li><li>JLTXX adalah dana pasar uang pemerintah terdaftar di AS yang dirancang mendukung penerbit stablecoin sesuai undang-undang GENIUS Act.</li><li>MONY adalah penempatan privat 506(c) yang memberi investor terkualifikasi akses hasil dolar AS.</li><li>Ethereum tetap menjadi jaringan pertama: MONY diluncurkan di sana 15 Desember 2025 lewat platform tokenisasi Kinexys, dan JLTXX menyusul 13 Mei 2026 dengan penyemaian dana awal $100 juta plus partisipasi Anchorage Digital.</li><li>Semua langganan dan penukaran diproses lewat platform Morgan Money, di mana investor menerima saldo token langsung di alamat blockchain mereka.</li><li>Keputusan ini datang di momen yang pas: baru sehari sebelumnya upgrade Alpenglow mengaktifkan finalitas ±150 ms di Solana, memperkuat kasus penggunaan institusional.</li></ul>
+<div class="explain">Money market fund itu produk keuangan paling &#x27;membosankan&#x27; sekaligus paling raksasa — tempat institusi parkir uang tunai untuk menghasilkan bunga aset yang sangat aman. Dengan mem-token-nya, saham dana berubah jadi token digital yang bergerak di blockchain: bisa ditransfer 24/7, dipakai sebagai jaminan, dan pada kasus JLTXX bahkan dirancang jadi tempat parkir cadangan bagi penerbit stablecoin sesuai GENIUS Act. Ketika bank seperti JPMorgan memilih Solana sebagai jaringan kedua setelah Ethereum, itu pengakuan eksplisit bahwa kecepatan dan biaya transaksi Solana dianggap layak untuk uang institusi sungguhan.
+
+Ini bukan eksperimen kecil di sandbox. JLTXX terdaftar resmi di regulator AS dan didukung dana awal $100 juta dari JPMorgan sendiri, dan aksesnya lewat platform Morgan Money yang sudah dipakai klien korporat. Bagi Solana, masuknya dana institutional berarti likuiditas nyata dan legitimasi regulator-ramah di atas ekosistem yang selama ini didominasi aktivitas ritel dan DeFi. Untuk industri tokenisasi aset secara umum, arahnya makin jelas: kompetisi antar blockchain kini bukan soal meme, tapi soal siapa yang bisa mengamankan dompet dana kas institusi.
+
+</div>
+<div class="bg"><b>Konteks:</b> J.P. Morgan Asset Management adalah divisi manajemen aset JPMorgan Chase, dengan suite dana bertoken yang dibangun di atas platform Kinexys Digital Assets dan didistribusikan lewat Morgan Money. Solana menjadi jaringan publik kedua mereka setelah Ethereum.</div>
+</details>
+</div>
+<div class="news">
+<h3>NASA merilis rencana uji penerbangan lander bulan Artemis III, meski tanggal peluncuran pasti belum diumumkan</h3>
+<p>Space.com, 23 Okt)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">NASA baru saja membuka kartu soal Artemis III: misi ini tak langsung mendarat di Bulan, melainkan jadi uji coba 14 hari di orbit Bumi tempat astronot berlatih bertemu dan bertemu dengan lander eksperimental dari Blue Origin dan SpaceX.</div>
+<ul><li>NASA memaparkan rencana misi pada 23 Oktober 2026; peluncuran ditargetkan 2027 dari Kennedy Space Center dengan roket SLS membawa kapsul Orion.</li><li>Awaknya empat orang: astronot NASA Randy Bresnik, Frank Rubio, Andre Douglas, dan astronot ESA Luca Parmitano.</li><li>Misi berdurasi 14 hari ini akan uji rendezvous dan docking dengan artikel uji (test article) lander Blue Moon Mark 2 milik Blue Origin yang mengorbit di ±273 mil.</li><li>Astronot akan membuka hatch, masuk ke dalam Blue Moon, dan menilai lingkungan kabin, kontrol, serta sistem penopang hidup selama sekitar dua hari.</li><li>Berikutnya Orion akan bertemu dengan artikel uji Starship Version 3 dari SpaceX di orbit lebih rendah (±206 mil), dengan demonstrasi docking hingga dua jam — tapi awak tidak masuk ke Starship.</li><li>Seluruh latihan ini disiapkan untuk pendaratan awak dekat Kutub Selatan Bulan yang ditargetkan pada 2028 lewat misi berikutnya.</li></ul>
+<div class="explain">Rencana baru Artemis III ini menceritakan pengubahan strategi yang cukup besar. Semula misi ketiga Artemis memang direncanakan langsung mendaratkan manusia di Bulan, tapi NASA mendefinisikan ulang misinya: karena lander Blue Origin dan SpaceX masih dalam pengembangan, langkah paling aman adalah menguji dulu seluruh tarian teknisnya dekat Bumi — manuver bertemu di orbit, merapat, membuka pintu, dan beroperasi bersama lander — sebelum mempertaruhkan nyawa astronot di bulan. Ini bentuk manajemen risiko: semua hardware dan prosedur tervalidasi di lingkungan yang kalau terjadi masalah, astronot bisa pulang dalam hitungan jam.
+
+Misi ini juga gerbang menuju target pendaratan ulang manusia di Kutub Selatan Bulan pada 2028, wilayah yang diperebutkan karena diperkirakan kaya es air. Yang jujur diakui NASA: tanggal peluncuran pasti masih belum diumumkan, dan program Artemis memang terkenal sering bergeser jadwal. Tapi detail yang dirilis — dari urutan orbit, durasi docking, sampai pemeriksaan setelan astronot Orion — menunjukkan desain misi sudah serius sampai level operasional, bukan sekadar wacana.
+
+</div>
+<div class="bg"><b>Konteks:</b> Artemis adalah program pendaratan manusia kembali ke Bulan yang dipimpin NASA bersama mitra internasional dan industri. Artemis III memakai kombinasi roket SLS, kapsul Orion, dan lander komersial dari Blue Origin serta SpaceX.</div>
+</details>
+</div>
+<div class="news">
+<h3>SpaceX meluncurkan 27 satelit Starlink dari California (23 Okt) setelah tiga kali</h3>
+<p>tertunda — peluncuran Starlink pertama dalam 11 hari. (Spaceflight Now)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Setelah tiga hari dibatalkan beruntun, roket Falcon 9 SpaceX akhirnya lepas landas dari Vandenberg memuat 27 satelit Starlink — upaya keempat yang sukses, sekaligus tanda laju peluncuran Starlink yang terlihat melambat.</div>
+<ul><li>Peluncuran misi Starlink Group 15-15 terjadi 23 Oktober 2026 pukul 3:48 sore waktu California dari landasan SLC-4E di Vandenberg Space Force Base.</li><li>Dua percobaan sebelumnya gagal karena isu teknis (20 Okt) dan cuaca buruk (21-22 Okt) — 22 Okt bahkan hold di detik-detik akhir hitung mundur.</li><li>Ini misi Starlink Falcon 9 pertama dalam 11 hari; di puncak ritmenya dulu misi semacam ini terbang tiap 2-3 hari.</li><li>Booster B1063 menjalankan penerbangan dan pendaratan ke-36-nya, mendarat di kapal drone &#x27;Of Course I Still Love Love You&#x27; di Samudra Pasifik sekitar 8,5 menit setelah lepas landas.</li><li>B1063 punya catatan spesial: roket yang sama pernah meluncurkan misi DART NASA, penabrak asteroid, pada November 2021.</li><li>Ini penerbangan Falcon 9 ke-116 tahun 2026 (sekitar 75% untuk Starlink), sementara konstelasi aktif Starlink kini melebihi 11.000 satelit.</li></ul>
+<div class="explain">Drama tiga penundaan beruntun lalu sukses di upaya keempat ini terlihat sepele, tapi angka &#x27;11 hari tanpa peluncuran Starlink&#x27; adalah yang menarik perhatian pengamat. SpaceX terbiasa meluncurkan Starlink hampir tiap dua-tiga hari, dan jeda panjang semacam ini jarang terjadi. Space.com mencatat salah satu penyebabnya adalah berkurangnya peluncuran dari sisi Florida, yang mengubah ritme operasi Falcon 9 secara keseluruhan. Bagi pengguna Starlink, ada pula catatan menenangkan: konstelasi sudah lewat 11.000 satelit aktif, jadi jeda dua minggu tidak terasa di kualitas layanan.
+
+Sisi lain yang patut diapresiasi adalah keandalan penggunaan ulang roket. B1063 kini sudah terbang dan mendarat 36 kali — dimulai dari misi ilmiah DART NASA tahun 2021 sampai misi rutin internet hari ini. Seluruh 27 satelit berhasil ditempatkan di orbit rendah mulai 62 menit setelah lepas landas. Sekitar 116 peluncuran Falcon 9 sepanjang 2026 menunjukkan bahwa meski ritme sempat melambat, angka tahunan ini masih mengarah ke salah satu tahun teraktif dalam sejarah peluncuran roket dunia.
+
+</div>
+<div class="bg"><b>Konteks:</b> Starlink adalah konstelasi internet satelit milik SpaceX yang kini jadi penyedia bandwidth orbit rendah terbesar di dunia. Vandenberg Space Force Base di California adalah lokasi utama peluncuran Starlink untuk sisi Pasifik.</div>
+</details>
+</div>
+<div class="news">
+<h3>Sonnen, perintis baterai rumah asal Jerman, mengajukan pailit hanya dua bulan setelah</h3>
+<p>dijual Shell — pendapatan anjlok 55%. (renewable-energy-industry.com)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Sonnen, perusahaan baterai rumah asal Bayern yang pernah dijuluki &#x27;Tesla-nya penyimpan surya&#x27;, mengajukan pailit pada 22 Oktober — hanya dua bulan setelah Shell melepasnya ke investor, dengan pendapatan grup yang sudah anjlok 55% dalam setahun.</div>
+<ul><li>Sonnen GmbH, berbasis di Wildpoldsried, mengajukan pailit dalam skema pengelolaan sendiri (self-administration) pada Kamis, 22 Oktober 2026.</li><li>Pendapatan grup jatuh sekitar 55% pada 2024 — dari €443 juta ke sekitar €199 juta — dan neraca Sonnen GmbH 2024 mencatat rugi bersih ±€106,6 juta.</li><li>Sekitar 400 karyawan di kantor pusat diberi tahu pagi itu; rencananya hanya satu pabrik yang tetap beroperasi sementara banyak anak perusahaan dibubarkan.</li><li>Lebih dari 150.000 pelanggan baterai rumah dijanjikan layanan dan bisnis berjalan tetap dipertahankan untuk sementara.</li><li>Shell mengakuisisi Sonnen tahun 2019 senilai ±€500 juta dan total menginvestasikan lebih dari €1 miliar, lalu menjualnya pada Agustus 2026 ke Tiven, family office rekan pendiri Aurelius Gert Purkert.</li><li>Program restrukturisasi &#x27;Sunrise&#x27; di era Shell sukses memangkas karyawan dari 1.318 menjadi 800 dan memangkas rugi menjadi €52,2 juta, tapi Sonnen hanya pernah untung satu tahun sepanjang sejarahnya.</li></ul>
+<div class="explain">Kisah Sonnen adalah peringatan keras soal sisi gelap transisi energi. Perusahaan ini pelopor sesungguhnya: baterai rumah untuk pasangan panel surya, plus konsep jaringan virtual yang menggabungkan ribuan baterai rumah jadi pembangkit maya. Tapi bisnisnya sulit — persaingan murah dari pabrikan Asia, margin tipis, dan biaya riset tinggi membuat perusahaan nyaris selalu rugi. Di bawah kepemilikan Shell, pendapatan malah runtuh 55% dalam satu tahun. Ketika Shell akhirnya menjualnya pada Agustus 2026 ke investor restrukturisasi, banyak yang mengira itu awal pemulihan; dua bulan kemudian kenyataannya adalah berkas pailit.
+
+Dampaknya menjalar ke tiga lapis. Pertama, sekitar 400 pekerja di Wildpoldsried kini memegang masa depan kerja yang tidak pasti, dengan hanya satu lokasi produksi yang direncanakan bertahan. Kedua, lebih dari 150.000 pemilik baterai Sonnen di rumah-rumah mereka bergantung pada jaminan layanan dan suku cadang yang dalam sistem pailit bisa berubah kapan saja. Ketiga, bagi industri penyimpanan energi, ini sinyal bahwa pasar baterai rumah Eropa sedang dalam fase seleksi alam yang keras — yang kuat meraih skala, yang tertinggal ditelan biaya. Kritik juga mulai menganga ke arah Shell yang dianggap menarik diri dari tanggung jawab pascajual.
+
+</div>
+<div class="bg"><b>Konteks:</b> Sonnen didirikan di Bayern, Jerman, dan jadi pelopor baterai penyimpan energi rumah tangga di Eropa sejak 2010-an. Perusahaan berpindah tangan dari Shell ke investor Tiven pada Agustus 2026 sebelum akhirnya mengajukan pailit Oktober 2026.</div>
+</details>
+</div>
+<div class="news">
+<h3>Nordex masuk pasar angin Selandia Baru lewat order pertama 192 MW dari utilitas Mercury</h3>
+<p>kontrak servis 30 tahun. (renewable-energy-industry.com)</p>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Produsen turbin angin Jerman Nordex baru saja mencatat kaki pertamanya di Selandia Baru: pesanan 40 turbin sekapasitas 192 MW dari utilitas besar Mercury, lengkap dengan kontrak servis yang mengikat keduanya selama 30 tahun.</div>
+<ul><li>Pesanan diumumkan Nordex dari Hamburg pada 22 Oktober 2026 dan menjadi order pertama perusahaan ini di pasar angin Selandia Baru.</li><li>Mercury memesan 40 unit turbin N133/4.8 dengan kapasitas total 192 MW untuk ladang angin Puke Kapo Hau di wilayah Otago, Pulau Selatan.</li><li>Proyek ini diperkirakan bernilai NZ$506 juta dan dikombinasikan dengan ladang angin Mahinerangi 36 MW yang sudah ada, menjadikannya ladang angin terbesar di Selandia Baru.</li><li>Lokasinya di kaki timur Lammermoor Range dekat Dunedin punya kecepatan angin rata-rata lebih dari 8 meter per detik — kondisi angin yang sangat menguntungkan.</li><li>Nordex dan Mercury juga menandatangani perjanjian servis komprehensif 30 tahun, memberi Nordex arus pendapatan berulang sepanjang umur proyek.</li><li>Pemasangan turbin pertama di menara baja pipa 90 meter dijadwalkan awal 2028, dengan unit pertama direncanakan beroperasi pertengahan 2028.</li></ul>
+<div class="explain">Untuk memahami kenapa order ini penting, perlu tahu bagaimana pasar turbin angin bekerja. Produsen turbin seperti Nordex, Vestas, atau GE Vernova bersaing ketat di pasar-pasar besar, dan memasuki negara baru dengan pelanggan utilitas kredibel itu seperti membuka gerbang pasar yang sebelumnya tertutup. Mercury bukan pembeli kecil — ia salah satu generator dan pengecer listrik terbesar Selandia Baru — dan pilihan Nordex berarti pasar angin Selandia Baru yang relatif kecil kini masuk radar pemasok global.
+
+Bagi Nordex sendiri, dua angka paling menarik adalah 192 MW dan 30 tahun. Kapasitas 192 MW terdengar moderat dibanding basis pendapatan Nordex yang melewati €8 miliar, jadi ini bukan perubahan besar bagi bisnisnya. Tapi kontrak servis 30 tahun adalah aset yang jauh lebih berharga: pendapatan berulang yang stabil, sekaligus pijakan pertama untuk menawarkan proyek-proyek berikutnya di negara yang sedang mempercepat transisi energinya. Konstruksi proyek direncanakan mulai November ini dengan pendanaan dari neraca Mercury sendiri, dan jika jadwal terjaga, turbin pertama akan berputar di Otago pertengahan 2028.
+
+</div>
+<div class="bg"><b>Konteks:</b> Nordex Group adalah produsen turbin angin onshore asal Hamburg, Jerman. Mercury adalah salah satu perusahaan pembangkit dan pengecer listrik terbesar di Selandia Baru dengan portofolio energi terbarukan besar, dan Puke Kapo Hau akan jadi ladang angin terbesar di negara itu.</div>
+</details>
+</div>
+<div class="news">
+<h3>Sorotan hari ini</h3>
+<p>PMorgan memperluas tokenized money market fund ke Solana — tanda makin kuatnya masuknya institusi besar ke ekosistem Solana di tengah tekanan jual whale ETH/BTC.</p>
+</div>
 </div>
 <div class="nav"><a href="index.html">← TERBARU</a>
 <a href="2026-10-29.html">29 Oct 2026</a>
