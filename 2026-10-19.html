@@ -3,58 +3,121 @@
 <title>PhotonLedger Digest — Berita AI & Space Harian</title>
 <meta name="description" content="Digest harian berita AI dan Space exploration — ringkasan berita global terkini oleh PhotonLedger.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0c14;--card:#121826;--card2:#161e30;--txt:#e8edf7;--dim:#8b97b0;
---cyan:#00e5ff;--gold:#ffb900;--line:#232c42}
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.22)}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.65}
-.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
-header{text-align:center;padding:48px 16px 32px;border-bottom:1px solid var(--line)}
-.logo{font-size:13px;letter-spacing:4px;color:var(--cyan);text-transform:uppercase;font-weight:700}
-h1{font-size:clamp(28px,6vw,42px);margin:12px 0 8px;background:linear-gradient(90deg,#fff,#00e5ff);
--webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:900}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(900px 420px at 70% -10%,rgba(0,229,255,.07),transparent 60%),
+radial-gradient(700px 380px at 10% 0%,rgba(255,185,0,.05),transparent 60%)}
+.wrap{max-width:780px;margin:0 auto;padding:20px 16px 80px;position:relative;z-index:1}
+header{text-align:center;padding:56px 16px 30px;border-bottom:1px solid var(--line);
+background:linear-gradient(180deg,rgba(13,18,32,.6),transparent)}
+.logo{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:4px;
+color:var(--cyan);text-transform:uppercase;font-weight:700;
+border:1px solid rgba(0,229,255,.25);border-radius:24px;padding:6px 16px;
+background:rgba(0,229,255,.06)}
+h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(30px,6.5vw,46px);margin:16px 0 6px;
+background:linear-gradient(90deg,#fff 20%,var(--cyan) 75%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .tag{color:var(--dim);font-size:14px}
-.day-card{background:var(--card);border:1px solid var(--line);border-radius:16px;
-padding:24px;margin:20px 0;overflow:hidden}
-.hero{width:calc(100% + 48px);margin:-24px 0 18px -24px;display:block;border-radius:16px 16px 0 0}
-.day-title{font-size:20px;font-weight:800;color:#fff;margin-bottom:4px}
-.day-meta{font-size:12px;color:var(--dim);margin-bottom:16px}
-.topic{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
-color:var(--gold);margin:18px 0 8px}
-.news{background:var(--card2);border-radius:12px;padding:16px;margin:10px 0;
-border-left:3px solid var(--cyan)}
-.news h3{font-size:16px;color:#fff;margin-bottom:6px}
-.news p{font-size:14px;color:var(--txt);margin-bottom:8px}
-.src{font-size:12px;color:var(--dim)}
+/* --- news ticker --- */
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);position:relative;z-index:2;overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 42s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+/* --- day cards --- */
+.day-card{background:linear-gradient(180deg,rgba(20,29,51,.5),rgba(13,18,32,.9)) var(--card);
+border:1px solid var(--line);border-radius:18px;padding:24px;margin:22px 0;overflow:hidden;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 12px 32px rgba(0,0,0,.35);
+animation:rise .5s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero{width:calc(100% + 48px);margin:-24px 0 18px -24px;display:block;
+border-radius:18px 18px 0 0;border-bottom:1px solid var(--line)}
+.day-title{font-size:19px;font-weight:800;color:#fff;margin-bottom:4px;
+letter-spacing:.3px}
+.day-title .cal{color:var(--cyan);margin-right:6px}
+.day-meta{font-size:12px;color:var(--faint);margin-bottom:16px}
+.topic{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;
+letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);
+border:1px solid rgba(255,185,0,.25);background:rgba(255,185,0,.06);
+border-radius:8px;padding:5px 12px;margin:20px 0 10px}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:10px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
 .src a{color:var(--cyan);text-decoration:none}
 .src a:hover{text-decoration:underline}
-.score{display:inline-block;background:#1c2740;color:var(--cyan);font-size:11px;
-padding:2px 10px;border-radius:20px;margin-top:6px}
-details.more{margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
 details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
-list-style:none;user-select:none}
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
 details.more summary::before{content:"▸ ";}
 details.more[open] summary::before{content:"▾ "}
-details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
 details.more ul{margin:8px 0 10px 20px}
-details.more li{font-size:13.5px;color:var(--txt);margin:4px 0}
-details.more .explain{font-size:13.5px;color:var(--txt);margin:8px 0}
-details.more .bg{font-size:12.5px;color:var(--dim);margin:8px 0;background:#0f1422;
-border-radius:8px;padding:10px 12px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
 details.more .bg b{color:var(--gold)}
-.nav{text-align:center;margin:32px 0 0}
+.nav{text-align:center;margin:36px 0 0}
 .nav a{display:inline-block;background:var(--card);border:1px solid var(--line);
-color:var(--txt);padding:8px 20px;border-radius:24px;margin:4px;text-decoration:none;font-size:13px}
-.nav a.cur{border-color:var(--cyan);color:var(--cyan)}
-footer{text-align:center;color:var(--dim);font-size:12px;padding:40px 16px;border-top:1px solid var(--line);margin-top:48px}
+color:var(--dim);padding:8px 18px;border-radius:24px;margin:4px;text-decoration:none;
+font-size:12.5px;transition:all .2s ease-out}
+.nav a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.nav a.cur{border-color:var(--cyan);color:var(--cyan);background:rgba(0,229,255,.07)}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
 footer a{color:var(--cyan);text-decoration:none}
-.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#5a6a8c}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+::selection{background:rgba(0,229,255,.25)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+@media (prefers-reduced-motion:reduce){
+ .day-card,.ticker-track,.tickerbar .live::before{animation:none!important}
+ .news,.nav a{transition:none!important}
+}
 </style></head><body>
 <header><div class="logo">⚡ PhotonLedger</div>
 <h1>DIGEST HARIAN</h1>
 <div class="tag">Berita AI &amp; Space — ringkasan dari sumber berita global, setiap hari</div>
-</header><div class="wrap">
+</header>
+<div class="tickerbar"><div class="live">LIVE</div><div class="ticker"><div class="ticker-track"><a href="2026-10-30.html"><b>●</b>SpaceX kirim kargo &quot;point-to-point&quot; pertama via kapsul Starfall</a><a href="2026-10-30.html"><b>●</b>Starship Flight 15: upper stage dinyalakan penuh 6 mesin</a><a href="2026-10-30.html"><b>●</b>Google rilis Gemini 4 Carbon, model khusus cyber defense</a><a href="2026-10-30.html"><b>●</b>50 agen AI di Minecraft bentuk pemerintahan usai 22 &quot;kematian&quot; massal</a><a href="2026-10-29.html"><b>●</b>Artemis III SLS Core Stage Dipasang di Kennedy</a><a href="2026-10-29.html"><b>●</b>Spacewalk ISS Upgrade Listrik Disetujui</a><a href="2026-10-29.html"><b>●</b>Google Rilis Gemini 4 Carbon, Langsung #1 Leaderboard</a><a href="2026-10-29.html"><b>●</b>OpenAI Luncurkan GPT-6.1 Terra</a><a href="2026-10-28.html"><b>●</b>SpaceX uji nyala 33 mesin Super Heavy demi &quot;double catch&quot; Starship</a><a href="2026-10-28.html"><b>●</b>Astroscale usul armada satelit &quot;bodyguard&quot; lawan serangan orbital</a><a href="2026-10-28.html"><b>●</b>OpenAI rilis GPT-6.1 Terra, harga API turun 50%</a><a href="2026-10-28.html"><b>●</b>Alibaba luncurkan Qwen3.8-27B untuk laptop, tanpa cloud</a><a href="2026-10-30.html"><b>●</b>SpaceX kirim kargo &quot;point-to-point&quot; pertama via kapsul Starfall</a><a href="2026-10-30.html"><b>●</b>Starship Flight 15: upper stage dinyalakan penuh 6 mesin</a><a href="2026-10-30.html"><b>●</b>Google rilis Gemini 4 Carbon, model khusus cyber defense</a><a href="2026-10-30.html"><b>●</b>50 agen AI di Minecraft bentuk pemerintahan usai 22 &quot;kematian&quot; massal</a><a href="2026-10-29.html"><b>●</b>Artemis III SLS Core Stage Dipasang di Kennedy</a><a href="2026-10-29.html"><b>●</b>Spacewalk ISS Upgrade Listrik Disetujui</a><a href="2026-10-29.html"><b>●</b>Google Rilis Gemini 4 Carbon, Langsung #1 Leaderboard</a><a href="2026-10-29.html"><b>●</b>OpenAI Luncurkan GPT-6.1 Terra</a><a href="2026-10-28.html"><b>●</b>SpaceX uji nyala 33 mesin Super Heavy demi &quot;double catch&quot; Starship</a><a href="2026-10-28.html"><b>●</b>Astroscale usul armada satelit &quot;bodyguard&quot; lawan serangan orbital</a><a href="2026-10-28.html"><b>●</b>OpenAI rilis GPT-6.1 Terra, harga API turun 50%</a><a href="2026-10-28.html"><b>●</b>Alibaba luncurkan Qwen3.8-27B untuk laptop, tanpa cloud</a></div></div></div>
+<div class="wrap">
 <div class="day-card">
 <img class="hero" src="assets/poster_space_psyche_v2.jpg" alt="PhotonLedger poster" loading="lazy">
 <div class="day-title">📅 19 Oct 2026</div>
