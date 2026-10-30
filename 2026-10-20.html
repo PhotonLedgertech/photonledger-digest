@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PhotonLedger Digest — Berita AI & Space Harian</title>
-<meta name="description" content="Digest harian berita AI dan Space exploration — ringkasan berita global terkini oleh PhotonLedger.">
+<title>Digest 20 Oct 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 20 Oct 2026: 9 berita dari sumber global, dengan pembahasan mendalam.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -9,30 +9,54 @@
 :root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
 --txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
 --cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
---line2:rgba(120,150,200,.22)}
+--line2:rgba(120,150,200,.24)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--txt);
 font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
--webkit-font-smoothing:antialiased}
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
-background:radial-gradient(900px 420px at 70% -10%,rgba(0,229,255,.07),transparent 60%),
-radial-gradient(700px 380px at 10% 0%,rgba(255,185,0,.05),transparent 60%)}
-.wrap{max-width:780px;margin:0 auto;padding:20px 16px 80px;position:relative;z-index:1}
-header{text-align:center;padding:56px 16px 30px;border-bottom:1px solid var(--line);
-background:linear-gradient(180deg,rgba(13,18,32,.6),transparent)}
-.logo{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:4px;
-color:var(--cyan);text-transform:uppercase;font-weight:700;
-border:1px solid rgba(0,229,255,.25);border-radius:24px;padding:6px 16px;
-background:rgba(0,229,255,.06)}
-h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
-font-size:clamp(30px,6.5vw,46px);margin:16px 0 6px;
-background:linear-gradient(90deg,#fff 20%,var(--cyan) 75%,var(--cyan2));
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
 -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.tag{color:var(--dim);font-size:14px}
-/* --- news ticker --- */
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
 .tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
-background:rgba(11,15,24,.85);position:relative;z-index:2;overflow:hidden}
+background:rgba(11,15,24,.85);overflow:hidden}
 .tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
 font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
 border-right:1px solid var(--line);flex:none}
@@ -41,34 +65,85 @@ background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 .ticker{overflow:hidden;flex:1;display:flex;align-items:center}
 .ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
-animation:marquee 42s linear infinite}
+animation:marquee 45s linear infinite}
 .tickerbar:hover .ticker-track{animation-play-state:paused}
 .ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
 .ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
 .ticker-track a:hover{color:var(--txt)}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
-/* --- day cards --- */
-.day-card{background:linear-gradient(180deg,rgba(20,29,51,.5),rgba(13,18,32,.9)) var(--card);
-border:1px solid var(--line);border-radius:18px;padding:24px;margin:22px 0;overflow:hidden;
-box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 12px 32px rgba(0,0,0,.35);
-animation:rise .5s ease-out both}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.hero{width:calc(100% + 48px);margin:-24px 0 18px -24px;display:block;
-border-radius:18px 18px 0 0;border-bottom:1px solid var(--line)}
-.day-title{font-size:19px;font-weight:800;color:#fff;margin-bottom:4px;
-letter-spacing:.3px}
-.day-title .cal{color:var(--cyan);margin-right:6px}
-.day-meta{font-size:12px;color:var(--faint);margin-bottom:16px}
-.topic{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;
-letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);
-border:1px solid rgba(255,185,0,.25);background:rgba(255,185,0,.06);
-border-radius:8px;padding:5px 12px;margin:20px 0 10px}
-.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:10px 0;
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
 border:1px solid var(--line);border-left:3px solid var(--cyan);
 transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
 .news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
 box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
-.news h3{font-size:16px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
 .news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
 .src{font-size:12px;color:var(--faint)}
 .src a{color:var(--cyan);text-decoration:none}
@@ -79,7 +154,7 @@ details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px
 details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
 list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
 details.more summary:hover{color:#7deaff}
-details.more summary::before{content:"▸ ";}
+details.more summary::before{content:"▸ "}
 details.more[open] summary::before{content:"▾ "}
 details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
 padding-left:14px;border-left:2px solid var(--gold)}
@@ -91,101 +166,150 @@ details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
 background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
 border-radius:10px;padding:10px 14px}
 details.more .bg b{color:var(--gold)}
-.nav{text-align:center;margin:36px 0 0}
-.nav a{display:inline-block;background:var(--card);border:1px solid var(--line);
-color:var(--dim);padding:8px 18px;border-radius:24px;margin:4px;text-decoration:none;
-font-size:12.5px;transition:all .2s ease-out}
-.nav a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
-.nav a.cur{border-color:var(--cyan);color:var(--cyan);background:rgba(0,229,255,.07)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
 footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
 border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
 footer a{color:var(--cyan);text-decoration:none}
 footer a:hover{text-decoration:underline}
 .brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
-::selection{background:rgba(0,229,255,.25)}
-::-webkit-scrollbar{width:10px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
-::-webkit-scrollbar-thumb:hover{background:#2a3857}
 @media (prefers-reduced-motion:reduce){
- .day-card,.ticker-track,.tickerbar .live::before{animation:none!important}
- .news,.nav a{transition:none!important}
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
 }
 </style></head><body>
-<header><div class="logo">⚡ PhotonLedger</div>
-<h1>DIGEST HARIAN</h1>
-<div class="tag">Berita AI &amp; Space — ringkasan dari sumber berita global, setiap hari</div>
-</header>
-<div class="tickerbar"><div class="live">LIVE</div><div class="ticker"><div class="ticker-track"><a href="2026-10-30.html"><b>●</b>SpaceX kirim kargo &quot;point-to-point&quot; pertama via kapsul Starfall</a><a href="2026-10-30.html"><b>●</b>Starship Flight 15: upper stage dinyalakan penuh 6 mesin</a><a href="2026-10-30.html"><b>●</b>Google rilis Gemini 4 Carbon, model khusus cyber defense</a><a href="2026-10-30.html"><b>●</b>50 agen AI di Minecraft bentuk pemerintahan usai 22 &quot;kematian&quot; massal</a><a href="2026-10-29.html"><b>●</b>Artemis III SLS Core Stage Dipasang di Kennedy</a><a href="2026-10-29.html"><b>●</b>Spacewalk ISS Upgrade Listrik Disetujui</a><a href="2026-10-29.html"><b>●</b>Google Rilis Gemini 4 Carbon, Langsung #1 Leaderboard</a><a href="2026-10-29.html"><b>●</b>OpenAI Luncurkan GPT-6.1 Terra</a><a href="2026-10-28.html"><b>●</b>SpaceX uji nyala 33 mesin Super Heavy demi &quot;double catch&quot; Starship</a><a href="2026-10-28.html"><b>●</b>Astroscale usul armada satelit &quot;bodyguard&quot; lawan serangan orbital</a><a href="2026-10-28.html"><b>●</b>OpenAI rilis GPT-6.1 Terra, harga API turun 50%</a><a href="2026-10-28.html"><b>●</b>Alibaba luncurkan Qwen3.8-27B untuk laptop, tanpa cloud</a><a href="2026-10-30.html"><b>●</b>SpaceX kirim kargo &quot;point-to-point&quot; pertama via kapsul Starfall</a><a href="2026-10-30.html"><b>●</b>Starship Flight 15: upper stage dinyalakan penuh 6 mesin</a><a href="2026-10-30.html"><b>●</b>Google rilis Gemini 4 Carbon, model khusus cyber defense</a><a href="2026-10-30.html"><b>●</b>50 agen AI di Minecraft bentuk pemerintahan usai 22 &quot;kematian&quot; massal</a><a href="2026-10-29.html"><b>●</b>Artemis III SLS Core Stage Dipasang di Kennedy</a><a href="2026-10-29.html"><b>●</b>Spacewalk ISS Upgrade Listrik Disetujui</a><a href="2026-10-29.html"><b>●</b>Google Rilis Gemini 4 Carbon, Langsung #1 Leaderboard</a><a href="2026-10-29.html"><b>●</b>OpenAI Luncurkan GPT-6.1 Terra</a><a href="2026-10-28.html"><b>●</b>SpaceX uji nyala 33 mesin Super Heavy demi &quot;double catch&quot; Starship</a><a href="2026-10-28.html"><b>●</b>Astroscale usul armada satelit &quot;bodyguard&quot; lawan serangan orbital</a><a href="2026-10-28.html"><b>●</b>OpenAI rilis GPT-6.1 Terra, harga API turun 50%</a><a href="2026-10-28.html"><b>●</b>Alibaba luncurkan Qwen3.8-27B untuk laptop, tanpa cloud</a></div></div></div>
-<div class="wrap">
-<div class="day-card">
-<img class="hero" src="assets/poster_ai_hariini_v2.jpg" alt="PhotonLedger poster" loading="lazy">
-<div class="day-title">📅 20 Oct 2026</div>
-<div class="topic">Ai</div>
-<div class="news">
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_ai_hariini_v2.jpg" alt="Poster 20 Oct 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>20 OCT 2026</div>
+<h1>Inception merilis Mercury 3, LLM berbasis diffusion dengan konteks 1M token, diklaim</h1>
+<div class="lsub">Edisi 20 Oct 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="9">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="4">0</b><span>Topik</span></div>
+ <div class="stat"><b>—</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news feat-news rv">
+<span class="ftag">★ CERITA UTAMA</span>
 <h3>Inception merilis Mercury 3, LLM berbasis diffusion dengan konteks 1M token, diklaim</h3>
 <p>kalahkan GPT-6 Luna &amp; Claude Haiku 5.5 di benchmark agentic dan 4-8x lebih cepat. (Techmeme/Unite.AI)</p>
 </div>
-<div class="news">
+<div class="news rv">
 <h3>MiniMax umumkan M3.1 Flash — model coding/agent baru, 3x lebih cepat &amp; turunkan biaya</h3>
 <p>tugas agent 70% dibanding pendahulunya; bobot open rilis 23 Okt. (Techmeme, AI/TLDR)</p>
 </div>
-<div class="topic">Kripto</div>
-<div class="news">
+<div class="topic-l rv"><span class="chip">Kripto</span><span class="rule"></span></div>
+<div class="news rv">
 <h3>ETF Bitcoin AS catat inflow $527M-$665M (IBIT BlackRock terbesar sejak Okt 2025) seiring</h3>
 <p>reli harga, sementara Strategy (Saylor) dan Strive terus borong BTC tambahan. (The Block, Cointelegraph)</p>
 </div>
-<div class="news">
+<div class="news rv">
 <h3>Treasury firm SkyAI jual habis seluruh kepemilikan Solana-nya dan luncurkan buyback $201</h3>
 <p>juta; JPMorgan perluas JPM Coin ke jaringan Ethereum untuk klien institusi. (The Block, crypto.news)</p>
 </div>
-<div class="topic">Space Exploration</div>
-<div class="news">
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news rv">
 <h3>JAXA meluncurkan misi Martian Moons eXploration (MMX) dari Tanegashima — akan studi</h3>
 <p>Phobos &amp; Deimos dan ambil sampel dari Phobos. (SpacePolicyOnline)</p>
 </div>
-<div class="news">
+<div class="news rv">
 <h3>SpaceX luncurkan uji kedua kapsul re-entry &quot;Starfall&quot; (demo pengangkutan eksperimen balik</h3>
 <p>ke Bumi) dari Cape Canaveral; NASA juga gelar briefing persiapan 2 spacewalk ISS (EVA-100/101) untuk instalasi panel surya. (Spaceflight Now, NASA)</p>
 </div>
-<div class="topic">Renewable Energy</div>
-<div class="news">
+<div class="topic-l rv"><span class="chip">Renewable Energy</span><span class="rule"></span></div>
+<div class="news rv">
 <h3>RWE (Jerman) perluas taman solar Garzweiler &amp; operasikan ladang angin Düren-Merken, plus</h3>
 <p>bangun sistem baterai skala besar yang tersambung grid awal 2027. (renewable-energy-industry.com)</p>
 </div>
-<div class="news">
+<div class="news rv">
 <h3>Australia Selatan ajukan proyek angin+solar baru senilai hampir 13 GW untuk dorong negara</h3>
 <p>bagian itu melampaui 100% energi terbarukan bersih. (RenewEconomy)</p>
 </div>
-<div class="news">
+<div class="news rv">
 <h3>Sorotan hari ini</h3>
 <p>eluncuran Mercury 3 oleh Inception menandai terobosan model diffusion-LLM yang menantang dominasi arsitektur transformer di benchmark agentic — sekaligus bersaing ketat dengan rilis M3.1 Flash dari MiniMax di hari yang sama.</p>
 </div>
-</div>
-<div class="nav"><a href="index.html">← TERBARU</a>
-<a href="2026-10-30.html">30 Oct 2026</a>
-<a href="2026-10-29.html">29 Oct 2026</a>
-<a href="2026-10-28.html">28 Oct 2026</a>
-<a href="2026-10-27.html">27 Oct 2026</a>
-<a href="2026-10-26.html">26 Oct 2026</a>
-<a href="2026-10-25.html">25 Oct 2026</a>
-<a href="2026-10-24.html">24 Oct 2026</a>
-<a href="2026-10-23.html">23 Oct 2026</a>
-<a href="2026-10-22.html">22 Oct 2026</a>
-<a href="2026-10-21.html">21 Oct 2026</a>
-<a href="2026-10-20.html" class="cur">20 Oct 2026</a>
-<a href="2026-10-19.html">19 Oct 2026</a>
-<a href="2026-10-17.html">17 Oct 2026</a>
-<a href="2026-10-15.html">15 Oct 2026</a>
-<a href="2026-10-14.html">14 Oct 2026</a>
-<a href="2026-10-13.html">13 Oct 2026</a>
-<a href="2026-10-04.html">04 Oct 2026</a>
-<a href="2026-10-03.html">03 Oct 2026</a>
-<a href="2026-10-01.html">01 Oct 2026</a>
-<a href="2026-09-30.html">30 Sep 2026</a>
-</div>
-</div><footer>
+<div class="pn rv"><a href="2026-10-19.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">19 Oct 2026</span></a><a class="next" href="2026-10-21.html"><span class="lbl">EDISI BERIKUTNYA →</span><span class="dt">21 Oct 2026</span></a></div>
+<footer>
 <p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
 <p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
 <div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
-</footer></body></html>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var prog=document.getElementById('progress');
+ var toTop=document.getElementById('toTop');
+ function onScroll(){
+   var h=document.documentElement;
+   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+   if(prog)prog.style.width=(p*100)+'%';
+   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
+ }
+ addEventListener('scroll',onScroll,{passive:true});onScroll();
+ if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+ var els=document.querySelectorAll('.rv');
+ if(!reduce&&'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){
+     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+   els.forEach(function(el){io.observe(el)});
+ } else { els.forEach(function(el){el.classList.add('in')}) }
+ var hero=document.querySelector('.land-hero .poster-wrap img');
+ if(hero&&!reduce){
+   addEventListener('scroll',function(){
+     var r=hero.getBoundingClientRect();
+     if(r.bottom>0&&r.top<innerHeight){
+       var off=(innerHeight-r.top)*0.06;
+       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
+     }
+   },{passive:true});
+ }
+ var counts=document.querySelectorAll('[data-count]');
+ if(!reduce&&'IntersectionObserver' in window&&counts.length){
+   var cio=new IntersectionObserver(function(es){
+     es.forEach(function(e){
+       if(!e.isIntersecting)return;cio.unobserve(e.target);
+       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
+       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
+         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
+         if(k<1)requestAnimationFrame(step);}
+       requestAnimationFrame(step);
+     });
+   },{threshold:.4});
+   counts.forEach(function(el){cio.observe(el)});
+ }
+})();
+</script>
