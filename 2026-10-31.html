@@ -1,0 +1,367 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digest 31 Oct 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 31 Oct 2026: 6 berita dari sumber global, dengan pembahasan mendalam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_space_meteorit.jpg" alt="Poster 31 Oct 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>31 OCT 2026</div>
+<h1>ISS dapat panel surya baru lewat spacewalk 7 jam</h1>
+<div class="lsub">Edisi 31 Oct 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="6">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="2">0</b><span>Topik</span></div>
+ <div class="stat"><b>✔</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news feat-news rv">
+<span class="ftag">★ CERITA UTAMA</span>
+<h3>ISS dapat panel surya baru lewat spacewalk 7 jam</h3>
+<p>Dua astronot NASA menyelesaikan spacewalk 7 jam 11 menit pada 30 Okt 2026 untuk memasang solar array baru di ISS, langkah penting menuju upgrade daya stasiun. Ini melengkapi rangkaian pemasangan array yang sudah berjalan sejak awal tahun.</p>
+<div class="src">Sumber: ScienceDaily, sciencedaily.com/news/space_time/space_missions — 30 Okt 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Dua astronot NASA berhasil memasang panel surya baru di Stasiun Luar Angkasa Internasional melalui spacewalk selama 7 jam 11 menit pada 30 Oktober 2026.</div>
+<ul><li>Spacewalk berlangsung 7 jam 11 menit dan selesai tepat pada 30 Oktober 2026.</li><li>Dua astronot NASA menyelesaikan pemasangan solar array baru di luar stasiun.</li><li>Pemasangan ini bagian dari rangkaian upgrade daya ISS yang berjalan sejak awal 2026.</li><li>Panel baru menambah kapasitas listrik untuk menopang eksperimen dan beban operasional stasiun yang terus bertambah.</li></ul>
+<div class="explain">Listrik adalah nyawa ISS. Semakin banyak eksperimen komersial dan payload riset yang dijalankan di stasiun, semakin besar permintaan daya, sementara panel-panel asli yang dipasang era 2000-an sudah mengalami degradasi alami akibat radiasi dan siklus terang-gelap yang ekstrem. Pemasangan array baru ini memastikan stasiun tetap punya cadangan daya memadai menjelang masa-masa sibuk operasi komersial dan persiapan penghentian stasiun yang masih beberapa tahun ke depan.
+
+Bagi NASA, keberhasilan spacewalk ini juga menunjukkan bahwa jadwal EVA (extravehicular activity) stasiun bisa tetap dipenuhi secara efisien — sekitar 7 jam per keluar — meskipun arah program luar angkasa AS sedang terpecah antara Bulan, Mars, dan operasi komersial di orbit rendah.</div>
+<div class="bg"><b>Konteks:</b> Rangkaian upgrade daya ISS (Roll-Out Solar Array / iROSA) sudah berjalan bertahap sejak beberapa tahun terakhir, dengan pemasangan array baru yang dilanjutkan intensif sejak awal 2026. Setiap array baru dipasang di atas pasangan panel lama yang masih berfungsi, sehingga menambah — bukan menggantikan — kapasitas listrik stasiun.
+
+Spacewalk ini juga berada dalam momen menarik: hanya sehari sebelumnya, pada 29-30 Oktober, dunia baru saja mencatat spacewalk AS ke-100 di ISS beserta rekor EVA pertama astronaut Kanada setelah 7 tahun. Artinya, kemampuan operasi luar kendaraan AS dan mitranya sedang berada di level yang sangat aktif, dan panel surya baru ini adalah buah nyata dari dorongan tersebut.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>NASA rilis data &amp; foto sains Artemis II</h3>
+<p>NASA merilis data dan gambar sains dari misi Artemis II (penerbangan mengelilingi Bulan) pada 30 Okt 2026, termasuk agenda misi harian yang diperbarui. Ini jadi bahan evaluasi sebelum uji coba lander Artemis III tahun depan.</p>
+<div class="src">Sumber: NASA, nasa.gov/2026/10/30 — 30 Okt 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">NASA membuka data dan gambar hasil sains misi Artemis II — penerbangan berawak mengelilingi Bulan — pada 30 Oktober 2026, lengkap dengan agenda misi harian yang diperbarui.</div>
+<ul><li>Rilisan mencakup data ilmiah, foto, dan agenda misi harian yang diperbarui dari Artemis II.</li><li>Artemis II adalah misi berawak pertama yang terbang mengelilingi Bulan sejak era Apollo.</li><li>Data dibuka ke publik pada 30 Oktober 2026 lewat kanal resmi NASA.</li><li>Hasil ini jadi bahan evaluasi kunci sebelum misi pendaratan berawak Artemis III tahun depan.</li></ul>
+<div class="explain">Membuka data sains secepat ini adalah sinyal bahwa NASA ingin evaluasi Artemis II berjalan terbuka dan cepat. Padahal jadwalnya ketat: Artemis III — misi pertama yang akan mendaratkan astronaut di permukaan Bulan sejak Apollo 17 pada 1972 — ditargetkan berangkat tahun depan. Semua temuan dari Artemis II, mulai dari paparan radiasi di orbit Bulan, performa sistem Orion, sampai peluang komunikasi saat berada di sisi jauh Bulan, harus dipelajari sebelum awak Artemis III naik ke pesawat.
+
+Bagi publik dan komunitas riset, rilisan foto dan data ini juga bernilai besar: data misi berawak langit dalam langit biasanya menjadi rujukan bertahun-tahun untuk studi radiasi, biologi antariksa, dan teknik pesawat ulang-alik antariksa modern.</div>
+<div class="bg"><b>Konteks:</b> Artemis II meluncur dengan awak empat astronaut dalam penerbangan free-return mengelilingi Bulan, tanpa mendarat, sebagai uji penuh kelayakan manusia di atas roket SLS dan kapsul Orion. Misi ini adalah tindak lanjut langsung dari Artemis I yang mengorbit Bulan tanpa awak.
+
+Menariknya, jalur menuju Artemis III tidak mulus: SLS core stage untuk Artemis III baru saja selesai dipasang di Kennedy Space Center sepekan lalu, dan penelitian terpisah baru mengungkap bahwa tingkat radiasi di dekat Bulan lebih tinggi dari perkiraan awal. Artinya, data Artemis II yang dirilis kemarin bukan sekadar dokumentasi — ia adalah potongan puzzle terakhir sebelum manusia benar-benar menginjak kembali permukaan Bulan.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>SpaceX nyalakan mesin Super Heavy jelang Starship Flight 15</h3>
+<p>SpaceX melakukan static fire mesin booster Super Heavy dan upper stage Starship sebagai persiapan uji terbang Flight 15 yang disebut &quot;landmark&quot;. Flight ini jadi bagian dari kampanye uji sebelum transfer propelan antar-Starship di orbit awal 2027.</p>
+<div class="src">Sumber: Space.com, space.com/news/archive/2026/10 — 30 Okt 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">SpaceX melakukan uji statis (static fire) mesin booster Super Heavy dan upper stage Starship sebagai persiapan akhir uji terbang Flight 15 yang disebut perusahaan sebagai uji &quot;landmark&quot;.</div>
+<ul><li>Static fire dilakukan pada booster Super Heavy dan juga upper stage Starship.</li><li>Flight 15 disebut SpaceX sebagai uji terbang &quot;landmark&quot; atau penentu arah.</li><li>Uji ini bagian dari kampanye menuju demo transfer propelan antar-Starship di orbit.</li><li>Transfer propelan di orbit ditargetkan terjadi awal 2027.</li></ul>
+<div class="explain">Transfer propelan antar-Kendaraan di orbit adalah teknologi kunci yang menentukan apakah Starship bisa benar-benar mendaratkan kargo dan manusia di Bulan dan Mars. Tanpa kemampuan mengisi bahan bakar di orbit, Starship hanya bisa membawa muatan terbatas dan tidak bisa menyelesaikan misi jauh. Karena itu Flight 15 — yang mengetes performasi booster dan upper stage secara bersamaan — dianggap landmark: keberhasilannya membuka jalan ke demo pengisian propelan awal 2027.
+
+Juga penting dikontekstualisasi: SpaceX baru saja mencatat sejarah dengan pengiriman kargo point-to-point pertama via kapsul Starfall, dan sebelumnya menguji nyala penuh 33 mesin Super Heavy demi skenario &quot;double catch&quot;. Ritme pengujian SpaceX sedang sangat cepat, dan setiap flight test kini bergerak dari sekadar membuktikan roket bisa terbang menuju membuktikan roket bisa beroperasi sebagai infrastruktur antariksa.</div>
+<div class="bg"><b>Konteks:</b> Kampanye uji Starship berjalan sejak 2023 dengan pola iterasi cepat: setiap flight mengambil data, kemudian desain diperbaiki, dan uji berikutnya dijadwalkan dalam hitungan pekan. Flight 14 dan tes-tes sebelumnya sudah menunjukkan booster yang bisa ditangkap kembali oleh menara launch, sementara upper stage terus disempurnakan untuk misi orbit penuh.
+
+Target awal 2027 untuk transfer propelan antar-Starship bukan angka acak — jadwal ini terkait erat dengan kontrak NASA Human Landing System yang menuntut Starship terbukti bisa mengisi bahan bakar di orbit sebelum membawa astronaut ke permukaan Bulan dalam misi Artemis. Setiap kemajuan Flight 15 berarti mundur atau majunya arloji Artemis III.</div>
+</details>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Google rilis Gemini 4 Carbon, model kedua dalam sebulan</h3>
+<p>Google DeepMind meluncurkan Gemini 4 Carbon (28 Okt) khusus deteksi kerentanan siber, skor 88,2% di SEC-bench Pro dan memimpin Artificial Analysis Intelligence Index dengan skor 59 — unggul 1 poin dari Claude Opus 5.5. Harga awal $2/juta token input, $10/juta token output; akses dibatasi ke tim cyber defense lewat program Fairwind.</p>
+<div class="src">Sumber: AI Impact Hub, aiimpacthub.com/ai-news/2026-10-30 — 30 Okt 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Google DeepMind meluncurkan Gemini 4 Carbon pada 28 Oktober 2026 — model spesialis deteksi kerentanan siber yang langsung memimpin leaderboard inteligensi dengan skor 59, mengungguli Claude Opus 5.5.</div>
+<ul><li>Gemini 4 Carbon diluncurkan 28 Oktober 2026, hanya beberapa pekan setelah model sebelumnya.</li><li>Skor 88,2% di benchmark keamanan SEC-bench Pro untuk deteksi kerentanan.</li><li>Memimpin Artificial Analysis Intelligence Index dengan skor 59 — unggul 1 poin dari Claude Opus 5.5.</li><li>Harga: $2 per juta token input dan $10 per juta token output.</li><li>Akses awal dibatasi ke tim cyber defense melalui program Fairwind.</li></ul>
+<div class="explain">Ini adalah langkah menarik dari Google: hanya dalam satu bulan, DeepMind merilis dua model dengan fokus berbeda — menandakan strategi spesialisasi alih-alih satu model serbaguna. Gemini 4 Carbon tidak dimarketkan sebagai chatbot umum, tapi sebagai alat pertahanan siber, dan langsung mengklaim puncak leaderboard inteligensi — 1 poin di atas Claude Opus 5.5 yang sebelumnya jadi pemuncak. Persaingan leaderboard AI kini makin ketat sampai ke level satu poin.
+
+Pembatasan akses lewat program Fairwind juga penting: dengan menahan model hanya untuk tim pertahanan siber, Google sengaja membatasi risiko penyalahgunaan — model yang ahli menemukan kerentanan juga bisa dipakai untuk mengeksploitasi. Harga $2/$10 per juta token juga agresif untuk kelas model frontier, sinyal bahwa Google menekan pasar ke arah AI keamanan yang terjangkau untuk institusi besar.</div>
+<div class="bg"><b>Konteks:</b> Gemini 4 Carbon adalah tindak lanjut dari rilisan Gemini 4 yang diperkenalkan Google beberapa pekan lalu dan langsung ditempatkan sebagai model unggulan. Tren spesialisasi model ini sejalan dengan gerakan industri 2026: model keamanan khusus mulai dipisahkan dari model umum karena karakteristik datanya sangat berbeda — kode berbahaya, pola serangan, dan log sistem.
+
+Persaingan langsung dengan Claude Opus 5.5 menunjukkan Anthropic dan Google sedang beradu di benchmark yang sama (Artificial Analysis Intelligence Index), sementara OpenAI bermain di jalur berbeda dengan memangkas harga model efisiensi seperti GPT-6.1 Terra. Pasar AI akhir 2026 kini terbelah jelas: perebutan puncak kemampuan dan perebutan harga terendah.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>GitHub Copilot bisa kontrol komputer langsung</h3>
+<p>GitHub umumkan fitur &quot;Computer Use&quot; untuk Copilot (28 Okt), kini public preview di macOS &amp; Windows — agen bisa baca layar, klik tombol, isi teks, dan navigasi antar-aplikasi tanpa API, termasuk software lawas.</p>
+<div class="src">Sumber: Aidapted, aidapted.ro/en/articles/ai-news-october-30-2026 — 29 Okt 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">GitHub mengumumkan fitur &quot;Computer Use&quot; untuk Copilot pada 28 Oktober 2026, kini tersedia sebagai public preview di macOS dan Windows — agen AI bisa mengoperasikan komputer secara langsung tanpa API.</div>
+<ul><li>Fitur Computer Use diumumkan GitHub pada 28 Oktober 2026.</li><li>Kini public preview di macOS dan Windows.</li><li>Agen bisa membaca layar, mengklik tombol, mengisi teks, dan berpindah antar-aplikasi.</li><li>Berjalan tanpa API khusus — termasuk pada software lawas yang tidak punya integrasi AI.</li></ul>
+<div class="explain">Ini mengubah definisi &quot;asisten coding&quot;. Selama ini Copilot hidup di dalam editor dan terminal; dengan Computer Use, Copilot bisa keluar dari kotaknya dan berinteraksi dengan seluruh desktop — membuka aplikasi keuangan lawas, mengisi formulir internal, atau memverifikasi hasil kerja langsung di layar. Untuk perusahaan dengan banyak software legacy yang tidak punya API, ini adalah pintu masuk AI yang selama ini tertutup.
+
+Secara industri, fitur ini menempatkan GitHub (Microsoft) langsung bersaing dengan agen komputer ala Anthropic Computer Use dan browser-agent OpenAI. Tapi ada konsekuensi keamanan serius: agen yang bisa klik dan isi teks di seluruh sistem berarti permukaan serangan baru — dari prompt injection di halaman web sampai kesalahan aksi yang mengubah data nyata. Karena itu status public preview penting: GitHub sedang menguji batas kepercayaan sebelum fitur ini masuk stabil.</div>
+<div class="bg"><b>Konteks:</b> Computer Use bukan ide baru pada 2026 — Anthropic memperkenalkan konsep agen yang mengendalikan komputer via screenshot dan klik pada 2024, dan sejak itu ekosistem berkembang pesat. Namun integrasinya ke tools developer massal seperti GitHub Copilot baru terjadi sekarang, dan itu mengubah skala: jutaan pengembang Copilot akan mendapat kemampuan ini sebagai fitur bawaan.
+
+Ini juga menyambung dengan arah Copilot yang semakin menjadi agen penuh — dari autocomplete, ke chat, ke agen yang mengerjakan tugas mandiri. Dengan Computer Use, Copilot kini menjangkau area yang sebelumnya hanya bisa dijelajahi browser-agent: aplikasi desktop, software enterprise lawas, dan alur kerja lintas-aplikasi yang tidak pernah didesain untuk AI.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>OpenAI pangkas harga GPT-6.1 Terra separuh</h3>
+<p>OpenAI rilis GPT-6.1 Terra (26 Okt) seharga $1/juta token input &amp; $5/juta output — separuh harga GPT-5.6 Terra, menyasar tugas kantor rutin seperti isi form dan input invoice, menyaingi posisi Claude Sonnet.</p>
+<div class="src">Sumber: AI to ROI, ai2roi.substack.com/p/ai-to-roi-news-and-analysis-october-b1d — 26 Okt 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">OpenAI merilis GPT-6.1 Terra pada 26 Oktober 2026 dengan harga $1 per juta token input dan $5 per juta token output — separuh dari pendahulunya GPT-5.6 Terra — untuk menyasar tugas kantor rutin.</div>
+<ul><li>GPT-6.1 Terra dirilis 26 Oktober 2026.</li><li>Harga: $1 per juta token input, $5 per juta token output.</li><li>Harga itu separuh dari GPT-5.6 Terra sebelumnya.</li><li>Target pasar: tugas kantor rutin seperti mengisi form dan input invoice.</li><li>Langkah ini langsung menyasar posisi Claude Sonnet di segmen pekerjaan repetitif bervolume tinggi.</li></ul>
+<div class="explain">Perang harga API AI sudah bergeser ke segmen pekerjaan kantor volume-tinggi. Tugas seperti input invoice dan pengisian form terjadi jutaan kali per hari di perusahaan besar, sehingga perbedaan $1 vs $2 per juta token sangat terasa di tagihan bulanan. Dengan memangkas separuh, OpenAI sengaja membuat penghematan itu sangat kasat mata untuk buyer enterprise yang saat ini masih menimbang antara melanjutkan otomasi manual atau pindah ke AI.
+
+Target Claude Sonnet juga tidak sembarangan — Sonnet selama ini jadi standar de facto untuk agen kantor dan pemrosesan dokumen karena kombinasi harga dan keandalannya. Jika GPT-6.1 Terra mampu menyamai kualitas pada harga separuh, OpenAI berharap memindahkan volume pekerjaan operasional yang selama ini menguntungkan Anthropic. Ini bagian dari strategi lebih besar OpenAI yang sedang bermain agresif di harga — berbarengan dengan kabar revenue $10 miliar dari kemitraan yang dibocorkan Microsoft akhir Oktober lalu.</div>
+<div class="bg"><b>Konteks:</b> Garis keluarga Terra adalah lini model OpenAI yang didesain untuk efisiensi — kemampuan agak di bawah model flagship, tapi jauh lebih murah dan cepat. GPT-5.6 Terra sudah dipakai luas untuk otomasi dokumen dan chat support, dan GPT-6.1 Terra melanjutkan pola generasi berikutnya dengan langkah harga yang lebih agresif.
+
+Langkah ini sejalan dengan tren pasar 2026 di mana model murah justru jadi mesin pendapatan terbesar — karena volume pemakaiannya berkali-kali lipat dibanding model flagship. Bersamaan dengan itu, persaingan makin ramai: Google menekan harga lewat Gemini 4 Carbon ($2/$10 per juta token), dan Anthropic mempertahankan Sonnet di tengah pasar. Bagi pelanggan enterprise, hasilnya jelas: biaya otomasi dokumen turun drastis dalam hitungan bulan.</div>
+</details>
+</div>
+<div class="pn rv"><a href="2026-10-30.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">30 Oct 2026</span></a></div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var prog=document.getElementById('progress');
+ var toTop=document.getElementById('toTop');
+ function onScroll(){
+   var h=document.documentElement;
+   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+   if(prog)prog.style.width=(p*100)+'%';
+   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
+ }
+ addEventListener('scroll',onScroll,{passive:true});onScroll();
+ if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+ var els=document.querySelectorAll('.rv');
+ if(!reduce&&'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){
+     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+   els.forEach(function(el){io.observe(el)});
+ } else { els.forEach(function(el){el.classList.add('in')}) }
+ var hero=document.querySelector('.land-hero .poster-wrap img');
+ if(hero&&!reduce){
+   addEventListener('scroll',function(){
+     var r=hero.getBoundingClientRect();
+     if(r.bottom>0&&r.top<innerHeight){
+       var off=(innerHeight-r.top)*0.06;
+       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
+     }
+   },{passive:true});
+ }
+ var counts=document.querySelectorAll('[data-count]');
+ if(!reduce&&'IntersectionObserver' in window&&counts.length){
+   var cio=new IntersectionObserver(function(es){
+     es.forEach(function(e){
+       if(!e.isIntersecting)return;cio.unobserve(e.target);
+       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
+       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
+         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
+         if(k<1)requestAnimationFrame(step);}
+       requestAnimationFrame(step);
+     });
+   },{threshold:.4});
+   counts.forEach(function(el){cio.observe(el)});
+ }
+})();
+</script>
