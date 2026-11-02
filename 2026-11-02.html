@@ -1,0 +1,352 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digest 02 Nov 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 02 Nov 2026: 5 berita dari sumber global, dengan pembahasan mendalam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_space_chapea.jpg" alt="Poster 02 Nov 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>02 NOV 2026</div>
+<h1>Teleskop Swift NASA akan jatuh ke Bumi</h1>
+<div class="lsub">Edisi 02 Nov 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="5">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="3">0</b><span>Topik</span></div>
+ <div class="stat"><b>✔</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Digest Fokus — Space &amp; Ai ( Nov )</span><span class="rule"></span></div>
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Teleskop Swift NASA akan jatuh ke Bumi</h3>
+<p>Swift Observatory (gamma-ray) diperkirakan US Space Force re-entry sekitar Jumat ini, setelah 22 tahun orbit (sejak 20 Nov 2004). Robot penyelamat &quot;Link&quot; dari Katalyst Space gagal — cuma sampai 12-15 km dari Swift lalu jatuh sendiri September lalu. Swift mencatat 2.000+ gamma-ray burst dan 1.400 bintang meledak selama tugasnya.</p>
+<div class="src">Sumber: The Gazette (AP) — gazette.com/2026/11/01/aging-nasa-telescope-to-fall-from-space-soon/ — 1 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Setelah 22 tahun berpatroli di orbit dan mencatat ribuan ledakan gamma terjauh di alam semesta, teleskop Swift NASA diperkirakan jatuh ke Bumi sekitar hari Jumat pekan ini, dan upaya penyelamatan luar angkasa untuk menyelamatkannya telah gagal.</div>
+<ul><li>Swift diperkirakan memasuki atmosfer dan jatuh ke Bumi sekitar hari Jumat pekan ini, menurut perkiraan US Space Force.</li><li>Teleskop ini diluncurkan pada 20 November 2004, sehingga telah menghabiskan sekitar 22 tahun di orbit sebelum akhirnya &#x27;pulang&#x27; dengan cara terbakar sebagian di atmosfer.</li><li>Upaya penyelamatan sudah dicoba: robot penyelamat &#x27;Link&#x27; milik Katalyst Space mendekati Swift hingga jarak 12-15 km pada September, tetapi kemudian robot itu sendiri jatuh dan misi gagal.</li><li>Selama kariernya, Swift mencatat lebih dari 2.000 ledakan sinar gamma (gamma-ray bursts) dan sekitar 1.400 bintang yang meledak (supernova).</li><li>Karena tidak ada lagi kendaraan yang bisa mendorongnya ke orbit lebih tinggi, re-entry Swift bersifat alami dan tidak terkendali.</li></ul>
+<div class="explain">Swift bukan teleskop biasa. Sejak diluncurkan pada 20 November 2004, ia bertugas mengintai fenomena paling liar di alam semesta: ledakan sinar gamma, ledakan energi terkuat yang diketahui manusia, yang datang tanpa peringatan dan hanya bertahan beberapa detik. Misi 22 tahun itu menghasilkan lebih dari 2.000 ledakan sinar gamma tercatat dan sekitar 1.400 bintang yang meledak, warisan ilmiah yang sangat besar untuk memahami kematian bintang raksasa dan lahir lubang hitam.
+
+Namun teleskop ini sudah lanjut usia dan perlahan kehilangan ketinggian orbitnya akibat gesekan tipis dengan atmosfer atas. Karena tidak berawak dan tidak punya mesin pendorong besar, satu-satunya harapan memperpanjang umurnya adalah ditolong wahana robot — dan itulah yang dicoba Katalyst Space lewat robot penyelamat bernama &#x27;Link&#x27;. Robot itu berhasil mendekat hingga 12-15 km dari Swift pada September, jarak yang secara teknis sudah sangat dekat untuk operasi orbital, tetapi kemudian gagal dan jatuh sendiri. Dengan upaya itu batal, tak ada lagi yang bisa mendorong Swift ke orbit lebih aman.
+
+Pekan ini kitalah saksinya: menurut perkiraan US Space Force, Swift diperkirakan jatuh sekitar hari Jumat. Yang paling mungkin terjadi adalah sebagian besar badan teleskop terbakar saat masuk atmosfer, dan sebagian kecil puing yang tahan panas bisa jatuh ke permukaan. Risiko bagi manusia sangat kecil karena Bumi sebagian besar adalah lautan dan wilayah tak berpenghuni, tetapi jatuhnya Swift tetap menjadi penutup era untuk salah satu observatorium gamma paling produktif dalam sejarah astronomi.</div>
+<div class="bg"><b>Konteks:</b> Swift adalah observatorium luar angkasa NASA yang sejak 2004 dikhususkan mendeteksi ledakan sinar gamma dan mengarahkan instrumennya ke lokasi ledakan itu dalam hitungan menit. Usia rata-rata misi teleskop luar angkasa biasanya 5-10 tahun, sehingga bertahan 22 tahun adalah prestasi tersendiri. Kasus Swift menunjukkan pola yang kini makin sering muncul: generasi pertama teleskop pionir — Hubble, Chandra, kini Swift — mulai jatuh satu per satu, sementara kemampuan manusia untuk &#x27;menyelamatkan&#x27; mereka dari bumi lewat robot masih belum siap.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>NASA buka opsi industri selamatkan Hubble</h3>
+<p>NASA rilis Request for Information, menantang perusahaan swasta ajukan rencana dorong Hubble naik minimal 600 km, rawat, atau deorbit terkendali sebelum 2032. Respons ditunggu sampai 30 November; NASA belum komit beli misi apa pun.</p>
+<div class="src">Sumber: Keeptrack Space Brief — keeptrack.space/space-brief/space-brief-2026-11-01 — 1 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">NASA merilis Request for Information yang menantang perusahaan swasta mengusulkan cara menaikkan orbit Hubble minimal 600 km, memperbaikinya, atau menjatuhkannya secara terkendali sebelum 2032 — dan menjawabnya sampai 30 November, meski belum ada jaminan NASA akan membeli salah satu misi.</div>
+<ul><li>NASA merilis Request for Information (RFI) yang menantang perusahaan swasta mengusulkan rencana untuk &#x27;mengangkat&#x27; Hubble ke orbit lebih tinggi, memperbaikinya di orbit, atau menjatuhkannya secara terkendali.</li><li>Kenaikan orbit yang diminta minimal 600 km, cukup untuk memperpanjang umur teleskop yang perlahan merosot ke bumi akibat gesekan atmosfer atas.</li><li>Batas waktu pengajuan usulan adalah 30 November, jadi perusahaan hanya punya beberapa pekan untuk merumuskan konsepnya.</li><li>NASA tegas menyatakan belum berkomitmen membeli misi apa pun — RFI ini semata tahap penjajakan untuk memahami apa yang bisa ditawarkan industri.</li><li>Tenggat waktu yang dipatok NASA adalah sebelum 2032, kira-kira saat Hubble diperkirakan terlalu rendah orbitnya dan mulai berisiko jatuh tak terkendali.</li></ul>
+<div class="explain">Dengan merilis RFI ini, NASA pada dasarnya bertanya ke industri: &#x27;Jika kami butuh Hubble ditolong, siapa yang bisa melakukannya, dan dengan cara apa?&#x27; Tiga opsi ditawarkan sekaligus: pertama, menaikkan orbit Hubble setidaknya 600 km supaya teleskop itu tidak makin cepat turun ke bumi; kedua, melakukan servis atau perbaikan di orbit — hal yang dulu hanya mungkin lewat Space Shuttle; ketiga, jika tidak bisa diselamatkan, setidaknya menjatuhkannya secara terkendali ke lokasi aman di Samudra Pasir sebelum 2032, supaya puing-puingnya tidak berbahaya bagi manusia.
+
+Yang menarik di sini adalah pergeseran peran: dulu hanya NASA yang bisa menyelamatkan Hubble lewat astronot, kini NASA sebenarnya membeli ide dari swasta. Perusahaan-perusahaan di sektor luar angkasa baru-baru ini punya kendaraan orbital yang jauh lebih mampu, dan NASA ingin tahu apakah ada yang benar-benar sanggup merencanakan misi se kompleks itu. Batas waktu 30 November memberi industri ruang yang pendek namun nyata untuk mengajukan konsep.
+
+Perlu digarisbawahi, RFI bukan kontrak. NASA secara eksplisit menyatakan belum berkomitmen membeli misi apa pun — langkah ini semata tahap menakar pasar. Jadi meski mungkin muncul usulan menarik, belum ada jaminan uang akan mengalir. Tapi sinyalnya cukup jelas: NASA serius memikirkan masa depan Hubble dan tidak menutup pintu bagi swasta untuk menyelamatkannya.</div>
+<div class="bg"><b>Konteks:</b> Hubble Space Telescope diluncurkan tahun 1990 dan menjadi teleskop optik paling terkenal di dunia, menghasilkan gambar-gambar ikonik alam semesta yang mengubah pemahaman astronomi. Sejak pensiunnya program Space Shuttle pada 2011, tidak ada lagi cara resmi untuk menservis Hubble, dan orbitnya perlahan menurun. RFI ini melanjutkan diskusi yang dimulai sejak NASA menggandeng SpaceX dan Polaris Program pada akhir 2024 untuk mempelajari kelayakan misi pendorong orbit Hubble.</div>
+</details>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>OpenAI kesulitan dana, valuasi turun ke $1,25 triliun</h3>
+<p>Laporan WSJ 31 Okt: OpenAI baru kantongi komitmen investor ~$11 miliar, jauh dari target awal $30 miliar. Kini incar maksimal $20 miliar dengan valuasi $1,25 triliun, turun dari target sebelumnya $1,4 triliun.</p>
+<div class="src">Sumber: Tech Current — teccurrent.com/articles/daily-brief-2026-11-01/ — 1 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Pangsa pasar kekayaan dunia ternyata tidak sebesar yang dibayangkan OpenAI: laporan Wall Street Journal menyebut mereka baru mendapatkan sekitar $11 miliar komitmen investor, jauh dari target awal $30 miliar, dan kini melirik maksimal $20 miliar dengan valuasi $1,25 triliun.</div>
+<ul><li>Menurut laporan Wall Street Journal pada 31 Oktober, OpenAI sejauh ini baru mendapat sekitar $11 miliar komitmen investor untuk putaran pendanaannya.</li><li>Angka itu jauh dari target awal perusahaan, yang diumumkan sebesar $30 miliar.</li><li>OpenAI kini melirik pendanaan maksimal $20 miliar, dengan valuasi sekitar $1,25 triliun.</li><li>Valuasi $1,25 triliun ini menurun dari target sebelumnya sebesar $1,4 triliun.</li><li>Jika tetap terwujud, pendanaan ini tetap jadi salah satu yang terbesar dalam sejarah — hanya saja skalanya menyusut hampir separuh dari yang diharapkan.</li></ul>
+<div class="explain">Yang sedang terjadi sederhananya begini: OpenAI, perusahaan di balik ChatGPT, sedang mencari uang dalam jumlah raksasa untuk membiayai komputasi, chip, dan operasi model-modelnya. Awalnya mereka mengincar $30 miliar — angka yang belum pernah ada pendahulunya di dunia pendanaan swasta. Tapi WSJ melaporkan pada 31 Oktober bahwa hingga kini baru sekitar $11 miliar komitmen yang berhasil dikumpulkan, artinya kurang dari 40% target tercapai. Menyadari realitas pasar itu, OpenAI menurunkan ambisinya ke maksimal $20 miliar.
+
+Justru di sinilah letak berita yang lebih penting: nilai perusahaan. Valuasi yang diincar turun dari $1,4 triliun menjadi sekitar $1,25 triliun. Sebesar apa pun angkanya, ini masih perusahaan termahal di kelasnya — tapi arah penurunannya adalah sinyal. Investor tampaknya mulai lebih selektif memandang startup AI yang membakar uang dalam skala miliaran dolar per tahun tanpa kepastian kapan keuntungan akan datang.
+
+Pertanyaannya ke depan: apakah penurunan ini hanya penyesuaian harga satu putaran pendanaan, atau awal dari pendinginan lebih luas di pasar pendanaan AI? Kalau hanya yang pertama, OpenAI tetap memiliki kekuatan finansial besar untuk beberapa tahun ke depan. Kalau yang kedua, gelombang yang sama bisa menimpa lab AI lain yang juga tergantung pada pendanaan eksternal untuk membeli komputasi mahal.</div>
+<div class="bg"><b>Konteks:</b> OpenAI adalah perusahaan riset dan pengembang AI yang dikenal lewat ChatGPT dan keluarga model GPT, dan salah satu pemain AI paling berpengaruh di dunia. Untuk menjalankan model-model raksasanya, perusahaan ini membutuhkan infrastruktur komputasi dengan biaya puluhan miliar dolar per tahun — alasan utama kenapa ia harus terus menggali pendanaan eksternal dari investor besar seperti dana hedge, sovereign wealth fund, dan raksasa teknologi.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Bug CVSS 10.0 di tool generative-UI buka akses server</h3>
+<p>JFrog ungkap CVE-2026-120338 pada Prefab UI (v0.14.0-0.20.2): sandbox Python yang dijalankan LLM lewat Pyodide di Deno dapat izin berlebihan, buka akses baca/tulis file server dan eksekusi kode persisten sebagai user OS.</p>
+<div class="src">Sumber: AI Weekly — aiweekly.co/ai-news-today/ — 1 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Sebuah kelemahan keamanan berbobot maksimal CVSS 10.0 ditemukan di tool generative-UI bernama Prefab: sandbox Python yang dijalankan LLM ternyata punya izin berlebihan, membuka akses baca-tulis file server dan eksekusi kode permanen sebagai user sistem operasi.</div>
+<ul><li>Kerentanan terdaftar sebagai CVE-2026-120338, ditemukan dan diungkapkan oleh JFrog.</li><li>Bug terdapat di Prefab UI, sebuah tool generative-UI, pada versi 0.14.0 hingga 0.20.2.</li><li>Akar masalahnya: sandbox Python yang dijalankan LLM lewat Pyodide di Deno ternyata memiliki izin yang terlalu luas, jauh melebihi yang diperlukan.</li><li>Akibatnya, model AI (atau siapa pun yang bisa memengaruhi inputnya) bisa membaca dan menulis file di server, serta mendapatkan eksekusi kode yang persisten sebagai user OS.</li><li>Skor kerentanan diberi CVSS 10.0 — nilai maksimal dalam skala keparahan kerentanan software, yang lazimnya dicadangkan untuk bug yang bisa dirugikan tanpa syarat khusus.</li></ul>
+<div class="explain">Tool generative-UI adalah kategori baru aplikasi AI: model bahasa tidak hanya menjawab teks, tetapi menghasilkan antarmuka atau kode yang benar-benar dijalankan — dan untuk itu, sering kali ada sandbox Python yang memprosesnya. Di Prefab UI, sandbox itu dijalankan lewat Pyodide di atas runtime Deno. Masalahnya, sandbox ini ternyata diberi izin yang jauh lebih besar daripada yang seharusnya: alih-alih terkunci rapat, ia bisa menyentuh sistem di luar kotak pasirnya.
+
+Konsekuensinya serius. Server file bisa dibaca dan ditulis lewat celah ini, dan yang lebih buruk, penyerang mendapatkan eksekusi kode yang persisten sebagai user sistem operasi — artinya mereka tidak cuma mampu menjalankan satu perintah, tetapi bisa bertahan dan mengendalikan server dalam jangka panjang. Dalam konteks aplikasi AI, risikonya diambil alih dari dua sisi: penyerang bisa memanipulasi input yang dibaca model, dan model sendiri bisa dipancing menghasilkan kode berbahaya yang langsung dijalankan sandbox dengan izin berlebihan itu.
+
+Skor CVSS 10.0 menegaskan betapa kritisnya celah ini — nilai maksimal yang hampir selalu bermakna &#x27;perbaiki sekarang&#x27;. Pengguna Prefab UI pada rentang versi 0.14.0 sampai 0.20.2 sebaiknya segera meng-upgrade ke versi yang sudah ditambal, atau setidaknya membatasi paparan aplikasi ini ke jaringan internal. Lebih luas lagi, kasus ini menjadi peringatan penting bagi industri: setiap kali LLM diberi kemampuan menjalankan kode, sandbox harus dirancang dengan prinsip hak akses minimum, bukan sekadar kotak pasir kosmetik.</div>
+<div class="bg"><b>Konteks:</b> Prefab UI adalah tool generative-UI yang memungkinkan model bahasa menghasilkan antarmuka aplikasi secara otomatis, dengan menjalankan kode Python di sandbox lewat Pyodide (implementasi Python untuk browser dan runtime modern) pada platform Deno. Kerentanannya diungkap oleh JFrog, perusahaan keamanan dan manajemen artefak software yang rutin meneliti dan mengungkap celah keamanan di open source. Kasus ini menambah daftar panjang kerentanan yang lahir dari lapisan &#x27;AI menjalankan kode&#x27;, kategori risiko yang makin relevan seiring maraknya agen AI yang menulis dan mengeksekusi program sendiri.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Qwen Alibaba kuasai Siri versi China</h3>
+<p>Apple &amp; Alibaba umumkan 31 Okt: Qwen akan menenagai Apple Intelligence di Siri, Writing Tools, Visual Intelligence, dan photo cleanup — khusus edisi China, menggantikan model AS yang diblokir di sana.</p>
+<div class="src">Sumber: AI Weekly — aiweekly.co/ai-news-today/ — 31 Okt 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Apple dan Alibaba mengumumkan pada 31 Oktober bahwa model AI Qwen akan menggerakkan fitur Apple Intelligence di Siri, Writing Tools, Visual Intelligence, dan pembersihan foto — namun hanya untuk edisi China, menggantikan model AS yang diblokir di sana.</div>
+<ul><li>Apple dan Alibaba mengumumkan kemitraan ini pada 31 Oktober, dengan model Qwen milik Alibaba sebagai penggerak AI di edisi China.</li><li>Fitur yang terdampak mencakup Apple Intelligence di Siri, Writing Tools, Visual Intelligence, dan fitur pembersihan foto.</li><li>Kemitraan ini hanya berlaku untuk edisi China dari produk-produk Apple, bukan versi global.</li><li>Alasannya: model-model AI dari perusahaan AS seperti OpenAI dan Google diblokir atau tidak tersedia di China, sehingga Apple butuh mitra lokal yang disetujui.</li><li>Qwen, keluarga model AI Alibaba, dipilih sebagai penggantinya — menempatkan teknologi China di jantung ekosistem AI Apple pasar terbesar kedua dunia.</li></ul>
+<div class="explain">Arti sederhananya: kalau kamu pengguna iPhone di China dan bertanya ke Siri atau memakai fitur pembersihan foto, kecerdasan di balik layar itu bukan buatan OpenAI atau Google, melainkan Qwen milik Alibaba. Apple dan Alibaba mengumumkan kemitraan ini pada 31 Oktober, mencakup Apple Intelligence pada Siri, Writing Tools untuk menulis, Visual Intelligence untuk memahami apa yang dilihat kamera, dan fitur pembersihan foto.
+
+Kenapa Apple harus melakukan ini? Karena model-model AI dari Amerika — seperti ChatGPT dan Gemini yang dipakai Apple Intelligence di negara lain — diblokir atau tidak tersedia di China. Untuk bisa tetap menawarkan fitur AI yang sama di pasar raksasa itu, Apple tidak punya banyak pilihan selain bekerja sama dengan penyedia AI lokal yang disetujui pemerintah. Alibaba, dengan keluarga model Qwen yang sudah lama dikenal kuat, jadi jawabannya.
+
+Langkah ini punya dua sisi mata uang. Di satu sisi, Apple berhasil mempertahankan pengalaman fitur AI yang konsisten bagi penggunanya di China — pasar yang terlalu besar untuk ditinggalkan. Di sisi lain, ini menegaskan ketergantungan Apple pada mitra lokal di wilayah dengan regulasi ketat, dan sekaligus menjadi kemenangan besar bagi Alibaba: teknologinya kini terpasang di jutaan perangkat Apple di China, jangkauan yang tidak bisa dibeli dengan iklan apa pun.</div>
+<div class="bg"><b>Konteks:</b> Qwen adalah keluarga model bahasa buatan Alibaba Cloud yang berkembang pesat dan beberapa kini menjadi model open-weight populer di dunia. Apple Intelligence sendiri adalah paket fitur AI Apple yang ditenagai model-model berbeda per wilayah: di AS dan sebagian besar negara, ia memakai model Apple sendiri plus integrasi OpenAI. Edisi China selama ini tertinggal dari gelombang AI karena pembatasan regulasi terhadap layanan AI AS — dan kemitraan dengan Alibaba adalah cara Apple akhirnya menghadirkan Apple Intelligence di sana.</div>
+</details>
+</div>
+<div class="pn rv"><a href="2026-11-01.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">01 Nov 2026</span></a></div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var prog=document.getElementById('progress');
+ var toTop=document.getElementById('toTop');
+ function onScroll(){
+   var h=document.documentElement;
+   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+   if(prog)prog.style.width=(p*100)+'%';
+   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
+ }
+ addEventListener('scroll',onScroll,{passive:true});onScroll();
+ if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+ var els=document.querySelectorAll('.rv');
+ if(!reduce&&'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){
+     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+   els.forEach(function(el){io.observe(el)});
+ } else { els.forEach(function(el){el.classList.add('in')}) }
+ var hero=document.querySelector('.land-hero .poster-wrap img');
+ if(hero&&!reduce){
+   addEventListener('scroll',function(){
+     var r=hero.getBoundingClientRect();
+     if(r.bottom>0&&r.top<innerHeight){
+       var off=(innerHeight-r.top)*0.06;
+       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
+     }
+   },{passive:true});
+ }
+ var counts=document.querySelectorAll('[data-count]');
+ if(!reduce&&'IntersectionObserver' in window&&counts.length){
+   var cio=new IntersectionObserver(function(es){
+     es.forEach(function(e){
+       if(!e.isIntersecting)return;cio.unobserve(e.target);
+       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
+       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
+         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
+         if(k<1)requestAnimationFrame(step);}
+       requestAnimationFrame(step);
+     });
+   },{threshold:.4});
+   counts.forEach(function(el){cio.observe(el)});
+ }
+})();
+</script>
