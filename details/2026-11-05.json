@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-05",
+  "items": [
+    {
+      "match_title": "Spacewalk terakhir rampungkan upgrade daya ISS",
+      "lead": "Dua astronot menuntaskan pemasangan panel surya IROSA kedelapan sekaligus terakhir di Stasiun Luar Angkasa Internasional lewat spacewalk 5 November, menutup program peningkatan daya yang digulirkan sejak pertengahan 2021.",
+      "points": [
+        "Astronot NASA Anil Menon dan astronot CSA Joshua Kutryk memasang IROSA ke-8 di truss sisi starboard ISS pada 5 November, ditayangkan langsung melalui NASA+.",
+        "Panel terakhir ini dipasang di saluran daya 3B, melengkapi tujuh IROSA yang sudah terpasang sebelumnya — yang ketujuh baru dipasang pasangan yang sama pada spacewalk 29 Oktober.",
+        "Dengan lengkapnya delapan array, kapasitas pembangkit daya stasiun naik dari sekitar 160 kW menjadi sekitar 215 kW, tambahan hingga 30 persen.",
+        "Program ini berawal pada Juni 2021 saat dua IROSA pertama tiba dan terpasang lewat misi kargo SpaceX Dragon ke-22.",
+        "Setiap IROSA baru menyumbang sekitar 20 kW daya tambahan di atas array lama yang sudah menunjukkan tanda degradasi."
+      ],
+      "explain": "Spacewalk 5 November menandai garis akhir dari salah satu proyek pemeliharaan terbesar ISS dalam satu dekade terakhir. Menon dan Kutryk keluar dari airlock untuk memasang International Space Station Roll-Out Solar Array (IROSA) kedelapan di saluran daya 3B di truss sisi starboard. Keduanya bukan pendatang baru di pekerjaan ini: hanya beberapa hari sebelumnya, pada 29 Oktober, mereka juga memasang IROSA ketujuh di saluran 2A dalam spacewalk berdurasi lebih dari tujuh jam, sekaligus menyiapkan sejumlah pekerjaan awal agar tugas pemasangan terakhir berjalan lebih cepat.\n\nLatar teknis proyek ini menarik dicermati. Array surya asli ISS mulai dipasang pada Desember 2000 dan dirancang untuk usia layanan 15 tahun, sehingga setelah lebih dari dua dekade mengorbit daya produksinya terus tergerus degradasi. Solusi NASA adalah memasang array generasi baru di depan array lama — desain gulung (roll-out) yang lebih ringan dan ramping, terurai otomatis saat diluncurkan, dan mampu menyumbang sekitar 20 kW per panel. Enam panel pertama terpasang antara 2021 dan 2023, dan dua panel penyempurna mengikuti pada 2026.\n\nDengan seluruh delapan IROSA kini terpasang, kapasitas pembangkitan daya stasiun naik dari sekitar 160 kW menjadi sekitar 215 kW — lonjakan hingga 30 persen. Tambahan daya ini bukan sekadar bonus angka: ia menopang eksperimen sains yang makin rakus energi, serta menopang kebutuhan operasional penting termasuk rencana deorbit terkendali ISS di masa depan. Penyelesaian pada 5 November juga menutup babak kerja luar angkasa yang panjang sejak pertengahan 2021.",
+      "background": "ISS mengandalkan array surya yang dipasang sejak Desember 2000 dengan umur desain 15 tahun; degradasi alami mendorong NASA memperbarui sistem daya dengan IROSA sejak Juni 2021, dan upgrade resmi berakhir dengan pemasangan IROSA kedelapan pada 5 November 2026 melalui siaran langsung NASA+."
+    },
+    {
+      "match_title": "NASA godok rencana selamatkan Hubble dari jatuh",
+      "lead": "NASA tengah mengkaji skema penyelamatan yang 'berani' untuk Teleskop Hubble, yang orbitnya terus merosot setelah lebih dari 35 tahun mengorbit Bumi tanpa punya mesin dorong sendiri.",
+      "points": [
+        "Hubble tidak memiliki sistem propulsi sendiri, sehingga ketinggian orbitnya hanya bisa terus menurun akibat hambatan atmosfer.",
+        "Orbit teleskop kini berada di sekitar 470 km, turun dari sekitar 583 km yang terakhir dicapai lewat misi pesawat ulang-alik pada 2002.",
+        "Tanpa intervensi, analisis NASA memperkirakan Hubble akan masuk atmosfer dan terbakar pada 2033 atau 2034.",
+        "Opsi yang dikaji mencakup reboost ke ketinggian minimal sekitar 600 km, misi servis untuk memulihkan atau memperluas kemampuan, hingga deorbit terkendali.",
+        "NASA meminta misi apa pun tuntas sebelum 2032 dan menegaskan tidak boleh membahayakan teleskop."
+      ],
+      "explain": "Di usia lebih dari 35 tahun, teleskop paling ikonik dalam sejarah astronomi menghadapi akhir yang nyata: jatuh ke atmosfer Bumi dan terbakar. Masalahnya murni mekanis — Hubble tidak punya mesin untuk mengangkat orbitnya sendiri. Pesawat ulang-alik yang dulu rutin 'mengangkat' teleskop ini sudah pensiun, dan misi servis terakhir pada 2009 sama sekali tidak melakukan reboost. Sejak itu, Hubble perlahan turun dari sekitar 583 km ke kisaran 470 km di atas Bumi.\n\nSkema yang dikaji NASA digambarkan berani karena tidak ada preseden operasionalnya: menjemput dan mengangkat kembali observatorium sekelas Hubble lewat wahana komersial, atau bahkan melayaninya di orbit lagi. Ketiganya menuntut kemampuan pertemuan dan penangkapan objek yang tidak dirancang untuk itu secara aktif, di atas kerumitan teleskop yang terus menghasilkan sains berkelas dunia. Ada juga opsi ketiga yang lebih suram, yaitu misi deorbit terkendali agar jatuhnya tidak membahayakan daerah permukiman.\n\nYang membuat perdebatan ini menarik adalah posisi NASA yang masih menimbang, bukan memutuskan. Agensi belum mengalokasikan dana untuk misi penyelamatan, dan pernah membatalkan rencana serupa pada 2024 setelah menilai proposal yang masuk sebagai konsep yang belum matang. Namun jam terus berjalan: jika tidak ada intervensi, perkiraan jatuh adalah 2033-2034, dan misi apa pun idealnya sudah terbang paling lambat 2032.",
+      "background": "Hubble diluncurkan 1990 dan telah menghasilkan gambar-gambar paling berpengaruh dalam astronomi modern; setelah pensiunnya pesawat ulang-alik pada 2011 tidak ada lagi cara rutin mengangkat ketinggian orbitnya, sehingga NASA kini mencari jalur komersial untuk menyelamatkan, melayani, atau memusnahkannya dengan aman sebelum pertengahan 2030-an."
+    },
+    {
+      "match_title": "Hera ESA mendekati puing uji tabrak asteroid NASA",
+      "lead": "Wahana Hera milik ESA berhasil menangkap foto jelas pertama dari sistem asteroid biner yang menjadi sasaran uji tabrak DART milik NASA pada 2022, dalam perjalanan menyelidiki bekas benturan itu secara langsung.",
+      "points": [
+        "Hera menangkap citra jelas pertama pasangan asteroid Didymos dan Dimorphos saat masih berjarak ratusan ribu kilometer.",
+        "Sasaran investigasinya adalah bekas tabrakan DART, eksperimen defleksi asteroid NASA yang berlangsung September 2022.",
+        "Hera dijadwalkan tiba di sistem Didymos pada akhir 2026 untuk survei jarak dekat terhadap lokus dampak.",
+        "Data Hera akan mengukur massa, bentuk, dan struktur internal Dimorphos untuk menghitung efisiensi perpindahan momentum tabrakan.",
+        "Temuan ini dimaksudkan mengubah satu eksperimen tunggal menjadi teknik pertahanan planet yang bisa diulang dan dipahami penuh."
+      ],
+      "explain": "Kamera Hera berhasil memotret pasangan Didymos-Dimorphos dengan keduanya kini terlihat terpisah jelas, pengintaian visual pertama sejak wahana ini berlayar. Foto itu lebih dari sekadar konfirmasi navigasi: ia menandai bahwa misi pertahanan planet pertama Eropa sudah dekat dengan sasarannya. Didymos sendiri adalah asteroid berdiameter sekitar 780 meter yang dikelilingi bulan kecil Dimorphos berdiameter sekitar 150 meter — dan Dimorphos inilah yang pada September 2022 sengaja ditabrak DART dengan kecepatan sekitar 6,1 km per detik.\n\nUji DART sendiri terbilang sukses melebihi prediksi: orbit Dimorphos mengelilingi Didymos memendek lebih dari setengah jam, di ujung atas rentang yang dihitung para ilmuwan sebelum tabrakan. Namun yang belum diketahui secara detail adalah bentuk fisik bekas benturan itu — ukuran kawahnya, seberapa banyak material yang terlempar dan jatuh kembali, serta bagaimana struktur internal asteroid bereaksi. Hera dirancang persis untuk menjawab pertanyaan-pertanyaan itu, ditopang sejumlah CubeSat pendamping yang akan mendekat lebih jauh.\n\nNilai strategisnya besar. Impaktor kinetik seperti DART adalah satu-satunya teknik defleksi asteroid yang sudah teruji nyata, tetapi tanpa pengukuran pasca-tabrakan, keberhasilannya sulit dijadikan resep yang bisa direplikasi. Dengan tiba di akhir 2026 dan mengkaji kawah yang masih 'segar' dari material di bawah permukaan, Hera berupaya mengubah insiden satu kali itu menjadi basis data untuk merancang misi penyelamatan Bumi dari asteroid berbahaya di masa depan.",
+      "background": "DART adalah misi NASA yang pada 26 September 2022 menabrak Dimorphos sebagai uji pertama defleksi asteroid; Hera, misi ESA yang diluncurkan Oktober 2024, dikirim untuk memotret dan mengukur hasil benturan itu secara detail dalam kerangka pertahanan planet."
+    },
+    {
+      "match_title": "Tencent rilis Hy4, model open-weight 770B dengan vision & computer-use",
+      "lead": "Tencent meluncurkan Hy4, model andalan generasi baru keluarga Hunyuan dengan arsitektur Mixture-of-Experts 770 miliar parameter, konteks hingga 1 juta token, plus kemampuan vision dan computer-use yang melengkapi jurus agen AI-nya.",
+      "points": [
+        "Hy4 memakai arsitektur MoE dengan total 770 miliar parameter dan konteks jendela 1 juta token.",
+        "Model ini membawa kemampuan vision serta computer-use untuk mengoperasikan antarmuka GUI dan CLI, dengan pelatihan yang memanfaatkan Blender dan CAD.",
+        "Tencent memberi diskon API 50 persen hingga 31 Desember sebagai daya dorong adopsi awal.",
+        "Bobot model diumumkan akan dibuka (open-weight) dalam waktu dekat.",
+        "Hy4 melanjutkan jejak Hy4 preview yang sudah dipublikasikan sebelumnya di bawah lisensi Apache 2.0."
+      ],
+      "explain": "Rilis Hy4 menegaskan strategi Tencent untuk bermain di liga teratas model frontier dengan pendekatan yang khas: arsitektur Mixture-of-Experts membuat model terlihat raksasa dengan 770 miliar parameter total, sementara hanya sebagian parameter yang aktif pada setiap token — menjaga biaya inferensi tetap masuk akal untuk skala produksi. Jendela konteks 1 juta token menempatkannya di kelompok model yang sanggup mencerna codebase utuh, dokumen panjang, atau percakapan agen berjam-jam tanpa kehilangan benang merah.\n\nYang membedakan Hy4 dari generasi sebelumnya adalah lompatan multimodal dan agenik. Kemampuan vision membuat model ini memahami gambar dan antarmuka visual, sedangkan computer-use memungkinkannya mengendalikan aplikasi lewat GUI maupun baris perintah — termasuk perangkat lunak profesional seperti Blender dan CAD yang dipakai dalam pelatihannya. Arah ini menempatkan Hy4 bersaing langsung dengan model-model agen yang menargetkan penggunaan komputer end-to-end, bukan sekadar percakapan.\n\nSisi komersialnya juga digarap serius: diskon API 50 persen hingga akhir tahun adalah taktik klasik menarik developer sebelum harga normal berlaku, dan komitmen membuka bobot model memberi pengguna opsi menjalankan Hy4 secara mandiri. Strategi ganda ini mengikuti jejak Hy4 preview yang sudah tersedia di bawah lisensi Apache 2.0 dan tercatat ramai digunakan di agregator inferensi, sinyal bahwa Tencent mengejar adopsi ekosistem open-weight secara agresif.",
+      "background": "Keluarga Hunyuan adalah lini model AI Tencent; Hy4 preview telah dibuka ke publik sejak 28 Agustus dengan 770 miliar parameter total dan 49 miliar parameter aktif per token, dan versi resmi Hy4 dirilis 4 November 2026 dengan tambahan kemampuan vision dan computer-use."
+    },
+    {
+      "match_title": "AMD akuisisi startup chip inferensi AI Taalas senilai $2,9 miliar",
+      "lead": "AMD mengakuisisi Taalas, startup chip inferensi AI asal Toronto, senilai 2,9 miliar dolar AS sesuai dokumen SEC — penguatan besar di segmen inferensi yang jadi medan pertempuran baru para raksasa chip.",
+      "points": [
+        "Nilai akuisisi 2,9 miliar dolar AS terungkap lewat dokumen SEC pada 4 November.",
+        "Struktur pembayarannya tunai plus saham, dengan 1,4 miliar dolar di antaranya bersifat bersyarat (contingent).",
+        "Taalas didirikan 2023 di Toronto dan mengembangkan silikon inferensi AI yang meminimalkan hambatan komputasi dan memori.",
+        "AMD berencana mengintegrasikan teknologi Taalas ke roadmap akseleratornya, termasuk solusi sistem bersama GPU Instinct.",
+        "Sebelum diakuisisi, Taalas menghimpun pendanaan total sekitar 219 juta dolar."
+      ],
+      "explain": "Angka 2,9 miliar dolar yang muncul dari dokumen SEC mengonfirmasi keseriusan AMD di pasar inferensi — segmen AI yang justru paling cepat tumbuh karena menyangkut menjalankan model di produksi setiap hari, bukan sekadar melatihnya. Taalas mengambil pendekatan yang berbeda dari GPU umum: silikon mereka dioptimalkan untuk alur data inferensi, memangkas hambatan komputasi dan memori yang selama ini menjadi biang biaya saat model besar melayani jutaan permintaan.\n\nStruktur pembayaran tunai plus saham dengan komponen bersyarat 1,4 miliar dolar adalah pola umum untuk menyatukan insentif: sebagian nilai baru cair jika target teknis atau komersial tercapai, memastikan tim Taalas tetap berkomitmen pasca-akuisisi. AMD sendiri telah menandatangani kesepakatan definitif untuk mengakuisisi Taalas sejak Agustus 2026, dengan rencana integrasi teknologinya ke roadmap akselerator dan solusi rack-scale bersama GPU Instinct, CPU EPYC, dan perangkat lunak ROCm.\n\nBagi lanskap industri, langkah ini memperlihatkan pergeseran besar: pabrikan GPU tidak lagi cukup menjual chip serbaguna, melainkan dituntut menyediakan sistem terintegrasi penuh dengan chip yang dispesialisasikan per beban kerja. Kompetitornya juga sedang bergerak ke arah yang sama dengan mengandalkan startup inferensi, sehingga akuisisi Taalas sekaligus menjadi benteng AMD agar tak tertinggal di lomba inferensi yang makin panas.",
+      "background": "Taalas adalah startup Toronto yang didirikan 2023 dan dikenal dengan pendekatan mem-hardwire model AI ke silikon untuk inferensi super-efisien; AMD mengumumkan kesepakatan akuisisinya pada Agustus 2026, dan nilai final 2,9 miliar dolar terungkap via dokumen SEC 4 November 2026."
+    },
+    {
+      "match_title": "Meta akuisisi Conductor, startup agen coding AI paralel",
+      "lead": "Meta membeli Conductor, startup di balik platform yang memungkinkan developer menjalankan banyak agen coding AI secara paralel, dengan CEO dan CTO startup itu pindah ke Meta Superintelligence Labs.",
+      "points": [
+        "Akuisisi diumumkan 4 November; nilai transaksi tidak diungkapkan.",
+        "Conductor membangun platform untuk mengorkestrasi banyak agen coding AI yang bekerja paralel dalam ruang kerja terpisah.",
+        "CEO dan CTO Conductor berpindah ke Meta Superintelligence Labs.",
+        "Startup ini didirikan 2024 dan baru meluncurkan produk intinya sejak musim panas lalu.",
+        "Agen yang dijalankan Conductor bukan buatan in-house, melainkan dari lab besar seperti Anthropic dan OpenAI."
+      ],
+      "explain": "Meta mengambil alih Conductor, perusahaan muda yang membantu software engineer mengelola rombongan agen coding AI sekaligus — masing-masing bekerja di salinan proyek yang terisolasi agar tidak saling menimpa pekerjaan. Model penggunaannya fleksibel: agen bisa berjalan di cloud, di mesin lokal, bahkan dikendalikan lewat ponsel, mencerminkan visi bahwa pemrograman masa depan lebih banyak soal mengarahkan tim agen daripada mengetik kode sendiri.\n\nYang menarik, Conductor tidak mengembangkan modelnya sendiri; platformnya mengorkestrasikan agen dari lab-lab besar seperti Anthropic dan OpenAI. Nilai startup ini justru ada di lapisan orkestrasi dan pengalaman developer — bagaimana memecah proyek, mendistribusikan tugas, dan menggabungkan hasil banyak agen. Kesetaraan peran itulah yang tampaknya ingin Meta beli: bukan model, melainkan tim dan tata kelola agen paralel yang sudah teruji di lapangan.\n\nKedatangan CEO Charlie Holtz dan CTO-nya ke Meta Superintelligence Labs menandakan Conductor akan menjadi bahan bangunan langsung untuk ambisi AI Meta di ranah developer. Bagi pengguna, masa transisi juga sudah ditetapkan: fitur inti Conductor akan tetap berjalan seperti biasa hingga awal tahun depan, sementara layanan cloud-nya dijadwalkan tutup pada 20 November, dengan data pengguna mulai dihapus setelahnya.",
+      "background": "Conductor adalah startup yang didirikan 2024 dan populer karena aplikasi macOS-nya untuk menjalankan banyak agen coding dalam salinan Git yang terisolasi; akuisisi oleh Meta pada 4 November 2026 berlangsung tanpa pengumuman nilai transaksi."
+    }
+  ]
+}

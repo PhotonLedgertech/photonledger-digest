@@ -1,0 +1,367 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digest 05 Nov 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 05 Nov 2026: 6 berita dari sumber global, dengan pembahasan mendalam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_ai_claude26.jpg" alt="Poster 05 Nov 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>05 NOV 2026</div>
+<h1>Spacewalk terakhir rampungkan upgrade daya ISS</h1>
+<div class="lsub">Edisi 05 Nov 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="6">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="3">0</b><span>Topik</span></div>
+ <div class="stat"><b>✔</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Digest Fokus — Space &amp; Ai ( Okt , Update Per Nov)</span><span class="rule"></span></div>
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Spacewalk terakhir rampungkan upgrade daya ISS</h3>
+<p>Astronot NASA Anil Menon &amp; CSA Joshua Kutryk hari ini (5 Nov) memasang IROSA ke-8 (terakhir) di truss starboard ISS, menaikkan kapasitas daya stasiun dari 160 kW ke ~215 kW (+30%). Proyek ini berjalan sejak Juni 2021, selesai hari ini via siaran langsung NASA+.</p>
+<div class="src">Sumber: NASA Blogs — nasa.gov/blogs/spacestation/2026/11/04/astronauts-are-go-for-final-power-upgrade-spacewalk (4 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Dua astronot menuntaskan pemasangan panel surya IROSA kedelapan sekaligus terakhir di Stasiun Luar Angkasa Internasional lewat spacewalk 5 November, menutup program peningkatan daya yang digulirkan sejak pertengahan 2021.</div>
+<ul><li>Astronot NASA Anil Menon dan astronot CSA Joshua Kutryk memasang IROSA ke-8 di truss sisi starboard ISS pada 5 November, ditayangkan langsung melalui NASA+.</li><li>Panel terakhir ini dipasang di saluran daya 3B, melengkapi tujuh IROSA yang sudah terpasang sebelumnya — yang ketujuh baru dipasang pasangan yang sama pada spacewalk 29 Oktober.</li><li>Dengan lengkapnya delapan array, kapasitas pembangkit daya stasiun naik dari sekitar 160 kW menjadi sekitar 215 kW, tambahan hingga 30 persen.</li><li>Program ini berawal pada Juni 2021 saat dua IROSA pertama tiba dan terpasang lewat misi kargo SpaceX Dragon ke-22.</li><li>Setiap IROSA baru menyumbang sekitar 20 kW daya tambahan di atas array lama yang sudah menunjukkan tanda degradasi.</li></ul>
+<div class="explain">Spacewalk 5 November menandai garis akhir dari salah satu proyek pemeliharaan terbesar ISS dalam satu dekade terakhir. Menon dan Kutryk keluar dari airlock untuk memasang International Space Station Roll-Out Solar Array (IROSA) kedelapan di saluran daya 3B di truss sisi starboard. Keduanya bukan pendatang baru di pekerjaan ini: hanya beberapa hari sebelumnya, pada 29 Oktober, mereka juga memasang IROSA ketujuh di saluran 2A dalam spacewalk berdurasi lebih dari tujuh jam, sekaligus menyiapkan sejumlah pekerjaan awal agar tugas pemasangan terakhir berjalan lebih cepat.
+
+Latar teknis proyek ini menarik dicermati. Array surya asli ISS mulai dipasang pada Desember 2000 dan dirancang untuk usia layanan 15 tahun, sehingga setelah lebih dari dua dekade mengorbit daya produksinya terus tergerus degradasi. Solusi NASA adalah memasang array generasi baru di depan array lama — desain gulung (roll-out) yang lebih ringan dan ramping, terurai otomatis saat diluncurkan, dan mampu menyumbang sekitar 20 kW per panel. Enam panel pertama terpasang antara 2021 dan 2023, dan dua panel penyempurna mengikuti pada 2026.
+
+Dengan seluruh delapan IROSA kini terpasang, kapasitas pembangkitan daya stasiun naik dari sekitar 160 kW menjadi sekitar 215 kW — lonjakan hingga 30 persen. Tambahan daya ini bukan sekadar bonus angka: ia menopang eksperimen sains yang makin rakus energi, serta menopang kebutuhan operasional penting termasuk rencana deorbit terkendali ISS di masa depan. Penyelesaian pada 5 November juga menutup babak kerja luar angkasa yang panjang sejak pertengahan 2021.</div>
+<div class="bg"><b>Konteks:</b> ISS mengandalkan array surya yang dipasang sejak Desember 2000 dengan umur desain 15 tahun; degradasi alami mendorong NASA memperbarui sistem daya dengan IROSA sejak Juni 2021, dan upgrade resmi berakhir dengan pemasangan IROSA kedelapan pada 5 November 2026 melalui siaran langsung NASA+.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>NASA godok rencana selamatkan Hubble dari jatuh</h3>
+<p>NASA sedang mengkaji skema &quot;daring&quot; untuk menyelamatkan Hubble yang terus menurun orbitnya setelah 35+ tahun beroperasi, sebelum akhirnya jatuh terbakar ke atmosfer Bumi.</p>
+<div class="src">Sumber: ScienceDaily — sciencedaily.com/news/space_time/space_probes (4 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">NASA tengah mengkaji skema penyelamatan yang &#x27;berani&#x27; untuk Teleskop Hubble, yang orbitnya terus merosot setelah lebih dari 35 tahun mengorbit Bumi tanpa punya mesin dorong sendiri.</div>
+<ul><li>Hubble tidak memiliki sistem propulsi sendiri, sehingga ketinggian orbitnya hanya bisa terus menurun akibat hambatan atmosfer.</li><li>Orbit teleskop kini berada di sekitar 470 km, turun dari sekitar 583 km yang terakhir dicapai lewat misi pesawat ulang-alik pada 2002.</li><li>Tanpa intervensi, analisis NASA memperkirakan Hubble akan masuk atmosfer dan terbakar pada 2033 atau 2034.</li><li>Opsi yang dikaji mencakup reboost ke ketinggian minimal sekitar 600 km, misi servis untuk memulihkan atau memperluas kemampuan, hingga deorbit terkendali.</li><li>NASA meminta misi apa pun tuntas sebelum 2032 dan menegaskan tidak boleh membahayakan teleskop.</li></ul>
+<div class="explain">Di usia lebih dari 35 tahun, teleskop paling ikonik dalam sejarah astronomi menghadapi akhir yang nyata: jatuh ke atmosfer Bumi dan terbakar. Masalahnya murni mekanis — Hubble tidak punya mesin untuk mengangkat orbitnya sendiri. Pesawat ulang-alik yang dulu rutin &#x27;mengangkat&#x27; teleskop ini sudah pensiun, dan misi servis terakhir pada 2009 sama sekali tidak melakukan reboost. Sejak itu, Hubble perlahan turun dari sekitar 583 km ke kisaran 470 km di atas Bumi.
+
+Skema yang dikaji NASA digambarkan berani karena tidak ada preseden operasionalnya: menjemput dan mengangkat kembali observatorium sekelas Hubble lewat wahana komersial, atau bahkan melayaninya di orbit lagi. Ketiganya menuntut kemampuan pertemuan dan penangkapan objek yang tidak dirancang untuk itu secara aktif, di atas kerumitan teleskop yang terus menghasilkan sains berkelas dunia. Ada juga opsi ketiga yang lebih suram, yaitu misi deorbit terkendali agar jatuhnya tidak membahayakan daerah permukiman.
+
+Yang membuat perdebatan ini menarik adalah posisi NASA yang masih menimbang, bukan memutuskan. Agensi belum mengalokasikan dana untuk misi penyelamatan, dan pernah membatalkan rencana serupa pada 2024 setelah menilai proposal yang masuk sebagai konsep yang belum matang. Namun jam terus berjalan: jika tidak ada intervensi, perkiraan jatuh adalah 2033-2034, dan misi apa pun idealnya sudah terbang paling lambat 2032.</div>
+<div class="bg"><b>Konteks:</b> Hubble diluncurkan 1990 dan telah menghasilkan gambar-gambar paling berpengaruh dalam astronomi modern; setelah pensiunnya pesawat ulang-alik pada 2011 tidak ada lagi cara rutin mengangkat ketinggian orbitnya, sehingga NASA kini mencari jalur komersial untuk menyelamatkan, melayani, atau memusnahkannya dengan aman sebelum pertengahan 2030-an.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Hera ESA mendekati puing uji tabrak asteroid NASA</h3>
+<p>Pesawat Hera milik ESA menangkap foto jelas pertama pasangan asteroid dari eksperimen DART NASA 2022, menyelidiki dampak tabrakan untuk misi defense asteroid masa depan.</p>
+<div class="src">Sumber: ScienceDaily — sciencedaily.com/news/top/technology (3 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Wahana Hera milik ESA berhasil menangkap foto jelas pertama dari sistem asteroid biner yang menjadi sasaran uji tabrak DART milik NASA pada 2022, dalam perjalanan menyelidiki bekas benturan itu secara langsung.</div>
+<ul><li>Hera menangkap citra jelas pertama pasangan asteroid Didymos dan Dimorphos saat masih berjarak ratusan ribu kilometer.</li><li>Sasaran investigasinya adalah bekas tabrakan DART, eksperimen defleksi asteroid NASA yang berlangsung September 2022.</li><li>Hera dijadwalkan tiba di sistem Didymos pada akhir 2026 untuk survei jarak dekat terhadap lokus dampak.</li><li>Data Hera akan mengukur massa, bentuk, dan struktur internal Dimorphos untuk menghitung efisiensi perpindahan momentum tabrakan.</li><li>Temuan ini dimaksudkan mengubah satu eksperimen tunggal menjadi teknik pertahanan planet yang bisa diulang dan dipahami penuh.</li></ul>
+<div class="explain">Kamera Hera berhasil memotret pasangan Didymos-Dimorphos dengan keduanya kini terlihat terpisah jelas, pengintaian visual pertama sejak wahana ini berlayar. Foto itu lebih dari sekadar konfirmasi navigasi: ia menandai bahwa misi pertahanan planet pertama Eropa sudah dekat dengan sasarannya. Didymos sendiri adalah asteroid berdiameter sekitar 780 meter yang dikelilingi bulan kecil Dimorphos berdiameter sekitar 150 meter — dan Dimorphos inilah yang pada September 2022 sengaja ditabrak DART dengan kecepatan sekitar 6,1 km per detik.
+
+Uji DART sendiri terbilang sukses melebihi prediksi: orbit Dimorphos mengelilingi Didymos memendek lebih dari setengah jam, di ujung atas rentang yang dihitung para ilmuwan sebelum tabrakan. Namun yang belum diketahui secara detail adalah bentuk fisik bekas benturan itu — ukuran kawahnya, seberapa banyak material yang terlempar dan jatuh kembali, serta bagaimana struktur internal asteroid bereaksi. Hera dirancang persis untuk menjawab pertanyaan-pertanyaan itu, ditopang sejumlah CubeSat pendamping yang akan mendekat lebih jauh.
+
+Nilai strategisnya besar. Impaktor kinetik seperti DART adalah satu-satunya teknik defleksi asteroid yang sudah teruji nyata, tetapi tanpa pengukuran pasca-tabrakan, keberhasilannya sulit dijadikan resep yang bisa direplikasi. Dengan tiba di akhir 2026 dan mengkaji kawah yang masih &#x27;segar&#x27; dari material di bawah permukaan, Hera berupaya mengubah insiden satu kali itu menjadi basis data untuk merancang misi penyelamatan Bumi dari asteroid berbahaya di masa depan.</div>
+<div class="bg"><b>Konteks:</b> DART adalah misi NASA yang pada 26 September 2022 menabrak Dimorphos sebagai uji pertama defleksi asteroid; Hera, misi ESA yang diluncurkan Oktober 2024, dikirim untuk memotret dan mengukur hasil benturan itu secara detail dalam kerangka pertahanan planet.</div>
+</details>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Tencent rilis Hy4, model open-weight 770B dengan vision &amp; computer-use</h3>
+<p>Hunyuan Hy4 resmi diluncurkan 4 Nov — MoE 770B parameter, konteks 1 juta token, kini bisa &quot;melihat&quot; gambar/chart dan mengoperasikan GUI/CLI (dilatih khusus Blender &amp; CAD). Diskon API 50% sampai 31 Des, weights open-source segera.</p>
+<div class="src">Sumber: Tencent Newsroom — tencent.com/tencent-launches-hy4 (4 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Tencent meluncurkan Hy4, model andalan generasi baru keluarga Hunyuan dengan arsitektur Mixture-of-Experts 770 miliar parameter, konteks hingga 1 juta token, plus kemampuan vision dan computer-use yang melengkapi jurus agen AI-nya.</div>
+<ul><li>Hy4 memakai arsitektur MoE dengan total 770 miliar parameter dan konteks jendela 1 juta token.</li><li>Model ini membawa kemampuan vision serta computer-use untuk mengoperasikan antarmuka GUI dan CLI, dengan pelatihan yang memanfaatkan Blender dan CAD.</li><li>Tencent memberi diskon API 50 persen hingga 31 Desember sebagai daya dorong adopsi awal.</li><li>Bobot model diumumkan akan dibuka (open-weight) dalam waktu dekat.</li><li>Hy4 melanjutkan jejak Hy4 preview yang sudah dipublikasikan sebelumnya di bawah lisensi Apache 2.0.</li></ul>
+<div class="explain">Rilis Hy4 menegaskan strategi Tencent untuk bermain di liga teratas model frontier dengan pendekatan yang khas: arsitektur Mixture-of-Experts membuat model terlihat raksasa dengan 770 miliar parameter total, sementara hanya sebagian parameter yang aktif pada setiap token — menjaga biaya inferensi tetap masuk akal untuk skala produksi. Jendela konteks 1 juta token menempatkannya di kelompok model yang sanggup mencerna codebase utuh, dokumen panjang, atau percakapan agen berjam-jam tanpa kehilangan benang merah.
+
+Yang membedakan Hy4 dari generasi sebelumnya adalah lompatan multimodal dan agenik. Kemampuan vision membuat model ini memahami gambar dan antarmuka visual, sedangkan computer-use memungkinkannya mengendalikan aplikasi lewat GUI maupun baris perintah — termasuk perangkat lunak profesional seperti Blender dan CAD yang dipakai dalam pelatihannya. Arah ini menempatkan Hy4 bersaing langsung dengan model-model agen yang menargetkan penggunaan komputer end-to-end, bukan sekadar percakapan.
+
+Sisi komersialnya juga digarap serius: diskon API 50 persen hingga akhir tahun adalah taktik klasik menarik developer sebelum harga normal berlaku, dan komitmen membuka bobot model memberi pengguna opsi menjalankan Hy4 secara mandiri. Strategi ganda ini mengikuti jejak Hy4 preview yang sudah tersedia di bawah lisensi Apache 2.0 dan tercatat ramai digunakan di agregator inferensi, sinyal bahwa Tencent mengejar adopsi ekosistem open-weight secara agresif.</div>
+<div class="bg"><b>Konteks:</b> Keluarga Hunyuan adalah lini model AI Tencent; Hy4 preview telah dibuka ke publik sejak 28 Agustus dengan 770 miliar parameter total dan 49 miliar parameter aktif per token, dan versi resmi Hy4 dirilis 4 November 2026 dengan tambahan kemampuan vision dan computer-use.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>AMD akuisisi startup chip inferensi AI Taalas senilai $2,9 miliar</h3>
+<p>AMD mengumumkan lewat dokumen SEC (4 Nov) akan membeli startup inferensi AI asal Toronto, Taalas, tunai+saham, dengan $1,4 miliar bersyarat.</p>
+<div class="src">Sumber: AI Weekly — aiweekly.co/ai-news-today (4 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">AMD mengakuisisi Taalas, startup chip inferensi AI asal Toronto, senilai 2,9 miliar dolar AS sesuai dokumen SEC — penguatan besar di segmen inferensi yang jadi medan pertempuran baru para raksasa chip.</div>
+<ul><li>Nilai akuisisi 2,9 miliar dolar AS terungkap lewat dokumen SEC pada 4 November.</li><li>Struktur pembayarannya tunai plus saham, dengan 1,4 miliar dolar di antaranya bersifat bersyarat (contingent).</li><li>Taalas didirikan 2023 di Toronto dan mengembangkan silikon inferensi AI yang meminimalkan hambatan komputasi dan memori.</li><li>AMD berencana mengintegrasikan teknologi Taalas ke roadmap akseleratornya, termasuk solusi sistem bersama GPU Instinct.</li><li>Sebelum diakuisisi, Taalas menghimpun pendanaan total sekitar 219 juta dolar.</li></ul>
+<div class="explain">Angka 2,9 miliar dolar yang muncul dari dokumen SEC mengonfirmasi keseriusan AMD di pasar inferensi — segmen AI yang justru paling cepat tumbuh karena menyangkut menjalankan model di produksi setiap hari, bukan sekadar melatihnya. Taalas mengambil pendekatan yang berbeda dari GPU umum: silikon mereka dioptimalkan untuk alur data inferensi, memangkas hambatan komputasi dan memori yang selama ini menjadi biang biaya saat model besar melayani jutaan permintaan.
+
+Struktur pembayaran tunai plus saham dengan komponen bersyarat 1,4 miliar dolar adalah pola umum untuk menyatukan insentif: sebagian nilai baru cair jika target teknis atau komersial tercapai, memastikan tim Taalas tetap berkomitmen pasca-akuisisi. AMD sendiri telah menandatangani kesepakatan definitif untuk mengakuisisi Taalas sejak Agustus 2026, dengan rencana integrasi teknologinya ke roadmap akselerator dan solusi rack-scale bersama GPU Instinct, CPU EPYC, dan perangkat lunak ROCm.
+
+Bagi lanskap industri, langkah ini memperlihatkan pergeseran besar: pabrikan GPU tidak lagi cukup menjual chip serbaguna, melainkan dituntut menyediakan sistem terintegrasi penuh dengan chip yang dispesialisasikan per beban kerja. Kompetitornya juga sedang bergerak ke arah yang sama dengan mengandalkan startup inferensi, sehingga akuisisi Taalas sekaligus menjadi benteng AMD agar tak tertinggal di lomba inferensi yang makin panas.</div>
+<div class="bg"><b>Konteks:</b> Taalas adalah startup Toronto yang didirikan 2023 dan dikenal dengan pendekatan mem-hardwire model AI ke silikon untuk inferensi super-efisien; AMD mengumumkan kesepakatan akuisisinya pada Agustus 2026, dan nilai final 2,9 miliar dolar terungkap via dokumen SEC 4 November 2026.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Meta akuisisi Conductor, startup agen coding AI paralel</h3>
+<p>Meta mengumumkan (4 Nov) pembelian Conductor — platform yang menjalankan banyak AI coding agent sekaligus. CEO &amp; CTO-nya pindah ke Meta Superintelligence Labs, nilai tidak diumumkan.</p>
+<div class="src">Sumber: Axios via AI Weekly — aiweekly.co/ai-news-today (4 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Meta membeli Conductor, startup di balik platform yang memungkinkan developer menjalankan banyak agen coding AI secara paralel, dengan CEO dan CTO startup itu pindah ke Meta Superintelligence Labs.</div>
+<ul><li>Akuisisi diumumkan 4 November; nilai transaksi tidak diungkapkan.</li><li>Conductor membangun platform untuk mengorkestrasi banyak agen coding AI yang bekerja paralel dalam ruang kerja terpisah.</li><li>CEO dan CTO Conductor berpindah ke Meta Superintelligence Labs.</li><li>Startup ini didirikan 2024 dan baru meluncurkan produk intinya sejak musim panas lalu.</li><li>Agen yang dijalankan Conductor bukan buatan in-house, melainkan dari lab besar seperti Anthropic dan OpenAI.</li></ul>
+<div class="explain">Meta mengambil alih Conductor, perusahaan muda yang membantu software engineer mengelola rombongan agen coding AI sekaligus — masing-masing bekerja di salinan proyek yang terisolasi agar tidak saling menimpa pekerjaan. Model penggunaannya fleksibel: agen bisa berjalan di cloud, di mesin lokal, bahkan dikendalikan lewat ponsel, mencerminkan visi bahwa pemrograman masa depan lebih banyak soal mengarahkan tim agen daripada mengetik kode sendiri.
+
+Yang menarik, Conductor tidak mengembangkan modelnya sendiri; platformnya mengorkestrasikan agen dari lab-lab besar seperti Anthropic dan OpenAI. Nilai startup ini justru ada di lapisan orkestrasi dan pengalaman developer — bagaimana memecah proyek, mendistribusikan tugas, dan menggabungkan hasil banyak agen. Kesetaraan peran itulah yang tampaknya ingin Meta beli: bukan model, melainkan tim dan tata kelola agen paralel yang sudah teruji di lapangan.
+
+Kedatangan CEO Charlie Holtz dan CTO-nya ke Meta Superintelligence Labs menandakan Conductor akan menjadi bahan bangunan langsung untuk ambisi AI Meta di ranah developer. Bagi pengguna, masa transisi juga sudah ditetapkan: fitur inti Conductor akan tetap berjalan seperti biasa hingga awal tahun depan, sementara layanan cloud-nya dijadwalkan tutup pada 20 November, dengan data pengguna mulai dihapus setelahnya.</div>
+<div class="bg"><b>Konteks:</b> Conductor adalah startup yang didirikan 2024 dan populer karena aplikasi macOS-nya untuk menjalankan banyak agen coding dalam salinan Git yang terisolasi; akuisisi oleh Meta pada 4 November 2026 berlangsung tanpa pengumuman nilai transaksi.</div>
+</details>
+</div>
+<div class="pn rv"><a href="2026-11-04.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">04 Nov 2026</span></a></div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var prog=document.getElementById('progress');
+ var toTop=document.getElementById('toTop');
+ function onScroll(){
+   var h=document.documentElement;
+   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+   if(prog)prog.style.width=(p*100)+'%';
+   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
+ }
+ addEventListener('scroll',onScroll,{passive:true});onScroll();
+ if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+ var els=document.querySelectorAll('.rv');
+ if(!reduce&&'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){
+     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+   els.forEach(function(el){io.observe(el)});
+ } else { els.forEach(function(el){el.classList.add('in')}) }
+ var hero=document.querySelector('.land-hero .poster-wrap img');
+ if(hero&&!reduce){
+   addEventListener('scroll',function(){
+     var r=hero.getBoundingClientRect();
+     if(r.bottom>0&&r.top<innerHeight){
+       var off=(innerHeight-r.top)*0.06;
+       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
+     }
+   },{passive:true});
+ }
+ var counts=document.querySelectorAll('[data-count]');
+ if(!reduce&&'IntersectionObserver' in window&&counts.length){
+   var cio=new IntersectionObserver(function(es){
+     es.forEach(function(e){
+       if(!e.isIntersecting)return;cio.unobserve(e.target);
+       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
+       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
+         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
+         if(k<1)requestAnimationFrame(step);}
+       requestAnimationFrame(step);
+     });
+   },{threshold:.4});
+   counts.forEach(function(el){cio.observe(el)});
+ }
+})();
+</script>
