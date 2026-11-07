@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-07",
+  "items": [
+    {
+      "match_title": "Hera ESA foto jarak dekat asteroid Didymos — situs TKP DART",
+      "lead": "Misi pertahanan planet Hera milik ESA baru saja mengirim foto close-up pertama sistem asteroid biner Didymos, diambil dari jarak hanya sekitar 60 kilometer setelah penerbangan dua tahun menempuh 196,8 juta kilometer dari Bumi. Gambar ini membuka fase investigasi lapangan di lokasi yang tiga tahun lalu dibombardir pesawat DART milik NASA.",
+      "points": [
+        "Foto pertama diambil kamera Asteroid Framing Camera Hera dari jarak sekitar 60 km; asteroid utama Didymos yang lebarnya 780 meter terlihat jelas, sementara sebagian besar bulannya Dimorphos (151-160 meter) tertutup bayangan.",
+        "DART menabrak Dimorphos pada 26 September 2022 dengan bobot 580 kg dan kecepatan sekitar 6,1 km/s, memendekkan periode orbit Dimorphos sekitar 33 menit — jauh lebih besar dari prediksi awal.",
+        "Sudut pandang foto ini adalah sisi Didymos yang berlawanan dengan yang direkam kamera DART menjelang tabrakan, sehingga ilmuwan menyebutnya seperti melihat dunia yang baru.",
+        "Permukaan Didymos tampak penuh perubahan pasca-impact: batu-batu besar baru, kawah, serta pola alur dan punggungan, meski punggungan ekuator lamanya masih ada.",
+        "ESA akan merilis gambar detail kedua asteroid pada 25 November, menjelang penyelidikan mendalam atas lokasi tabrakan."
+      ],
+      "explain": "Foto ini menandai masuknya misi Hera ke fase paling krusial: rendezvous dengan sistem Didymos. Pesawat luar angkasa yang dibangun kontraktor OHB dan diluncurkan dari Cape Canaveral pada 7 Oktober 2024 kini bergerak makin dekat ke pasangan asteroid, dan gambar resolusi tinggi dari lokasi benturan DART diharapkan didapat selama fase pertemuan ini. Bagi ilmuwan, momen ini penting karena DART meninggalkan banyak pertanyaan terbuka: seberapa besar material yang terlempar, bagaimana permukaan terbentuk ulang, dan seberapa efektif pukulan kinetik pada benda langit yang strukturnya rapuh.",
+      "background": "DART adalah uji pertama dunia untuk teknik defleksi asteroid dengan benturan kinetik — sengaja menabrak objek untuk mengubah lintasannya. Kini Hera bertugas memastikan seberapa efektif metode itu, supaya teknik yang tadinya eksperimen sekali jalan bisa dijadikan prosedur yang terukur dan bisa diulang, kalau suatu hari Bumi benar-benar terancam asteroid."
+    },
+    {
+      "match_title": "Algoritma AI \"FLIP\" ungkap exoplanet raksasa tersembunyi di data James Webb",
+      "lead": "Tim riset dari Northwestern University menciptakan metode pemrosesan gambar berbasis fisika bernama FLIP yang mampu menghapus silau cahaya bintang pada citra teleskop James Webb, dan berhasil memunculkan planet raksasa 51 Eridani b yang tersembunyi di data dua tahun lalu. Studi ini terbit di jurnal Nature pada 4 November.",
+      "points": [
+        "FLIP (Physics-based Learning for Imaging Planets) membangun 'digital twin' teleskop — replika virtual yang mensimulasikan perjalanan cahaya bintang melewati cermin JWST sampai ke detektor.",
+        "Metode ini menaikkan sensitivitas deteksi planet redup sekitar 2 sampai 15 kali dibanding teknik konvensional seperti KLIP, terbukti konsisten di seluruh data uji.",
+        "Dengan sensitivitas baru itu, 51 Eridani b — raksasa gas bermassa sekitar 11 kali Jupiter di jarak 97 tahun cahaya — terdeteksi pada panjang gelombang 4,3 mikron, yang sebelumnya tidak terdeteksi sama sekali.",
+        "Uji dilakukan pada data NIRCam dari tiga bintang: HIP 65426 dan 51 Eridani yang punya planet yang sudah diketahui, serta TYC 5899 yang tidak punya planet, sebagai kontrol.",
+        "Penelitiannya dipimpin mahasiswa doktoral Rodrigo Ferrer-Chavez dari grup Jason Wang di Northwestern, bekerja sama antara lain dengan Katie Bouman dari Caltech."
+      ],
+      "explain": "Inti masalah yang dipecahkan FLIP adalah silau: cahaya bintang induk jauh lebih terang daripada planet yang mengelilinginya, sehingga citra planet langsung hampir mustahil tanpa pemrosesan canggih. Teknik lama seperti KLIP bekerja secara statistik dan sering 'memakan' sinyal planet itu sendiri. FLIP mengambil jalan berbeda: memodelkan teleskop secara fisik, mengkalibrasi jutaan parameter untuk menangkap cacat optik halus dan pergeseran posisi, lalu mengurangi silau hasil simulasi dari data asli — sehingga sinyal planet tersisa dengan lebih utuh.",
+      "background": "Temuan paling mencolok datang dari data yang sudah lama ada: 51 Eridani b sebenarnya sudah ditemukan lewat observasi berbasis darat, tetapi analisis konvensional atas data JWST dua tahun silam gagal menemukannya di filter 4,3 mikron. Artinya, FLIP berpotensi menghidupkan kembali arsip observasi lama tanpa perlu mengubah satu pun perangkat keras teleskop — memperbanyak penemuan planet hanya lewat perangkat lunak."
+    },
+    {
+      "match_title": "Tencent rilis Hy4 — model AI pertama dengan kemampuan \"computer use\"",
+      "lead": "Tencent resmi meluncurkan Hy4 pada 4 November, model bahasa multimodal pertamanya yang tidak hanya memahami gambar tetapi juga mampu mengoperasikan perangkat lunak secara mandiri — mengklik, mengetik, dan bernavigasi di antarmuka komputer. Model MoE raksasa ini diklaim masuk jajaran teratas model AI di China.",
+      "points": [
+        "Hy4 adalah model mixture-of-experts dengan total 770 miliar parameter namun hanya mengaktifkan sekitar 49 miliar per token, plus jendela konteks 1 juta token.",
+        "Kemampuan computer use-nya mencakup penglihatan visual, penalaran, dan pemanggilan alat: model membaca tangkapan layar resolusi tinggi, menemukan elemen antarmuka, lalu mengeluarkan perintah baik lewat CLI maupun aplikasi desktop grafis.",
+        "Tencent melatih Hy4 langsung di dalam lingkungan perangkat lunak nyata seperti Blender, aplikasi CAD, Unreal Engine, Unity, dan Godot — menaikkan skor internal GameDev 19,1% dan GameLogic 9,8% dibanding pratinjau sebelumnya.",
+        "Model tersedia via Tencent Cloud TokenHub dan produk internal (Yuanbao, WeCom, ima, WorkBuddy, CodeBuddy) serta saluran pihak ketiga seperti OpenRouter, dengan harga sekitar $0,90 per 1 juta token input.",
+        "Peluncurannya masih berbentuk hosted: bobot model final dan system card dijanjikan menyusul beberapa hari kemudian, dan skornya 35 di Artificial Analysis Intelligence Index — masih di bawah Kimi K3.1 Pro."
+      ],
+      "explain": "Peluncuran Hy4 menegaskan tren besar 2026: lomba-lomba membawa model dari sekadar menjawab pertanyaan ke mengeksekusi tugas di komputer secara langsung. Dengan menggabungkan persepsi visual dan aksi dalam satu model, Tencent membidik alur kerja agen yang panjang — coding, pekerjaan dokumen, sampai pengembangan game — bukan lagi sekadar chatbot. Pilihan melatih model di software 3D dan CAD profesional juga menunjukkan strategi pembedaan: alih-alih bertanding di benchmark umum, Hy4 difokuskan ke tugas teknis yang kompleks dan bernilai komersial tinggi.",
+      "background": "Kompetisi computer use kini menjadi medan perang utama antara lab AI Amerika dan China, karena kemampuan mengoperasikan antarmuka grafis adalah jembatan dari asisten penulis teks menuju agen yang benar-benar mengerjakan pekerjaan kantor. Rilisan Hy4 menandai Tencent masuk ke arena yang sebelumnya didominasi pemain seperti Anthropic dan OpenAI, sekaligus menutup celah terbesarnya: belum punya model multimodal dengan kendali komputer native."
+    },
+    {
+      "match_title": "Google rilis Gemini Omni 1.2 Flash — video AI 15 detik, harga turun 30%",
+      "lead": "Google DeepMind resmi mengumumkan ketersediaan umum Gemini Omni 1.2 Flash, model video generatif yang kini mampu membuat klip hingga 15 detik secara native — naik dari 10 detik — dengan harga yang dipangkas 30 persen menjadi $0,07 per detik untuk video 720p.",
+      "points": [
+        "Durasi kini bisa diatur 3 sampai 15 detik dalam kelipatan satu detik, cukup untuk iklan singkat, penjelasan produk, atau narasi lengkap dalam satu kali generasi.",
+        "Harga API turun ke $0,07 per detik untuk 720p (dari versi 1.1); skala harga lainnya: $0,02/detik untuk 360p, $0,10/detik untuk 1080p, dan $0,21/detik untuk 4K.",
+        "Alur kerja hemat biaya: draf dibuat cepat di 360p atau 720p, detail diperbaiki lewat edit lanjutan tanpa regenerasi penuh, lalu hasil terbaik di-upscale ke 1080p atau 4K.",
+        "Pembaruan lain mencakup penyuntingan multi-turn lewat percakapan, konsistensi objek dan karakter yang lebih baik antar-scene, dialog yang lebih natural, serta kepatuhan yang lebih kuat terhadap aset referensi yang diunggah.",
+        "Model tersedia lewat Gemini API, Google AI Studio, Google Cloud Console, Flow, Google Vids, aplikasi Gemini untuk pelanggan AI Ultra, hingga Google Ads."
+      ],
+      "explain": "Kenaikan durasi dari 10 ke 15 detik terdengar kecil, tetapi mengubah kasus penggunaan secara mendasar: iklan media sosial dan explainer produk pendek kini bisa dibuat utuh dalam satu generasi, tanpa harus menyambung klip-klip pendek yang konsistensinya sering pecah. Google juga menekankan perbaikan kualitas sinematik — transisi antar-scene yang lebih halus, berkurangnya glitch seperti jump cut, dan kestabilan objek dari awal sampai akhir video — yang selama ini jadi keluhan utama pengguna video AI.",
+      "background": "Dengan pemangkasan harga 30 persen, Google terlihat sedang mempercepat adopsi massal video generatif, menekan biaya produksi konten hingga level yang terjangkau bagi kreator dan pelaku usaha kecil. Persaingan harga di segmen video AI kian memanas, dan keputusan Google menjadikan model ini tersedia dari API developer sampai aplikasi konsumen dan iklan menunjukkan strategi mengunci seluruh rantai produksi konten di ekosistemnya."
+    }
+  ]
+}

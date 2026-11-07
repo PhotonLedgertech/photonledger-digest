@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digest 07 Nov 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 07 Nov 2026: 4 berita dari sumber global, dengan pembahasan mendalam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_ai_openai.jpg" alt="Poster 07 Nov 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>07 NOV 2026</div>
+<h1>Hera ESA foto jarak dekat asteroid Didymos — situs TKP DART</h1>
+<div class="lsub">Edisi 07 Nov 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="4">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="3">0</b><span>Topik</span></div>
+ <div class="stat"><b>✔</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Digest Harian Fokus — Space &amp; Ai ( Nov )</span><span class="rule"></span></div>
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Hera ESA foto jarak dekat asteroid Didymos — situs TKP DART</h3>
+<p>Pesawat Hera milik ESA berhasil ambil foto close-up pertama asteroid biner Didymos dari jarak cuma 60 km, setelah perjalanan 2 tahun menempuh 196,8 juta km dari Bumi. Ini sisi lain Didymos (lebar 780m) dibanding yang direkam DART saat menabrak bulan kecilnya Dimorphos (160m) pada 2022 — detail penuh keduanya baru dirilis 25 November.</p>
+<div class="src">Sumber: ESA, esa.int/articles/about-us/directorates/operations/space-safety/hera — 5-6 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Misi pertahanan planet Hera milik ESA baru saja mengirim foto close-up pertama sistem asteroid biner Didymos, diambil dari jarak hanya sekitar 60 kilometer setelah penerbangan dua tahun menempuh 196,8 juta kilometer dari Bumi. Gambar ini membuka fase investigasi lapangan di lokasi yang tiga tahun lalu dibombardir pesawat DART milik NASA.</div>
+<ul><li>Foto pertama diambil kamera Asteroid Framing Camera Hera dari jarak sekitar 60 km; asteroid utama Didymos yang lebarnya 780 meter terlihat jelas, sementara sebagian besar bulannya Dimorphos (151-160 meter) tertutup bayangan.</li><li>DART menabrak Dimorphos pada 26 September 2022 dengan bobot 580 kg dan kecepatan sekitar 6,1 km/s, memendekkan periode orbit Dimorphos sekitar 33 menit — jauh lebih besar dari prediksi awal.</li><li>Sudut pandang foto ini adalah sisi Didymos yang berlawanan dengan yang direkam kamera DART menjelang tabrakan, sehingga ilmuwan menyebutnya seperti melihat dunia yang baru.</li><li>Permukaan Didymos tampak penuh perubahan pasca-impact: batu-batu besar baru, kawah, serta pola alur dan punggungan, meski punggungan ekuator lamanya masih ada.</li><li>ESA akan merilis gambar detail kedua asteroid pada 25 November, menjelang penyelidikan mendalam atas lokasi tabrakan.</li></ul>
+<div class="explain">Foto ini menandai masuknya misi Hera ke fase paling krusial: rendezvous dengan sistem Didymos. Pesawat luar angkasa yang dibangun kontraktor OHB dan diluncurkan dari Cape Canaveral pada 7 Oktober 2024 kini bergerak makin dekat ke pasangan asteroid, dan gambar resolusi tinggi dari lokasi benturan DART diharapkan didapat selama fase pertemuan ini. Bagi ilmuwan, momen ini penting karena DART meninggalkan banyak pertanyaan terbuka: seberapa besar material yang terlempar, bagaimana permukaan terbentuk ulang, dan seberapa efektif pukulan kinetik pada benda langit yang strukturnya rapuh.</div>
+<div class="bg"><b>Konteks:</b> DART adalah uji pertama dunia untuk teknik defleksi asteroid dengan benturan kinetik — sengaja menabrak objek untuk mengubah lintasannya. Kini Hera bertugas memastikan seberapa efektif metode itu, supaya teknik yang tadinya eksperimen sekali jalan bisa dijadikan prosedur yang terukur dan bisa diulang, kalau suatu hari Bumi benar-benar terancam asteroid.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Algoritma AI &quot;FLIP&quot; ungkap exoplanet raksasa tersembunyi di data James Webb</h3>
+<p>Tim Northwestern pakai machine learning bikin &quot;digital twin&quot; teleskop James Webb untuk hilangkan silau bintang, dan berhasil temukan exoplanet 51 Eridani b (massa 11x Jupiter, jarak 97 tahun cahaya) yang sebelumnya tak terlihat. Teknik ini 2-15x lebih sensitif dari metode lama, dipublikasi di jurnal Nature 4 November.</p>
+<div class="src">Sumber: Live Science, livescience.com/space/scientists-removed-the-glare-from-a-james-webb-telescope-image-and-unmasked-a-hidden-world — 6 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Tim riset dari Northwestern University menciptakan metode pemrosesan gambar berbasis fisika bernama FLIP yang mampu menghapus silau cahaya bintang pada citra teleskop James Webb, dan berhasil memunculkan planet raksasa 51 Eridani b yang tersembunyi di data dua tahun lalu. Studi ini terbit di jurnal Nature pada 4 November.</div>
+<ul><li>FLIP (Physics-based Learning for Imaging Planets) membangun &#x27;digital twin&#x27; teleskop — replika virtual yang mensimulasikan perjalanan cahaya bintang melewati cermin JWST sampai ke detektor.</li><li>Metode ini menaikkan sensitivitas deteksi planet redup sekitar 2 sampai 15 kali dibanding teknik konvensional seperti KLIP, terbukti konsisten di seluruh data uji.</li><li>Dengan sensitivitas baru itu, 51 Eridani b — raksasa gas bermassa sekitar 11 kali Jupiter di jarak 97 tahun cahaya — terdeteksi pada panjang gelombang 4,3 mikron, yang sebelumnya tidak terdeteksi sama sekali.</li><li>Uji dilakukan pada data NIRCam dari tiga bintang: HIP 65426 dan 51 Eridani yang punya planet yang sudah diketahui, serta TYC 5899 yang tidak punya planet, sebagai kontrol.</li><li>Penelitiannya dipimpin mahasiswa doktoral Rodrigo Ferrer-Chavez dari grup Jason Wang di Northwestern, bekerja sama antara lain dengan Katie Bouman dari Caltech.</li></ul>
+<div class="explain">Inti masalah yang dipecahkan FLIP adalah silau: cahaya bintang induk jauh lebih terang daripada planet yang mengelilinginya, sehingga citra planet langsung hampir mustahil tanpa pemrosesan canggih. Teknik lama seperti KLIP bekerja secara statistik dan sering &#x27;memakan&#x27; sinyal planet itu sendiri. FLIP mengambil jalan berbeda: memodelkan teleskop secara fisik, mengkalibrasi jutaan parameter untuk menangkap cacat optik halus dan pergeseran posisi, lalu mengurangi silau hasil simulasi dari data asli — sehingga sinyal planet tersisa dengan lebih utuh.</div>
+<div class="bg"><b>Konteks:</b> Temuan paling mencolok datang dari data yang sudah lama ada: 51 Eridani b sebenarnya sudah ditemukan lewat observasi berbasis darat, tetapi analisis konvensional atas data JWST dua tahun silam gagal menemukannya di filter 4,3 mikron. Artinya, FLIP berpotensi menghidupkan kembali arsip observasi lama tanpa perlu mengubah satu pun perangkat keras teleskop — memperbanyak penemuan planet hanya lewat perangkat lunak.</div>
+</details>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Tencent rilis Hy4 — model AI pertama dengan kemampuan &quot;computer use&quot;</h3>
+<p>Tencent luncurkan Hy4, model bahasa multimodal pertamanya yang bisa lihat gambar dan operasikan software secara mandiri (klik, ketik, navigasi) lewat visual understanding + reasoning. Diklaim peringkat ke-2 di antara model AI China.</p>
+<div class="src">Sumber: AssayNotes, news.assaynotes.com/en/all?category=ai-models — 4 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Tencent resmi meluncurkan Hy4 pada 4 November, model bahasa multimodal pertamanya yang tidak hanya memahami gambar tetapi juga mampu mengoperasikan perangkat lunak secara mandiri — mengklik, mengetik, dan bernavigasi di antarmuka komputer. Model MoE raksasa ini diklaim masuk jajaran teratas model AI di China.</div>
+<ul><li>Hy4 adalah model mixture-of-experts dengan total 770 miliar parameter namun hanya mengaktifkan sekitar 49 miliar per token, plus jendela konteks 1 juta token.</li><li>Kemampuan computer use-nya mencakup penglihatan visual, penalaran, dan pemanggilan alat: model membaca tangkapan layar resolusi tinggi, menemukan elemen antarmuka, lalu mengeluarkan perintah baik lewat CLI maupun aplikasi desktop grafis.</li><li>Tencent melatih Hy4 langsung di dalam lingkungan perangkat lunak nyata seperti Blender, aplikasi CAD, Unreal Engine, Unity, dan Godot — menaikkan skor internal GameDev 19,1% dan GameLogic 9,8% dibanding pratinjau sebelumnya.</li><li>Model tersedia via Tencent Cloud TokenHub dan produk internal (Yuanbao, WeCom, ima, WorkBuddy, CodeBuddy) serta saluran pihak ketiga seperti OpenRouter, dengan harga sekitar $0,90 per 1 juta token input.</li><li>Peluncurannya masih berbentuk hosted: bobot model final dan system card dijanjikan menyusul beberapa hari kemudian, dan skornya 35 di Artificial Analysis Intelligence Index — masih di bawah Kimi K3.1 Pro.</li></ul>
+<div class="explain">Peluncuran Hy4 menegaskan tren besar 2026: lomba-lomba membawa model dari sekadar menjawab pertanyaan ke mengeksekusi tugas di komputer secara langsung. Dengan menggabungkan persepsi visual dan aksi dalam satu model, Tencent membidik alur kerja agen yang panjang — coding, pekerjaan dokumen, sampai pengembangan game — bukan lagi sekadar chatbot. Pilihan melatih model di software 3D dan CAD profesional juga menunjukkan strategi pembedaan: alih-alih bertanding di benchmark umum, Hy4 difokuskan ke tugas teknis yang kompleks dan bernilai komersial tinggi.</div>
+<div class="bg"><b>Konteks:</b> Kompetisi computer use kini menjadi medan perang utama antara lab AI Amerika dan China, karena kemampuan mengoperasikan antarmuka grafis adalah jembatan dari asisten penulis teks menuju agen yang benar-benar mengerjakan pekerjaan kantor. Rilisan Hy4 menandai Tencent masuk ke arena yang sebelumnya didominasi pemain seperti Anthropic dan OpenAI, sekaligus menutup celah terbesarnya: belum punya model multimodal dengan kendali komputer native.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Google rilis Gemini Omni 1.2 Flash — video AI 15 detik, harga turun 30%</h3>
+<p>Google DeepMind resmi GA-kan Gemini Omni 1.2 Flash: bisa generate video native sampai 15 detik (naik dari 10 detik), bisa diedit multi-turn via chat, dan harganya cuma $0,07/detik di resolusi 720p — turun 30% dari versi sebelumnya.</p>
+<div class="src">Sumber: AI Daily by rclabs, daily.rclabs.in — 5-6 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Google DeepMind resmi mengumumkan ketersediaan umum Gemini Omni 1.2 Flash, model video generatif yang kini mampu membuat klip hingga 15 detik secara native — naik dari 10 detik — dengan harga yang dipangkas 30 persen menjadi $0,07 per detik untuk video 720p.</div>
+<ul><li>Durasi kini bisa diatur 3 sampai 15 detik dalam kelipatan satu detik, cukup untuk iklan singkat, penjelasan produk, atau narasi lengkap dalam satu kali generasi.</li><li>Harga API turun ke $0,07 per detik untuk 720p (dari versi 1.1); skala harga lainnya: $0,02/detik untuk 360p, $0,10/detik untuk 1080p, dan $0,21/detik untuk 4K.</li><li>Alur kerja hemat biaya: draf dibuat cepat di 360p atau 720p, detail diperbaiki lewat edit lanjutan tanpa regenerasi penuh, lalu hasil terbaik di-upscale ke 1080p atau 4K.</li><li>Pembaruan lain mencakup penyuntingan multi-turn lewat percakapan, konsistensi objek dan karakter yang lebih baik antar-scene, dialog yang lebih natural, serta kepatuhan yang lebih kuat terhadap aset referensi yang diunggah.</li><li>Model tersedia lewat Gemini API, Google AI Studio, Google Cloud Console, Flow, Google Vids, aplikasi Gemini untuk pelanggan AI Ultra, hingga Google Ads.</li></ul>
+<div class="explain">Kenaikan durasi dari 10 ke 15 detik terdengar kecil, tetapi mengubah kasus penggunaan secara mendasar: iklan media sosial dan explainer produk pendek kini bisa dibuat utuh dalam satu generasi, tanpa harus menyambung klip-klip pendek yang konsistensinya sering pecah. Google juga menekankan perbaikan kualitas sinematik — transisi antar-scene yang lebih halus, berkurangnya glitch seperti jump cut, dan kestabilan objek dari awal sampai akhir video — yang selama ini jadi keluhan utama pengguna video AI.</div>
+<div class="bg"><b>Konteks:</b> Dengan pemangkasan harga 30 persen, Google terlihat sedang mempercepat adopsi massal video generatif, menekan biaya produksi konten hingga level yang terjangkau bagi kreator dan pelaku usaha kecil. Persaingan harga di segmen video AI kian memanas, dan keputusan Google menjadikan model ini tersedia dari API developer sampai aplikasi konsumen dan iklan menunjukkan strategi mengunci seluruh rantai produksi konten di ekosistemnya.</div>
+</details>
+</div>
+<div class="pn rv"><a href="2026-11-06.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">06 Nov 2026</span></a></div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var prog=document.getElementById('progress');
+ var toTop=document.getElementById('toTop');
+ function onScroll(){
+   var h=document.documentElement;
+   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+   if(prog)prog.style.width=(p*100)+'%';
+   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
+ }
+ addEventListener('scroll',onScroll,{passive:true});onScroll();
+ if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+ var els=document.querySelectorAll('.rv');
+ if(!reduce&&'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){
+     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+   els.forEach(function(el){io.observe(el)});
+ } else { els.forEach(function(el){el.classList.add('in')}) }
+ var hero=document.querySelector('.land-hero .poster-wrap img');
+ if(hero&&!reduce){
+   addEventListener('scroll',function(){
+     var r=hero.getBoundingClientRect();
+     if(r.bottom>0&&r.top<innerHeight){
+       var off=(innerHeight-r.top)*0.06;
+       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
+     }
+   },{passive:true});
+ }
+ var counts=document.querySelectorAll('[data-count]');
+ if(!reduce&&'IntersectionObserver' in window&&counts.length){
+   var cio=new IntersectionObserver(function(es){
+     es.forEach(function(e){
+       if(!e.isIntersecting)return;cio.unobserve(e.target);
+       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
+       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
+         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
+         if(k<1)requestAnimationFrame(step);}
+       requestAnimationFrame(step);
+     });
+   },{threshold:.4});
+   counts.forEach(function(el){cio.observe(el)});
+ }
+})();
+</script>
