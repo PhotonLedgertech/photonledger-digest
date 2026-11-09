@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digest 09 Nov 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 09 Nov 2026: 4 berita dari sumber global, dengan pembahasan mendalam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_space_clps.jpg" alt="Poster 09 Nov 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>09 NOV 2026</div>
+<h1>Dua wahana NASA Escapade terbang dekat Bumi menuju Mars</h1>
+<div class="lsub">Edisi 09 Nov 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="4">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="3">0</b><span>Topik</span></div>
+ <div class="stat"><b>✔</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Digest Harian — Space &amp; Ai ( Nov )</span><span class="rule"></span></div>
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Dua wahana NASA Escapade terbang dekat Bumi menuju Mars</h3>
+<p>Dua pesawat kembar NASA &quot;Escapade&quot; melakukan manuver flyby Bumi berbahan bakar mesin pada 7 &amp; 9 November — yang kedua pukul 6 pagi EST hari ini — melintas 965-1.770 km di atas permukaan Bumi sambil membakar mesin ±9 menit untuk menambah kecepatan &gt;1.600 km/jam. Wahana akan tiba di Mars September 2027, jadi misi multi-wahana pertama yang mengorbit formasi di Mars. Fenomena ini kemungkinan terlihat dari Australia selatan saat pembakaran mesin.</p>
+<div class="src">Sumber: Colombia One — colombiaone.com/2026/11/08/nasa-aircraft-earth-mars, 8 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Dua wahana kembar misi ESCAPADE milik NASA melewati Bumi pada awal pekan ini untuk memanfaatkan gravitasi planet sebagai katapel menuju Mars. Manuver tersebut menjadi tahap krusial dalam perjalanan yang akan berakhir dengan kedatangan mereka di Mars pada September 2027.</div>
+<ul><li>Flyby Bumi dilakukan dua kali: wahana pertama pada 7 November dan wahana kedua pada 9 November 2026, dengan jarak terdekat berkisar 965 sampai 1.770 km dari permukaan Bumi.</li><li>Saat melewati titik terdekat, masing-masing wahana menyalakan mesinnya sekitar sembilan menit, menambah kecepatan kira-kira 1.600 km per jam untuk mengarahkan lintasan ke Mars.</li><li>Setelah manuver, kedua wahana menjalani pelayaran sekitar sepuluh bulan sebelum tiba di Mars pada September 2027.</li><li>Di orbit Mars, ESCAPADE akan menjadi misi multi-wahana pertama yang terbang dalam formasi mengelilingi planet tersebut.</li><li>Sasaran ilmiahnya adalah mengkaji interaksi angin matahari dengan lingkungan Mars, termasuk perannya dalam hilangnya atmosfer planet itu.</li></ul>
+<div class="explain">Manuver flyby bertenaga ini penting karena belum pernah dilakukan wahana yang menuju Mars: kombinasi gravitasi Bumi dan pembakaran mesin singkat memberi dorongan tambahan tanpa perlu muatan bahan bakar yang jauh lebih besar. Menariknya, kedua wahana tidak langsung berangkat ke Mars, melainkan mengambil rute memutar di sekitar titik Lagrange Bumi-Matahari selama kurang lebih setahun untuk menunggu kedua planet berada pada posisi yang menguntungkan. Di Mars nanti, terbang berformasi dengan dua wahana memungkinkan pengukuran simultan dari dua titik berbeda, sesuatu yang tidak bisa dilakukan satu wahana saja. Data itu krusial untuk memahami bagaimana angin matahari mengikis atmosfer Mars, sebuah proses yang diyakini mengubah planet itu dari tempat yang tadinya lebih hangat dan basah menjadi gurun dingin seperti sekarang.</div>
+<div class="bg"><b>Konteks:</b> ESCAPADE, singkatan dari Escape and Plasma Acceleration and Dynamics Explorers, terdiri atas dua pengorbit kembar berukuran kira-kira sebesar lemari es. Keduanya sempat mengorbit di wilayah dekat Bumi dengan lintasan menyerupai bentuk biji kacang sebelum jendela peluncuran ke Mars terbuka kembali. Flyby 7 dan 9 November 2026 ini menandai akhir fase menunggu sekaligus awal fase pelayaran antarplanet; pengamat di Bumi bahkan sempat mencoba menangkap kedua wahana itu sebagai titik redup yang bergerak di antara bintang saat melewati langit selatan Australia.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>NASA pilih 8 perusahaan untuk program pengiriman bulan baru + rover nuklir</h3>
+<p>NASA mengumumkan Blue Origin, SpaceX, Lockheed Martin, Northrop Grumman, dan 4 lainnya terpilih untuk kerangka kerja &quot;CLPS 2&quot; mengangkut kargo ke Bulan. NASA juga lanjutkan rover bertenaga nuklir &quot;PROMISE&quot; enam roda ke Kutub Selatan Bulan untuk cari sumber daya.</p>
+<div class="src">Sumber: Qazinform — qazinform.com/news/nasa-taps-eight-companies-for-new-moon-delivery-program-43cbb6, 9 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">NASA menunjuk delapan perusahaan, di antaranya Blue Origin, SpaceX, Lockheed Martin, dan Northrop Grumman, sebagai penerima kerangka kerja pengiriman kargo bulan generasi baru CLPS 2. Bersamaan dengan itu, agensi melanjutkan pengembangan rover bertenaga nuklir PROMISE yang ditujukan ke Kutub Selatan Bulan.</div>
+<ul><li>Delapan perusahaan yang masuk CLPS 2 adalah Blue Origin, Firefly Aerospace, Intuitive Machines, ispace-U.S., Lockheed Martin Space, Northrop Grumman Space Systems, SpaceX, dan Voyager Technologies.</li><li>Kerangka CLPS 2 mengatur layanan pengiriman ke permukaan Bulan, mencakup pembangunan dan pengoperasian pendarat yang membawa payload ilmiah, teknologi, serta infrastruktur milik NASA.</li><li>Rover PROMISE (Polar Rover for Observation, Mapping, and In-Situ Exploration) beroda enam dan akan mendarat di Kutub Selatan Bulan untuk memetakan permukaan dan bawah permukaan serta menilai potensi sumber daya.</li><li>Tenaga nuklir membuat rover mampu bertahan melewati malam bulan yang sangat panjang dan bekerja di kawasan kawah yang selalu terlindung dari sinar matahari.</li><li>Data dari PROMISE nantinya dipakai untuk memilih lokasi pendarat dan merencanakan infrastruktur eksplorasi berikutnya.</li></ul>
+<div class="explain">Keputusan ini menegaskan strategi NASA mengandalkan penyedia komersial untuk logistik ke Bulan, alih-alih membangun sendiri semua kendaraan pengangkutnya. Dengan melibatkan delapan perusahaan sekaligus dalam satu kontrak induk, NASA menciptakan persaingan yang diharapkan menekan biaya dan mempercepat ritme misi. Pengumuman rover nuklir PROMISE sama pentingnya: salah satu hambatan terbesar eksplorasi Bulan adalah malam yang berlangsung sekitar dua minggu Bumi dengan suhu ekstrem, dan sumber tenaga nuklir menjadi salah satu solusi utama untuk bekerja terus-menerus di sana. Kawasan Kutub Selatan sendiri menjadi sasaran karena kawah-kawahnya menyimpan es air yang berpotensi diolah menjadi sumber daya bagi kehadiran manusia jangka panjang.</div>
+<div class="bg"><b>Konteks:</b> CLPS atau Commercial Lunar Payload Services adalah skema NASA sejak lama untuk menyewa jasa pendaratan komersial bagi payload ilmiahnya, dan kontrak generasi pertamanya masih berlaku hingga akhir dekade ini. Untuk PROMISE, NASA menargetkan peluncuran pada akhir 2028 dengan rencana misi selama 18 bulan, dan tugas pengirimannya dipercayakan kepada Blue Origin menggunakan pendarat Mark 1. Pembangunan rover ini melibatkan Jet Propulsion Laboratory, yang memanfaatkan komponen cadangan dan model uji dari program rover Mars Curiosity serta Perseverance sehingga biaya pengembangannya dapat ditekan.</div>
+</details>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>OpenAI rilis GPT-6 Astra, model paling berisiko siber mereka</h3>
+<p>OpenAI mulai rollout GPT-6 Astra yang mencapai skor 100% di ExploitBench dan 99,9% di ARC-AGI-3 — model pertama yang masuk level &quot;Critical&quot; ancaman siber di Preparedness Framework mereka. Sedang dibatasi ke organisasi tertentu via program Daybreak sebelum diperluas ke ChatGPT dalam beberapa hari.</p>
+<div class="src">Sumber: Ground News — ground.news/article/openai-begins-rolling-out-astra-model-after-warning-of-its-advanced-cyber-capabilities_4aee21, 9 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">OpenAI resmi merilis GPT-6 Astra, model frontier yang perusahaan itu sebut sebagai yang paling mampu sekaligus paling berisiko di bidang keamanan siber. Kemampuan lanjutannya dibatasi dan diluncurkan bertahap melalui program Daybreak sebelum tersedia di ChatGPT.</div>
+<ul><li>Astra mencetak skor sempurna 100% pada benchmark ExploitBench, jauh di atas capaian model pendahulunya, serta 99,9% pada ARC-AGI-3.</li><li>Penilaian internal OpenAI menempatkan Astra pada level &#x27;Critical&#x27; untuk kategori keamanan siber dalam Preparedness Framework, ambang tertinggi kerangka risiko perusahaan.</li><li>Level Critical berarti model, dengan alat dan akses yang memadai, mampu menemukan celah keamanan yang belum diketahui dan menyusun cara mengeksploitasinya tanpa arahan manusia per langkah.</li><li>Karena itu, kemampuan siber tingkat lanjut dirilis secara bertahap lewat program Daybreak, yang pada tahap awal mengutamakan penggunaan defensif seperti analisis kerentanan.</li><li>Di ChatGPT, model menolak tugas siber yang lebih berbahaya, misalnya membuat proof-of-concept eksploit.</li></ul>
+<div class="explain">Rilis Astra menjadi contoh nyata dilema kemampuan ganda kecerdasan buatan. Di tangan pembela, model yang mampu menemukan kerentanan tanpa bantuan bisa mempercepat penambalan sistem; di tangan pihak jahat, kemampuan yang sama bisa dipakai untuk menyusup ke sistem yang terlindungi baik. Karena itulah keputusan OpenAI untuk menahan kemampuan siber tertinggi dan menyalurkannya lewat program Daybreak dipandang sebagai ujian bagi praktik gated release berbasis ambang risiko, bukan sekadar retorika keselamatan. Lompatan skornya juga patut dicermati: dari sekitar tiga perempat pada model sebelumnya menjadi skor penuh di ExploitBench, menandakan kemajuan kapabilitas yang bergerak lebih cepat daripada kebiasaan merilis produk.</div>
+<div class="bg"><b>Konteks:</b> Preparedness Framework adalah kerangka yang digunakan OpenAI untuk melacak kemampuan frontier yang berpotensi menimbulkan bahaya serius, dengan kategori yang mencakup keamanan siber, biologi, dan kimia. ExploitBench sendiri menguji apakah sebuah model dapat mengubah kerentanan perangkat lunak yang sudah diketahui menjadi eksploit yang benar-benar berfungsi, sementara ARC-AGI-3 menilai kemampuan penalaran abstrak. Dalam evaluasi yang dipimpin pakar, Astra bahkan ditemukan mampu merangkai rantai eksploit pada peramban dan sistem operasi yang sudah diperkuat keamanannya, temuan yang menjadi dasar penilaian level Critical tersebut.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Nous Research open-source Arete-27B, turunkan rate propaganda drastis</h3>
+<p>Nous Research merilis model terbuka Arete-27B yang memangkas rate propaganda Qwen3.8 dari 22% jadi di bawah 1%.</p>
+<div class="src">Sumber: Jiufeng Blog — blog.jiufeng.ai/releases, 8 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Nous Research merilis Arete-27B, model terbuka hasil pelatihan ulang atas Qwen3.8 yang memangkas kadar jawaban berbau propaganda dari 22% menjadi kurang dari 1%. Bobot model, data latih, hingga dataset evaluasinya dibagikan secara terbuka kepada publik.</div>
+<ul><li>Arete-27B dibangun di atas Qwen3.8-27B melalui post-training lanjutan, bukan pelatihan model dari nol.</li><li>Dalam evaluasi terhadap ratusan prompt, porsi jawaban yang mengadopsi narasi propaganda turun dari 22% pada model dasar menjadi di bawah 1%.</li><li>Skor akurasi fakta model juga naik, dari 2,32 menjadi sekitar 2,98 pada skala 5.</li><li>Perbaikan terbesar terjadi pada kategori kebebasan berekspresi, yang tingkat propagandanya turun dari 60% menjadi sekitar 1%.</li><li>Model dirilis sebagai open-source bersama data latih dan dataset pengujian, sehingga hasilnya dapat diaudit ulang pihak lain.</li></ul>
+<div class="explain">Temuan utama di balik Arete-27B sederhana namun penting: bias propaganda pada model yang dilatih di lingkungan tertentu ternyata bukan bagian mendasar dari modelnya, melainkan lapisan tipis yang bisa dilepas melalui fine-tuning terarah tanpa mengorbankan kemampuan umum. Hal ini relevan karena jutaan pengguna di berbagai negara memakai model yang secara bawaan bisa menyajikan versi resmi sebuah kejadian alih-alih faktanya. Dengan merilis model, data latih, dan metode evaluasinya secara terbuka, Nous Research juga memberi contoh cara menguji netralitas kebijaksanaan model secara terukur, dengan juri yang buta terhadap identitas model dan wajib mengutip frasa persis yang dinilai bermasalah. Hasil semacam ini bisa menjadi acuan bagi upaya serupa di konteks dan bahasa lain.</div>
+<div class="bg"><b>Konteks:</b> Nous Research dikenal sebagai studio riset yang berfokus pada model terbuka dan pengujian kebijakan model secara empiris. Untuk proyek ini, mereka melatih ulang Qwen3.8-27B buatan Alibaba menggunakan korpus pelatihan berukuran puluhan juta token, lalu mengukur hasilnya dengan rubrik yang menghitung sebuah jawaban sebagai propaganda jika ia mengganti fakta dengan versi resmi negara atau mengesahkan versi tersebut. Pembandingnya pun jelas: model-model Barat yang mereka uji umumnya berada di bawah satu persen, sehingga Arete-27B diposisikan menyamai standar itu sambil mempertahankan keunggulan efisiensi model dasarnya.</div>
+</details>
+</div>
+<div class="pn rv"><a href="2026-11-08.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">08 Nov 2026</span></a></div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var prog=document.getElementById('progress');
+ var toTop=document.getElementById('toTop');
+ function onScroll(){
+   var h=document.documentElement;
+   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+   if(prog)prog.style.width=(p*100)+'%';
+   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
+ }
+ addEventListener('scroll',onScroll,{passive:true});onScroll();
+ if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+ var els=document.querySelectorAll('.rv');
+ if(!reduce&&'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){
+     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+   els.forEach(function(el){io.observe(el)});
+ } else { els.forEach(function(el){el.classList.add('in')}) }
+ var hero=document.querySelector('.land-hero .poster-wrap img');
+ if(hero&&!reduce){
+   addEventListener('scroll',function(){
+     var r=hero.getBoundingClientRect();
+     if(r.bottom>0&&r.top<innerHeight){
+       var off=(innerHeight-r.top)*0.06;
+       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
+     }
+   },{passive:true});
+ }
+ var counts=document.querySelectorAll('[data-count]');
+ if(!reduce&&'IntersectionObserver' in window&&counts.length){
+   var cio=new IntersectionObserver(function(es){
+     es.forEach(function(e){
+       if(!e.isIntersecting)return;cio.unobserve(e.target);
+       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
+       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
+         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
+         if(k<1)requestAnimationFrame(step);}
+       requestAnimationFrame(step);
+     });
+   },{threshold:.4});
+   counts.forEach(function(el){cio.observe(el)});
+ }
+})();
+</script>

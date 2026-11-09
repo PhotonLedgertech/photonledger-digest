@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-09",
+  "items": [
+    {
+      "match_title": "Dua wahana NASA Escapade terbang dekat Bumi menuju Mars",
+      "lead": "Dua wahana kembar misi ESCAPADE milik NASA melewati Bumi pada awal pekan ini untuk memanfaatkan gravitasi planet sebagai katapel menuju Mars. Manuver tersebut menjadi tahap krusial dalam perjalanan yang akan berakhir dengan kedatangan mereka di Mars pada September 2027.",
+      "points": [
+        "Flyby Bumi dilakukan dua kali: wahana pertama pada 7 November dan wahana kedua pada 9 November 2026, dengan jarak terdekat berkisar 965 sampai 1.770 km dari permukaan Bumi.",
+        "Saat melewati titik terdekat, masing-masing wahana menyalakan mesinnya sekitar sembilan menit, menambah kecepatan kira-kira 1.600 km per jam untuk mengarahkan lintasan ke Mars.",
+        "Setelah manuver, kedua wahana menjalani pelayaran sekitar sepuluh bulan sebelum tiba di Mars pada September 2027.",
+        "Di orbit Mars, ESCAPADE akan menjadi misi multi-wahana pertama yang terbang dalam formasi mengelilingi planet tersebut.",
+        "Sasaran ilmiahnya adalah mengkaji interaksi angin matahari dengan lingkungan Mars, termasuk perannya dalam hilangnya atmosfer planet itu."
+      ],
+      "explain": "Manuver flyby bertenaga ini penting karena belum pernah dilakukan wahana yang menuju Mars: kombinasi gravitasi Bumi dan pembakaran mesin singkat memberi dorongan tambahan tanpa perlu muatan bahan bakar yang jauh lebih besar. Menariknya, kedua wahana tidak langsung berangkat ke Mars, melainkan mengambil rute memutar di sekitar titik Lagrange Bumi-Matahari selama kurang lebih setahun untuk menunggu kedua planet berada pada posisi yang menguntungkan. Di Mars nanti, terbang berformasi dengan dua wahana memungkinkan pengukuran simultan dari dua titik berbeda, sesuatu yang tidak bisa dilakukan satu wahana saja. Data itu krusial untuk memahami bagaimana angin matahari mengikis atmosfer Mars, sebuah proses yang diyakini mengubah planet itu dari tempat yang tadinya lebih hangat dan basah menjadi gurun dingin seperti sekarang.",
+      "background": "ESCAPADE, singkatan dari Escape and Plasma Acceleration and Dynamics Explorers, terdiri atas dua pengorbit kembar berukuran kira-kira sebesar lemari es. Keduanya sempat mengorbit di wilayah dekat Bumi dengan lintasan menyerupai bentuk biji kacang sebelum jendela peluncuran ke Mars terbuka kembali. Flyby 7 dan 9 November 2026 ini menandai akhir fase menunggu sekaligus awal fase pelayaran antarplanet; pengamat di Bumi bahkan sempat mencoba menangkap kedua wahana itu sebagai titik redup yang bergerak di antara bintang saat melewati langit selatan Australia."
+    },
+    {
+      "match_title": "NASA pilih 8 perusahaan untuk program pengiriman bulan baru + rover nuklir",
+      "lead": "NASA menunjuk delapan perusahaan, di antaranya Blue Origin, SpaceX, Lockheed Martin, dan Northrop Grumman, sebagai penerima kerangka kerja pengiriman kargo bulan generasi baru CLPS 2. Bersamaan dengan itu, agensi melanjutkan pengembangan rover bertenaga nuklir PROMISE yang ditujukan ke Kutub Selatan Bulan.",
+      "points": [
+        "Delapan perusahaan yang masuk CLPS 2 adalah Blue Origin, Firefly Aerospace, Intuitive Machines, ispace-U.S., Lockheed Martin Space, Northrop Grumman Space Systems, SpaceX, dan Voyager Technologies.",
+        "Kerangka CLPS 2 mengatur layanan pengiriman ke permukaan Bulan, mencakup pembangunan dan pengoperasian pendarat yang membawa payload ilmiah, teknologi, serta infrastruktur milik NASA.",
+        "Rover PROMISE (Polar Rover for Observation, Mapping, and In-Situ Exploration) beroda enam dan akan mendarat di Kutub Selatan Bulan untuk memetakan permukaan dan bawah permukaan serta menilai potensi sumber daya.",
+        "Tenaga nuklir membuat rover mampu bertahan melewati malam bulan yang sangat panjang dan bekerja di kawasan kawah yang selalu terlindung dari sinar matahari.",
+        "Data dari PROMISE nantinya dipakai untuk memilih lokasi pendarat dan merencanakan infrastruktur eksplorasi berikutnya."
+      ],
+      "explain": "Keputusan ini menegaskan strategi NASA mengandalkan penyedia komersial untuk logistik ke Bulan, alih-alih membangun sendiri semua kendaraan pengangkutnya. Dengan melibatkan delapan perusahaan sekaligus dalam satu kontrak induk, NASA menciptakan persaingan yang diharapkan menekan biaya dan mempercepat ritme misi. Pengumuman rover nuklir PROMISE sama pentingnya: salah satu hambatan terbesar eksplorasi Bulan adalah malam yang berlangsung sekitar dua minggu Bumi dengan suhu ekstrem, dan sumber tenaga nuklir menjadi salah satu solusi utama untuk bekerja terus-menerus di sana. Kawasan Kutub Selatan sendiri menjadi sasaran karena kawah-kawahnya menyimpan es air yang berpotensi diolah menjadi sumber daya bagi kehadiran manusia jangka panjang.",
+      "background": "CLPS atau Commercial Lunar Payload Services adalah skema NASA sejak lama untuk menyewa jasa pendaratan komersial bagi payload ilmiahnya, dan kontrak generasi pertamanya masih berlaku hingga akhir dekade ini. Untuk PROMISE, NASA menargetkan peluncuran pada akhir 2028 dengan rencana misi selama 18 bulan, dan tugas pengirimannya dipercayakan kepada Blue Origin menggunakan pendarat Mark 1. Pembangunan rover ini melibatkan Jet Propulsion Laboratory, yang memanfaatkan komponen cadangan dan model uji dari program rover Mars Curiosity serta Perseverance sehingga biaya pengembangannya dapat ditekan."
+    },
+    {
+      "match_title": "OpenAI rilis GPT-6 Astra, model paling berisiko siber mereka",
+      "lead": "OpenAI resmi merilis GPT-6 Astra, model frontier yang perusahaan itu sebut sebagai yang paling mampu sekaligus paling berisiko di bidang keamanan siber. Kemampuan lanjutannya dibatasi dan diluncurkan bertahap melalui program Daybreak sebelum tersedia di ChatGPT.",
+      "points": [
+        "Astra mencetak skor sempurna 100% pada benchmark ExploitBench, jauh di atas capaian model pendahulunya, serta 99,9% pada ARC-AGI-3.",
+        "Penilaian internal OpenAI menempatkan Astra pada level 'Critical' untuk kategori keamanan siber dalam Preparedness Framework, ambang tertinggi kerangka risiko perusahaan.",
+        "Level Critical berarti model, dengan alat dan akses yang memadai, mampu menemukan celah keamanan yang belum diketahui dan menyusun cara mengeksploitasinya tanpa arahan manusia per langkah.",
+        "Karena itu, kemampuan siber tingkat lanjut dirilis secara bertahap lewat program Daybreak, yang pada tahap awal mengutamakan penggunaan defensif seperti analisis kerentanan.",
+        "Di ChatGPT, model menolak tugas siber yang lebih berbahaya, misalnya membuat proof-of-concept eksploit."
+      ],
+      "explain": "Rilis Astra menjadi contoh nyata dilema kemampuan ganda kecerdasan buatan. Di tangan pembela, model yang mampu menemukan kerentanan tanpa bantuan bisa mempercepat penambalan sistem; di tangan pihak jahat, kemampuan yang sama bisa dipakai untuk menyusup ke sistem yang terlindungi baik. Karena itulah keputusan OpenAI untuk menahan kemampuan siber tertinggi dan menyalurkannya lewat program Daybreak dipandang sebagai ujian bagi praktik gated release berbasis ambang risiko, bukan sekadar retorika keselamatan. Lompatan skornya juga patut dicermati: dari sekitar tiga perempat pada model sebelumnya menjadi skor penuh di ExploitBench, menandakan kemajuan kapabilitas yang bergerak lebih cepat daripada kebiasaan merilis produk."
+      ,
+      "background": "Preparedness Framework adalah kerangka yang digunakan OpenAI untuk melacak kemampuan frontier yang berpotensi menimbulkan bahaya serius, dengan kategori yang mencakup keamanan siber, biologi, dan kimia. ExploitBench sendiri menguji apakah sebuah model dapat mengubah kerentanan perangkat lunak yang sudah diketahui menjadi eksploit yang benar-benar berfungsi, sementara ARC-AGI-3 menilai kemampuan penalaran abstrak. Dalam evaluasi yang dipimpin pakar, Astra bahkan ditemukan mampu merangkai rantai eksploit pada peramban dan sistem operasi yang sudah diperkuat keamanannya, temuan yang menjadi dasar penilaian level Critical tersebut."
+    },
+    {
+      "match_title": "Nous Research open-source Arete-27B, turunkan rate propaganda drastis",
+      "lead": "Nous Research merilis Arete-27B, model terbuka hasil pelatihan ulang atas Qwen3.8 yang memangkas kadar jawaban berbau propaganda dari 22% menjadi kurang dari 1%. Bobot model, data latih, hingga dataset evaluasinya dibagikan secara terbuka kepada publik.",
+      "points": [
+        "Arete-27B dibangun di atas Qwen3.8-27B melalui post-training lanjutan, bukan pelatihan model dari nol.",
+        "Dalam evaluasi terhadap ratusan prompt, porsi jawaban yang mengadopsi narasi propaganda turun dari 22% pada model dasar menjadi di bawah 1%.",
+        "Skor akurasi fakta model juga naik, dari 2,32 menjadi sekitar 2,98 pada skala 5.",
+        "Perbaikan terbesar terjadi pada kategori kebebasan berekspresi, yang tingkat propagandanya turun dari 60% menjadi sekitar 1%.",
+        "Model dirilis sebagai open-source bersama data latih dan dataset pengujian, sehingga hasilnya dapat diaudit ulang pihak lain."
+      ],
+      "explain": "Temuan utama di balik Arete-27B sederhana namun penting: bias propaganda pada model yang dilatih di lingkungan tertentu ternyata bukan bagian mendasar dari modelnya, melainkan lapisan tipis yang bisa dilepas melalui fine-tuning terarah tanpa mengorbankan kemampuan umum. Hal ini relevan karena jutaan pengguna di berbagai negara memakai model yang secara bawaan bisa menyajikan versi resmi sebuah kejadian alih-alih faktanya. Dengan merilis model, data latih, dan metode evaluasinya secara terbuka, Nous Research juga memberi contoh cara menguji netralitas kebijaksanaan model secara terukur, dengan juri yang buta terhadap identitas model dan wajib mengutip frasa persis yang dinilai bermasalah. Hasil semacam ini bisa menjadi acuan bagi upaya serupa di konteks dan bahasa lain.",
+      "background": "Nous Research dikenal sebagai studio riset yang berfokus pada model terbuka dan pengujian kebijakan model secara empiris. Untuk proyek ini, mereka melatih ulang Qwen3.8-27B buatan Alibaba menggunakan korpus pelatihan berukuran puluhan juta token, lalu mengukur hasilnya dengan rubrik yang menghitung sebuah jawaban sebagai propaganda jika ia mengganti fakta dengan versi resmi negara atau mengesahkan versi tersebut. Pembandingnya pun jelas: model-model Barat yang mereka uji umumnya berada di bawah satu persen, sehingga Arete-27B diposisikan menyamai standar itu sambil mempertahankan keunggulan efisiensi model dasarnya."
+    }
+  ]
+}
