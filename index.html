@@ -3,240 +3,423 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PhotonLedger — Digest harian AI &amp; Space</title>
-<meta name="description" content="Digest harian berita AI dan space exploration. Edisi terbaru setiap hari oleh PhotonLedger.">
+<title>PhotonLedger — Intelijen yang berevolusi bersamamu</title>
+<meta name="description" content="Digest harian berita AI dan space exploration oleh PhotonLedger. Intelijen yang berevolusi bersamamu.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0a0b; --ink:#ffffff; --dim:#a1a1aa; --faint:#71717a;
-  --lime:#d2ff3a; --lime2:#e4ff54; --lime-dim:rgba(210,255,58,.55);
-  --glass:rgba(255,255,255,.04); --glass2:rgba(255,255,255,.06);
-  --line:rgba(255,255,255,.1); --line2:rgba(255,255,255,.16);
-  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+  --bg:#05070f; --ink:#fff; --dim:#8a94a6; --faint:#5a6478;
+  --blue:#5aa7ff; --cyan:#7fd0ff; --red:#ff4655; --magenta:#ff2e63;
+  --line:rgba(140,170,255,.08); --line2:rgba(140,170,255,.16);
+  --glass:rgba(120,150,255,.05); --glass2:rgba(120,150,255,.09);
+  --mono:'JetBrains Mono',ui-monospace,monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;
   -webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
-::selection{background:rgba(210,255,58,.25);color:#fff}
+::selection{background:rgba(90,167,255,.3)}
 ::-webkit-scrollbar{width:9px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:#232326;border-radius:8px}
+::-webkit-scrollbar-thumb{background:#1a2236;border-radius:8px}
 a{color:inherit;text-decoration:none}
 
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+/* blueprint grid */
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-   radial-gradient(900px 480px at 78% 30%, rgba(160,200,40,.10), transparent 60%),
-   radial-gradient(600px 380px at 70% 45%, rgba(210,255,58,.07), transparent 55%),
-   radial-gradient(700px 420px at 12% -8%, rgba(74,90,24,.14), transparent 60%)}
-.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:0 22px}
+   linear-gradient(rgba(120,160,255,.045) 1px,transparent 1px),
+   linear-gradient(90deg,rgba(120,160,255,.045) 1px,transparent 1px);
+  background-size:88px 88px}
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(1100px 620px at 62% 42%,rgba(90,140,255,.07),transparent 62%),
+   radial-gradient(700px 460px at 76% 62%,rgba(255,70,85,.05),transparent 58%)}
+.cross{position:fixed;z-index:1;color:rgba(140,170,255,.28);font-family:var(--mono);
+  font-size:13px;pointer-events:none;user-select:none}
 
-nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);
-  background:rgba(10,10,11,.78);border-bottom:1px solid var(--line)}
-nav .in{max-width:1120px;margin:0 auto;display:flex;align-items:center;
-  justify-content:space-between;padding:14px 22px;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.2px}
-.mark{width:26px;height:26px;border-radius:7px;background:var(--lime);display:grid;
-  place-items:center;color:#0a0a0b;font-weight:800;font-size:14px;
-  box-shadow:0 0 18px rgba(210,255,58,.45)}
-.navlinks{display:flex;gap:26px;font-size:13.5px;color:var(--dim)}
-.navlinks a{transition:color .2s}
+.wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* nav — mono caps */
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);
+  background:rgba(5,7,15,.72);border-bottom:1px solid var(--line)}
+nav .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;
+  justify-content:space-between;padding:16px 24px;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);
+  font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#fff}
+.brand .sq{width:10px;height:10px;background:var(--blue);
+  box-shadow:0 0 12px var(--blue);border-radius:2px}
+.navlinks{display:flex;gap:30px;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:2.4px;text-transform:uppercase;color:var(--dim)}
+.navlinks a{transition:color .2s;padding:4px 0}
 .navlinks a:hover{color:#fff}
-.navcta{font-size:13px;font-weight:700;color:#0a0a0b;background:var(--lime);
-  padding:9px 18px;border-radius:999px;transition:transform .15s,box-shadow .2s}
-.navcta:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(210,255,58,.35)}
-@media(max-width:720px){.navlinks{display:none}}
+.navlinks a.hot{color:var(--cyan)}
+@media(max-width:760px){.navlinks{display:none}}
 
-.hero{position:relative;padding:88px 0 72px;overflow:hidden}
-.trails{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.85}
-.hero .in{position:relative;z-index:1;display:grid;
-  grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-@media(max-width:900px){.hero .in{grid-template-columns:1fr;gap:36px}}
-.pill{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--dim);
-  border:1px solid var(--line2);border-radius:999px;padding:7px 14px;background:rgba(255,255,255,.03)}
-.pill .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);
-  box-shadow:0 0 10px var(--lime-dim)}
-h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04;letter-spacing:-2.2px;
-  font-weight:800;margin:22px 0 20px}
-h1 .serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;
-  font-weight:400;letter-spacing:-1px;color:var(--lime2)}
-.sub{color:var(--dim);font-size:16.5px;max-width:440px;margin-bottom:28px}
-.ctas{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.btn1{font-size:14px;font-weight:700;color:#0a0a0b;background:var(--lime);
-  padding:13px 26px;border-radius:999px;box-shadow:0 0 26px rgba(210,255,58,.25);
-  transition:transform .15s,box-shadow .2s}
-.btn1:hover{transform:translateY(-2px);box-shadow:0 10px 34px rgba(210,255,58,.4)}
-.btn2{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;
-  color:#fff;background:var(--glass2);border:1px solid var(--line2);
-  padding:13px 22px;border-radius:999px;backdrop-filter:blur(10px);transition:border-color .2s}
-.btn2:hover{border-color:rgba(255,255,255,.3)}
-.play{width:18px;height:18px;border-radius:50%;background:var(--lime);display:grid;place-items:center;flex:none}
-.play::after{content:'';border-style:solid;border-width:4px 0 4px 7px;
-  border-color:transparent transparent transparent #0a0a0b;margin-left:2px}
-.micro{margin-top:16px;font-size:12.5px;color:var(--faint);letter-spacing:.2px}
-.micro b{color:var(--dim);font-weight:500}
+/* hero */
+.hero{position:relative;min-height:92vh;overflow:hidden}
+#stage{position:absolute;inset:0;z-index:1}
+.hero .in{position:relative;z-index:2;min-height:92vh;display:flex;flex-direction:column;
+  justify-content:space-between;padding:40px 0 46px;pointer-events:none}
+.hero .in a,.hero .in .stat{pointer-events:auto}
+.hl1{font-size:clamp(34px,4.6vw,58px);line-height:1.06;letter-spacing:-1.6px;
+  font-weight:800;max-width:560px}
+.hl1 .l{display:inline-block;opacity:0;transform:translateY(28px) rotate(4deg);
+  filter:blur(6px)}
+.hl1 .l.on{opacity:1;transform:none;filter:none;
+  transition:opacity .5s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1),filter .5s}
+.hl1 .cy{color:var(--cyan)}
+.sub-hl{margin-top:14px;font-family:var(--mono);font-size:11px;letter-spacing:2.6px;
+  text-transform:uppercase;color:var(--faint)}
+.tagline{align-self:flex-end;text-align:right;max-width:430px}
+.tagline .t2{font-size:clamp(20px,2.4vw,30px);font-weight:700;letter-spacing:-.8px;
+  line-height:1.2;color:#dbe4ff}
+.tagline .t2 .r{color:var(--magenta)}
+.tagline .micro{margin-top:12px;font-family:var(--mono);font-size:11px;
+  letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+.tagline .micro .b{color:var(--cyan)}
+.tagline .micro .r{color:var(--red)}
+.cta-row{margin-top:20px;display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap}
+.cta{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  padding:12px 22px;border-radius:8px;border:1px solid var(--line2);
+  color:#dbe4ff;background:rgba(90,140,255,.06);transition:all .2s}
+.cta:hover{border-color:var(--blue);box-shadow:0 0 24px rgba(90,167,255,.25);color:#fff}
+.cta.solid{background:linear-gradient(120deg,rgba(90,167,255,.9),rgba(127,208,255,.75));
+  color:#04101f;font-weight:600;border:none}
+.cta.solid:hover{box-shadow:0 8px 30px rgba(90,167,255,.45)}
+@media(max-width:900px){
+  .hero .in{justify-content:flex-start;gap:40px}
+  .tagline{align-self:flex-start;text-align:left}
+  .cta-row{justify-content:flex-start}
+}
 
-.card{background:rgba(16,16,18,.72);backdrop-filter:blur(18px);
-  border:1px solid var(--line);border-radius:16px;padding:18px;
-  box-shadow:0 30px 80px rgba(0,0,0,.55), 0 0 90px rgba(160,200,40,.08)}
-.card .top{display:flex;justify-content:space-between;align-items:center;
-  font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-bottom:14px;gap:10px}
-.card .top .live{display:flex;align-items:center;gap:6px;color:var(--lime);white-space:nowrap}
-.card .top .live i{width:6px;height:6px;border-radius:50%;background:var(--lime);
-  box-shadow:0 0 8px var(--lime-dim)}
-.node{border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03);
-  padding:13px 15px;margin-bottom:10px;transition:border-color .2s,transform .2s;display:block}
-.node:hover{border-color:rgba(210,255,58,.45);transform:translateX(3px)}
-.node .tag{font-family:var(--mono);font-size:10px;letter-spacing:1px;
-  color:var(--faint);text-transform:uppercase;display:block;margin-bottom:4px}
-.node .t{font-size:14px;font-weight:600;line-height:1.4}
-.branch{display:flex;align-items:center;gap:8px;margin:2px 0 10px 14px;
-  font-family:var(--mono);font-size:10.5px;color:var(--faint)}
-.branch::before{content:'';width:14px;height:1px;background:var(--line2)}
-.log{border-top:1px solid var(--line);margin-top:14px;padding-top:12px;
-  font-family:var(--mono);font-size:10.5px;color:var(--faint);display:grid;gap:6px}
-.log span b{color:var(--dim);font-weight:500}
-.log .t{color:#3f3f46;margin-right:8px}
+/* cursor glow */
+#glow{position:fixed;width:340px;height:340px;border-radius:50%;pointer-events:none;z-index:1;
+  background:radial-gradient(circle,rgba(90,167,255,.09),transparent 62%);
+  transform:translate(-50%,-50%);left:50%;top:40%}
 
-.sec{padding:64px 0}
+/* stats + content */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:-8px 0 0}
+@media(max-width:640px){.stats{grid-template-columns:1fr 1fr 1fr;gap:8px}}
+.stat{border:1px solid var(--line);border-radius:12px;background:var(--glass);
+  padding:16px 18px;backdrop-filter:blur(8px)}
+.stat b{display:block;font-family:var(--mono);font-size:26px;font-weight:600;color:#fff;
+  font-variant-numeric:tabular-nums}
+.stat span{font-family:var(--mono);font-size:9.5px;letter-spacing:2.2px;
+  text-transform:uppercase;color:var(--faint)}
+.stat .k{color:var(--cyan)}
+.stat .r{color:var(--red)}
+
+.sec{padding:70px 0}
 .sec .head{display:flex;justify-content:space-between;align-items:baseline;
   margin-bottom:26px;gap:14px;flex-wrap:wrap}
-h2{font-size:22px;font-weight:700;letter-spacing:-.4px}
-h2 .serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:var(--lime2)}
+h2{font-size:21px;font-weight:700;letter-spacing:-.4px}
+h2 .cy{color:var(--cyan)}
+.sec .note{font-family:var(--mono);font-size:10px;letter-spacing:2.2px;
+  text-transform:uppercase;color:var(--faint)}
+
+.card{border:1px solid var(--line);border-radius:14px;background:var(--glass);
+  backdrop-filter:blur(10px);padding:18px}
+.card .top{display:flex;justify-content:space-between;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:11px;color:var(--dim);margin-bottom:14px}
+.card .top .live{display:flex;align-items:center;gap:7px;color:var(--cyan);white-space:nowrap}
+.card .top .live i{width:6px;height:6px;border-radius:50%;background:var(--blue);
+  box-shadow:0 0 9px var(--blue)}
+.node{border:1px solid var(--line);border-radius:11px;background:rgba(90,140,255,.03);
+  padding:13px 15px;display:block;margin-bottom:10px;transition:all .2s}
+.node:hover{border-color:rgba(90,167,255,.5);transform:translateX(3px)}
+.node .tag{font-family:var(--mono);font-size:9.5px;letter-spacing:1.6px;color:var(--faint);
+  text-transform:uppercase;display:block;margin-bottom:4px}
+.node .t{font-size:14px;font-weight:600;line-height:1.4}
+.node:hover .t{color:#fff}
+.branch{display:flex;align-items:center;gap:8px;margin:2px 0 10px 14px;
+  font-family:var(--mono);font-size:10px;color:var(--faint)}
+.branch::before{content:'';width:14px;height:1px;background:var(--line2)}
+
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.grid{grid-template-columns:1fr}}
-.ed{border:1px solid var(--line);border-radius:14px;background:var(--glass);
-  padding:16px 17px;display:block;transition:border-color .2s,background .2s,transform .2s}
-.ed:hover{border-color:rgba(210,255,58,.4);background:var(--glass2);transform:translateY(-2px)}
-.ed .d{font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:1px;
+.ed{border:1px solid var(--line);border-radius:12px;background:var(--glass);
+  padding:15px 16px;display:block;transition:all .2s}
+.ed:hover{border-color:rgba(90,167,255,.45);background:var(--glass2);transform:translateY(-2px)}
+.ed .d{font-family:var(--mono);font-size:10px;color:var(--faint);letter-spacing:1.6px;
   text-transform:uppercase;display:flex;justify-content:space-between;margin-bottom:8px}
-.ed .d .arr{color:var(--lime)}
-.ed .t{font-size:13.5px;font-weight:600;line-height:1.45;color:#e4e4e7}
+.ed .d .arr{color:var(--blue)}
+.ed .t{font-size:13.5px;font-weight:600;line-height:1.45;color:#dfe6f5}
 
 footer{border-top:1px solid var(--line)}
-footer .in{max-width:1120px;margin:0 auto;padding:34px 22px 44px;color:var(--faint);
-  font-size:12.5px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-footer .fbrand{display:flex;align-items:center;gap:9px;color:var(--dim);font-weight:600}
-footer .fbrand .mark{width:20px;height:20px;font-size:10px;border-radius:5px;box-shadow:none}
-footer a{color:var(--dim)}
+footer .in{max-width:1180px;margin:0 auto;padding:32px 24px 42px;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;
+  color:var(--faint)}
 footer a:hover{color:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .hl1 .l{opacity:1;transform:none;filter:none;transition:none}
+}
 </style>
 </head>
 <body>
 
+<span class="cross" style="left:6vw;top:24vh">+</span>
+<span class="cross" style="left:88vw;top:18vh">+</span>
+<span class="cross" style="left:12vw;top:72vh">+</span>
+<span class="cross" style="left:82vw;top:78vh">+</span>
+<span class="cross" style="left:46vw;top:10vh">+</span>
+
 <nav><div class="in">
-  <a class="brand" href="#"><span class="mark">◈</span>PhotonLedger</a>
+  <a class="brand" href="#"><span class="sq"></span>PhotonLedger</a>
   <div class="navlinks">
-    <a href="#hari-ini">Edisi hari ini</a>
+    <a class="hot" href="#hari-ini">Edisi hari ini</a>
     <a href="#arsip">Arsip</a>
+    <a href="#arsip">Poster</a>
     <a href="https://instagram.com/photonledgertech36" target="_blank">Instagram</a>
   </div>
-  <a class="navcta" href="2026-11-11.html">Baca hari ini</a>
 </div></nav>
 
-<header class="hero"><div class="wrap in">
-  <div>
-    <span class="pill"><span class="dot"></span>digest harian / AI &amp; space</span>
-    <h1>Berita luar angkasa<br>dan AI, <span class="serif">setiap hari.</span></h1>
-    <p class="sub">PhotonLedger merangkum berita AI dan eksplorasi angkasa paling penting
-      jadi satu halaman ringkas — dibaca dalam 3 menit, terbit tiap hari.</p>
-    <div class="ctas">
-      <a class="btn1" href="2026-11-11.html">Baca edisi hari ini</a>
-      <a class="btn2" href="2026-11-10.html"><span class="play"></span>Edisi kemarin</a>
+<header class="hero">
+  <canvas id="stage"></canvas>
+  <div id="glow"></div>
+  <div class="wrap in">
+    <div>
+      <h1 class="hl1" id="hl1">Intelijen keuangan <span class="cy">yang berevolusi</span> bersamamu.</h1>
+      <div class="sub-hl">PhotonLedger — AI &amp; Space, setiap hari</div>
     </div>
-    <p class="micro"><b>Gratis</b> &nbsp;/&nbsp; tanpa login &nbsp;/&nbsp; <b>33 edisi</b> tayang &nbsp;/&nbsp; update ±19:00 WIB</p>
+    <div class="tagline">
+      <div class="t2">Berita AI &amp; luar angkasa paling penting, <span class="r">diringkas jadi satu halaman.</span></div>
+      <div class="micro"><span class="b">33 edisi</span> tayang &nbsp;·&nbsp; <span class="r">gratis</span> &nbsp;·&nbsp; terbit <span class="b">±19:00 WIB</span></div>
+      <div class="cta-row">
+        <a class="cta solid" href="2026-11-11.html">Baca edisi #33</a>
+        <a class="cta" href="#arsip">Jelajahi arsip</a>
+      </div>
+    </div>
   </div>
-
-  <aside class="card" id="hari-ini">
-    <div class="top">
-      <span>AI &amp; Space — 11 Nov 2026</span>
-      <span class="live"><i></i>4 berita / edisi #33</span>
-    </div>
-    <a class="node" href="2026-11-11.html">
-      <span class="tag">NASA</span>
-      <span class="t">NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</span>
-    </a>
-    <div class="branch">next ↓</div>
-    <a class="node" href="2026-11-11.html">
-      <span class="tag">Blue Origin</span>
-      <span class="t">Rover nuklir PROMISE dibangun untuk Bulan</span>
-    </a>
-    <div class="branch">next ↓</div>
-    <a class="node" href="2026-11-11.html">
-      <span class="tag">Anthropic</span>
-      <span class="t">Claude Fable 5.2 &amp; Mythos 5.2 — langsung puncaki leaderboard</span>
-    </a>
-    <div class="branch">next ↓</div>
-    <a class="node" href="2026-11-11.html">
-      <span class="tag">Google</span>
-      <span class="t">Gemini 4 Carbon rilis publik + Gemini Robotics 2.5</span>
-    </a>
-    <div class="log">
-      <span><span class="t">19:04:31</span><b>edisi #33 terbit</b> 120 ms</span>
-      <span><span class="t">19:04:02</span><b>digest 10 Nov</b> 2,1 s</span>
-      <span><span class="t">19:04:44</span><b>IG auto-DM "mau"</b> aktif</span>
-    </div>
-  </aside>
-</div>
-<svg class="trails" viewBox="0 0 1440 720" preserveAspectRatio="none" aria-hidden="true">
-  <defs>
-    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#d2ff3a" stop-opacity="0"/>
-      <stop offset=".55" stop-color="#d2ff3a" stop-opacity=".5"/>
-      <stop offset="1" stop-color="#e4ff54" stop-opacity=".05"/>
-    </linearGradient>
-    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#9dc824" stop-opacity="0"/>
-      <stop offset=".6" stop-color="#9dc824" stop-opacity=".3"/>
-      <stop offset="1" stop-color="#d2ff3a" stop-opacity=".04"/>
-    </linearGradient>
-  </defs>
-  <path d="M-40,140 C 420,40 760,220 980,300 S 1360,420 1500,300" fill="none" stroke="url(#g1)" stroke-width="2"/>
-  <path d="M-40,170 C 430,80 740,260 960,340 S 1350,460 1500,340" fill="none" stroke="url(#g2)" stroke-width="5"/>
-  <path d="M-40,200 C 440,120 720,300 940,380 S 1340,500 1500,380" fill="none" stroke="url(#g1)" stroke-width="1"/>
-  <path d="M-40,110 C 400,10 780,180 1000,260 S 1370,380 1500,260" fill="none" stroke="url(#g2)" stroke-width="3"/>
-</svg>
 </header>
 
 <main class="wrap">
+  <div class="stats">
+    <div class="stat"><b class="sc" data-v="236">·····</b><span>Berita dirangkum</span></div>
+    <div class="stat"><b class="sc" data-v="33">····</b><span><span class="k">Edisi</span> tayang</span></div>
+    <div class="stat"><b class="sc" data-v="33">····</b><span><span class="r">Poster</span> eksklusif</span></div>
+  </div>
+
+  <section class="sec" id="hari-ini">
+    <div class="head">
+      <h2>Edisi <span class="cy">hari ini</span> — 11 Nov 2026</h2>
+      <span class="note">4 berita / edisi #33</span>
+    </div>
+    <div class="card">
+      <div class="top">
+        <span>AI &amp; SPACE — FEED</span>
+        <span class="live"><i></i>AKTIF · UPDATE 19:00 WIB</span>
+      </div>
+      <a class="node" href="2026-11-11.html">
+        <span class="tag">NASA</span>
+        <span class="t">NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</span>
+      </a>
+      <div class="branch">next ↓</div>
+      <a class="node" href="2026-11-11.html">
+        <span class="tag">Blue Origin</span>
+        <span class="t">Rover nuklir PROMISE dibangun untuk Bulan</span>
+      </a>
+      <div class="branch">next ↓</div>
+      <a class="node" href="2026-11-11.html">
+        <span class="tag">Anthropic</span>
+        <span class="t">Claude Fable 5.2 &amp; Mythos 5.2 — langsung puncaki leaderboard</span>
+      </a>
+      <div class="branch">next ↓</div>
+      <a class="node" href="2026-11-11.html">
+        <span class="tag">Google</span>
+        <span class="t">Gemini 4 Carbon rilis publik + Gemini Robotics 2.5</span>
+      </a>
+    </div>
+  </section>
+
   <section class="sec" id="arsip">
     <div class="head">
-      <h2>Arsip <span class="serif">edisi.</span></h2>
-      <span class="pill"><span class="dot"></span>33 edisi / sejak Sep 2026</span>
+      <h2>Arsip <span class="cy">edisi</span></h2>
+      <span class="note">33 edisi / sejak Sep 2026</span>
     </div>
     <div class="grid">
-      <a class="ed" href="2026-11-11.html"><span class="d"><span>11 Nov 2026</span><span class="arr">→</span></span><span class="t">NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</span></a>
-      <a class="ed" href="2026-11-10.html"><span class="d"><span>10 Nov 2026</span><span class="arr">→</span></span><span class="t">NASA Guyur $10 Miliar Kontrak Moon Base — Starship kejar penangkapan ganda</span></a>
-      <a class="ed" href="2026-11-09.html"><span class="d"><span>09 Nov 2026</span><span class="arr">→</span></span><span class="t">Dua wahana NASA Escapade terbang dekat Bumi menuju Mars — GPT-6 Astra rilis</span></a>
-      <a class="ed" href="2026-11-08.html"><span class="d"><span>08 Nov 2026</span><span class="arr">→</span></span><span class="t">Digest 8 November — ringkasan AI &amp; space</span></a>
-      <a class="ed" href="2026-11-07.html"><span class="d"><span>07 Nov 2026</span><span class="arr">→</span></span><span class="t">Hera ESA foto jarak dekat asteroid Didymos — situs TKP DART</span></a>
-      <a class="ed" href="2026-11-06.html"><span class="d"><span>06 Nov 2026</span><span class="arr">→</span></span><span class="t">Spacewalk terakhir pasang solar array ISS selesai</span></a>
-      <a class="ed" href="2026-11-05.html"><span class="d"><span>05 Nov 2026</span><span class="arr">→</span></span><span class="t">Spacewalk terakhir rampungkan upgrade daya ISS</span></a>
-      <a class="ed" href="2026-11-04.html"><span class="d"><span>04 Nov 2026</span><span class="arr">→</span></span><span class="t">Teleskop Swift NASA jatuh ke Bumi hari ini</span></a>
-      <a class="ed" href="2026-11-03.html"><span class="d"><span>03 Nov 2026</span><span class="arr">→</span></span><span class="t">Rocket Lab cetak misi sukses ke-99 Electron</span></a>
-      <a class="ed" href="2026-11-02.html"><span class="d"><span>02 Nov 2026</span><span class="arr">→</span></span><span class="t">Teleskop Swift NASA akan jatuh ke Bumi</span></a>
-      <a class="ed" href="2026-11-01.html"><span class="d"><span>01 Nov 2026</span><span class="arr">→</span></span><span class="t">Digest 1 November — ringkasan AI &amp; space</span></a>
-      <a class="ed" href="2026-10-31.html"><span class="d"><span>31 Okt 2026</span><span class="arr">→</span></span><span class="t">Digest 31 Oktober — ringkasan AI &amp; space</span></a>
+      <a class="ed rv" href="2026-11-11.html"><span class="d"><span>11 Nov 2026</span><span class="arr">→</span></span><span class="t">NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</span></a>
+      <a class="ed rv" href="2026-11-10.html"><span class="d"><span>10 Nov 2026</span><span class="arr">→</span></span><span class="t">NASA Guyur $10 Miliar Kontrak Moon Base — Starship kejar penangkapan ganda</span></a>
+      <a class="ed rv" href="2026-11-09.html"><span class="d"><span>09 Nov 2026</span><span class="arr">→</span></span><span class="t">Dua wahana NASA Escapade terbang dekat Bumi menuju Mars — GPT-6 Astra rilis</span></a>
+      <a class="ed rv" href="2026-11-08.html"><span class="d"><span>08 Nov 2026</span><span class="arr">→</span></span><span class="t">Digest 8 November — ringkasan AI &amp; space</span></a>
+      <a class="ed rv" href="2026-11-07.html"><span class="d"><span>07 Nov 2026</span><span class="arr">→</span></span><span class="t">Hera ESA foto jarak dekat asteroid Didymos — situs TKP DART</span></a>
+      <a class="ed rv" href="2026-11-06.html"><span class="d"><span>06 Nov 2026</span><span class="arr">→</span></span><span class="t">Spacewalk terakhir pasang solar array ISS selesai</span></a>
+      <a class="ed rv" href="2026-11-05.html"><span class="d"><span>05 Nov 2026</span><span class="arr">→</span></span><span class="t">Spacewalk terakhir rampungkan upgrade daya ISS</span></a>
+      <a class="ed rv" href="2026-11-04.html"><span class="d"><span>04 Nov 2026</span><span class="arr">→</span></span><span class="t">Teleskop Swift NASA jatuh ke Bumi hari ini</span></a>
+      <a class="ed rv" href="2026-11-03.html"><span class="d"><span>03 Nov 2026</span><span class="arr">→</span></span><span class="t">Rocket Lab cetak misi sukses ke-99 Electron</span></a>
+      <a class="ed rv" href="2026-11-02.html"><span class="d"><span>02 Nov 2026</span><span class="arr">→</span></span><span class="t">Teleskop Swift NASA akan jatuh ke Bumi</span></a>
+      <a class="ed rv" href="2026-11-01.html"><span class="d"><span>01 Nov 2026</span><span class="arr">→</span></span><span class="t">Digest 1 November — ringkasan AI &amp; space</span></a>
+      <a class="ed rv" href="2026-10-31.html"><span class="d"><span>31 Okt 2026</span><span class="arr">→</span></span><span class="t">Digest 31 Oktober — ringkasan AI &amp; space</span></a>
     </div>
   </section>
 </main>
 
-<footer><div class="wrap in">
-  <span class="fbrand"><span class="mark">◈</span>PhotonLedger</span>
-  <span>Digest harian AI &amp; space — tayang ±19:00 WIB · merangkum sumber publik dengan atribusi</span>
-  <a href="https://instagram.com/photonledgertech36" target="_blank">Instagram ↗</a>
+<footer><div class="in">
+  <span>PhotonLedger — intelijen finansial &amp; sains</span>
+  <span>Digest AI &amp; space · tayang ±19:00 WIB</span>
+  <a href="https://instagram.com/photonledgertech36">Instagram ↗</a>
 </div></footer>
 
 <script>
+/* ===== particle bust ===== */
+const cv=document.getElementById('stage'),cx2=cv.getContext('2d');
+let W=0,H=0,parts=[],turn=0,turnT=0,mx=.5,my=.4,t0=performance.now();
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function buildMask(){
+  // head + shoulders silhouette on offscreen canvas
+  const Wm=460,Hm=580,mc=document.createElement('canvas');
+  mc.width=Wm;mc.height=Hm;
+  const c=mc.getContext('2d');
+  c.fillStyle='#fff';
+  // cranium
+  c.beginPath();c.ellipse(230,180,102,124,0,0,7);c.fill();
+  // cheeks/jaw upper
+  c.beginPath();c.ellipse(230,255,86,86,0,0,7);c.fill();
+  // jaw taper
+  c.beginPath();c.moveTo(152,290);c.quadraticCurveTo(168,372,230,392);
+  c.quadraticCurveTo(292,372,308,290);c.quadraticCurveTo(300,330,230,352);
+  c.quadraticCurveTo(160,330,152,290);c.fill();
+  // neck
+  c.fillRect(196,370,68,64);
+  // shoulders
+  c.beginPath();c.moveTo(28,580);c.quadraticCurveTo(40,468,120,442);
+  c.quadraticCurveTo(180,428,230,428);c.quadraticCurveTo(280,428,340,442);
+  c.quadraticCurveTo(420,468,432,580);c.closePath();c.fill();
+  // subtle facial shading: darker eye band (fewer particles)
+  c.globalCompositeOperation='destination-out';
+  c.beginPath();c.ellipse(230,196,70,20,0,0,7);c.globalAlpha=.5;c.fill();c.globalAlpha=1;
+  c.globalCompositeOperation='source-over';
+  return {data:c.getImageData(0,0,Wm,Hm).data,W:Wm,H:Hm};
+}
+
+function makeParts(){
+  const m=buildMask(),Wm=m.W,Hm=m.H,md=m.data;
+  const step=window.innerWidth<760?4:3, pts=[];
+  const isF=(x,y)=>x>0&&y>0&&x<Wm&&y<Hm&&md[(y*Wm+x)*4+3]>128;
+  for(let y=0;y<Hm;y+=step)for(let x=0;x<Wm;x+=step){
+    if(!isF(x,y))continue;
+    // edge check: near silhouette boundary => brighter + red rim on right
+    let edge=false;
+    for(let d=5;d<=9;d+=4){
+      if(!isF(x+d,y)||!isF(x-d,y)||!isF(x,y+d)||!isF(x,y-d)){edge=true;break}
+    }
+    const tt=(x-230)/(Wm/2); // -1 left .. 1 right
+    const depth=Math.random();
+    pts.push({x,y,edge,depth,ph:Math.random()*6.28,sp:.4+Math.random()*.9,
+      sz:edge?1.5+Math.random():.7+Math.random()*.9});
+  }
+  // keep count sane
+  const cap=window.innerWidth<760?3200:7000;
+  while(pts.length>cap)pts.splice(Math.floor(Math.random()*pts.length),1);
+  return pts;
+}
+
+function resize(){
+  const r=cv.parentElement.getBoundingClientRect(),dpr=Math.min(devicePixelRatio,2);
+  W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;
+  cv.style.width=W+'px';cv.style.height=H+'px';cx2.setTransform(dpr,0,0,dpr,0,0);
+}
+function init(){resize();parts=makeParts()}
+init();addEventListener('resize',()=>{clearTimeout(window.__rt);window.__rt=setTimeout(init,200)});
+
+addEventListener('mousemove',e=>{
+  mx=e.clientX/innerWidth;my=e.clientY/innerHeight;
+  const g=document.getElementById('glow');
+  g.style.left=e.clientX+'px';g.style.top=e.clientY+'px';
+});
+
+function draw(now){
+  const t=(now-t0)/1000;
+  turnT+=((mx-.5)*2-turnT)*.04;            // eased turn toward cursor
+  cx2.clearRect(0,0,W,H);
+  const sc=Math.min(W/520,H/620)*.92;
+  const bw=460*sc,bh=580*sc;
+  const ox=W*(window.innerWidth<900?.5:.6)-bw/2, oy=H-bh-Math.min(40,H*.05);
+  const breathe=1+Math.sin(t*.8)*.014;
+  const a=turnT*.34;                        // rotation angle (rad)
+  const ca=Math.cos(a),sa=Math.sin(a);
+  for(const p of parts){
+    // fake 3D turn: rotate around vertical axis w/ per-particle depth
+    const dx=(p.x-230)*breathe;
+    const px=230+dx*ca+p.depth*sa*46;
+    const py=p.y*breathe+Math.sin(t*p.sp+p.ph)*2.2;
+    const shade=.45+p.depth*.4+(p.edge?.35:0);
+    const tt=(px-230)/230;
+    // key light blue from left, rim red from right
+    let r,g,b;
+    const mix=Math.min(1,Math.max(0,tt*.5+.5));
+    r=Math.round(90+(255-90)*Math.pow(mix,1.6));
+    g=Math.round(167+(70-167)*Math.pow(mix,1.6));
+    b=Math.round(255+(85-255)*Math.pow(mix,1.4));
+    if(p.edge&&tt>0){r=255;g=Math.round(70+40*Math.random());b=Math.round(85+30*Math.random())}
+    const cxp=ox+px*sc,cyp=oy+py*sc;
+    // cursor repel
+    const ddx=cxp-mx*W,ddy=cyp-my*H,dd=Math.sqrt(ddx*ddx+ddy*ddy);
+    let ox2=0,oy2=0;
+    if(dd<110){const f=(110-dd)/110*14;ox2=ddx/dd*f;oy2=ddy/dd*f}
+    cx2.fillStyle=`rgba(${r},${g},${b},${(shade*.85).toFixed(2)})`;
+    cx2.fillRect(cxp+ox2,cyp+oy2,p.sz,p.sz);
+  }
+  requestAnimationFrame(draw);
+}
+if(!reduce)requestAnimationFrame(draw);
+else{resize();/* static single frame */}
+addEventListener('resize',()=>{if(reduce){resize();
+  // draw one static frame
+  const t=0;requestAnimationFrame(function f(){cx2.clearRect(0,0,W,H);requestAnimationFrame(()=>{})});
+}});
+
+/* ===== headline letter sweep ===== */
+(function(){
+  const h=document.getElementById('hl1');
+  const frag=document.createDocumentFragment();
+  function walk(node){
+    [...node.childNodes].forEach(n=>{
+      if(n.nodeType===3){
+        const frag2=document.createDocumentFragment();
+        [...n.textContent].forEach(ch=>{
+          const s=document.createElement('span');s.className='l';
+          s.innerHTML=ch===' '?'&nbsp;':ch;frag2.appendChild(s);
+        });
+        node.replaceChild(frag2,n);
+      } else if(n.nodeType===1) walk(n);
+    });
+  }
+  walk(h);
+  const ls=[...h.querySelectorAll('.l')];
+  ls.forEach((s,i)=>setTimeout(()=>s.classList.add('on'),120+i*26));
+})();
+
+/* ===== stat scramble settle ===== */
+(function(){
+  const GLY='01#ΛΞΔ$%&@₿';
+  document.querySelectorAll('.sc').forEach(el=>{
+    const v=String(el.dataset.v),n=v.length;let frame=0;
+    const iv=setInterval(()=>{
+      frame++;
+      if(frame>18){el.textContent=v;clearInterval(iv);return}
+      el.textContent=v.split('').map((c,i)=>
+        i<frame/2?c:GLY[Math.floor(Math.random()*GLY.length)]).join('');
+    },55);
+  });
+})();
+
+/* ===== reveal on scroll ===== */
 const io=new IntersectionObserver(es=>es.forEach(e=>{
-  if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='none';io.unobserve(e.target)}
+  if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}
 }),{threshold:.12});
-document.querySelectorAll('.ed,.node,.card').forEach(el=>{
-  el.style.opacity=0;el.style.transform='translateY(10px)';
-  el.style.transition='opacity .5s ease,transform .5s ease';io.observe(el)});
+document.querySelectorAll('.rv,.stat,.card').forEach(el=>{
+  el.style.opacity=0;el.style.transform='translateY(20px)';
+  el.style.transition='opacity .7s ease,transform .7s ease';io.observe(el);
+});
 </script>
 </body>
 </html>
