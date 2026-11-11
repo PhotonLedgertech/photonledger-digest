@@ -1,349 +1,242 @@
-<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PhotonLedger Digest — Berita AI & Space Harian</title>
-<meta name="description" content="Digest harian berita AI dan Space exploration — ringkasan berita global terkini oleh PhotonLedger.">
+<title>PhotonLedger — Digest harian AI &amp; Space</title>
+<meta name="description" content="Digest harian berita AI dan space exploration. Edisi terbaru setiap hari oleh PhotonLedger.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
---txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
---cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
---line2:rgba(120,150,200,.24)}
+:root{
+  --bg:#0a0a0b; --ink:#ffffff; --dim:#a1a1aa; --faint:#71717a;
+  --lime:#d2ff3a; --lime2:#e4ff54; --lime-dim:rgba(210,255,58,.55);
+  --glass:rgba(255,255,255,.04); --glass2:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.1); --line2:rgba(255,255,255,.16);
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--txt);
-font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
--webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
-background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
-radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
-radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
-::selection{background:rgba(0,229,255,.28)}
-::-webkit-scrollbar{width:10px}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+::selection{background:rgba(210,255,58,.25);color:#fff}
+::-webkit-scrollbar{width:9px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
-::-webkit-scrollbar-thumb:hover{background:#2a3857}
-#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
-background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
-.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
-justify-content:space-between;padding:12px 22px;
-background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
-color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
-border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
-background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
-.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
-.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
-padding:8px 18px;border-radius:24px;
-background:linear-gradient(90deg,var(--cyan),#7deaff);
-transition:transform .2s,box-shadow .2s}
-.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
-.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
-.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
-width:min(760px,90%);height:1px;
-background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
-h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
-font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
-background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
--webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
-.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
-padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
-.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
-.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
-font-variant-numeric:tabular-nums}
-.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
-.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
-background:rgba(11,15,24,.85);overflow:hidden}
-.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
-font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
-border-right:1px solid var(--line);flex:none}
-.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
-background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
-.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
-animation:marquee 45s linear infinite}
-.tickerbar:hover .ticker-track{animation-play-state:paused}
-.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
-.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
-.ticker-track a:hover{color:var(--txt)}
-@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
-.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
-max-width:1120px;margin:44px auto 8px;padding:0 20px}
-.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
-font-size:clamp(22px,4vw,30px);color:#fff}
-.sec-hd h2 em{font-style:normal;color:var(--cyan)}
-.sec-hd .hint{font-size:12px;color:var(--faint)}
-.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
-display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
-.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
-background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
-border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
-box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
-transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
-animation:rise .55s ease-out both}
-.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
-box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
-@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
-.bcard .bimg{position:relative;overflow:hidden}
-.bcard img{width:100%;height:230px;object-fit:cover;display:block;
-transition:transform .5s ease-out;filter:saturate(1.05)}
-.bcard:hover img{transform:scale(1.04)}
-.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
-background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
-border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
-.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
-.bcard .bbody{padding:18px 20px 20px}
-.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
-text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
-background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
-.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
-.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
-display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
-font-size:11.5px;color:var(--faint)}
-.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
-.bcard:hover .bmeta .open{transform:translateX(4px)}
-.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
-.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
-.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
-filter:saturate(1.08);will-change:transform}
-.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
-background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
-.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
-margin:0 auto;width:100%}
-.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
-background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
-border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
-.land-hero .ldate i{font-style:normal;color:var(--cyan)}
-.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
-line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
-text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
-.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
-.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
-.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
-.lstats .stat{flex:1;min-width:130px}
-.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
-.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
-text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
-background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
-.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
-.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
-padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
-box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
-.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
-letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
-border-radius:6px;padding:4px 10px;margin-bottom:12px}
-.news.feat-news h3{font-size:21px;line-height:1.35}
-.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
-border:1px solid var(--line);border-left:3px solid var(--cyan);
-transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
-.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
-box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
-.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
-.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
-.src{font-size:12px;color:var(--faint)}
-.src a{color:var(--cyan);text-decoration:none}
-.src a:hover{text-decoration:underline}
-.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
-padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
-details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
-details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
-list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
-details.more summary:hover{color:#7deaff}
-details.more summary::before{content:"▸ "}
-details.more[open] summary::before{content:"▾ "}
-details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
-padding-left:14px;border-left:2px solid var(--gold)}
-details.more ul{margin:8px 0 10px 20px}
-details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
-details.more li::marker{color:var(--cyan)}
-details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
-details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
-background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
-border-radius:10px;padding:10px 14px}
-details.more .bg b{color:var(--gold)}
-.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
-.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
-padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
-transition:transform .2s,border-color .2s,box-shadow .2s}
-.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
-box-shadow:0 10px 28px rgba(0,0,0,.45)}
-.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
-display:block;margin-bottom:5px}
-.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
-.pn a.next{text-align:right}
-#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
-border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
-color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
-transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
-#toTop.show{opacity:1;pointer-events:auto}
-#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
-.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
-.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
-color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
-transition:all .2s ease-out}
-.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
-.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
-.rv.in{opacity:1;transform:none}
-.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
-footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
-border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
-footer a{color:var(--cyan);text-decoration:none}
-footer a:hover{text-decoration:underline}
-.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
-@media (prefers-reduced-motion:reduce){
- .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
- .rv{opacity:1;transform:none;transition:none}
- .news,.pn a,.bcard,.nav a{transition:none!important}
- .land-hero .poster-wrap img{transform:none!important}
-}
-</style></head><body>
-<div id="progress"></div>
-<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
-<a class="cta" href="index.html">Arsip Lengkap</a></nav>
-<div class="tickerbar"><div class="live">LIVE</div><div class="ticker"><div class="ticker-track"><a href="2026-11-11.html"><b>●</b>NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</a><a href="2026-11-11.html"><b>●</b>Blue Origin bangun rover nuklir PROMISE untuk Bulan</a><a href="2026-11-10.html"><b>●</b>NASA Guyur $10 Miliar Kontrak Moon Base</a><a href="2026-11-10.html"><b>●</b>Starship Kejar &quot;Holy Grail&quot; Penangkapan Ganda</a><a href="2026-11-09.html"><b>●</b>Dua wahana NASA Escapade terbang dekat Bumi menuju Mars</a><a href="2026-11-09.html"><b>●</b>NASA pilih 8 perusahaan untuk program pengiriman bulan baru + rover nuklir</a><a href="2026-11-11.html"><b>●</b>NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</a><a href="2026-11-11.html"><b>●</b>Blue Origin bangun rover nuklir PROMISE untuk Bulan</a><a href="2026-11-10.html"><b>●</b>NASA Guyur $10 Miliar Kontrak Moon Base</a><a href="2026-11-10.html"><b>●</b>Starship Kejar &quot;Holy Grail&quot; Penangkapan Ganda</a><a href="2026-11-09.html"><b>●</b>Dua wahana NASA Escapade terbang dekat Bumi menuju Mars</a><a href="2026-11-09.html"><b>●</b>NASA pilih 8 perusahaan untuk program pengiriman bulan baru + rover nuklir</a></div></div></div>
+::-webkit-scrollbar-thumb{background:#232326;border-radius:8px}
+a{color:inherit;text-decoration:none}
 
-<header class="hero-hd"><div class="glowline"></div>
-<h1 class="hd">DIGEST HARIAN</h1>
-<div class="hero-sub">Berita AI &amp; Space dari sumber global — dirangkum dalam kata-kata sendiri,
-dengan pembahasan mendalam per berita. Pilih edisi di bawah.</div>
-<div class="hero-stats">
- <div class="stat"><b data-count="236">0</b><span>Berita</span></div>
- <div class="stat"><b data-count="33">0</b><span>Edisi</span></div>
- <div class="stat"><b data-count="33">0</b><span>Poster Eksklusif</span></div>
-</div></header>
-<div class="sec-hd"><h2>EDISI <em>TERBARU</em></h2><span class="hint">klik kartu untuk landing page lengkap →</span></div>
-<div class="bento">
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+   radial-gradient(900px 480px at 78% 30%, rgba(160,200,40,.10), transparent 60%),
+   radial-gradient(600px 380px at 70% 45%, rgba(210,255,58,.07), transparent 55%),
+   radial-gradient(700px 420px at 12% -8%, rgba(74,90,24,.14), transparent 60%)}
+.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:0 22px}
 
-<a class="bcard feat rv" href="2026-11-11.html">
- <div class="bimg"><img src="assets/poster_ai_fable52.jpg" alt="Poster 11 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>11 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Fokus — Space &amp; Ai ( Nov )</span>
- <h3>NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</h3><p>NASA memilih 8 perusahaan (SpaceX, Blue Origin, Firefly, Intuitive Machines, Lockheed Martin, Northrop Grumman, ispace-US, Voyager</p>
- <div class="bmeta"><span>📄 4 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);
+  background:rgba(10,10,11,.78);border-bottom:1px solid var(--line)}
+nav .in{max-width:1120px;margin:0 auto;display:flex;align-items:center;
+  justify-content:space-between;padding:14px 22px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.2px}
+.mark{width:26px;height:26px;border-radius:7px;background:var(--lime);display:grid;
+  place-items:center;color:#0a0a0b;font-weight:800;font-size:14px;
+  box-shadow:0 0 18px rgba(210,255,58,.45)}
+.navlinks{display:flex;gap:26px;font-size:13.5px;color:var(--dim)}
+.navlinks a{transition:color .2s}
+.navlinks a:hover{color:#fff}
+.navcta{font-size:13px;font-weight:700;color:#0a0a0b;background:var(--lime);
+  padding:9px 18px;border-radius:999px;transition:transform .15s,box-shadow .2s}
+.navcta:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(210,255,58,.35)}
+@media(max-width:720px){.navlinks{display:none}}
 
-<a class="bcard std rv d1" href="2026-11-10.html">
- <div class="bimg"><img src="assets/poster_space_starship15.jpg" alt="Poster 10 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>10 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Harian — Space &amp; Ai ( Nov )</span>
- <h3>NASA Guyur $10 Miliar Kontrak Moon Base</h3><p>NASA mengumumkan 8 perusahaan pemenang program CLPS 2 (Commercial Lunar Payload Services) senilai total $10 miliar untuk misi pang</p>
- <div class="bmeta"><span>📄 4 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+.hero{position:relative;padding:88px 0 72px;overflow:hidden}
+.trails{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.85}
+.hero .in{position:relative;z-index:1;display:grid;
+  grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+@media(max-width:900px){.hero .in{grid-template-columns:1fr;gap:36px}}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--dim);
+  border:1px solid var(--line2);border-radius:999px;padding:7px 14px;background:rgba(255,255,255,.03)}
+.pill .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);
+  box-shadow:0 0 10px var(--lime-dim)}
+h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04;letter-spacing:-2.2px;
+  font-weight:800;margin:22px 0 20px}
+h1 .serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;
+  font-weight:400;letter-spacing:-1px;color:var(--lime2)}
+.sub{color:var(--dim);font-size:16.5px;max-width:440px;margin-bottom:28px}
+.ctas{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.btn1{font-size:14px;font-weight:700;color:#0a0a0b;background:var(--lime);
+  padding:13px 26px;border-radius:999px;box-shadow:0 0 26px rgba(210,255,58,.25);
+  transition:transform .15s,box-shadow .2s}
+.btn1:hover{transform:translateY(-2px);box-shadow:0 10px 34px rgba(210,255,58,.4)}
+.btn2{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;
+  color:#fff;background:var(--glass2);border:1px solid var(--line2);
+  padding:13px 22px;border-radius:999px;backdrop-filter:blur(10px);transition:border-color .2s}
+.btn2:hover{border-color:rgba(255,255,255,.3)}
+.play{width:18px;height:18px;border-radius:50%;background:var(--lime);display:grid;place-items:center;flex:none}
+.play::after{content:'';border-style:solid;border-width:4px 0 4px 7px;
+  border-color:transparent transparent transparent #0a0a0b;margin-left:2px}
+.micro{margin-top:16px;font-size:12.5px;color:var(--faint);letter-spacing:.2px}
+.micro b{color:var(--dim);font-weight:500}
 
-<a class="bcard std rv d2" href="2026-11-09.html">
- <div class="bimg"><img src="assets/poster_ai_arete.jpg" alt="Poster 09 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>09 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Harian — Space &amp; Ai ( Nov )</span>
- <h3>Dua wahana NASA Escapade terbang dekat Bumi menuju Mars</h3><p>Dua pesawat kembar NASA &amp;quot;Escapade&amp;quot; melakukan manuver flyby Bumi berbahan bakar mesin pada 7 &amp;amp; 9 November — yang kedu</p>
- <div class="bmeta"><span>📄 4 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+.card{background:rgba(16,16,18,.72);backdrop-filter:blur(18px);
+  border:1px solid var(--line);border-radius:16px;padding:18px;
+  box-shadow:0 30px 80px rgba(0,0,0,.55), 0 0 90px rgba(160,200,40,.08)}
+.card .top{display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-bottom:14px;gap:10px}
+.card .top .live{display:flex;align-items:center;gap:6px;color:var(--lime);white-space:nowrap}
+.card .top .live i{width:6px;height:6px;border-radius:50%;background:var(--lime);
+  box-shadow:0 0 8px var(--lime-dim)}
+.node{border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03);
+  padding:13px 15px;margin-bottom:10px;transition:border-color .2s,transform .2s;display:block}
+.node:hover{border-color:rgba(210,255,58,.45);transform:translateX(3px)}
+.node .tag{font-family:var(--mono);font-size:10px;letter-spacing:1px;
+  color:var(--faint);text-transform:uppercase;display:block;margin-bottom:4px}
+.node .t{font-size:14px;font-weight:600;line-height:1.4}
+.branch{display:flex;align-items:center;gap:8px;margin:2px 0 10px 14px;
+  font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+.branch::before{content:'';width:14px;height:1px;background:var(--line2)}
+.log{border-top:1px solid var(--line);margin-top:14px;padding-top:12px;
+  font-family:var(--mono);font-size:10.5px;color:var(--faint);display:grid;gap:6px}
+.log span b{color:var(--dim);font-weight:500}
+.log .t{color:#3f3f46;margin-right:8px}
 
-<a class="bcard std rv" href="2026-11-08.html">
- <div class="bimg"><img src="assets/poster_space_escapade.jpg" alt="Poster 08 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>08 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Space Exploration</span>
- <h3>1. <strong>NASA pilih 8 perusahaan untuk lander Moon Base</strong> — NASA mengumumkan kontrak CLPS 2</h3><p>(7 Nov) di ajang MAX POWER Kennedy Space Center: Blue Origin, SpaceX, Lockheed Martin, Northrop Grumman, Firefly, Intuitive Machin</p>
- <div class="bmeta"><span>📄 6 berita · 2 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+.sec{padding:64px 0}
+.sec .head{display:flex;justify-content:space-between;align-items:baseline;
+  margin-bottom:26px;gap:14px;flex-wrap:wrap}
+h2{font-size:22px;font-weight:700;letter-spacing:-.4px}
+h2 .serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:var(--lime2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.ed{border:1px solid var(--line);border-radius:14px;background:var(--glass);
+  padding:16px 17px;display:block;transition:border-color .2s,background .2s,transform .2s}
+.ed:hover{border-color:rgba(210,255,58,.4);background:var(--glass2);transform:translateY(-2px)}
+.ed .d{font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:1px;
+  text-transform:uppercase;display:flex;justify-content:space-between;margin-bottom:8px}
+.ed .d .arr{color:var(--lime)}
+.ed .t{font-size:13.5px;font-weight:600;line-height:1.45;color:#e4e4e7}
 
-<a class="bcard std rv d1" href="2026-11-07.html">
- <div class="bimg"><img src="assets/poster_space_clps.jpg" alt="Poster 07 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>07 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Harian Fokus — Space &amp; Ai ( Nov )</span>
- <h3>Hera ESA foto jarak dekat asteroid Didymos — situs TKP DART</h3><p>Pesawat Hera milik ESA berhasil ambil foto close-up pertama asteroid biner Didymos dari jarak cuma 60 km, setelah perjalanan 2 tah</p>
- <div class="bmeta"><span>📄 4 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+footer{border-top:1px solid var(--line)}
+footer .in{max-width:1120px;margin:0 auto;padding:34px 22px 44px;color:var(--faint);
+  font-size:12.5px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+footer .fbrand{display:flex;align-items:center;gap:9px;color:var(--dim);font-weight:600}
+footer .fbrand .mark{width:20px;height:20px;font-size:10px;border-radius:5px;box-shadow:none}
+footer a{color:var(--dim)}
+footer a:hover{color:#fff}
+</style>
+</head>
+<body>
 
-<a class="bcard std rv d2" href="2026-11-06.html">
- <div class="bimg"><img src="assets/poster_ai_claudebank.jpg" alt="Poster 06 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>06 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Harian — Space &amp; Ai ( Nov )</span>
- <h3>Spacewalk terakhir pasang solar array ISS selesai</h3><p>Astronot NASA Anil Menon dan CSA Joshua Kutryk menyelesaikan spacewalk 6,5 jam untuk memasang IROSA ke-8 (terakhir) di channel 3B </p>
- <div class="bmeta"><span>📄 6 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+<nav><div class="in">
+  <a class="brand" href="#"><span class="mark">◈</span>PhotonLedger</a>
+  <div class="navlinks">
+    <a href="#hari-ini">Edisi hari ini</a>
+    <a href="#arsip">Arsip</a>
+    <a href="https://instagram.com/photonledgertech36" target="_blank">Instagram</a>
+  </div>
+  <a class="navcta" href="2026-11-11.html">Baca hari ini</a>
+</div></nav>
 
-<a class="bcard std rv" href="2026-11-05.html">
- <div class="bimg"><img src="assets/poster_space_jwstflip.jpg" alt="Poster 05 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>05 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Fokus — Space &amp; Ai ( Okt , Update Per Nov)</span>
- <h3>Spacewalk terakhir rampungkan upgrade daya ISS</h3><p>Astronot NASA Anil Menon &amp;amp; CSA Joshua Kutryk hari ini (5 Nov) memasang IROSA ke-8 (terakhir) di truss starboard ISS, menaikkan</p>
- <div class="bmeta"><span>📄 6 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+<header class="hero"><div class="wrap in">
+  <div>
+    <span class="pill"><span class="dot"></span>digest harian / AI &amp; space</span>
+    <h1>Berita luar angkasa<br>dan AI, <span class="serif">setiap hari.</span></h1>
+    <p class="sub">PhotonLedger merangkum berita AI dan eksplorasi angkasa paling penting
+      jadi satu halaman ringkas — dibaca dalam 3 menit, terbit tiap hari.</p>
+    <div class="ctas">
+      <a class="btn1" href="2026-11-11.html">Baca edisi hari ini</a>
+      <a class="btn2" href="2026-11-10.html"><span class="play"></span>Edisi kemarin</a>
+    </div>
+    <p class="micro"><b>Gratis</b> &nbsp;/&nbsp; tanpa login &nbsp;/&nbsp; <b>33 edisi</b> tayang &nbsp;/&nbsp; update ±19:00 WIB</p>
+  </div>
 
-<a class="bcard std rv d1" href="2026-11-04.html">
- <div class="bimg"><img src="assets/poster_space_hera.jpg" alt="Poster 04 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>04 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Fokus — Space &amp; Ai | Nov</span>
- <h3>Teleskop Swift NASA jatuh ke Bumi hari ini</h3><p>Observatorium Neil Gehrels Swift seberat 1,5 ton diperkirakan re-entry ke atmosfer Rabu 4 Nov sekitar jam 9:30 pagi (Paris time), </p>
- <div class="bmeta"><span>📄 4 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
-
-<a class="bcard std rv d2" href="2026-11-03.html">
- <div class="bimg"><img src="assets/poster_ai_gemini.jpg" alt="Poster 03 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>03 Nov 2026</div></div>
- <div class="bbody"><span class="btopic">Digest Fokus — Space &amp; Ai ( - Nov )</span>
- <h3>Rocket Lab cetak misi sukses ke-99 Electron</h3><p>Rocket Lab meluncurkan satelit radar Jepang iQPS &amp;quot;Sea God Surveys&amp;quot; dari Mahia, Selandia Baru pada 2 November — misi Elec</p>
- <div class="bmeta"><span>📄 6 berita · 3 topik</span>
- <span class="open">BACA EDISI →</span></div></div></a>
+  <aside class="card" id="hari-ini">
+    <div class="top">
+      <span>AI &amp; Space — 11 Nov 2026</span>
+      <span class="live"><i></i>4 berita / edisi #33</span>
+    </div>
+    <a class="node" href="2026-11-11.html">
+      <span class="tag">NASA</span>
+      <span class="t">NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</span>
+    </a>
+    <div class="branch">next ↓</div>
+    <a class="node" href="2026-11-11.html">
+      <span class="tag">Blue Origin</span>
+      <span class="t">Rover nuklir PROMISE dibangun untuk Bulan</span>
+    </a>
+    <div class="branch">next ↓</div>
+    <a class="node" href="2026-11-11.html">
+      <span class="tag">Anthropic</span>
+      <span class="t">Claude Fable 5.2 &amp; Mythos 5.2 — langsung puncaki leaderboard</span>
+    </a>
+    <div class="branch">next ↓</div>
+    <a class="node" href="2026-11-11.html">
+      <span class="tag">Google</span>
+      <span class="t">Gemini 4 Carbon rilis publik + Gemini Robotics 2.5</span>
+    </a>
+    <div class="log">
+      <span><span class="t">19:04:31</span><b>edisi #33 terbit</b> 120 ms</span>
+      <span><span class="t">19:04:02</span><b>digest 10 Nov</b> 2,1 s</span>
+      <span><span class="t">19:04:44</span><b>IG auto-DM "mau"</b> aktif</span>
+    </div>
+  </aside>
 </div>
-<div class="sec-hd"><h2>ARSIP <em>LAMA</em></h2></div><div class="arch">
-<a href="2026-11-02.html">02 Nov 2026</a>
-<a href="2026-11-01.html">01 Nov 2026</a>
-<a href="2026-10-31.html">31 Oct 2026</a>
-<a href="2026-10-30.html">30 Oct 2026</a>
-<a href="2026-10-29.html">29 Oct 2026</a>
-<a href="2026-10-28.html">28 Oct 2026</a>
-<a href="2026-10-27.html">27 Oct 2026</a>
-<a href="2026-10-26.html">26 Oct 2026</a>
-<a href="2026-10-25.html">25 Oct 2026</a>
-<a href="2026-10-24.html">24 Oct 2026</a>
-<a href="2026-10-23.html">23 Oct 2026</a>
-</div>
-<footer>
-<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
-<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
-<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
-</footer>
+<svg class="trails" viewBox="0 0 1440 720" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d2ff3a" stop-opacity="0"/>
+      <stop offset=".55" stop-color="#d2ff3a" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#e4ff54" stop-opacity=".05"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9dc824" stop-opacity="0"/>
+      <stop offset=".6" stop-color="#9dc824" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#d2ff3a" stop-opacity=".04"/>
+    </linearGradient>
+  </defs>
+  <path d="M-40,140 C 420,40 760,220 980,300 S 1360,420 1500,300" fill="none" stroke="url(#g1)" stroke-width="2"/>
+  <path d="M-40,170 C 430,80 740,260 960,340 S 1350,460 1500,340" fill="none" stroke="url(#g2)" stroke-width="5"/>
+  <path d="M-40,200 C 440,120 720,300 940,380 S 1340,500 1500,380" fill="none" stroke="url(#g1)" stroke-width="1"/>
+  <path d="M-40,110 C 400,10 780,180 1000,260 S 1370,380 1500,260" fill="none" stroke="url(#g2)" stroke-width="3"/>
+</svg>
+</header>
+
+<main class="wrap">
+  <section class="sec" id="arsip">
+    <div class="head">
+      <h2>Arsip <span class="serif">edisi.</span></h2>
+      <span class="pill"><span class="dot"></span>33 edisi / sejak Sep 2026</span>
+    </div>
+    <div class="grid">
+      <a class="ed" href="2026-11-11.html"><span class="d"><span>11 Nov 2026</span><span class="arr">→</span></span><span class="t">NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing</span></a>
+      <a class="ed" href="2026-11-10.html"><span class="d"><span>10 Nov 2026</span><span class="arr">→</span></span><span class="t">NASA Guyur $10 Miliar Kontrak Moon Base — Starship kejar penangkapan ganda</span></a>
+      <a class="ed" href="2026-11-09.html"><span class="d"><span>09 Nov 2026</span><span class="arr">→</span></span><span class="t">Dua wahana NASA Escapade terbang dekat Bumi menuju Mars — GPT-6 Astra rilis</span></a>
+      <a class="ed" href="2026-11-08.html"><span class="d"><span>08 Nov 2026</span><span class="arr">→</span></span><span class="t">Digest 8 November — ringkasan AI &amp; space</span></a>
+      <a class="ed" href="2026-11-07.html"><span class="d"><span>07 Nov 2026</span><span class="arr">→</span></span><span class="t">Hera ESA foto jarak dekat asteroid Didymos — situs TKP DART</span></a>
+      <a class="ed" href="2026-11-06.html"><span class="d"><span>06 Nov 2026</span><span class="arr">→</span></span><span class="t">Spacewalk terakhir pasang solar array ISS selesai</span></a>
+      <a class="ed" href="2026-11-05.html"><span class="d"><span>05 Nov 2026</span><span class="arr">→</span></span><span class="t">Spacewalk terakhir rampungkan upgrade daya ISS</span></a>
+      <a class="ed" href="2026-11-04.html"><span class="d"><span>04 Nov 2026</span><span class="arr">→</span></span><span class="t">Teleskop Swift NASA jatuh ke Bumi hari ini</span></a>
+      <a class="ed" href="2026-11-03.html"><span class="d"><span>03 Nov 2026</span><span class="arr">→</span></span><span class="t">Rocket Lab cetak misi sukses ke-99 Electron</span></a>
+      <a class="ed" href="2026-11-02.html"><span class="d"><span>02 Nov 2026</span><span class="arr">→</span></span><span class="t">Teleskop Swift NASA akan jatuh ke Bumi</span></a>
+      <a class="ed" href="2026-11-01.html"><span class="d"><span>01 Nov 2026</span><span class="arr">→</span></span><span class="t">Digest 1 November — ringkasan AI &amp; space</span></a>
+      <a class="ed" href="2026-10-31.html"><span class="d"><span>31 Okt 2026</span><span class="arr">→</span></span><span class="t">Digest 31 Oktober — ringkasan AI &amp; space</span></a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap in">
+  <span class="fbrand"><span class="mark">◈</span>PhotonLedger</span>
+  <span>Digest harian AI &amp; space — tayang ±19:00 WIB · merangkum sumber publik dengan atribusi</span>
+  <a href="https://instagram.com/photonledgertech36" target="_blank">Instagram ↗</a>
+</div></footer>
 
 <script>
-(function(){
- var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
- var prog=document.getElementById('progress');
- var toTop=document.getElementById('toTop');
- function onScroll(){
-   var h=document.documentElement;
-   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
-   if(prog)prog.style.width=(p*100)+'%';
-   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
- }
- addEventListener('scroll',onScroll,{passive:true});onScroll();
- if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
- var els=document.querySelectorAll('.rv');
- if(!reduce&&'IntersectionObserver' in window){
-   var io=new IntersectionObserver(function(es){
-     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
-   els.forEach(function(el){io.observe(el)});
- } else { els.forEach(function(el){el.classList.add('in')}) }
- var hero=document.querySelector('.land-hero .poster-wrap img');
- if(hero&&!reduce){
-   addEventListener('scroll',function(){
-     var r=hero.getBoundingClientRect();
-     if(r.bottom>0&&r.top<innerHeight){
-       var off=(innerHeight-r.top)*0.06;
-       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
-     }
-   },{passive:true});
- }
- var counts=document.querySelectorAll('[data-count]');
- if(!reduce&&'IntersectionObserver' in window&&counts.length){
-   var cio=new IntersectionObserver(function(es){
-     es.forEach(function(e){
-       if(!e.isIntersecting)return;cio.unobserve(e.target);
-       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
-       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
-         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
-         if(k<1)requestAnimationFrame(step);}
-       requestAnimationFrame(step);
-     });
-   },{threshold:.4});
-   counts.forEach(function(el){cio.observe(el)});
- }
-})();
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='none';io.unobserve(e.target)}
+}),{threshold:.12});
+document.querySelectorAll('.ed,.node,.card').forEach(el=>{
+  el.style.opacity=0;el.style.transform='translateY(10px)';
+  el.style.transition='opacity .5s ease,transform .5s ease';io.observe(el)});
 </script>
+</body>
+</html>
