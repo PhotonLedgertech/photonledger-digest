@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-11",
+  "items": [
+    {
+      "match_title": "NASA buka kontrak Moon Base $10 Miliar, 8 perusahaan bersaing",
+      "lead": "NASA menunjuk delapan perusahaan untuk mengisi kontrak CLPS generasi kedua, program pengiriman kargo ke Bulan yang dinilai hingga 10 miliar dolar AS untuk jangka waktu sepuluh tahun. Kontrak ini ditujukan untuk menopang kebutuhan logistik Moon Base yang akan dibangun di Kutub Selatan Bulan.",
+      "points": [
+        "Delapan perusahaan yang terpilih adalah SpaceX, Blue Origin, Firefly, Intuitive Machines, Lockheed Martin, Northrop Grumman, ispace-US, dan Voyager.",
+        "Nilai kontrak CLPS 2 mencapai hingga 10 miliar dolar AS dengan masa berlaku sepuluh tahun.",
+        "Tugas para kontraktor adalah mengantar kargo menuju Moon Base yang direncanakan berdiri di Kutub Selatan Bulan.",
+        "Plafon kontrak generasi CLPS sebelumnya dinaikkan dari 2,6 miliar menjadi 4,2 miliar dolar AS.",
+        "Berita ini dilaporkan oleh mlive.com pada 10 November 2026."
+      ],
+      "explain": "Kontrak ini menegaskan bahwa pengiriman kargo ke Bulan kini dianggap NASA sebagai layanan jangka panjang, bukan misi satu kali yang dirancang khusus. Dengan membuka kursi untuk delapan penyedia sekaligus, agensi membangun cadangan kapasitas agar kebutuhan logistik Moon Base tidak bergantung pada satu perusahaan. Kenaikan plafon kontrak lama dari 2,6 menjadi 4,2 miliar dolar juga jadi sinyal volume pekerjaan yang jauh lebih besar ketimbang fase awal program, dan angka 10 miliar dolar untuk satu dekade menunjukkan besarnya komitmen belanja menuju pangkalan permanen di Kutub Selatan Bulan. Daftar pesertanya pun campuran menarik antara pendatang komersial dan kontraktor aerospace tradisional, sehingga persaingan harga dan inovasi di pasar pendarat Bulan dipastikan memanas.",
+      "background": "CLPS atau Commercial Lunar Payload Services adalah skema NASA sejak akhir 2010-an untuk menyewa jasa pendaratan komersial bagi muatan ilmiah dan teknologi ke permukaan Bulan. Generasi pertama program ini sudah menghasilkan beberapa misi pendaratan nyata, dan kini diperluas menjadi tulang punggung logistik ambisi Moon Base. Kutub Selatan Bulan menjadi target karena wilayahnya diduga kaya es air, sumber daya yang penting untuk keberadaan manusia jangka panjang."
+    },
+    {
+      "match_title": "Blue Origin bangun rover nuklir PROMISE untuk Bulan",
+      "lead": "NASA memberikan kontrak dasar senilai 94 juta dolar AS kepada Blue Origin, ditambah opsi hingga 140 juta dolar, untuk membangun rover bertenaga nuklir bernama PROMISE. Kendaraan pengjelajah itu akan diluncurkan lewat lander Mark One dengan target keberangkatan akhir 2028 untuk mencari es air di Kutub Selatan Bulan.",
+      "points": [
+        "Kontrak dasar dari NASA untuk Blue Origin bernilai 94 juta dolar AS.",
+        "Tersedia opsi tambahan senilai 140 juta dolar AS di atas nilai kontrak dasar.",
+        "Rover PROMISE dirancang dengan tenaga nuklir dan akan diangkut ke Bulan menggunakan lander Mark One milik Blue Origin.",
+        "Target peluncuran misi ditetapkan pada akhir tahun 2028.",
+        "Misi utamanya adalah mencari es air di wilayah Kutub Selatan Bulan."
+      ],
+      "explain": "Pilihan tenaga nuklir untuk PROMISE bukan hal sepele. Wilayah Kutub Selatan Bulan yang menjadi sasaran pencarian es air memiliki kawah-kawah yang berada dalam bayangan abadi, sehingga panel surya praktis tidak berguna di sana. Rover bertenaga nuklir bisa bekerja terus-menerus tanpa bergantung pada sinar matahari, dan itulah syarat mutlak untuk menjelajahi daerah gelap tempat es air diduga tersembunyi. Struktur kontraknya dengan dasar 94 juta dolar dan opsi hingga 140 juta dolar juga mencerminkan pendekatan bertahap NASA: pembayaran tambahan dilepaskan seiring pencapaian milestone, bukan dibayar sekaligus di depan. Penjadwalan peluncuran akhir 2028 lewat lander Mark One milik Blue Origin sendiri menambahkan dimensi menarik, karena perusahaan itu kini mengembangkan pendarat dan muatannya sekaligus, memperkuat posisinya di ekosistem logistik Bulan yang tengah dibangun NASA.",
+      "background": "Es air di Kutub Selatan Bulan lama menjadi target utama eksplorasi karena bisa diolah menjadi air minum, oksigen, dan bahkan bahan bakar roket, menjadikannya kunci keberlanjutan pangkalan bulan. Blue Origin mengembangkan keluarga lander Mark One sebagai wahana pengangkut kargo ke permukaan Bulan, dan rover bertenaga nuklir telah lama menjadi arah yang diincar NASA untuk misi di wilayah bayangan abadi yang tak bisa dijangkau tenaga surya."
+    },
+    {
+      "match_title": "Anthropic rilis Claude Fable 5.2 & Mythos 5.2, langsung puncaki leaderboard",
+      "lead": "Anthropic merilis dua model barunya, Claude Fable 5.2 dan Mythos 5.2, yang langsung menempati puncak leaderboard setelah dirilis. Model ini diklaim sanggup merancang tiga perangkat elektronik dari nol, memecahkan dua masalah fisika lubang hitam, serta memformalkan bukti Teorema Terakhir Fermat dalam 30 jam.",
+      "points": [
+        "Claude Fable 5.2 dan Mythos 5.2 dirilis Anthropic dan langsung menduduki puncak leaderboard.",
+        "Model diklaim mampu merancang tiga perangkat elektronik dari nol.",
+        "Model juga diklaim memecahkan dua masalah fisika terkait lubang hitam.",
+        "Formalisasi bukti Teorema Terakhir Fermat dilaporkan rampung dalam 30 jam.",
+        "Fable 5.2 mencatat skor 74,6 persen di Terminal Bench Science dengan harga 8 dolar per juta token input dan 40 dolar per juta token output."
+      ],
+      "explain": "Sekali lagi lompatan performa di leaderboard AI terjadi bukan dari selisih tipis, melainkan dari klaim-klaim yang menyentuh ranah pekerjaan riset sungguhan. Merancang perangkat elektronik dari nol berarti model tidak lagi sekadar menjawab soal ujian, melainkan menghasilkan artefak rekayasa yang utuh, sementara pemecahan dua masalah fisika lubang hitam dan formalisasi Teorema Terakhir Fermat dalam 30 jam menunjukkan kemampuan penalaran matematis dalam durasi kerja yang manusia butuhkan berbulan-bulan. Skor 74,6 persen di Terminal Bench Science memberi ukuran yang bisa dibandingkan antar model, bukan hanya narasi pemasaran. Harga 8 dolar per juta token input dan 40 dolar per juta token output menempatkan model ini di tingkatan premium, tetapi kemampuan yang diklaim membuat kelas harganya masuk akal bagi pelanggan riset dan rekayasa yang selama ini harus menyewa tim ahli untuk pekerjaan sejenis. Perlu dicatat bahwa klaim semacam ini biasanya perlu diverifikasi komunitas secara independen sebelum diterima penuh, namun jika terkonfirmasi, ini menandai langkah baru dalam pergeseran model AI dari asisten menjadi pekerja riset otonom.",
+      "background": "Anthropic terus memperluas lini model Claude-nya di pasar model frontier yang semakin padat persaingan. Demonstrasi pekerjaan sains berat seperti formalisasi teorema dan pemecahan masalah fisika terbuka kini menjadi tolok ukur pemasaran umum di kalangan pengembang model terdepan, karena menunjukkan kemampuan penalaran jangka panjang yang jauh melampaui tanya-jawab biasa. Terminal Bench Science adalah benchmark yang menguji model pada tugas-tugas ilmiah nyata dan sering dipakai membandingkan kemampuan model frontier terbaru."
+    },
+    {
+      "match_title": "Google rilis Gemini 4 Carbon ke publik + Gemini Robotics 2.5",
+      "lead": "Google membuka akses publik luas untuk Gemini 4 Carbon dengan harga API promo 2 dolar per juta token input dan 10 dolar per juta token output yang berlaku sampai 30 November. Bersamaan, perusahaan itu juga mengumumkan Gemini Robotics 2.5, model vision-language-action yang mencatat kenaikan tingkat keberhasilan tugas robot 30 hingga 100 persen.",
+      "points": [
+        "Gemini 4 Carbon kini tersedia secara luas kepada publik.",
+        "Harga API promo ditetapkan 2 dolar per juta token input dan 10 dolar per juta token output.",
+        "Harga promo berlaku hingga tanggal 30 November.",
+        "Gemini Robotics 2.5 adalah model vision-language-action untuk robotika.",
+        "Gemini Robotics 2.5 mencatat peningkatan tingkat keberhasilan tugas robot sebesar 30 hingga 100 persen."
+      ],
+      "explain": "Dua pengumuman ini memperlihatkan dua sisi strategi Google: menekan pasar lewat harga dan memperluas medan tempur ke robotika. Harga promo 2 dolar per juta token input dan 10 dolar per juta token output untuk Gemini 4 Carbon tergolong agresif untuk kelas model sebesar itu, dan batas waktu 30 November menciptakan insentif bagi pengembang untuk bermigrasi sekarang juga, dengan harapan biaya perpindahan membuat mereka bertahan setelah promo berakhir. Sementara itu, Gemini Robotics 2.5 membawa pendekatan vision-language-action ke pasar robotika, yaitu model tunggal yang memahami apa yang dilihat, memahami instruksi bahasa, dan menerjemahkannya langsung menjadi gerakan. Kenaikan tingkat keberhasilan tugas 30 hingga 100 persen adalah rentang yang lebar, tetapi menunjukkan dampak yang konsisten positif di berbagai jenis tugas. Gabungan keduanya menegaskan Google tidak hanya bertarung di pasar chatbot, melainkan membangun posisi di dunia fisik tempat persaingan baru saja dimulai.",
+      "background": "Model vision-language-action adalah kelas model yang menggabungkan persepsi visual, pemahaman bahasa, dan pengambilan keputusan gerak dalam satu sistem, memungkinkan robot merespons perintah natural tanpa perlu antrean program yang ditulis manual. Google telah lama menanamkan investasi di lini Gemini Robotics untuk membawa kemampuan model bahasanya ke dunia robotika. Di sisi lain, strategi harga promo terbatas waktu sudah lama menjadi senjata Google untuk mempercepat adopsi model barunya di kalangan pengembang API."
+    }
+  ]
+}
