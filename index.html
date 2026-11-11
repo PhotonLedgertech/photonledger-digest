@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PhotonLedger — Intelijen yang berevolusi bersamamu</title>
-<meta name="description" content="Digest harian berita AI dan space exploration oleh PhotonLedger. Intelijen yang berevolusi bersamamu.">
+<meta name="description" content="Digest harian berita AI dan space exploration oleh PhotonLedger.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -25,8 +25,6 @@ body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-seri
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:#1a2236;border-radius:8px}
 a{color:inherit;text-decoration:none}
-
-/* blueprint grid */
 body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
    linear-gradient(rgba(120,160,255,.045) 1px,transparent 1px),
@@ -37,10 +35,8 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
    radial-gradient(700px 460px at 76% 62%,rgba(255,70,85,.05),transparent 58%)}
 .cross{position:fixed;z-index:1;color:rgba(140,170,255,.28);font-family:var(--mono);
   font-size:13px;pointer-events:none;user-select:none}
-
 .wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 24px}
 
-/* nav — mono caps */
 nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);
   background:rgba(5,7,15,.72);border-bottom:1px solid var(--line)}
 nav .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;
@@ -56,16 +52,14 @@ nav .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;
 .navlinks a.hot{color:var(--cyan)}
 @media(max-width:760px){.navlinks{display:none}}
 
-/* hero */
 .hero{position:relative;min-height:92vh;overflow:hidden}
 #stage{position:absolute;inset:0;z-index:1}
 .hero .in{position:relative;z-index:2;min-height:92vh;display:flex;flex-direction:column;
   justify-content:space-between;padding:40px 0 46px;pointer-events:none}
-.hero .in a,.hero .in .stat{pointer-events:auto}
+.hero .in a{pointer-events:auto}
 .hl1{font-size:clamp(34px,4.6vw,58px);line-height:1.06;letter-spacing:-1.6px;
   font-weight:800;max-width:560px}
-.hl1 .l{display:inline-block;opacity:0;transform:translateY(28px) rotate(4deg);
-  filter:blur(6px)}
+.hl1 .l{display:inline-block;opacity:0;transform:translateY(28px) rotate(4deg);filter:blur(6px)}
 .hl1 .w{display:inline-block;white-space:nowrap}
 .hl1 .l.on{opacity:1;transform:none;filter:none;
   transition:opacity .5s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1),filter .5s}
@@ -96,12 +90,10 @@ nav .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;
   .cta-row{justify-content:flex-start}
 }
 
-/* cursor glow */
 #glow{position:fixed;width:340px;height:340px;border-radius:50%;pointer-events:none;z-index:1;
   background:radial-gradient(circle,rgba(90,167,255,.09),transparent 62%);
   transform:translate(-50%,-50%);left:50%;top:40%}
 
-/* stats + content */
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:-8px 0 0}
 @media(max-width:640px){.stats{grid-template-columns:1fr 1fr 1fr;gap:8px}}
 .stat{border:1px solid var(--line);border-radius:12px;background:var(--glass);
@@ -157,7 +149,6 @@ footer .in{max-width:1180px;margin:0 auto;padding:32px 24px 42px;
   color:var(--faint)}
 footer a:hover{color:#fff}
 
-/* reveal */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .rv.on{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
@@ -273,30 +264,23 @@ footer a:hover{color:#fff}
 <script>
 /* ===== particle bust ===== */
 const cv=document.getElementById('stage'),cx2=cv.getContext('2d');
-let W=0,H=0,parts=[],turn=0,turnT=0,mx=.5,my=.4,t0=performance.now();
+let W=0,H=0,parts=[],turnT=0,mx=.5,my=.4,t0=performance.now();
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function buildMask(){
-  // head + shoulders silhouette on offscreen canvas
   const Wm=460,Hm=580,mc=document.createElement('canvas');
   mc.width=Wm;mc.height=Hm;
   const c=mc.getContext('2d');
   c.fillStyle='#fff';
-  // cranium
   c.beginPath();c.ellipse(230,180,102,124,0,0,7);c.fill();
-  // cheeks/jaw upper
   c.beginPath();c.ellipse(230,255,86,86,0,0,7);c.fill();
-  // jaw taper
   c.beginPath();c.moveTo(152,290);c.quadraticCurveTo(168,372,230,392);
   c.quadraticCurveTo(292,372,308,290);c.quadraticCurveTo(300,330,230,352);
   c.quadraticCurveTo(160,330,152,290);c.fill();
-  // neck
   c.fillRect(196,370,68,64);
-  // shoulders
   c.beginPath();c.moveTo(28,580);c.quadraticCurveTo(40,468,120,442);
   c.quadraticCurveTo(180,428,230,428);c.quadraticCurveTo(280,428,340,442);
   c.quadraticCurveTo(420,468,432,580);c.closePath();c.fill();
-  // subtle facial shading: darker eye band (fewer particles)
   c.globalCompositeOperation='destination-out';
   c.beginPath();c.ellipse(230,196,70,20,0,0,7);c.globalAlpha=.5;c.fill();c.globalAlpha=1;
   c.globalCompositeOperation='source-over';
@@ -309,17 +293,15 @@ function makeParts(){
   const isF=(x,y)=>x>0&&y>0&&x<Wm&&y<Hm&&md[(y*Wm+x)*4+3]>128;
   for(let y=0;y<Hm;y+=step)for(let x=0;x<Wm;x+=step){
     if(!isF(x,y))continue;
-    // edge check: near silhouette boundary => brighter + red rim on right
     let edge=false;
     for(let d=5;d<=9;d+=4){
       if(!isF(x+d,y)||!isF(x-d,y)||!isF(x,y+d)||!isF(x,y-d)){edge=true;break}
     }
-    const tt=(x-230)/(Wm/2); // -1 left .. 1 right
+    const tt=(x-230)/(Wm/2);
     const depth=Math.random();
     pts.push({x,y,edge,depth,ph:Math.random()*6.28,sp:.4+Math.random()*.9,
       sz:edge?1.5+Math.random():.7+Math.random()*.9});
   }
-  // keep count sane
   const cap=window.innerWidth<760?3200:7000;
   while(pts.length>cap)pts.splice(Math.floor(Math.random()*pts.length),1);
   return pts;
@@ -341,22 +323,19 @@ addEventListener('mousemove',e=>{
 
 function draw(now){
   const t=(now-t0)/1000;
-  turnT+=((mx-.5)*2-turnT)*.04;            // eased turn toward cursor
+  turnT+=((mx-.5)*2-turnT)*.04;
   cx2.clearRect(0,0,W,H);
   const sc=Math.min(W/520,H/620)*.92;
   const bw=460*sc,bh=580*sc;
   const ox=W*(window.innerWidth<900?.5:.6)-bw/2, oy=H-bh-Math.min(40,H*.05);
   const breathe=1+Math.sin(t*.8)*.014;
-  const a=turnT*.34;                        // rotation angle (rad)
-  const ca=Math.cos(a),sa=Math.sin(a);
+  const a=turnT*.34, ca=Math.cos(a),sa=Math.sin(a);
   for(const p of parts){
-    // fake 3D turn: rotate around vertical axis w/ per-particle depth
     const dx=(p.x-230)*breathe;
     const px=230+dx*ca+p.depth*sa*46;
     const py=p.y*breathe+Math.sin(t*p.sp+p.ph)*2.2;
     const shade=.45+p.depth*.4+(p.edge?.35:0);
     const tt=(px-230)/230;
-    // key light blue from left, rim red from right
     let r,g,b;
     const mix=Math.min(1,Math.max(0,tt*.5+.5));
     r=Math.round(90+(255-90)*Math.pow(mix,1.6));
@@ -364,7 +343,6 @@ function draw(now){
     b=Math.round(255+(85-255)*Math.pow(mix,1.4));
     if(p.edge&&tt>0){r=255;g=Math.round(70+40*Math.random());b=Math.round(85+30*Math.random())}
     const cxp=ox+px*sc,cyp=oy+py*sc;
-    // cursor repel
     const ddx=cxp-mx*W,ddy=cyp-my*H,dd=Math.sqrt(ddx*ddx+ddy*ddy);
     let ox2=0,oy2=0;
     if(dd<110){const f=(110-dd)/110*14;ox2=ddx/dd*f;oy2=ddy/dd*f}
@@ -374,16 +352,10 @@ function draw(now){
   requestAnimationFrame(draw);
 }
 if(!reduce)requestAnimationFrame(draw);
-else{resize();/* static single frame */}
-addEventListener('resize',()=>{if(reduce){resize();
-  // draw one static frame
-  const t=0;requestAnimationFrame(function f(){cx2.clearRect(0,0,W,H);requestAnimationFrame(()=>{})});
-}});
 
-/* ===== headline letter sweep ===== */
+/* ===== headline letter sweep (word-safe) ===== */
 (function(){
   const h=document.getElementById('hl1');
-  const frag=document.createDocumentFragment();
   function walk(node){
     [...node.childNodes].forEach(n=>{
       if(n.nodeType===3){
@@ -410,7 +382,7 @@ addEventListener('resize',()=>{if(reduce){resize();
 (function(){
   const GLY='01#ΛΞΔ$%&@₿';
   document.querySelectorAll('.sc').forEach(el=>{
-    const v=String(el.dataset.v),n=v.length;let frame=0;
+    const v=String(el.dataset.v);let frame=0;
     const iv=setInterval(()=>{
       frame++;
       if(frame>18){el.textContent=v;clearInterval(iv);return}
