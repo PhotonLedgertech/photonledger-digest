@@ -66,6 +66,7 @@ nav .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;
   font-weight:800;max-width:560px}
 .hl1 .l{display:inline-block;opacity:0;transform:translateY(28px) rotate(4deg);
   filter:blur(6px)}
+.hl1 .w{display:inline-block;white-space:nowrap}
 .hl1 .l.on{opacity:1;transform:none;filter:none;
   transition:opacity .5s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1),filter .5s}
 .hl1 .cy{color:var(--cyan)}
@@ -385,9 +386,14 @@ addEventListener('resize',()=>{if(reduce){resize();
     [...node.childNodes].forEach(n=>{
       if(n.nodeType===3){
         const frag2=document.createDocumentFragment();
-        [...n.textContent].forEach(ch=>{
-          const s=document.createElement('span');s.className='l';
-          s.innerHTML=ch===' '?'&nbsp;':ch;frag2.appendChild(s);
+        n.textContent.split(/(\s+)/).forEach(tok=>{
+          if(/^\s+$/.test(tok)){frag2.appendChild(document.createTextNode(' '));return}
+          const w=document.createElement('span');w.className='w';
+          [...tok].forEach(ch=>{
+            const s=document.createElement('span');s.className='l';
+            s.innerHTML=ch===' '?'&nbsp;':ch;w.appendChild(s);
+          });
+          frag2.appendChild(w);
         });
         node.replaceChild(frag2,n);
       } else if(n.nodeType===1) walk(n);
