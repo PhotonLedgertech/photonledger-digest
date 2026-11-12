@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-12",
+  "items": [
+    {
+      "match_title": "Starship Flight 15: upaya orbital penuh pertama + landing ganda",
+      "lead": "SpaceX menyiapkan peluncuran Starship Flight 15 sekitar 13 November, dan untuk pertama kalinya misi ini mengincar orbit penuh sekaligus pendaratan balik untuk dua wahana sekaligus. Jika berhasil, booster Super Heavy maupun tahap atas Starship akan keduanya mendarat kembali di Starbase setelah mengorbit Bumi.",
+      "points": [
+        "Peluncuran Starship Flight 15 dijadwalkan sekitar tanggal 13 November 2026.",
+        "Target orbit berada di ketinggian sekitar 275 kilometer.",
+        "Wahana direncanakan mengorbit Bumi sebanyak 14 putaran dengan durasi sekitar 22 jam.",
+        "Booster Super Heavy dan tahap atas Starship sama-sama ditargetkan untuk mendarat balik di Starbase.",
+        "Berita ini dilaporkan oleh New Scientist pada 11 November 2026."
+      ],
+      "explain": "Flight 15 dibedakan dari penerbangan-penerbangan sebelumnya karena profil misinya jauh lebih menuntut: bukan sekadar uji suborbital atau percobaan lepas landas, melainkan upaya orbital penuh dengan 14 putaran mengelilingi Bumi dalam durasi sekitar 22 jam di ketinggian sekitar 275 kilometer. Yang membuat misi ini penting bukan hanya mencapai orbit, tetapi memulangkan kedua wahana sekaligus, sesuatu yang jarang dicoba dalam satu penerbangan karena risikonya berlipat. Pendaratan booster Super Heavy sudah pernah ditunjukkan SpaceX berkali-kali, tetapi pendaratan balik tahap atas Starship masih menjadi tantangan tersulit yang selama ini sering berakhir gagal di uji-uji sebelumnya. Berhasilnya keduanya dalam satu misi akan menjadi bukti bahwa konsep roket yang sepenuhnya dapat dipakai ulang benar-benar bisa dijalankan secara berulang, bukan hanya sebagai demonstrasi sekali jalan.",
+      "background": "Starship adalah roket terbesar yang pernah dikembangkan SpaceX dan menjadi kunci ambisi jangka panjang perusahaan itu, mulai dari misi ke Bulan dan Mars hingga peluncuran muatan berat secara berulang dengan biaya rendah. Starbase di Texas menjadi pusat pengembangan dan peluncurannya sejak awal program. Selama bertahun-tahun, pengujian Starship bergerak bertahap dari uji terbang pendek menuju profil orbital, dan pendaratan tahap atas yang utuh telah lama menjadi tonggak yang belum sepenuhnya ditaklukkan. Bila Flight 15 sukses mendaratkan kedua bagian wahana, program ini akan melangkah maju mendekati visi operasional penuhnya."
+    },
+    {
+      "match_title": "NASA pilih 8 perusahaan untuk program basis bulan $10 miliar",
+      "lead": "NASA mengumumkan pemilihan delapan perusahaan, termasuk SpaceX, untuk menggarap kontrak infrastruktur Bulan jangka panjang bernilai hingga 10 miliar dolar AS. Pengumuman ini datang bersamaan dengan rencana SpaceX membangun lini panel surya berkapasitas 100 GW serta pusat data AI bernilai 24 miliar dolar di Starbase.",
+      "points": [
+        "NASA memilih delapan perusahaan untuk kontrak infrastruktur jangka panjang senilai 10 miliar dolar AS.",
+        "Daftar perusahaan yang terpilih mencakup SpaceX.",
+        "Bersamaan dengan itu, SpaceX menyusun rencana lini produksi panel surya berkapasitas 100 GW.",
+        "SpaceX juga merencanakan pembangunan pusat data AI senilai 24 miliar dolar AS di Starbase.",
+        "Berita ini dilaporkan oleh Yahoo Finance/Simply Wall St pada 12 November 2026."
+      ],
+      "explain": "Kontrak infrastruktur senilai 10 miliar dolar AS ini menegaskan bahwa ambisi basis Bulan NASA kini masuk fase pembangunan nyata, dengan delapan perusahaan yang diberi tanggung jawab membangun prasarana jangka panjang di permukaan Bulan. Kehadiran SpaceX di daftar itu memperkuat posisinya sebagai pemain sentral dalam ekosistem pendaratan Bulan, sekaligus menambah aliran pendapatan besar di samping bisnis peluncuran dan Starlink. Yang menarik, kabar ini muncul bersamaan dengan rencana industri raksasa di Starbase: lini panel surya 100 GW dan pusat data AI seharga 24 miliar dolar AS. Gabungan keduanya menggambarkan SpaceX yang sedang bergeser dari sekadar perusahaan roket menjadi konglomerat teknologi yang menopang kebutuhan energinya sendiri, dengan pusat data AI yang membutuhkan daya listrik masif untuk operasinya.",
+      "background": "Program basis Bulan NASA telah lama digodok lewat berbagai skema kontrak, dari pengiriman kargo komersial hingga prasarana permukaan, dan anggaran raksasa sebesar ini menandai eskalasi komitmen terbesarnya sejauh ini. SpaceX sendiri telah menjadikan Starbase di Texas sebagai simpul utama kegiatan produksi, pengujian, dan peluncurannya, sehingga wajar jika rencana ekspansi industri seperti panel surya dan pusat data AI ditetapkan di lokasi yang sama. Tren pembangunan pusat data berskala besar oleh perusahaan teknologi kini lazim didampingi investasi energi sendiri, karena kebutuhan listrik komputasi AI melampaui kapasitas jaringan listrik konvensional di banyak wilayah."
+    },
+    {
+      "match_title": "Claude Mythos & Faible 5.2 — Anthropic kejar IPO dengan rekor benchmark",
+      "lead": "Anthropic meluncurkan Claude Mythos dan Faible 5.2 dengan kinerja benchmark puncak sekaligus harga yang turun 20 persen ke kisaran 8 sampai 40 dolar per juta token. Rilis ini dirangkai dengan rencana IPO perusahaan, di tengah kemampuan baru model yang memformalkan Teorema Terakhir Fermat dalam waktu 30 jam.",
+      "points": [
+        "Model baru diklaim 30 persen lebih cepat dengan mode cepat hingga 2,5 kali lipat.",
+        "Harga API turun 20 persen ke rentang 8 sampai 40 dolar AS per juta token.",
+        "Model mencatat skor AAII 65, melampaui Gemini 4 Carbon (60), Opus 5.5 (59), dan GPT-6 Astra (57).",
+        "Model berhasil memformalkan Teorema Terakhir Fermat dalam waktu 30 jam.",
+        "Anthropic dikabarkan sedang menyiapkan rencana IPO."
+      ],
+      "explain": "Kombinasi rilis ini menunjukkan strategi ganda Anthropic: menaikkan performa model sekaligus menurunkan harga sebesar 20 persen, langkah yang jarang terjadi bersamaan di kelas model frontier. Skor AAII 65 membuat model ini berdiri di puncak persaingan dengan selisih yang jelas atas Gemini 4 Carbon, Opus 5.5, dan GPT-6 Astra, sementara klaim 30 persen lebih cepat dan mode cepat 2,5 kali lipat menambah daya saing di sisi pengalaman pengguna. Demonstrasi formalisasi Teorema Terakhir Fermat dalam 30 jam adalah bintang pemasaran utamanya, karena pekerjaan semacam itu secara normal menuntut berbulan-bulan kerja para ahli dan menandakan kemampuan penalaran matematis formal yang langka. Pencantuman rencana IPO di urutan berita yang sama menandakan bahwa rekor benchmark ini juga berfungsi menopang valuasi menjelang perjalanan ke bursa.",
+      "background": "Persaingan model AI kelas atas kini diukur lewat leaderboard yang membandingkan skor antar model frontier, dan setiap rilis besar diikuti lompatan angka yang menggeser peringkat papan atas. Anthropic sendiri terus memperluas lini Claude-nya sejak beberapa tahun terakhir, dengan model-model yang semakin ditujukan untuk pekerjaan penalaran berat, bukan hanya percakapan. Formalisasi bukti teorema matematika menggunakan AI menjadi salah satu tolok ukur kemampuan penalaran formal yang paling diincar pengembang model, sementara rencana IPO menandai tahap kematangan finansial yang biasanya didahului bukti keunggulan teknologi dan pertumbuhan pendapatan yang konsisten."
+    },
+    {
+      "match_title": "Qwen 4 resmi rilis API — MoE raksasa harga murah",
+      "lead": "Alibaba resmi merilis API Qwen 4, model arsitektur Mixture-of-Experts dengan 1,2 triliun parameter yang dihargai hanya 1 dolar per juta token input dan 4 dolar per juta token output. Bobot modelnya juga dijanjikan dibuka di bawah lisensi Apache 2.0 pada tanggal 20 Desember.",
+      "points": [
+        "Qwen 4 dirilis oleh Alibaba dan kini tersedia resmi lewat API.",
+        "Model memakai arsitektur MoE sparse dengan total 1,2 triliun parameter.",
+        "Model mencatat skor 58 dan menempati peringkat tiga.",
+        "Harga API ditetapkan 1 dolar per juta token input dan 4 dolar per juta token output.",
+        "Bobot model dijanjikan dirilis di bawah lisensi Apache 2.0 pada 20 Desember."
+      ],
+      "explain": "Rilis Qwen 4 memperlihatkan pola yang sudah menjadi tanda tangan Alibaba di pasar model: mengejar performa papan atas sambil menekan harga ke level yang sulit ditandingi. Arsitektur Mixture-of-Experts sparse dengan 1,2 triliun parameter memungkinkan model besar itu beroperasi secara efisien, karena pada setiap langkah hanya sebagian kecil parameter yang benar-benar diaktifkan, dan efisiensi inilah yang membuat harga 1 dolar per juta token input serta 4 dolar per juta token output bisa dijalankan secara ekonomis. Skor 58 yang menempatkan model ini di peringkat tiga menunjukkan ia berdiri sejajar dengan para pemain frontier tanpa harga frontier. Janji pembukaan bobot di bawah lisensi Apache 2.0 pada 20 Desember menambah nilai strategisnya, karena pengembang bisa menunggu sekadar beberapa minggu untuk menjalankan model ini secara mandiri tanpa biaya API per token.",
+      "background": "Arsitektur Mixture-of-Experts memecah model raksasa menjadi banyak pakar spesialis yang diaktifkan selektif per token, sehingga kapasitas total bisa dibesarkan tanpa menaikkan biaya komputasi seiring, dan pendekatan ini kini menjadi standar model-model besar terbaru. Qwen adalah lini model AI Alibaba yang selama ini dikenal konsisten merilis versi terbuka dengan lisensi permisif, menjadikannya salah satu keluarga model paling banyak dipakai di komunitas pengembang global. Strategi harga murah plus bobot terbuka yang dianut Alibaba menekan margin pesaing API komersial sekaligus memperluas jangkauan ekosistemnya, mengikuti pola persaingan pasar model AI akhir 2026 yang bergerak di dua arah sekaligus: kualitas naik dan harga turun."
+    }
+  ]
+}

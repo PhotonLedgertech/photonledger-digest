@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digest 12 Nov 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 12 Nov 2026: 4 berita dari sumber global, dengan pembahasan mendalam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_space_promise.jpg" alt="Poster 12 Nov 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>12 NOV 2026</div>
+<h1>Starship Flight 15: upaya orbital penuh pertama + landing ganda</h1>
+<div class="lsub">Edisi 12 Nov 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="4">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="2">0</b><span>Topik</span></div>
+ <div class="stat"><b>✔</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news feat-news rv">
+<span class="ftag">★ CERITA UTAMA</span>
+<h3>Starship Flight 15: upaya orbital penuh pertama + landing ganda</h3>
+<p>SpaceX akan meluncurkan Starship test flight ke-15 sekitar 13 November, misi paling ambisius sejauh ini — upper stage ditargetkan orbit 275 km, 14 putaran Bumi (~22 jam), lalu booster Super Heavy DAN upper stage Starship mendarat kembali di Starbase. Baru 3x booster sukses landing, belum pernah upper stage ikut mendarat balik di darat. Flight 14 (September) gagal orbit penuh karena masalah engine.</p>
+<div class="src">Sumber: New Scientist, newscientist.com/article/2598233-spacex-aims-to-safely-land-starship-and-booster-stage-after-orbital-flight (11 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">SpaceX menyiapkan peluncuran Starship Flight 15 sekitar 13 November, dan untuk pertama kalinya misi ini mengincar orbit penuh sekaligus pendaratan balik untuk dua wahana sekaligus. Jika berhasil, booster Super Heavy maupun tahap atas Starship akan keduanya mendarat kembali di Starbase setelah mengorbit Bumi.</div>
+<ul><li>Peluncuran Starship Flight 15 dijadwalkan sekitar tanggal 13 November 2026.</li><li>Target orbit berada di ketinggian sekitar 275 kilometer.</li><li>Wahana direncanakan mengorbit Bumi sebanyak 14 putaran dengan durasi sekitar 22 jam.</li><li>Booster Super Heavy dan tahap atas Starship sama-sama ditargetkan untuk mendarat balik di Starbase.</li><li>Berita ini dilaporkan oleh New Scientist pada 11 November 2026.</li></ul>
+<div class="explain">Flight 15 dibedakan dari penerbangan-penerbangan sebelumnya karena profil misinya jauh lebih menuntut: bukan sekadar uji suborbital atau percobaan lepas landas, melainkan upaya orbital penuh dengan 14 putaran mengelilingi Bumi dalam durasi sekitar 22 jam di ketinggian sekitar 275 kilometer. Yang membuat misi ini penting bukan hanya mencapai orbit, tetapi memulangkan kedua wahana sekaligus, sesuatu yang jarang dicoba dalam satu penerbangan karena risikonya berlipat. Pendaratan booster Super Heavy sudah pernah ditunjukkan SpaceX berkali-kali, tetapi pendaratan balik tahap atas Starship masih menjadi tantangan tersulit yang selama ini sering berakhir gagal di uji-uji sebelumnya. Berhasilnya keduanya dalam satu misi akan menjadi bukti bahwa konsep roket yang sepenuhnya dapat dipakai ulang benar-benar bisa dijalankan secara berulang, bukan hanya sebagai demonstrasi sekali jalan.</div>
+<div class="bg"><b>Konteks:</b> Starship adalah roket terbesar yang pernah dikembangkan SpaceX dan menjadi kunci ambisi jangka panjang perusahaan itu, mulai dari misi ke Bulan dan Mars hingga peluncuran muatan berat secara berulang dengan biaya rendah. Starbase di Texas menjadi pusat pengembangan dan peluncurannya sejak awal program. Selama bertahun-tahun, pengujian Starship bergerak bertahap dari uji terbang pendek menuju profil orbital, dan pendaratan tahap atas yang utuh telah lama menjadi tonggak yang belum sepenuhnya ditaklukkan. Bila Flight 15 sukses mendaratkan kedua bagian wahana, program ini akan melangkah maju mendekati visi operasional penuhnya.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>NASA pilih 8 perusahaan untuk program basis bulan $10 miliar</h3>
+<p>SpaceX jadi satu dari 8 perusahaan yang dipilih NASA untuk kontrak infrastruktur Bulan jangka panjang senilai $10 miliar. Bersamaan, SpaceX juga memesan lini manufaktur solar 100 GW dan rencana data center AI $24 miliar di Starbase, Texas.</p>
+<div class="src">Sumber: Yahoo Finance/Simply Wall St, finance.yahoo.com/energy/articles/spacex-spcx-ordered-equipment-100-231946867.html (12 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">NASA mengumumkan pemilihan delapan perusahaan, termasuk SpaceX, untuk menggarap kontrak infrastruktur Bulan jangka panjang bernilai hingga 10 miliar dolar AS. Pengumuman ini datang bersamaan dengan rencana SpaceX membangun lini panel surya berkapasitas 100 GW serta pusat data AI bernilai 24 miliar dolar di Starbase.</div>
+<ul><li>NASA memilih delapan perusahaan untuk kontrak infrastruktur jangka panjang senilai 10 miliar dolar AS.</li><li>Daftar perusahaan yang terpilih mencakup SpaceX.</li><li>Bersamaan dengan itu, SpaceX menyusun rencana lini produksi panel surya berkapasitas 100 GW.</li><li>SpaceX juga merencanakan pembangunan pusat data AI senilai 24 miliar dolar AS di Starbase.</li><li>Berita ini dilaporkan oleh Yahoo Finance/Simply Wall St pada 12 November 2026.</li></ul>
+<div class="explain">Kontrak infrastruktur senilai 10 miliar dolar AS ini menegaskan bahwa ambisi basis Bulan NASA kini masuk fase pembangunan nyata, dengan delapan perusahaan yang diberi tanggung jawab membangun prasarana jangka panjang di permukaan Bulan. Kehadiran SpaceX di daftar itu memperkuat posisinya sebagai pemain sentral dalam ekosistem pendaratan Bulan, sekaligus menambah aliran pendapatan besar di samping bisnis peluncuran dan Starlink. Yang menarik, kabar ini muncul bersamaan dengan rencana industri raksasa di Starbase: lini panel surya 100 GW dan pusat data AI seharga 24 miliar dolar AS. Gabungan keduanya menggambarkan SpaceX yang sedang bergeser dari sekadar perusahaan roket menjadi konglomerat teknologi yang menopang kebutuhan energinya sendiri, dengan pusat data AI yang membutuhkan daya listrik masif untuk operasinya.</div>
+<div class="bg"><b>Konteks:</b> Program basis Bulan NASA telah lama digodok lewat berbagai skema kontrak, dari pengiriman kargo komersial hingga prasarana permukaan, dan anggaran raksasa sebesar ini menandai eskalasi komitmen terbesarnya sejauh ini. SpaceX sendiri telah menjadikan Starbase di Texas sebagai simpul utama kegiatan produksi, pengujian, dan peluncurannya, sehingga wajar jika rencana ekspansi industri seperti panel surya dan pusat data AI ditetapkan di lokasi yang sama. Tren pembangunan pusat data berskala besar oleh perusahaan teknologi kini lazim didampingi investasi energi sendiri, karena kebutuhan listrik komputasi AI melampaui kapasitas jaringan listrik konvensional di banyak wilayah.</div>
+</details>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Claude Mythos &amp; Faible 5.2 — Anthropic kejar IPO dengan rekor benchmark</h3>
+<p>Anthropic rilis Claude Mythos 5.2 &amp; Faible 5.2: 30% lebih cepat, mode cepat 2,5x, harga turun 20% ($8-$40/juta token). Skor AAII 65 — ungguli Gemini 4 Carbon (60), Claude Opus 5.5 (59), GPT-6 Astra (57). Bisa formalisasi bukti Fermat&#x27;s Last Theorem dalam 30 jam. Anthropic rencana IPO bulan ini.</p>
+<div class="src">Sumber: SBS News, news.sbs.co.kr/english/article.do?news_id=N1008839177 (12 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Anthropic meluncurkan Claude Mythos dan Faible 5.2 dengan kinerja benchmark puncak sekaligus harga yang turun 20 persen ke kisaran 8 sampai 40 dolar per juta token. Rilis ini dirangkai dengan rencana IPO perusahaan, di tengah kemampuan baru model yang memformalkan Teorema Terakhir Fermat dalam waktu 30 jam.</div>
+<ul><li>Model baru diklaim 30 persen lebih cepat dengan mode cepat hingga 2,5 kali lipat.</li><li>Harga API turun 20 persen ke rentang 8 sampai 40 dolar AS per juta token.</li><li>Model mencatat skor AAII 65, melampaui Gemini 4 Carbon (60), Opus 5.5 (59), dan GPT-6 Astra (57).</li><li>Model berhasil memformalkan Teorema Terakhir Fermat dalam waktu 30 jam.</li><li>Anthropic dikabarkan sedang menyiapkan rencana IPO.</li></ul>
+<div class="explain">Kombinasi rilis ini menunjukkan strategi ganda Anthropic: menaikkan performa model sekaligus menurunkan harga sebesar 20 persen, langkah yang jarang terjadi bersamaan di kelas model frontier. Skor AAII 65 membuat model ini berdiri di puncak persaingan dengan selisih yang jelas atas Gemini 4 Carbon, Opus 5.5, dan GPT-6 Astra, sementara klaim 30 persen lebih cepat dan mode cepat 2,5 kali lipat menambah daya saing di sisi pengalaman pengguna. Demonstrasi formalisasi Teorema Terakhir Fermat dalam 30 jam adalah bintang pemasaran utamanya, karena pekerjaan semacam itu secara normal menuntut berbulan-bulan kerja para ahli dan menandakan kemampuan penalaran matematis formal yang langka. Pencantuman rencana IPO di urutan berita yang sama menandakan bahwa rekor benchmark ini juga berfungsi menopang valuasi menjelang perjalanan ke bursa.</div>
+<div class="bg"><b>Konteks:</b> Persaingan model AI kelas atas kini diukur lewat leaderboard yang membandingkan skor antar model frontier, dan setiap rilis besar diikuti lompatan angka yang menggeser peringkat papan atas. Anthropic sendiri terus memperluas lini Claude-nya sejak beberapa tahun terakhir, dengan model-model yang semakin ditujukan untuk pekerjaan penalaran berat, bukan hanya percakapan. Formalisasi bukti teorema matematika menggunakan AI menjadi salah satu tolok ukur kemampuan penalaran formal yang paling diincar pengembang model, sementara rencana IPO menandai tahap kematangan finansial yang biasanya didahului bukti keunggulan teknologi dan pertumbuhan pendapatan yang konsisten.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Qwen 4 resmi rilis API — MoE raksasa harga murah</h3>
+<p>Alibaba luncurkan Qwen 4 API (11 Nov): model MoE sparse 1,2 triliun parameter, skor 58 (peringkat 3), harga $1/$4 per juta token — bobot Apache 2.0 dijanjikan 20 Desember.</p>
+<div class="src">Sumber: AI Model Updates Dispatch, local-ai-zone.github.io/blog/November_2026_AI_Model_Updates.html (11 Nov 2026)</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Alibaba resmi merilis API Qwen 4, model arsitektur Mixture-of-Experts dengan 1,2 triliun parameter yang dihargai hanya 1 dolar per juta token input dan 4 dolar per juta token output. Bobot modelnya juga dijanjikan dibuka di bawah lisensi Apache 2.0 pada tanggal 20 Desember.</div>
+<ul><li>Qwen 4 dirilis oleh Alibaba dan kini tersedia resmi lewat API.</li><li>Model memakai arsitektur MoE sparse dengan total 1,2 triliun parameter.</li><li>Model mencatat skor 58 dan menempati peringkat tiga.</li><li>Harga API ditetapkan 1 dolar per juta token input dan 4 dolar per juta token output.</li><li>Bobot model dijanjikan dirilis di bawah lisensi Apache 2.0 pada 20 Desember.</li></ul>
+<div class="explain">Rilis Qwen 4 memperlihatkan pola yang sudah menjadi tanda tangan Alibaba di pasar model: mengejar performa papan atas sambil menekan harga ke level yang sulit ditandingi. Arsitektur Mixture-of-Experts sparse dengan 1,2 triliun parameter memungkinkan model besar itu beroperasi secara efisien, karena pada setiap langkah hanya sebagian kecil parameter yang benar-benar diaktifkan, dan efisiensi inilah yang membuat harga 1 dolar per juta token input serta 4 dolar per juta token output bisa dijalankan secara ekonomis. Skor 58 yang menempatkan model ini di peringkat tiga menunjukkan ia berdiri sejajar dengan para pemain frontier tanpa harga frontier. Janji pembukaan bobot di bawah lisensi Apache 2.0 pada 20 Desember menambah nilai strategisnya, karena pengembang bisa menunggu sekadar beberapa minggu untuk menjalankan model ini secara mandiri tanpa biaya API per token.</div>
+<div class="bg"><b>Konteks:</b> Arsitektur Mixture-of-Experts memecah model raksasa menjadi banyak pakar spesialis yang diaktifkan selektif per token, sehingga kapasitas total bisa dibesarkan tanpa menaikkan biaya komputasi seiring, dan pendekatan ini kini menjadi standar model-model besar terbaru. Qwen adalah lini model AI Alibaba yang selama ini dikenal konsisten merilis versi terbuka dengan lisensi permisif, menjadikannya salah satu keluarga model paling banyak dipakai di komunitas pengembang global. Strategi harga murah plus bobot terbuka yang dianut Alibaba menekan margin pesaing API komersial sekaligus memperluas jangkauan ekosistemnya, mengikuti pola persaingan pasar model AI akhir 2026 yang bergerak di dua arah sekaligus: kualitas naik dan harga turun.</div>
+</details>
+</div>
+<div class="pn rv"><a href="2026-11-11.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">11 Nov 2026</span></a></div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var prog=document.getElementById('progress');
+ var toTop=document.getElementById('toTop');
+ function onScroll(){
+   var h=document.documentElement;
+   var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+   if(prog)prog.style.width=(p*100)+'%';
+   if(toTop)toTop.classList.toggle('show',h.scrollTop>500);
+ }
+ addEventListener('scroll',onScroll,{passive:true});onScroll();
+ if(toTop)toTop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+ var els=document.querySelectorAll('.rv');
+ if(!reduce&&'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){
+     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+   els.forEach(function(el){io.observe(el)});
+ } else { els.forEach(function(el){el.classList.add('in')}) }
+ var hero=document.querySelector('.land-hero .poster-wrap img');
+ if(hero&&!reduce){
+   addEventListener('scroll',function(){
+     var r=hero.getBoundingClientRect();
+     if(r.bottom>0&&r.top<innerHeight){
+       var off=(innerHeight-r.top)*0.06;
+       hero.style.transform='translateY('+Math.min(off,90)+'px) scale(1.05)';
+     }
+   },{passive:true});
+ }
+ var counts=document.querySelectorAll('[data-count]');
+ if(!reduce&&'IntersectionObserver' in window&&counts.length){
+   var cio=new IntersectionObserver(function(es){
+     es.forEach(function(e){
+       if(!e.isIntersecting)return;cio.unobserve(e.target);
+       var el=e.target,target=parseInt(el.dataset.count,10),t0=null;
+       function step(t){if(!t0)t0=t;var k=Math.min((t-t0)/900,1);
+         el.textContent=Math.round(target*(1-Math.pow(1-k,3)));
+         if(k<1)requestAnimationFrame(step);}
+       requestAnimationFrame(step);
+     });
+   },{threshold:.4});
+   counts.forEach(function(el){cio.observe(el)});
+ }
+})();
+</script>
