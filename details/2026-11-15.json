@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-15",
+  "items": [
+    {
+      "match_title": "SpaceX Tangkap Starship untuk Pertama Kali dalam Sejarah",
+      "lead": "SpaceX baru saja menorehkan momen yang belum pernah terjadi dalam sejarah program Starship: kapal antariksa upper stage-nya berhasil ditangkap utuh oleh lengan raksasa 'chopsticks' di menara Starbase. Pencapaian itu terjadi dalam Flight 15 pada 13-14 November, usai pesawat menyelesaikan perjalanan orbit Bumi selama 14 putaran.",
+      "points": [
+        "Upper stage Starship berhasil ditangkap lengan 'chopsticks' menara Starbase — pertama kalinya sepanjang sejarah program.",
+        "Ship menghabiskan sekitar 22 jam di orbit dengan 14 kali mengelilingi Bumi sebelum kembali.",
+        "Sebelum kembali, pesawat sempat melepas 26 satelit Starlink V3 ke orbit.",
+        "Booster Super Heavy gagal ditangkap dan terpaksa melakukan splashdown di Teluk Meksiko."
+      ],
+      "explain": "Kemampuan menangkap kembali upper stage Starship mengubah perhitungan ekonomi roket secara fundamental. Selama ini, tahap atas roket hampir selalu terbakar di atmosfer dan hilang setelah satu kali pakai; dengan ditangkannya ship utuh, SpaceX bisa langsung memeriksa kondisi komponen, mempelajari efek 22 jam di orbit pada material, dan menyiapkan penerbangan ulang. Ini juga melengkapi misi penuh Starship sebagai kendaraan transportasi antariksa: mengantar kargo ke orbit, yakni 26 satelit Starlink V3, lalu pulang dan diparkir kembali di menara. Reaksi Administrator NASA Jared Isaacman yang menyebutnya 'hampir seperti sihir' menegaskan betapa besar lompatan ini di mata industri antariksa. Adapun kegagalan menangkap booster Super Heavy mengingatkan bahwa sistem dua tahap penuh ini masih dalam fase perbaikan bertahap.",
+      "background": "Program Starship memang dirancang sejak awal dengan filosofi ketergunaan penuh, dan teknik penangkapan lengan menara sudah pernah diterapkan pada booster Super Heavy di penerbangan-penerbangan sebelumnya. Namun upper stage alias ship jauh lebih sulit: ia harus bertahan dari masuk kembali atmosfer setelah orbit penuh, lalu terbang kembali ke situs peluncuran dengan presisi tinggi untuk dikenali lengan. Flight 15 yang berlangsung 13-14 November menjadi bukti konsep bahwa skenario itu kini benar-benar bisa dilakukan."
+    },
+    {
+      "match_title": "Roket Vulcan Centaur Kembali Terbang Setelah 9 Bulan Vakum",
+      "lead": "Setelah sembilan bulan tanpa penerbangan, roket Vulcan Centaur milik United Launch Alliance akhirnya dijadwalkan kembali ke landasan peluncuran pada 15 November 2026. Jeda panjang ini menutup periode vakum yang cukup langka bagi roket flagship ULA.",
+      "points": [
+        "Peluncuran Vulcan Centaur dijadwalkan pada 15 November 2026.",
+        "Ini penerbangan pertama roket tersebut dalam 9 bulan terakhir.",
+        "United Launch Alliance menjadi operator roket yang kembali aktif setelah jeda panjang."
+      ],
+      "explain": "Kembalinya Vulcan Centaur penting bagi keseimbangan pasar peluncuran antariksa yang belakangan didominasi duet SpaceX dan kompetitor baru. ULA merupakan pemain veteran dengan reputasi keandalan tinggi, dan setiap jeda panjang dari armadanya berarti kurangnya opsi peluncuran bagi misi pemerintah dan komersial. Peluncuran hari ini menjadi ujian apakah program Vulcan bisa mempertahankan ritme operasionalnya ke depan. Bagi industri, kehadiran roket yang aktif lagi menambah kapasitas lepas landas nasional dan mengurangi risiko antrean misi yang menumpuk. Perjalanan selanjutnya akan ditentukan oleh seberapa mulus penerbangan ini berjalan.",
+      "background": "Vulcan Centaur adalah roket generasi baru United Launch Alliance yang menggantikan armada Atlas V dan Delta IV. Sejak penerbangan perdananya, roket ini menjadi tulang punggung baru ULA untuk misi pemerintah dan komersial. Jeda sembilan bulan sejak peluncuran terakhirnya membuat penggemar dan pelanggan industri menantikan apakah program ini kembali ke jalur yang stabil."
+    },
+    {
+      "match_title": "Model Baru Anthropic Kalahkan GPT-6 dan Gemini 4 di Benchmark",
+      "lead": "Anthropic kembali memicu perang model AI frontier: dua model barunya, Claude Mythos 5.2 dan Fable 5.2, mencatat skor AAII 65 dan melampaui Gemini 4 Carbon (60) serta GPT-6 Astra (57). Yang mengejutkan, keunggulan itu diraih sambil memangkas biaya penggunaan 20 persen.",
+      "points": [
+        "Claude Mythos 5.2 dan Fable 5.2 mencetak skor AAII 65, di atas Gemini 4 Carbon (60) dan GPT-6 Astra (57).",
+        "Biaya pemakaian dipotong 20 persen, kini ke kisaran $8-40 per juta token.",
+        "Modelnya memformalkan pembuktian Teorema Terakhir Fermat menjadi kode hanya dalam 30 jam.",
+        "Dua masalah fisika teoretis terbuka juga dilaporkan selesai oleh model ini."
+      ],
+      "explain": "Kombinasi skor benchmark tertinggi dan harga yang justru turun adalah sinyal pergeseran pasar AI: kompetisi kini bukan sekadar soal kecerdasan, tapi efisiensi biaya per unit kemampuan. Dengan tarif $8-40 per juta token, Anthropic menekan margin pesaing yang selama ini bersaing di level harga serupa. Kemampuan memformalkan pembuktian Teorema Terakhir Fermat dalam 30 jam menjadi bukti konkret bahwa model frontier kini bisa bekerja di ranah matematika formal yang dulu eksklusif manusia, bukan cuma mengetik jawaban yang 'terdengar benar'. Penyelesaian dua masalah fisika teoretis terbuka memperkuat klaim itu ke arah sains aplikatif. Bagi pengguna korporat, lompatan ini mempercepat titik di mana model AI layak dipakai untuk pekerjaan riset berskala besar. Sisanya menunggu bagaimana OpenAI dan Google merespons di rilis berikutnya.",
+      "background": "Benchmark AAII menjadi salah satu rujukan utama untuk membandingkan kemampuan model AI frontier terkini, dan tiga bulan terakhir sengit diisi perpindahan puncak papan peringkat antara Anthropic, OpenAI, dan Google. Sebelumnya Gemini 4 Carbon dan GPT-6 Astra bergantian memimpin dengan skor 60 dan 57. Riset matematika formal memang sudah beberapa tahun jadi medan unggulan model frontier, tapi pembuktian teorema level Fermat dalam hitungan jam masih tergolong wilayah baru."
+    },
+    {
+      "match_title": "OpenAI Rilis 372 Hasil Matematika dari Model Rahasia",
+      "lead": "OpenAI mempublikasikan 372 keluarga hasil matematika beserta 722 manuskrip ke GitHub — dan semuanya diklaim dihasilkan oleh model internal frontier yang belum dirilis ke publik. Di dalamnya termasuk solusi konjektur Kakeya 4-dimensi dan kemajuan menuju Hipotesis Riemann.",
+      "points": [
+        "OpenAI membuka 372 keluarga hasil matematika dan 722 manuskrip di GitHub.",
+        "Termasuk klaim solusi konjektur Kakeya 4-dimensi.",
+        "Juga kemajuan menuju Hipotesis Riemann, salah satu masalah terbesar matematika.",
+        "Semua hasil diklaim berasal dari model internal frontier yang belum dipublikasikan."
+      ],
+      "explain": "Langkah OpenAI mempublikasikan hasil riset dari model yang belum diumumkan membaca seperti strategi ganda: memamerkan kemampuan riset sambil menanam ekspektasi untuk produk berikutnya. 372 keluarga hasil dan 722 manuskrip adalah volume yang jauh melampaui output riset matematika manusia dalam tahun-tahun, dan komunitas matematika kini menghadapi pekerjaan besar memverifikasi klaim klaim itu — termasuk sesuatu sebesar konjektur Kakeya 4-dimensi dan pendekatan ke Hipotesis Riemann. Pembukaan kode dan manuskrip ke GitHub memudahkan pemeriksaan independen, yang justru jadi ujian kredibilitas sesungguhnya. Kalau hasilnya terverifikasi, ini menandai pergeseran peran AI dari asisten riset menjadi produsen pengetahuan matematika utama. Kalau tidak, klaim besar seperti ini bisa memicu kritik soal transparansi.",
+      "background": "Konjektur Kakeya dan Hipotesis Riemann termasuk persoalan paling dihormati di matematika, dengan Riemann kerap disebut masalah terpenting yang belum terpecahkan dalam ratusan tahun. Riset matematika berbantuan AI memang berkembang pesat belakangan, namun publikasi massal hasil dari model rahasia seperti ini belum pernah terjadi sebelumnya. OpenAI berada di tengah persaingan ketat dengan Anthropic yang baru saja memamerkan kemampuan pembuktian teorema pada model barunya."
+    }
+  ]
+}
