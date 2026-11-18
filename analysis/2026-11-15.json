@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-15",
+  "items": [
+    {
+      "match_title": "SpaceX Tangkap Starship untuk Pertama Kali dalam Sejarah",
+      "analysis": "Menangkap wahana yang sudah mengorbit penuh menyelesaikan setengah persamaan reusability; setengah sisanya adalah biaya dan waktu refurbishment, angka yang belum pernah dipublikasikan SpaceX. Selama angka itu dirahasiakan, sejarahnya sudah sah tetapi ekonominya masih klaim."
+    },
+    {
+      "match_title": "Roket Vulcan Centaur Kembali Terbang Setelah 9 Bulan Vakum",
+      "analysis": "Kembali terbang setelah vakum panjang selalu jadi ujian nyata organisasi: tim berubah, pemasok berubah, memori produksi memudar. Apa yang terjadi setelah menit-menit pertama penerbangan ini akan menentukan apakah ULA keluar dari krisis atau justru menumpuk masalah baru."
+    },
+    {
+      "match_title": "Model Baru Anthropic Kalahkan GPT-6 dan Gemini 4 di Benchmark",
+      "analysis": "Benchmark versi vendor hampir selalu dipilih di tempat modelnya paling unggul, jadi klaim mengalahkan dua model sekaligus wajib dibaca sebagai iklan sampai ada uji pihak ketiga. Pertanyaan yang lebih berguna: bagaimana performanya di tugas dunia nyata yang dilakukan pelanggan, bukan di leaderboard."
+    },
+    {
+      "match_title": "OpenAI Rilis 372 Hasil Matematika dari Model Rahasia",
+      "analysis": "Mempublikasikan 372 hasil dari model yang tidak diungkap adalah kombinasi aneh antara transparansi dan rahasia dagang: buktinya terbuka, tapi prosesnya tidak bisa direproduksi siapa pun. Verifikasi Lean mengurangi keraguan, tapi komunitas matematika tetap berhak menuntut lebih dari satu sumber penilaian."
+    }
+  ]
+}

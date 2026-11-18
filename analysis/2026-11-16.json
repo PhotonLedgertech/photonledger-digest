@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-16",
+  "items": [
+    {
+      "match_title": "Starship ditangkap hidup-hidup dari orbit pertama dalam sejarah",
+      "analysis": "Pencapaian teknisnya nyata, tapi narasi sejarahnya perlu ditempel catatan kecil: booster yang meledak di Teluk Meksiko di penerbangan yang sama menunjukkan program ini masih jauh dari konsistensi operasional. Satu tangkapan sempurna adalah demonstrasi; sepuluh berturut-turut baru menjadi transportasi."
+    },
+    {
+      "match_title": "Roket ULA Vulcan Centaur gagal 40 satelit internet Amazon hilang",
+      "analysis": "Kehilangan 40 satelit sekaligus bukan hanya kerugian ULA — ini pengingat bahwa konsentrasi muatan berisiko: satu anomali memusnahkan investasi konstelasi bertahun-tahun. Amazon kini menghadapi pertanyaan strategis yang lebih keras: apakah tetap bertaruh pada satu peluncur atau membayar premium untuk diversifikasi."
+    },
+    {
+      "match_title": "James Webb temukan sepasang quasar tertua yang tidak seharusnya ada",
+      "analysis": "Frasa tidak seharusnya ada lebih mencerminkan keterbatasan teori pembentukan lubang hitam daripada keanehan alam semesta. Setiap temuan JWST di cosmic dawn selama ini menunjuk ke arah yang sama: mekanisme pertumbuhan awal yang lebih efisien daripada yang dimodelkan — kemungkinan bukan kebetulan, tapi sinyal model yang perlu direvisi."
+    },
+    {
+      "match_title": "Google rilis 3 model Gemini 4 dalam 3 hari Carbon Hydrogen model skor baru",
+      "analysis": "Meluncurkan tiga model dalam tiga hari adalah respons kompetisi, bukan puncak riset — dan konsekuensinya nyata: dokumentasi, ekosistem tooling, dan kepercayaan developer harus mengejar tempo yang hampir mustahil. Pengguna justru perlu berhati-hati memilih, karena nama keluarga model yang sama kini menyembunyikan perbedaan performa dan harga yang besar."
+    },
+    {
+      "match_title": "Meituan open-source LongCat-2.5 model agent 1,6 triliun parameter dilatih di chip China",
+      "analysis": "Klaim dilatih tanpa GPU Nvidia itu kuat secara geopolitik, tapi harus dibaca hati-hati: Terminal Bench 88,4 vs Opus 89,1 adalah angka versi vendor, dan skalabilitas produksi chip Huawei ke ribuan pelanggan belum terbukti. Yang tak terbantahkan justru sinyal pasarnya: frontier AI tidak lagi monopoli akses ke silikon Amerika."
+    },
+    {
+      "match_title": "Anthropic pangkas harga Claude Fable 5.2 jadi $8/$40 per juta token",
+      "analysis": "Pemangkasan 20 persen hanya sebulan setelah rilis adalah pengakuan bahwa pasar menolak harga sebelumnya, bukan kemurahan hati. Bagi pelanggan ini momen terbaik untuk menegosiasikan kontrak; bagi lab AI, margin makin tipis dan perlombaan mencari efisiensi inferensi jadi satu-satunya jalan keluar."
+    }
+  ]
+}

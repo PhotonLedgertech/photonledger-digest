@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "items": [
+    {
+      "match_title": "Starship Flight 15 catch booster gagal catch Ship masih ditunggu",
+      "analysis": "Hasil terpisah ini justru data yang paling jujur: menangkap Ship dari orbit sambil kehilangan booster berarti satu sistem bekerja dan yang lain belum. Yang perlu dipantau bukan sorotan tangkapan, melainkan apakah kegagalan booster berulang — pola yang berulang berarti masalah desain, bukan keberuntungan."
+    },
+    {
+      "match_title": "ULA luncurkan Vulcan Centaur pertama dalam 9 bulan",
+      "analysis": "Vakum sembilan bulan untuk roket berstatus andalan itu lama sekali untuk standar industri, dan peluncuran kembali ini memaksa pertanyaan yang kurang nyaman: apakah tekanan jadwal mengalahkan proses penjaminan mutu. Jawabannya akan keluar dengan sendirinya, entah dari peluncuran ini atau berikutnya."
+    },
+    {
+      "match_title": "Rocket Lab capai misi ke-100",
+      "analysis": "Seratus misi dari roket kecil berbahan komposit buatan sendiri adalah bukti bahwa niche tetap bernilai di era mega-konstelasi. Yang membedakan Rocket Lab dari pesaing small-launch yang gugur adalah disiplin ritme peluncuran, bukan spekulasi kapasitas."
+    },
+    {
+      "match_title": "CEO Nvidia Jensen Huang mundur usai skandal",
+      "analysis": "Kasus ini menunjukkan betapa tipisnya lapisan tata kelola di perusahaan bernilai triliunan: satu orang bisa membawa reputasi dan valuasi sekaligus ke tepi jurang. Penggantian CEO sementara akan diuji langsung oleh pasar dalam laporan keuangan terdekat, bukan oleh siaran pers."
+    },
+    {
+      "match_title": "Google rilis Gemini 4 Hydrogen 2,5x lebih cepat",
+      "analysis": "Mengganti model andalan mid-tier dalam satu langkah adalah pernyataan strategi: Google memilih mempertahankan pengguna beranggaran kecil daripada memaksimalkan margin. Klaim performanya masih butuh uji independen, tapi harganya sendiri sudah jadi tekanan bagi kompetitor."
+    },
+    {
+      "match_title": "Anthropic dan OpenAI rilis model murah sekaligus",
+      "analysis": "Perang harga antar-lab besar adalah kabar baik untuk pengguna dan sinyal buruk untuk margin — seseorang di industri ini akhirnya akan menanggung biaya komputasi yang tidak tertutup. Yang menarik, diskon harga justru terjadi saat permintaan AI sedang tinggi, tanda kompetisi lebih ketat dari yang diakui publik."
+    }
+  ]
+}

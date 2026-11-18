@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-13",
+  "items": [
+    {
+      "match_title": "SpaceX Starship Flight 15 percobaan landing ganda pertama",
+      "analysis": "Percobaan menangkap dua komponen sekaligus dalam satu penerbangan adalah lompatan ambisi, bukan kenaikan bertahap — dan itu menyembunyikan risikonya: satu kegagalan kecil di tahap pertama bisa membatalkan data yang sebenarnya dicari. Perlu diingat, target resmi Flight 15 masih uji, bukan layanan; rayakan prosesnya, jangan anggap jadwal Artemis otomatis aman."
+    },
+    {
+      "match_title": "Teleskop Euclid rilis data pertama 900 juta galaksi",
+      "analysis": "Membuka 900 juta galaksi ke publik lebih penting daripada angkanya sendiri: ini memindahkan botlenecks astronomi dari teleskop ke analisnya. Pertanyaan jujurnya, apakah jumlah ilmuwan yang bisa mengolah data sebesar ini cukup, atau kita akan menimbun data tanpa menuai pengetahuan."
+    },
+    {
+      "match_title": "Jensen Huang mundur sebagai CEO Nvidia",
+      "analysis": "Resign ini memperlihatkan risiko tata kelola klasik perusahaan pendiri-tunggal: satu figur dengan kekuatan hampir tanpa batas, tanpa mekanisme kendali yang bekerja lebih cepat dari skandalnya. Reaksi pasar berikutnya akan menguji sesuatu yang lebih menarik: apakah valuasi Nvidia selama ini membeli visi Huang, atau membeli mesin uang datanya yang tetap jalan tanpa dia."
+    },
+    {
+      "match_title": "Google rilis Gemini 4 Hydrogen",
+      "analysis": "Klaim 2,5x lebih cepat dan hemat kuota 24% wajar diuji skeptis karena semuanya berasal dari vendor sendiri. Yang lebih menarik justru posisinya: Google menurunkan model kelas menengah ke harga $1,50/$7,50, tanda perang harga AI bergeser dari frontier ke pasar massal."
+    }
+  ]
+}

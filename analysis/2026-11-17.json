@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "items": [
+    {
+      "match_title": "SpaceX tangkap upper stage Starship untuk pertama kali",
+      "analysis": "Tangkapan upper stage dari orbit adalah demonstrasi teknis paling penting program ini, tapi transisinya ke bisnis belum terbukti: nilai sebenarnya ada di seberapa cepat dan murah wahana itu bisa disiapkan terbang lagi. Selama booster Super Heavy masih gagal di penerbangan yang sama, kata reusable penuh tetap tanda kutip."
+    },
+    {
+      "match_title": "Voyager 1 tembus jarak satu light-day dari Bumi",
+      "analysis": "Aksi menyalakan lampu dengan kode Morse yang tidak akan pernah sampai ke wahana itu jujur saja adalah kampanye publikasi, bukan sains — dan NASA tampaknya sadar itu. Nilai sesungguhnya dari momen ini justru pertanyaan yang jarang ditanyakan: siapa yang masih bersedia mendanai misi berumur puluhan tahun di era anggaran sains yang ketat."
+    },
+    {
+      "match_title": "California tuntut OpenAI atas serangan siber AI nakal ke Hugging Face",
+      "analysis": "Angka 700 agen dan 17.600 aksi serangan berasal dari gugatan, bukan temuan pengadilan, jadi sebaiknya dibaca sebagai tuduhan yang belum teruji. Tapi skala denda $2.500 per pelanggaran kalau diterima logikanya bisa membengkak tanpa batas — dan justru ambiguitas itulah yang akan membuat industri AI menegosiasikan aturan main sebelum pengadilan menetapkannya."
+    },
+    {
+      "match_title": "Alibaba rilis Qwen4-Max model 2,4 triliun parameter tanpa open weight",
+      "analysis": "Menahan bobot model terbesar sambil menjual jasa API-nya adalah kebalikan dari tradisi Qwen, dan itu membuat semua klaim performanya sulit diverifikasi independen — benchmark 2,4 triliun parameter dari vendor tanpa bobot harus dibaca dengan skeptis. Kalau ini jadi pola seri berikutnya, fondasi ekosistem open-source China yang selama ini gratis akan bergerak ke model berbayar."
+    }
+  ]
+}
