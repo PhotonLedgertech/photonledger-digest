@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digest 22 Nov 2026 — PhotonLedger</title>
+<meta name="description" content="Digest berita AI & Space 22 Nov 2026: 6 berita dari sumber global, dengan pembahasan mendalam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'">
+<style>
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.anl{font-size:13.5px;color:#dfe8ff;margin:12px 0 2px;
+background:rgba(0,229,255,.06);border-left:3px solid var(--cyan);
+border-radius:0 10px 10px 0;padding:10px 14px;line-height:1.55}
+.anl b{color:var(--cyan);font-size:11.5px;letter-spacing:1.5px}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+
+
+<header class="land-hero"><div class="poster-wrap"><img src="assets/poster_space_dragoncrs35.jpg" alt="Poster 22 Nov 2026"></div>
+<div class="lhd"><div class="ldate"><i>📅</i>22 NOV 2026</div>
+<h1>Dragon Splashdown, Bawa Sampel Riset Penting</h1>
+<div class="lsub">Edisi 22 Nov 2026 · ringkasan &amp; pembahasan mendalam dari sumber berita global.</div>
+</div></header>
+<div class="land-body">
+<div class="lstats rv">
+ <div class="stat"><b data-count="6">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="2">0</b><span>Topik</span></div>
+ <div class="stat"><b>✔</b><span>Pembahasan Detail</span></div>
+</div>
+<div class="topic-l rv"><span class="chip">Space Exploration</span><span class="rule"></span></div>
+<div class="news feat-news rv">
+<span class="ftag">★ CERITA UTAMA</span>
+<h3>Dragon Splashdown, Bawa Sampel Riset Penting</h3>
+<p>Kapsul SpaceX Dragon mendarat di Pasifik Sabtu 21 Nov, membawa 6.300+ pon kargo dari ISS — termasuk pembuluh darah hasil bioprinting 3D untuk riset penuaan vaskular dan organoid tumor beku untuk riset kanker. Ini misi resupply ke-35 NASA-SpaceX, docking sejak 15 Okt.</p>
+<div class="src">Sumber: NASA — nasa.gov/blogs/spacestation | 21 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Kapsul kargo SpaceX Dragon telah mendarat selamat di Samudra Pasifik pada Sabtu, 21 November 2026, menutup misi resuplai ke-35 NASA bersama SpaceX ke Stasiun Antariksa Internasional.</div>
+<ul><li>Dragon mendarat (splashdown) di Samudra Pasifik dekat pesisir Los Angeles pada Sabtu sore waktu setempat, sekitar pukul 14:03 PST, setelah melepas docking dari stasiun pada 20 November.</li><li>Kapsul membawa pulang lebih dari 6.300 pon (sekitar 2.900 kg) kargo ilmiah dan perlengkapan dari ISS.</li><li>Salah satu sampel utamanya adalah pembuluh darah hasil bioprinting 3D yang dipakai mempelajari penuaan vaskular dan penyakit kardiovaskular, baik di antariksa maupun di Bumi.</li><li>Ikut pulang pula organoid tumor yang dibekukan dan telah diperlakukan di stasiun antariksa, untuk riset pengobatan kanker dan pengobatan yang dipersonalisasi.</li><li>Misi ini adalah resuplai komersial ke-35 NASA-SpaceX; Dragon telah docking di ISS sejak 15 Oktober 2026 setelah diluncurkan dua hari sebelumnya dari Cape Canaveral dengan roket Falcon 9.</li></ul>
+<div class="explain">Pendaratan ini penting karena sampel yang dibawa pulang bukan sekadar barang, melainkan hasil eksperimen yang hanya bisa dijalankan di lingkaran gravitasi mikro. Pembuluh darah bioprinting 3D memungkinkan ilmuwan mengamati bagaimana pembuluh darah menua dan terserang penyakit jantung dalam kondisi yang tidak bisa direplikasi di laboratorium Bumi, sementara organoid tumor yang dibekukan berpotensi membuka cara baru pengobatan kanker yang lebih tepat sasaran bagi tiap pasien. Semakin cepat sampel sampai ke tangan peneliti — dan pendaratan di laut dekat Los Angeles memangkas waktu logistik — semakin besar nilai ilmiahnya.</div>
+<div class="bg"><b>Konteks:</b> NASA sudah sejak lebih dari satu dekade menggantungkan logistik ISS pada program Commercial Resupply Services, dengan SpaceX sebagai operator utama lewat kapsul Dragon. Berbeda dengan kapsul yang terbakar saat masuk atmosfer, Dragon dirancang untuk kembali utuh dengan muatan, sehingga menjadi sarana utama mengirim hasil eksperimen dari orbit kembali ke Bumi. Misi ke-35 ini diluncurkan 13 Oktober 2026 dan docking di stasiun dua hari kemudian, lalu menginap lebih dari sebulan sebelum dipulangkan ke pesisir California.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Bintang &quot;Ditelan&quot; Bintang Raksasa, Webb Rekam Detik-Detiknya</h3>
+<p>James Webb menangkap tabrakan kosmik di galaksi Andromeda: sebuah bintang kecil berspiral masuk ke bintang raksasa yang 18.000 kali lebih terang dari Matahari, memicu letusan dahsyat.</p>
+<div class="src">Sumber: ScienceDaily — sciencedaily.com/news/space_time/space_telescopes | 21 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Astronom untuk pertama kalinya merekam lengkap proses sebuah bintang kecil tersedot masuk dan melebur ke dalam bintang raksasa di galaksi Andromeda, dengan teleskop luar angkasa James Webb sebagai pembuktian akhirnya.</div>
+<ul><li>Peristiwa terjadi di tepi galaksi Andromeda, sekitar 2,5 juta tahun cahaya dari Bumi, pada sistem bintang ganda yang dijuluki Bao.</li><li>Bintang raksasanya sebelum letusan punya massa sekitar 7 kali Matahari, radius 350 kali Matahari, dan kecerahan sekitar 18.000 kali Matahari.</li><li>Pasangannya, bintang kecil sekitar 70 persen massa Matahari, butuh waktu sekitar tujuh tahun untuk berpilin masuk ke inti sang raksasa sebelum melebur menjadi satu.</li><li>Peleburan itu memicu letusan yang pernah mencapai sekitar sejuta kali kecerahan Matahari.</li><li>Webb mengamati objek yang dijuluki Bao ini hanya 47 hari setelah letusannya mencapai puncak — tindak lanjut paling cepat yang pernah dilakukan untuk peristiwa semacam ini — dan hasil risetnya dipublikasikan di jurnal Nature.</li></ul>
+<div class="explain">Ini penting karena peleburan dua bintang (stellar merger) selama ini hanya bisa ditebak dari puing-puing yang tersisa; kali ini para peneliti untuk pertama kalinya merekonstruksi keseluruhan alur peristiwa dari sebelum, selama, hingga sesudah tabrakan terjadi. Webb masuk dengan cepat lewat program observasi darurat dan inframerahnya menangkap debu yang terlepas dari bintang raksasa, menjadi kunci pembuktian bahwa bintang kecil memang tenggelam ke inti, bukan lolos terbang. Pemahaman ini membantu astronom memprediksi kapan dan bagaimana sistem bintang ganda lain di galaksi kita bisa mengalami nasib serupa.</div>
+<div class="bg"><b>Konteks:</b> Bintang raksasa di akhir hidupnya mengembang luar biasa hingga bisa menelan benda-benda yang mengelilinginya — bahkan dianggap akan terjadi pada Matahari kita terhadap planet-planet dalam miliaran tahun lagi. Sistem Bao ini awalnya terdeteksi lewat teleskop inframerah WINTER di Observatorium Palomar dan teleskop antariksa NEOWISE milik NASA, lalu diawaki secara terus-menerus oleh SPHEREx, Webb, dan sejumlah observatorium darat selama hampir tiga tahun. Letusan besarnya terjadi pada akhir 2025, dan bukti pengunci dari Webb direkam pada 24 Desember 2025 sebelum hasil akhirnya dirilis November 2026.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Teleskop Sinar-X Buka Mata Setelah 8 Tahun Terbang ke Merkurius</h3>
+<p>Setelah 8 tahun perjalanan dan 10 miliar km, misi teleskop sinar-X menuju Merkurius akhirnya mengambil observasi kosmik pertamanya — performa disebut lebih baik dari prediksi ilmuwan.</p>
+<div class="src">Sumber: ScienceDaily — sciencedaily.com/news/space_time/nasa | 20 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Instrumen teleskop sinar-X MIXS di atas misi BepiColombo akhirnya melakukan observasi astronomis pertamanya, setelah delapan tahun dan sekitar 10 miliar kilometer menempuh perjalanan menuju Merkurius.</div>
+<ul><li>MIXS (Mercury Imaging X-ray Spectrometer) dibangun oleh konsorsium Eropa yang dipimpin University of Leicester, di atas misi BepiColombo hasil kerja sama badan antariksa Eropa (ESA) dan Jepang (JAXA).</li><li>Target observasi pertamanya adalah Nebula Kepiting, sumber sinar-X terkenal yang jaraknya sekitar 6.500 tahun cahaya dari Bumi.</li><li>Seri observasi utama dilakukan 11-12 September: total 39 jam pengamatan dengan 55 kali pergantian orientasi wahana.</li><li>Setelah 8 tahun di antariksa dan sekitar 10 miliar km tempuh, kualitas citranya justru sedikit lebih tajam dibanding hasil kalibrasi di laboratorium tahun 2015, dan detektornya tidak mengalami kerusakan radiasi.</li><li>BepiColombo memasuki orbit Merkurius sekitar 21 November, dan fase sains utama dijadwalkan mulai April 2027, berjalan minimal satu tahun.</li></ul>
+<div class="explain">Kabar ini penting karena sebuah instrumen presisi tinggi yang sudah terbang delapan tahun di lingkungan antariksa yang keras bisa saja menurun performanya — padahal hasil ujinya justru lebih tajam dari saat masih di laboratorium. Artinya, peta komposisi permukaan Merkurius yang akan dihasilkan MIXS berpeluang lebih detail dari perkiraan awal. Ini juga teleskop sinar-X pencitraan pertama yang dipakai pada misi planet, jadi performanya menjadi tolok ukur untuk desain instrumen misi planet ke depan.</div>
+<div class="bg"><b>Konteks:</b> BepiColombo adalah misi sains paling kompleks kedua yang pernah dikirim ke Merkurius, planet terdekat dengan Matahari yang lingkungannya sangat panas dan beriradiasi. Selama perjalanan panjangnya wahana memakai manuver bantuan gravitasi sehingga butuh bertahun-tahun untuk sampai, dan instrumen-instrumennya baru bisa memandang langsung ke angkasa setelah modul transfer terpisah dari dua orbiter sains pada September. MIXS nantinya bekerja sama dengan instrumen lain untuk memetakan susunan atom permukaan Merkurius secara menyeluruh, membantu ilmuwan memahami asal-usul planet terkecil di tata surya ini.</div>
+</details>
+</div>
+<div class="topic-l rv"><span class="chip">Ai</span><span class="rule"></span></div>
+<div class="news rv">
+<h3>Matematikawan Anthropic Klaim Pecahkan Riemann Hypothesis Pakai Claude</h3>
+<p>Levent Alpöge mengumumkan 20 Nov bahwa ia dan Claude menemukan bukti Riemann Hypothesis — misteri matematika berusia 167 tahun dengan hadiah $1 juta. Bukti 17 juta baris kode Lean, tapi belum diverifikasi independen; Clay Mathematics Institute masih mencantumkannya &quot;belum terpecahkan&quot;.</p>
+<div class="src">Sumber: AP via Maine Public — mainepublic.org/npr-news | 21 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Levent Alpöge, matematikawan yang bekerja di Anthropic, mengumumkan bahwa dirinya bersama Claude telah menemukan bukti Riemann Hypothesis — salah satu masalah matematika terbesar yang belum terpecahkan selama lebih dari seabad.</div>
+<ul><li>Alpöge mengumumkannya pada 20 November 2026 lewat catatan empat halaman di situs pribadinya, yang menyatakan ia percaya telah menemukan bukti Riemann Hypothesis dengan bekerja bersama Claude.</li><li>Bukti itu dirilis bukan sebagai paper biasa, melainkan sebagai kode formal dalam bahasa pembuktian Lean: sekitar 17,3 juta baris dalam lebih dari 175 ribu berkas, dengan perkiraan 819 ribu teorema dan lema.</li><li>Riemann Hypothesis sudah menggantung sejak 1859 — sekitar 167 tahun — dan menjadi salah satu tujuh Millennium Prize Problems dari Clay Mathematics Institute dengan hadiah 1 juta dolar AS.</li><li>Klaim ini belum diverifikasi penuh secara independen; pembacaan independen terhadap arsip menemukan tidak ada langkah yang dilewati, tetapi build lengkap seluruh 17 juta baris masih dalam proses, dan para ahli menekankan belum ada penilaian komunitas matematika.</li><li>Clay Mathematics Institute masih mencantumkan Riemann Hypothesis sebagai belum terpecahkan; hadiah 1 juta dolarnya mensyaratkan publikasi di jurnal peer-review dan dua tahun pengawasan.</li></ul>
+<div class="explain">Jika terbukti benar, ini akan menjadi lompatan ganda: sekaligus menjawab soal tentang pola tersembunyi bilangan prima yang dipelajari matematikawan sejak 1859, dan menandai pertama kalinya sebuah model bahasa AI diklaim menyumbang gagasan sentral dalam penyelesaian masalah sekaliber ini — bahkan sang penulis mengaku belum sepenuhnya memahami seluruh argumennya. Namun skeptisisme tetap wajar: bukti setebal jutaan baris kode yang belum terbaca manusia dan belum lolos verifikasi penuh berarti komunitas matematika masih butuh waktu lama untuk menilainya, dan institusi pemberi hadiah pun belum menggeser status masalahnya.</div>
+<div class="bg"><b>Konteks:</b> Riemann Hypothesis menyatakan bahwa semua zero tak trivial dari fungsi zeta Riemann punya bagian riil satu per dua — sebuah dugaan yang menjadi fondasi banyak teorema lain tentang sebaran bilangan prima. Pemeriksaan bukti secara formal lewat bahasa Lean memang sudah lama dipakai komunitas matematika karena komputer dapat memverifikasi setiap langkah penalaran, sehingga penggunaannya di sini memungkinkan klaim sebesar ini setidaknya bisa diuji secara mekanis. Alpöge sendiri adalah peneliti teori bilangan dengan latar belakang Harvard dan Princeton yang kini menjadi anggota tim teknis Anthropic; ia berencana menulis versi bukti yang bisa dibaca manusia.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>Anthropic IPO, Saham Melonjak Valuasi $107,3 Miliar</h3>
+<p>Anthropic resmi debut di Wall Street dengan IPO yang disebut rekor, nilai valuasi mencapai $107,3 miliar.</p>
+<div class="src">Sumber: GuideGuru — guideguru.dev/ai-news-november-21-2026 | 21 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">Anthropic, perusahaan di balik Claude, resmi memulai perdagangan sahamnya di Wall Street dalam IPO terbesar yang pernah tercatat, dengan total dana yang terkumpul mencapai sekitar 107,3 miliar dolar AS.</div>
+<ul><li>Saham Anthropic dihargai 83 dolar per lembar pada 18 November — di atas rentang penawaran awal 70-78 dolar — dengan 980 juta saham dilepas ke publik, mengumpulkan sekitar 81,3 miliar dolar, IPO terbesar sepanjang sejarah melebihi rekor SpaceX sebesar 75 miliar dolar.</li><li>Ditambah penempatan privat 26 miliar dolar dari sejumlah raksasa teknologi — termasuk Google, Nvidia, AMD, dan Microsoft — total dana terkumpul mencapai sekitar 107,3 miliar dolar.</li><li>Saham perdagangan perdana di Nasdaq dengan kode ANT pada 19 November, membuka di 111,50 dolar atau sekitar 34 persen di atas harga IPO.</li><li>Saham ditutup perdana di 97,17 dolar, naik lebih dari 17 persen dari harga IPO; valuasi sepenuhnya didilusi perusahaan mencapai sekitar 1,5 triliun dolar dan sempat menyentuh sekitar 2 triliun dolar saat perdagangan pembukaan.</li><li>Ini IPO pertama oleh laboratorium AI frontier, dengan Goldman Sachs dan Morgan Stanley sebagai penjamin emisi utama.</li></ul>
+<div class="explain">Debut ini penting karena menjadi ujian nyata selera pasar modal terhadap industri AI yang selama ini didanai modal privat: investasi institusional yang ramai, harga IPO yang tergas di atas rentang, dan lompatan saham di hari pertama menunjukkan permintaan publik masih sangat besar meski kekhawatiran soal gelembung AI beredar. Dengan masuk bursa, keuangan Anthropic kini harus dibuka secara berkala ke publik, dan pergerakan sahamnya akan menjadi termometer sentimen untuk seluruh sektor — naik atau turun, dampaknya terasa ke pendanaan perusahaan AI lain.</div>
+<div class="bg"><b>Konteks:</b> Sebelum IPO, Anthropic tumbuh pesat sebagai pengembang keluarga model Claude melalui pendanaan privat yang nilainya terus naik — dari sekitar 61,5 miliar dolar awal 2025 hingga sekitar 965 miliar dolar pada putaran pendanaan Mei 2026. IPO ini menandai pertama kalinya sebuah laboratorium AI frontier — kelas perusahaan yang membangun model paling canggih — membuka sahamnya di pasar publik, melampaui debut SpaceX pada Juni yang sebelumnya memecah rekor. Pendanaan tambahan dari para raksasa chip dan cloud menegaskan ketergantungan ekosistem teknologi pada pemasok model AI kelas atas.</div>
+</details>
+</div>
+<div class="news rv">
+<h3>OpenAI Rilis GPT-6.2 Astra &amp; Sol, Harga Turun</h3>
+<p>Astra naik 5,2 poin di Agents&#x27; Last Exam dan 6,2 poin di GDPval v2 dibanding versi lama, pakai 22% token lebih sedikit. Harga API Astra dipotong jadi $8/$40 per juta token (dari $10/$50).</p>
+<div class="src">Sumber: Digital Trends — digitaltrends.com/computing/openai-gpt-6-2-astra-sol-launch | 17 Nov 2026</div>
+<details class="more"><summary>📖 Pembahasan lengkap &amp; poin utama</summary>
+<div class="lead">OpenAI merilis dua model barunya, GPT-6.2 Astra dan GPT-6.2 Sol, dengan kenaikan skor di berbagai tolok ukur agen dan pemotongan harga API untuk model Astra.</div>
+<ul><li>GPT-6.2 Astra naik 5,2 poin dibanding pendahulunya GPT-6 Astra pada Agents&#x27; Last Exam, uji alur kerja profesional multi-langkah, dengan biaya per tugas kurang dari sepertiga.</li><li>Pada GDPval v2, tolok ukur internal OpenAI untuk pekerjaan pengetahuan, Astra naik 6,2 poin sekaligus memakai 22 persen lebih sedikit token keluaran; Sol naik 5,3 poin dibanding GPT-6.1 Sol.</li><li>Harga API Astra dipotong 20 persen menjadi 8 dolar per juta token masukan dan 40 dolar per juta token keluaran, dari sebelumnya 10 dolar dan 50 dolar; harga input tersimpan (cached) turun 60 persen ke 0,40 dolar.</li><li>Sol mempertahankan harga pendahulunya, yaitu 2 dolar per juta token masukan dan 10 dolar per juta token keluaran, menjadikannya opsi murah dengan performa coding yang mengejar Astra.</li><li>Kedua model tersedia di OpenAI API, ChatGPT, dan Codex, dirilis pada 17 November 2026.</li></ul>
+<div class="explain">Rilisan ini penting karena arah persaingan model AI tampaknya bergeser: bukan sekadar soal skor tertinggi, melainkan seberapa banyak kemampuan yang didapat per dolar. OpenAI sekaligus menaikkan performa dan menurunkan harga Astra, sinyal bahwa tekanan pesaing seperti Anthropic dan Google memaksa efisiensi turun ke pelanggan. Bagi pengembang yang membangun produk di atas API, pemotongan 20 persen plus konsumsi token yang lebih hemat bisa mengubah ekonomi aplikasi AI secara langsung, terutama untuk beban kerja agen yang boros token.</div>
+<div class="bg"><b>Konteks:</b> GPT-6.2 Astra sebenarnya punya riwayat menarik: versi sebelumnya sempat dibatalkan OpenAI sebelum akhirnya dikirim tujuh pekan kemudian dengan harga yang justru lebih murah. Agents&#x27; Last Exam menguji kemampuan model menyelesaikan alur kerja profesional bertingkat dalam banyak langkah, sedangkan GDPval v2 menguji tugas pekerjaan pengetahuan seperti konsultan, keuangan, dan desain. Angka-angka yang dipublikasikan OpenAI umumnya laporan vendor sendiri, jadi pembanding independen seperti lembaga evaluasi pihak ketiga tetap jadi rujukan untuk melihat posisi Astra dan Sol di lapangan.</div>
+</details>
+</div>
+<div class="pn rv"><a href="2026-11-21.html"><span class="lbl">← EDISI SEBELUMNYA</span><span class="dt">21 Nov 2026</span></a></div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<p style="margin-top:8px"><a href="tentang.html">Tentang</a> · <a href="privasi.html">Kebijakan Privasi</a> · <a href="kontak.html">Kontak</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script src="assets/site.js"></script>
