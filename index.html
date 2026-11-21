@@ -1,552 +1,310 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PhotonLedger — Digest AI &amp; Luar Angkasa</title>
-<meta name="description" content="PhotonLedger: digest harian berita AI dan luar angkasa, diringkas jadi satu halaman. Tayang 19:00 WIB.">
-<meta name="theme-color" content="#02060f">
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PhotonLedger Digest — Berita AI & Space Harian</title>
+<meta name="description" content="Digest harian berita AI dan Space exploration — ringkasan berita global terkini oleh PhotonLedger.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Variable-axis Sora (wght 100..900). The local assets/fonts/sora-variable.ttf is not
-     available, so the Google Fonts variable build stands in, per the brief. -->
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'">
 <style>
-  /* ============ 2. DESIGN TOKENS ============ */
-  :root{
-    --ink:#ffffff; --sub:#a2a9b8; --nav:#fbfdff; --foot:#f4f8fd;
-    --hair:rgba(196,214,232,.72); --chev:rgba(214,232,250,.90);
-    --navdim:#e8ecf0; --feat:#e2ebf5;
-    --veil:6,10,18;
-  }
+:root{--bg:#06080d;--surface:#0b0f18;--card:#0d1220;--card2:#101828;--elev:#141d33;
+--txt:#e8edf7;--dim:#8b97b0;--faint:#5a6a8c;
+--cyan:#00e5ff;--cyan2:#4d8bff;--gold:#ffb900;--line:rgba(120,150,200,.13);
+--line2:rgba(120,150,200,.24)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+font-family:Inter,'Segoe UI',system-ui,sans-serif;line-height:1.7;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(1000px 460px at 72% -12%,rgba(0,229,255,.08),transparent 62%),
+radial-gradient(760px 400px at 8% -4%,rgba(255,185,0,.05),transparent 60%),
+radial-gradient(600px 500px at 50% 110%,rgba(77,139,255,.05),transparent 60%)}
+::selection{background:rgba(0,229,255,.28)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#1c2740;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3857}
+#progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:100;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));box-shadow:0 0 12px rgba(0,229,255,.6)}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:12px 22px;
+background:rgba(6,8,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;
+color:var(--cyan);text-transform:uppercase;font-weight:800;text-decoration:none;
+border:1px solid rgba(0,229,255,.28);border-radius:24px;padding:7px 16px;
+background:rgba(0,229,255,.06);transition:box-shadow .2s,transform .2s}
+.brand:hover{box-shadow:0 0 18px rgba(0,229,255,.25);transform:translateY(-1px)}
+.topbar .cta{font-size:12px;font-weight:700;color:#062028;text-decoration:none;
+padding:8px 18px;border-radius:24px;
+background:linear-gradient(90deg,var(--cyan),#7deaff);
+transition:transform .2s,box-shadow .2s}
+.topbar .cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,229,255,.35)}
+.hero-hd{position:relative;text-align:center;padding:64px 20px 40px;overflow:hidden}
+.hero-hd .glowline{position:absolute;left:50%;top:0;transform:translateX(-50%);
+width:min(760px,90%);height:1px;
+background:linear-gradient(90deg,transparent,rgba(0,229,255,.5),transparent)}
+h1.hd{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:3px;
+font-size:clamp(34px,7vw,56px);margin:18px 0 8px;
+background:linear-gradient(90deg,#fff 15%,var(--cyan) 70%,var(--cyan2));
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{color:var(--dim);font-size:15px;max-width:580px;margin:0 auto}
+.hero-stats{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:12px 22px;min-width:120px;transition:border-color .2s,transform .2s}
+.stat:hover{border-color:rgba(0,229,255,.3);transform:translateY(-2px)}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--cyan);
+font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px}
+.tickerbar{display:flex;align-items:stretch;border-bottom:1px solid var(--line);
+background:rgba(11,15,24,.85);overflow:hidden}
+.tickerbar .live{display:flex;align-items:center;gap:7px;padding:0 14px;
+font-size:11px;font-weight:800;letter-spacing:2px;color:#ff4d5e;white-space:nowrap;
+border-right:1px solid var(--line);flex:none}
+.tickerbar .live::before{content:'';width:7px;height:7px;border-radius:50%;
+background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ticker{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track{display:inline-flex;gap:48px;white-space:nowrap;padding-left:100%;
+animation:marquee 45s linear infinite}
+.tickerbar:hover .ticker-track{animation-play-state:paused}
+.ticker-track a{color:var(--dim);text-decoration:none;font-size:12.5px;transition:color .2s}
+.ticker-track a b{color:var(--cyan);font-weight:700;margin-right:6px}
+.ticker-track a:hover{color:var(--txt)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+max-width:1120px;margin:44px auto 8px;padding:0 20px}
+.sec-hd h2{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:2px;
+font-size:clamp(22px,4vw,30px);color:#fff}
+.sec-hd h2 em{font-style:normal;color:var(--cyan)}
+.sec-hd .hint{font-size:12px;color:var(--faint)}
+.bento{max-width:1120px;margin:18px auto 40px;padding:0 20px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.bcard{grid-column:span 6;position:relative;border-radius:18px;overflow:hidden;
+background:linear-gradient(180deg,rgba(20,29,51,.55),rgba(13,18,32,.92));
+border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;
+box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.35);
+transition:transform .25s ease-out,border-color .25s ease-out,box-shadow .25s ease-out;
+animation:rise .55s ease-out both}
+.bcard:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);
+box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(0,229,255,.12)}
+@media(min-width:760px){.bcard.feat{grid-column:span 4}.bcard.std{grid-column:span 3}}
+.bcard .bimg{position:relative;overflow:hidden}
+.bcard img{width:100%;height:230px;object-fit:cover;display:block;
+transition:transform .5s ease-out;filter:saturate(1.05)}
+.bcard:hover img{transform:scale(1.04)}
+.bcard .date-badge{position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(6,8,13,.78);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:10px;padding:7px 14px;font-size:12px;font-weight:800;color:#fff;letter-spacing:.5px}
+.bcard .date-badge i{font-style:normal;color:var(--cyan);margin-right:6px}
+.bcard .bbody{padding:18px 20px 20px}
+.bcard .btopic{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.07);border-radius:7px;padding:4px 10px;margin-bottom:10px}
+.bcard h3{font-size:17px;line-height:1.4;color:#fff;margin-bottom:8px;font-weight:700}
+.bcard p{font-size:13px;color:var(--dim);margin-bottom:12px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bcard .bmeta{display:flex;justify-content:space-between;align-items:center;
+font-size:11.5px;color:var(--faint)}
+.bcard .bmeta .open{color:var(--cyan);font-weight:700;transition:transform .2s}
+.bcard:hover .bmeta .open{transform:translateX(4px)}
+.land-hero{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.land-hero .poster-wrap{position:absolute;inset:0;z-index:0}
+.land-hero .poster-wrap img{width:100%;height:132%;object-fit:cover;object-position:center 18%;
+filter:saturate(1.08);will-change:transform}
+.land-hero::after{content:'';position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(6,8,13,.28) 0%,rgba(6,8,13,.45) 45%,var(--bg) 96%)}
+.land-hero .lhd{position:relative;z-index:2;padding:120px 22px 30px;max-width:900px;
+margin:0 auto;width:100%}
+.land-hero .ldate{display:inline-flex;align-items:center;gap:8px;
+background:rgba(6,8,13,.72);backdrop-filter:blur(8px);border:1px solid var(--line2);
+border-radius:12px;padding:9px 18px;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px}
+.land-hero .ldate i{font-style:normal;color:var(--cyan)}
+.land-hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:1.5px;
+line-height:1.15;font-size:clamp(28px,5.5vw,48px);color:#fff;
+text-shadow:0 4px 30px rgba(0,0,0,.65);max-width:780px}
+.land-hero .lsub{margin-top:12px;color:#b9c6de;font-size:15px;max-width:640px}
+.land-body{max-width:860px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:2}
+.lstats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.lstats .stat{flex:1;min-width:130px}
+.topic-l{display:flex;align-items:center;gap:12px;margin:38px 0 16px}
+.topic-l .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+text-transform:uppercase;color:var(--gold);border:1px solid rgba(255,185,0,.28);
+background:rgba(255,185,0,.06);border-radius:8px;padding:6px 14px}
+.topic-l .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.news.feat-news{background:linear-gradient(180deg,rgba(20,29,51,.6),rgba(13,18,32,.95));
+padding:24px;border-radius:18px;border:1px solid var(--line2);margin-bottom:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 16px 40px rgba(0,0,0,.4)}
+.news.feat-news .ftag{display:inline-block;font-size:10px;font-weight:800;
+letter-spacing:2px;color:#062028;background:linear-gradient(90deg,var(--cyan),#7deaff);
+border-radius:6px;padding:4px 10px;margin-bottom:12px}
+.news.feat-news h3{font-size:21px;line-height:1.35}
+.news{background:var(--card2);border-radius:14px;padding:18px 18px 14px;margin:12px 0;
+border:1px solid var(--line);border-left:3px solid var(--cyan);
+transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out}
+.news:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(0,229,255,.08)}
+.news h3{font-size:16.5px;line-height:1.45;color:#fff;margin-bottom:7px;font-weight:700}
+.news p{font-size:14px;color:#c3cee4;margin-bottom:8px}
+.src{font-size:12px;color:var(--faint)}
+.src a{color:var(--cyan);text-decoration:none}
+.src a:hover{text-decoration:underline}
+.score{display:inline-block;background:rgba(0,229,255,.08);color:var(--cyan);font-size:11px;
+padding:3px 10px;border-radius:20px;margin-top:8px;border:1px solid rgba(0,229,255,.2)}
+details.more{margin-top:12px;border-top:1px dashed var(--line2);padding-top:12px}
+details.more summary{cursor:pointer;color:var(--cyan);font-size:13px;font-weight:700;
+list-style:none;user-select:none;padding:4px 0;border-radius:6px;transition:color .15s}
+details.more summary:hover{color:#7deaff}
+details.more summary::before{content:"▸ "}
+details.more[open] summary::before{content:"▾ "}
+details.more .lead{font-size:14px;color:#fff;font-weight:600;margin:10px 0 8px;
+padding-left:14px;border-left:2px solid var(--gold)}
+details.more ul{margin:8px 0 10px 20px}
+details.more li{font-size:13.5px;color:var(--txt);margin:5px 0}
+details.more li::marker{color:var(--cyan)}
+details.more .explain{font-size:13.5px;color:#c3cee4;margin:8px 0}
+details.more .bg{font-size:12.5px;color:var(--dim);margin:10px 0 2px;
+background:rgba(255,185,0,.05);border:1px solid rgba(255,185,0,.14);
+border-radius:10px;padding:10px 14px}
+details.more .bg b{color:var(--gold)}
+.anl{font-size:13.5px;color:#dfe8ff;margin:12px 0 2px;
+background:rgba(0,229,255,.06);border-left:3px solid var(--cyan);
+border-radius:0 10px 10px 0;padding:10px 14px;line-height:1.55}
+.anl b{color:var(--cyan);font-size:11.5px;letter-spacing:1.5px}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 0}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:16px 18px;text-decoration:none;color:var(--txt);display:block;
+transition:transform .2s,border-color .2s,box-shadow .2s}
+.pn a:hover{transform:translateY(-2px);border-color:rgba(0,229,255,.35);
+box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.pn a .lbl{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);
+display:block;margin-bottom:5px}
+.pn a .dt{font-weight:800;color:var(--cyan);font-size:14px}
+.pn a.next{text-align:right}
+#toTop{position:fixed;bottom:26px;right:26px;z-index:60;width:46px;height:46px;
+border-radius:50%;border:1px solid rgba(0,229,255,.35);background:rgba(13,18,32,.85);
+color:var(--cyan);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;
+transition:opacity .25s,transform .25s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arch{max-width:1120px;margin:8px auto 60px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.arch a{display:inline-block;background:var(--card);border:1px solid var(--line);
+color:var(--dim);padding:7px 15px;border-radius:20px;text-decoration:none;font-size:12px;
+transition:all .2s ease-out}
+.arch a:hover{color:var(--cyan);border-color:rgba(0,229,255,.35);transform:translateY(-1px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:44px 16px;
+border-top:1px solid var(--line);margin-top:52px;background:rgba(11,15,24,.6)}
+footer a{color:var(--cyan);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.brand-footer{margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){
+ .ticker-track,.tickerbar .live::before,.bcard{animation:none!important}
+ .rv{opacity:1;transform:none;transition:none}
+ .news,.pn a,.bcard,.nav a{transition:none!important}
+ .land-hero .poster-wrap img{transform:none!important}
+}
+</style></head><body>
+<div id="progress"></div>
+<nav class="topbar"><a class="brand" href="index.html">⚡ PhotonLedger</a>
+<a class="cta" href="index.html">Arsip Lengkap</a></nav>
+<div class="tickerbar"><div class="live">LIVE</div><div class="ticker"><div class="ticker-track"><a href="2026-11-21.html"><b>●</b>Voyager 1 tembus jarak &quot;satu hari cahaya&quot;</a><a href="2026-11-21.html"><b>●</b>James Webb buktikan &quot;merger bintang&quot; pertama yang pernah terekam</a><a href="2026-11-20.html"><b>●</b>Starship Flight 15: booster batal ditangkap, misteri terungkap</a><a href="2026-11-20.html"><b>●</b>SpaceX luncurkan misi rahasia Space Force ke-3 beruntun dari California</a><a href="2026-11-19.html"><b>●</b>Voyager 1 capai 1 cahaya-hari dari Bumi</a><a href="2026-11-19.html"><b>●</b>Dragon SpaceX batal undocking, mundur jadi Kamis</a><a href="2026-11-21.html"><b>●</b>Voyager 1 tembus jarak &quot;satu hari cahaya&quot;</a><a href="2026-11-21.html"><b>●</b>James Webb buktikan &quot;merger bintang&quot; pertama yang pernah terekam</a><a href="2026-11-20.html"><b>●</b>Starship Flight 15: booster batal ditangkap, misteri terungkap</a><a href="2026-11-20.html"><b>●</b>SpaceX luncurkan misi rahasia Space Force ke-3 beruntun dari California</a><a href="2026-11-19.html"><b>●</b>Voyager 1 capai 1 cahaya-hari dari Bumi</a><a href="2026-11-19.html"><b>●</b>Dragon SpaceX batal undocking, mundur jadi Kamis</a></div></div></div>
 
-  /* ============ 3. SCALE SYSTEM ============ */
-  :root{
-    --cover:max(calc(100vw / 1536), calc(100vh / 1024));
-    --fit:calc(100vh / 910);
-    --u:min(var(--cover), var(--fit));
-    --blur:calc(var(--u)*26);
-    --glow:calc(var(--u)*34);
-    --hairline:max(1px, calc(var(--u)*1.6));
-  }
-  @supports (height:100dvh){
-    :root{--cover:max(calc(100vw / 1536), calc(100dvh / 1024));
-          --fit:calc(100dvh / 910);}
-  }
+<header class="hero-hd"><div class="glowline"></div>
+<h1 class="hd">DIGEST HARIAN</h1>
+<div class="hero-sub">Berita AI &amp; Space dari sumber global — dirangkum dalam kata-kata sendiri,
+dengan pembahasan mendalam per berita. Pilih edisi di bawah.</div>
+<div class="hero-stats">
+ <div class="stat"><b data-count="284">0</b><span>Berita</span></div>
+ <div class="stat"><b data-count="43">0</b><span>Edisi</span></div>
+ <div class="stat"><b data-count="2">0</b><span>Poster Eksklusif</span></div>
+</div></header>
+<div class="sec-hd"><h2>EDISI <em>TERBARU</em></h2><span class="hint">klik kartu untuk landing page lengkap →</span></div>
+<div class="bento">
 
-  html,body{height:100%;background:#02060f;overflow:hidden}
-  *,*::before,*::after{box-sizing:border-box}
-  h1,p,ul{margin:0}
-  ul{padding:0}
-  body{font-family:'Sora',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);
-       -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
-       text-rendering:geometricPrecision}
-  a{color:inherit;text-decoration:none}
-  li{list-style:none}
-  a:focus-visible{outline:2px solid #9fe0ff;outline-offset:3px;border-radius:4px}
+<a class="bcard feat rv" href="2026-11-21.html">
+ <div class="bimg"><img src="assets/poster_space_dragoncrs35.jpg" alt="Poster 21 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>21 Nov 2026</div></div>
+ <div class="bbody"><span class="btopic">Digest Harian — Space &amp; Ai ( Nov )</span>
+ <h3>Voyager 1 tembus jarak &quot;satu hari cahaya&quot;</h3><p>Setelah 49 tahun 2 bulan perjalanan, Voyager 1 jadi objek buatan manusia pertama yang melewati jarak 1 hari cahaya dari Bumi (~26 </p>
+ <div class="bmeta"><span>📄 4 berita · 3 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  /* ============ 4. BACKGROUND LAYERS ============ */
-  .art{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;
-       object-position:50% 50%;z-index:0;user-select:none;
-       -webkit-user-drag:none;pointer-events:none;background:#03060c}
+<a class="bcard std rv d1" href="2026-11-20.html">
+ <div class="bimg"><img src="assets/poster_ai_genie4api.jpg" alt="Poster 20 Nov 2026" loading="lazy"><div class="date-badge"><i>📅</i>20 Nov 2026</div></div>
+ <div class="bbody"><span class="btopic">Digest Fokus — Space &amp; Ai ( Nov )</span>
+ <h3>Starship Flight 15: booster batal ditangkap, misteri terungkap</h3><p>SpaceX akhirnya menangkap Ship (upper stage) untuk pertama kali, tapi booster Super Heavy batal ditangkap tower dan jatuh terkontr</p>
+ <div class="bmeta"><span>📄 5 berita · 3 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  .veil{position:fixed;inset:0;z-index:0;pointer-events:none;
-    background:
-      radial-gradient(140% 60% at 50% 40%,
-          rgba(var(--veil),.16) 0%, rgba(var(--veil),.057) 50%,
-          rgba(var(--veil),0) 100%),
-      linear-gradient(180deg, rgba(var(--veil),0) 45%,
-          rgba(var(--veil),.10) 100%);}
+<a class="bcard std rv d2" href="2026-11-19.html">
+ 
+ <div class="bbody"><span class="btopic">Digest Fokus — Space &amp; Ai ( Nov )</span>
+ <h3>Voyager 1 capai 1 cahaya-hari dari Bumi</h3><p>Pada 18 Nov, Voyager 1 — diluncurkan 1977 (49 tahun lalu) — resmi berjarak 1 cahaya-hari dari Bumi, lebih dari 26 miliar km (16 mi</p>
+ <div class="bmeta"><span>📄 5 berita · 3 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  .bar,.hero,.foot{position:fixed;z-index:1}
+<a class="bcard std rv" href="2026-11-18.html">
+ 
+ <div class="bbody"><span class="btopic">Space Exploration</span>
+ <h3>SpaceX pertama kali tangkap upper stage Starship</h3><p>Starship Flight 15: kapsul &amp;quot;Ship 42&amp;quot; mengorbit 14 kali selama 22 jam 32 menit, lalu ditangkap mechanical arms &amp;quot;Mech</p>
+ <div class="bmeta"><span>📄 6 berita · 2 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  /* ============ 5. COMPONENT SKIN ============ */
-  .brand svg{fill:var(--ink);display:block}
-  .caret,.navarrow{fill:none;stroke:var(--nav);stroke-linecap:round;
-                   stroke-linejoin:round}
-  .navarrow{stroke-linecap:square;stroke-linejoin:miter}
-  .pill{border:var(--hairline) solid var(--hair);border-radius:999px}
-  .chev{fill:none;stroke:var(--chev);stroke-width:1.75;stroke-linecap:round;
-        stroke-linejoin:round}
-  .cta .arrow{fill:none;stroke:var(--ink);stroke-width:1.6;
-              stroke-linecap:square;stroke-linejoin:miter}
-  .rule{background:linear-gradient(180deg,
-        rgba(186,200,214,.70) 0%,rgba(206,220,232,.92) 52%,
-        rgba(182,198,212,.68) 100%)}
+<a class="bcard std rv d1" href="2026-11-17.html">
+ 
+ <div class="bbody"><span class="btopic">Digest Fokus — Space &amp; Ai ( Nov )</span>
+ <h3>SpaceX tangkap upper stage Starship untuk pertama kali</h3><p>Starship mengorbit Bumi 14 kali di ketinggian 266 km selama 22 jam 32 menit, lalu ditangkap mechanical chopsticks di landing pad S</p>
+ <div class="bmeta"><span>📄 4 berita · 3 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  /* THE CTA GLASS */
-  .cta{
-    border-radius:999px;
-    background:
-      linear-gradient(180deg, rgba(6,12,22,0) 45%, rgba(6,12,22,.12) 78%,
-                              rgba(6,12,22,.28) 100%),
-      linear-gradient(90deg,
-        rgba(255,226,178,.17) 0%,  rgba(255,236,208,.07) 22%,
-        rgba(176,206,238,.03) 55%, rgba(150,196,244,.09) 100%),
-      linear-gradient(90deg,
-        rgba(255,255,255,.24) 0%,  rgba(255,255,255,.17) 12%,
-        rgba(255,255,255,.11) 26%, rgba(255,255,255,.07) 42%,
-        rgba(255,255,255,.05) 60%, rgba(255,255,255,.04) 80%,
-        rgba(255,255,255,.04) 100%);
-    -webkit-backdrop-filter:blur(var(--blur)) saturate(.45);
-    backdrop-filter:blur(var(--blur)) saturate(.45);
-    box-shadow:0 calc(var(--u)*-2) calc(var(--u)*20) rgba(255,224,176,.20),
-               0 0 var(--glow) rgba(168,204,252,.16),
-               inset 0 var(--hairline) 0 0 rgba(255,251,242,.45);
-  }
+<a class="bcard std rv d2" href="2026-11-16.html">
+ 
+ <div class="bbody"><span class="btopic">Space Exploration</span>
+ <h3>Starship ditangkap hidup-hidup dari orbit — pertama dalam sejarah</h3><p>SpaceX menangkap upper stage Starship (171 kaki) dengan lengan mekanik Mechazilla di Starbase, Texas, Sabtu (14 Nov), setelah meng</p>
+ <div class="bmeta"><span>📄 6 berita · 2 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  .cta::before{
-    content:'';position:absolute;inset:0;border-radius:inherit;
-    padding:var(--hairline);pointer-events:none;
-    background:
-      linear-gradient(180deg, rgba(255,252,246,.95) 0%,
-          rgba(255,252,246,.20) 45%, rgba(255,252,246,0) 78%),
-      linear-gradient(90deg,
-        rgba(255,228,182,.95) 0%,  rgba(250,236,210,.70) 12%,
-        rgba(226,230,234,.03) 32%, rgba(214,226,240,.02) 62%,
-        rgba(200,228,250,.70) 90%, rgba(186,224,247,.95) 100%);
-    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-    -webkit-mask-composite:xor;
-    mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-    mask-composite:exclude;
-  }
+<a class="bcard std rv" href="2026-11-15.html">
+ 
+ <div class="bbody"><span class="btopic">Space Exploration</span>
+ <h3>SpaceX Tangkap Starship untuk Pertama Kali dalam Sejarah</h3><p>Dalam Flight 15 (13–14 Nov), SpaceX menangkap upper stage Starship dengan lengan &amp;quot;chopsticks&amp;quot; di menara Starbase setelah</p>
+ <div class="bmeta"><span>📄 4 berita · 2 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  /* PER-ELEMENT VARIABLE WEIGHTS */
-  #word{font-variation-settings:'wght' 531;color:var(--ink)}
-  #about,#product,#solutions,#login{font-variation-settings:'wght' 506;color:var(--nav)}
-  #contact{font-variation-settings:'wght' 581;color:var(--navdim)}
-  #h1a,#h1b{font-variation-settings:'wght' 424;color:var(--ink)}
-  #sub1,#sub2{font-variation-settings:'wght' 446;color:var(--sub)}
-  #cta{font-variation-settings:'wght' 497;color:var(--ink)}
-  #f1,#f2,#f3,#f4{font-variation-settings:'wght' 534;color:var(--feat)}
-  #foot1,#foot2{font-variation-settings:'wght' 521;color:var(--foot)}
+<a class="bcard std rv d1" href="2026-11-14.html">
+ 
+ <div class="bbody"><span class="btopic">Digest Harian — Space &amp; Ai ( Nov )</span>
+ <h3>Starship Flight 15: catch booster gagal, catch Ship masih ditunggu</h3><p>SpaceX meluncurkan Starship ke-15 nya Jumat (13 Nov) dengan misi &amp;quot;double catch&amp;quot; — menangkap booster Super Heavy DAN uppe</p>
+ <div class="bmeta"><span>📄 6 berita · 3 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
 
-  /* ============ 6. ENTRANCE SEQUENCE ============ */
-  @media (prefers-reduced-motion:no-preference){
-    :root{--rise:9px;
-      --ent-line:cubic-bezier(.16,1,.3,1);
-      --ent-soft:cubic-bezier(.25,.8,.35,1);}
+<a class="bcard std rv d2" href="2026-11-13.html">
+ 
+ <div class="bbody"><span class="btopic">Space Exploration</span>
+ <h3>SpaceX Starship Flight 15 — percobaan landing ganda pertama</h3><p>Starship diluncurkan hari ini, Jumat 13 Nov pukul 17:45 EST dari Starbase Texas, mencoba menangkap balik Super Heavy booster DAN u</p>
+ <div class="bmeta"><span>📄 4 berita · 2 topik</span>
+ <span class="open">BACA EDISI →</span></div></div></a>
+</div>
+<div class="sec-hd"><h2>ARSIP <em>LAMA</em></h2></div><div class="arch">
+<a href="2026-11-12.html">12 Nov 2026</a>
+<a href="2026-11-11.html">11 Nov 2026</a>
+<a href="2026-11-10.html">10 Nov 2026</a>
+<a href="2026-11-09.html">09 Nov 2026</a>
+<a href="2026-11-08.html">08 Nov 2026</a>
+<a href="2026-11-07.html">07 Nov 2026</a>
+<a href="2026-11-06.html">06 Nov 2026</a>
+<a href="2026-11-05.html">05 Nov 2026</a>
+<a href="2026-11-04.html">04 Nov 2026</a>
+<a href="2026-11-03.html">03 Nov 2026</a>
+<a href="2026-11-02.html">02 Nov 2026</a>
+</div>
+<footer>
+<p>PhotonLedger Digest merangkum berita dari sumber publik (NASA, Spaceflight Now, TechCrunch, dll) dalam kata-kata sendiri, selalu dengan atribusi &amp; tautan ke artikel asli. Untuk berita lengkap, kunjungi sumber terkait.</p>
+<p style="margin-top:8px"><a href="https://instagram.com/photonledgertech">Instagram @photonledgertech</a> · <a href="https://tiktok.com/@photonledgertech">TikTok</a> · <a href="https://youtube.com/@photonledgertech">YouTube</a></p>
+<p style="margin-top:8px"><a href="tentang.html">Tentang</a> · <a href="privasi.html">Kebijakan Privasi</a> · <a href="kontak.html">Kontak</a></p>
+<div class="brand-footer">PhotonLedger · Edukasi Finansial &amp; Sains</div>
+</footer>
 
-    @keyframes en-wipe{
-      from{clip-path:inset(-.78em 0 calc(100% + .78em) 0);translate:0 var(--rise)}
-      to  {clip-path:inset(-.78em 0 -.78em 0);translate:0 0}}
-    @keyframes en-lift{from{opacity:0;translate:0 var(--rise)}}
-    @keyframes en-settle{from{opacity:0;translate:0 calc(var(--rise)*.7);scale:.99}}
-    @keyframes en-draw{from{scale:1 0}}
-
-    html:not(.is-entered) .brand      {animation:en-lift   .60s var(--ent-soft)  .12s backwards}
-    html:not(.is-entered) #about      {animation:en-lift   .55s var(--ent-soft)  .20s backwards}
-    html:not(.is-entered) #product    {animation:en-lift   .55s var(--ent-soft)  .25s backwards}
-    html:not(.is-entered) #solutions,
-    html:not(.is-entered) .caret      {animation:en-lift   .55s var(--ent-soft)  .30s backwards}
-    html:not(.is-entered) #login,
-    html:not(.is-entered) .navarrow   {animation:en-lift   .55s var(--ent-soft)  .35s backwards}
-    html:not(.is-entered) .pill       {animation:en-settle .60s var(--ent-soft)  .40s backwards}
-    html:not(.is-entered) .burger     {animation:en-lift   .60s var(--ent-soft)  .40s backwards}
-    html:not(.is-entered) #h1a        {animation:en-wipe   .95s var(--ent-line)  .34s backwards}
-    html:not(.is-entered) #h1b        {animation:en-wipe   .95s var(--ent-line)  .44s backwards}
-    html:not(.is-entered) #sub1       {animation:en-lift   .70s var(--ent-soft)  .74s backwards}
-    html:not(.is-entered) #sub2       {animation:en-lift   .70s var(--ent-soft)  .80s backwards}
-    html:not(.is-entered) .cta        {animation:en-lift   .80s var(--ent-line)  .94s backwards}
-    html:not(.is-entered) .feats li:nth-child(1){animation:en-lift .60s var(--ent-soft) 1.08s backwards}
-    html:not(.is-entered) .feats li:nth-child(2){animation:en-lift .60s var(--ent-soft) 1.15s backwards}
-    html:not(.is-entered) .feats li:nth-child(3){animation:en-lift .60s var(--ent-soft) 1.22s backwards}
-    html:not(.is-entered) .feats li:nth-child(4){animation:en-lift .60s var(--ent-soft) 1.29s backwards}
-    html:not(.is-entered) .rule       {animation:en-draw   .55s var(--ent-line) 1.34s backwards;
-                                       transform-origin:top}
-    html:not(.is-entered) #foot1      {animation:en-lift   .60s var(--ent-soft) 1.42s backwards}
-    html:not(.is-entered) #foot2      {animation:en-lift   .60s var(--ent-soft) 1.48s backwards}
-  }
-
-  /* ============ 7. ARCHITECTURE A — LOCKED (desktop) ============ */
-  @media (min-width:1200px) and (min-height:560px) and (min-aspect-ratio:100/95){
-    .bar,.hero,.foot{left:50%;width:calc(var(--u)*1536);transform:translateX(-50%)}
-    .bar{top:0;height:calc(var(--u)*120)}
-    .foot{bottom:0;height:calc(var(--u)*140)}
-    .hero{top:50%;height:calc(var(--u)*1024);transform:translate(-50%,-50%)}
-    .navtoggle,.burger,.scrim{display:none}
-    .navpanel{display:contents}
-    .bar > *,.foot > *,.hero > *,.pill,.caret,.navarrow{position:absolute}
-    .menu,.menu a,.login{position:static}
-    .title,.sub,.feats{inset:0;font-weight:inherit}
-    .bar span,.foot span,.title span,.sub span,.feats span,.cta span{
-      position:absolute;line-height:0;white-space:nowrap}
-
-    /* box coordinates */
-    .brand{left:calc(var(--u)*221);top:calc(var(--u)*55);
-           display:flex;align-items:center;gap:calc(var(--u)*7)}
-    .brand svg{width:calc(var(--u)*23);height:calc(var(--u)*17)}
-    #word{position:relative;font-size:calc(var(--u)*19.4);
-          letter-spacing:calc(var(--u)*3.4)}
-    .caret    {left:calc(var(--u)*760);   top:calc(var(--u)*62.4);
-               width:calc(var(--u)*9);   height:calc(var(--u)*6);   stroke-width:1.25}
-    .navarrow {left:calc(var(--u)*1068);  top:calc(var(--u)*61.6);
-               width:calc(var(--u)*10);  height:calc(var(--u)*9);   stroke-width:1.2}
-    .pill     {left:calc(var(--u)*1191.5);top:calc(var(--u)*43.5);
-               width:calc(var(--u)*144); height:calc(var(--u)*44)}
-    .cta      {left:calc(var(--u)*625.8); top:calc(var(--u)*555.2);
-               width:calc(var(--u)*279.6);height:calc(var(--u)*46.6)}
-    .cta .arrow{position:absolute;left:calc(var(--u)*230.8);top:calc(var(--u)*17.8);
-               width:calc(var(--u)*16);height:calc(var(--u)*11)}
-    .feats li {position:absolute;width:calc(var(--u)*220);height:calc(var(--u)*20)}
-    .feats .chev{position:absolute;left:0;top:0;
-               width:calc(var(--u)*11);height:calc(var(--u)*20)}
-    .feats li:nth-child(1){left:calc(var(--u)*360); top:calc(var(--u)*718)}
-    .feats li:nth-child(2){left:calc(var(--u)*590); top:calc(var(--u)*719)}
-    .feats li:nth-child(3){left:calc(var(--u)*803); top:calc(var(--u)*721)}
-    .feats li:nth-child(4){left:calc(var(--u)*1013);top:calc(var(--u)*722)}
-    .rule     {left:calc(var(--u)*767);   top:calc(var(--u)*792);
-               width:calc(var(--u)*1);   height:calc(var(--u)*57)}
-
-    /* type coordinates — centred items + X nudge */
-    #contact,#h1a,#h1b,#sub1,#sub2,#cta,#foot1,#foot2{
-      left:0;right:0;text-align:center}
-    #about    {font-size:calc(var(--u)*13.5);letter-spacing:calc(var(--u)*-.5);
-               left:calc(var(--u)*477);   top:calc(var(--u)*65.66)}
-    #product  {font-size:calc(var(--u)*13.5);letter-spacing:calc(var(--u)*-.167);
-               left:calc(var(--u)*568.5); top:calc(var(--u)*65.66)}
-    #solutions{font-size:calc(var(--u)*13.5);letter-spacing:calc(var(--u)*-.5);
-               left:calc(var(--u)*675);   top:calc(var(--u)*65.66)}
-    #login    {font-size:calc(var(--u)*13.5);letter-spacing:calc(var(--u)*-.227);
-               left:calc(var(--u)*1002.5);top:calc(var(--u)*66.16)}
-    #contact  {font-size:calc(var(--u)*13.5);letter-spacing:calc(var(--u)*.25);
-               top:calc(var(--u)*21.66);  transform:translateX(calc(var(--u)*-.5))}
-    #h1a      {font-size:calc(var(--u)*46.8);letter-spacing:calc(var(--u)*.532);
-               top:calc(var(--u)*285.222);transform:translateX(calc(var(--u)*-1))}
-    #h1b      {font-size:calc(var(--u)*46.8);letter-spacing:calc(var(--u)*-.398);
-               top:calc(var(--u)*335.222);transform:translateX(calc(var(--u)*-3))}
-    #sub1     {font-size:calc(var(--u)*20.6);letter-spacing:calc(var(--u)*.367);
-               top:calc(var(--u)*408.115);transform:translateX(calc(var(--u)*-.5))}
-    #sub2     {font-size:calc(var(--u)*19.1);letter-spacing:calc(var(--u)*-.632);
-               top:calc(var(--u)*432.153);transform:translateX(calc(var(--u)*-2))}
-    #cta      {font-size:calc(var(--u)*22);  letter-spacing:calc(var(--u)*-.312);
-               top:calc(var(--u)*23.113); transform:translateX(calc(var(--u)*-14.5))}
-    #f1       {font-size:calc(var(--u)*14.6);letter-spacing:calc(var(--u)*-.75);
-               left:calc(var(--u)*26);top:calc(var(--u)*11.266)}
-    #f2       {font-size:calc(var(--u)*14.6);letter-spacing:calc(var(--u)*-.889);
-               left:calc(var(--u)*26);top:calc(var(--u)*11.266)}
-    #f3       {font-size:calc(var(--u)*14.6);letter-spacing:calc(var(--u)*-1.067);
-               left:calc(var(--u)*26);top:calc(var(--u)*11.266)}
-    #f4       {font-size:calc(var(--u)*14.6);letter-spacing:calc(var(--u)*-1.067);
-               left:calc(var(--u)*29);top:calc(var(--u)*11.266)}
-    #foot1    {font-size:calc(var(--u)*16.3);letter-spacing:calc(var(--u)*-.256);
-               bottom:calc(var(--u)*101.344);transform:translateX(calc(var(--u)*-.5))}
-    #foot2    {font-size:calc(var(--u)*16.3);letter-spacing:calc(var(--u)*-.667);
-               bottom:calc(var(--u)*76.344); transform:translateX(calc(var(--u)*-2))}
-  }
-
-  /* ============ 8. ARCHITECTURE B — FLOW ============ */
-  @media (max-width:1199px),(max-height:559px),(max-aspect-ratio:100/95){
-    :root{--c:min(calc(100vw / 430), calc(100vh / 860))}
-
-    body{display:flex;flex-direction:column;height:100vh;
-         padding:calc(env(safe-area-inset-top) + calc(var(--c)*24)) calc(var(--c)*22)
-                 calc(env(safe-area-inset-bottom) + calc(var(--c)*22))}
-    .bar,.hero,.foot{position:static;width:100%}
-    .bar{order:1;position:relative;z-index:5;display:flex;align-items:center;
-         justify-content:space-between;gap:calc(var(--c)*16);
-         height:auto;transform:none}
-    .hero,.foot{transform:none}
-    .brand{display:flex;align-items:center;gap:calc(var(--c)*8)}
-    .brand svg{width:calc(var(--c)*22);height:auto}
-    #word{font-size:calc(var(--c)*19);letter-spacing:.06em}
-
-    /* burger menu — pure CSS */
-    .navtoggle{position:absolute;top:0;right:0;width:1px;height:1px;opacity:0;
-               margin:0;pointer-events:none}
-    .burger{display:inline-flex;align-items:center;justify-content:center;
-      width:calc(var(--c)*42);height:calc(var(--c)*30);border-radius:999px;
-      cursor:pointer;border:var(--hairline) solid var(--hair);
-      background:rgba(255,255,255,.03);
-      -webkit-backdrop-filter:blur(var(--blur)) saturate(.45);
-      backdrop-filter:blur(var(--blur)) saturate(.45)}
-    .burger svg{width:calc(var(--c)*19);height:auto;fill:none;stroke:var(--nav);
-                stroke-width:1.4;stroke-linecap:round}
-    .burger svg path{transform-box:fill-box;transform-origin:center;
-                     transition:transform .24s ease,opacity .18s ease}
-    .navtoggle:focus-visible ~ .burger{outline:2px solid #9fe0ff;outline-offset:3px}
-    .navtoggle:checked ~ .burger .b1{transform:translateY(6px) rotate(45deg)}
-    .navtoggle:checked ~ .burger .b2{opacity:0}
-    .navtoggle:checked ~ .burger .b3{transform:translateY(-6px) rotate(-45deg)}
-    .scrim{display:none;position:fixed;inset:0;z-index:-1}
-    .navtoggle:checked ~ .scrim{display:block}
-
-    /* panel — the CTA glass recipe at panel scale */
-    .navpanel{position:absolute;top:calc(100% + calc(var(--c)*12));right:0;
-      display:flex;flex-direction:column;gap:calc(var(--c)*2);
-      width:min(calc(var(--c)*268), 78vw);padding:calc(var(--c)*12);
-      border-radius:calc(var(--c)*20);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.10) 0%,
-                                rgba(255,255,255,.045) 100%),
-        linear-gradient(90deg, rgba(255,226,178,.06) 0%,
-                               rgba(150,196,244,.06) 100%),
-        linear-gradient(180deg, rgba(6,12,22,.60) 0%, rgba(6,12,22,.70) 100%);
-      -webkit-backdrop-filter:blur(var(--blur)) saturate(.45);
-      backdrop-filter:blur(var(--blur)) saturate(.45);
-      box-shadow:0 calc(var(--c)*14) calc(var(--c)*38) rgba(2,6,14,.45);
-      opacity:0;transform:translateY(calc(var(--c)*-8)) scale(.985);
-      transform-origin:100% 0;pointer-events:none;
-      transition:opacity .2s ease,transform .2s ease}
-    .navtoggle:checked ~ .navpanel{opacity:1;transform:none;pointer-events:auto}
-    .navpanel .menu{display:flex;flex-direction:column}
-    .navpanel .menu a,.navpanel .login{display:flex;align-items:center;
-      gap:calc(var(--c)*8);padding:calc(var(--c)*10) calc(var(--c)*12);
-      border-radius:calc(var(--c)*12);font-size:calc(var(--c)*16);
-      color:var(--nav);transition:background .15s ease}
-    .navpanel .menu a:hover,.navpanel .login:hover{background:rgba(255,255,255,.07)}
-    .navpanel .caret,.navpanel .navarrow{margin-left:auto;height:auto;
-      position:static;width:calc(var(--c)*10)}
-    .navpanel .navarrow{width:calc(var(--c)*11)}
-    .navpanel .pill{margin-top:calc(var(--c)*8);text-align:center;
-      white-space:nowrap;padding:calc(var(--c)*11) calc(var(--c)*16);
-      font-size:calc(var(--c)*15);position:static;width:auto;height:auto}
-    .navpanel span{position:static;line-height:inherit;white-space:normal}
-
-    /* hero flow */
-    .hero{order:2;flex:1;display:flex;flex-direction:column;align-items:center;
-          justify-content:center;text-align:center;gap:calc(var(--c)*20);
-          position:relative;height:auto}
-    .title,.sub,.feats{position:static;inset:auto}
-    .title span,.sub span,.feats span,.cta span{
-      position:static;line-height:inherit;white-space:normal}
-    .title{font-size:calc(var(--c)*33);line-height:1.12;max-width:15ch}
-    .title span{display:inline}
-    .sub{color:var(--sub);font-size:calc(var(--c)*17);line-height:1.32;max-width:26ch}
-    .sub span{display:inline}
-    .cta{position:relative;display:inline-flex;align-items:center;
-         gap:calc(var(--c)*12);padding:calc(var(--c)*16) calc(var(--c)*26);
-         font-size:calc(var(--c)*18);left:auto;top:auto;width:auto;height:auto}
-    .cta .arrow{position:static;width:calc(var(--c)*16);height:calc(var(--c)*11)}
-    .feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:calc(var(--c)*15) calc(var(--c)*13);width:100%;
-      max-width:calc(var(--c)*400);margin-top:calc(var(--c)*6);
-      position:static}
-    .feats li{display:flex;align-items:center;gap:calc(var(--c)*9);
-              font-size:calc(var(--c)*14);position:static;width:auto;height:auto}
-    .feats .chev{width:calc(var(--c)*9);height:calc(var(--c)*16);flex:none;
-                 position:static}
-    .rule{width:1px;height:calc(var(--c)*33);margin:calc(var(--c)*19) auto 0;
-          position:static;transform:none}
-    .foot{order:3;text-align:center;color:var(--foot);
-          font-size:calc(var(--c)*13);line-height:1.55;height:auto}
-    .foot span{display:block;position:static;line-height:inherit;white-space:normal}
-
-    /* --- B1. PHONE CANVAS --- */
-    @media (max-width:599px),(max-height:429px){
-      :root{--c:min(calc(100vw / 360), calc(100vh / 770), 1px);--rise:6px}
-      body{padding:calc(env(safe-area-inset-top) + calc(var(--c)*28)) calc(var(--c)*26)
-                 calc(env(safe-area-inset-bottom) + calc(var(--c)*26))}
-      .brand svg{width:calc(var(--c)*24)}
-      #word{font-size:calc(var(--c)*19)}
-      .burger{width:calc(var(--c)*46);height:calc(var(--c)*33);position:relative}
-      .burger::after{content:'';position:absolute;left:50%;top:50%;
-        transform:translate(-50%,-50%);width:max(44px,100%);height:max(44px,100%)}
-      .burger svg{width:calc(var(--c)*21)}
-      .navpanel{width:min(calc(var(--c)*300), 82vw);padding:calc(var(--c)*15);
-                border-radius:calc(var(--c)*22)}
-      .navpanel .menu a,.navpanel .login{font-size:calc(var(--c)*16);
-        padding:calc(var(--c)*13) calc(var(--c)*14);border-radius:calc(var(--c)*13);
-        min-height:max(44px,calc(var(--c)*44))}
-      .navpanel .pill{font-size:calc(var(--c)*16);
-        padding:calc(var(--c)*13) calc(var(--c)*18);margin-top:calc(var(--c)*9)}
-
-      /* re-aimed veil for the phone crop */
-      .veil{background:
-        radial-gradient(130% 44% at 50% 45%,
-            rgba(var(--veil),.50) 0%, rgba(var(--veil),.26) 55%,
-            rgba(var(--veil),0) 100%),
-        linear-gradient(180deg,
-            rgba(var(--veil),.34) 0%, rgba(var(--veil),0) 20%,
-            rgba(var(--veil),0) 60%, rgba(var(--veil),.36) 100%)}
-
-      .hero{gap:calc(var(--c)*22)}
-      .title{font-size:calc(var(--c)*32);line-height:1.2;letter-spacing:-.002em;
-             max-width:none;text-wrap:balance}
-      .title span{display:block}
-      .sub{font-size:calc(var(--c)*16);line-height:1.45;max-width:none;
-           text-wrap:balance}
-      .sub span{display:block}
-      .cta{font-size:calc(var(--c)*16.5);padding:calc(var(--c)*15) calc(var(--c)*28);
-           gap:calc(var(--c)*12)}
-      .cta .arrow{width:calc(var(--c)*17);height:calc(var(--c)*12)}
-      .feats{grid-template-columns:repeat(2,max-content);justify-content:center;
-        width:auto;max-width:none;gap:calc(var(--c)*16) calc(var(--c)*16);
-        margin-top:calc(var(--c)*22)}
-      .feats li{font-size:calc(var(--c)*13);gap:calc(var(--c)*10)}
-      .feats .chev{width:calc(var(--c)*10);height:calc(var(--c)*18)}
-      .rule{height:calc(var(--c)*30);margin:calc(var(--c)*28) auto 0}
-      .foot{font-size:calc(var(--c)*13.5);line-height:1.65;text-wrap:balance}
-    }
-
-    /* --- LANDSCAPE PHONES --- */
-    @media (max-height:429px) and (min-aspect-ratio:1/1){
-      :root{--c:min(calc(100vw / 760), calc(100vh / 430))}
-      .hero{gap:calc(var(--c)*12)}
-      .title{font-size:calc(var(--c)*31);line-height:1.2;max-width:26ch}
-      .sub{font-size:calc(var(--c)*16);max-width:44ch}
-      .sub span{display:inline}
-      .cta{font-size:calc(var(--c)*15.5);padding:calc(var(--c)*12) calc(var(--c)*24)}
-      .feats{grid-template-columns:repeat(4,max-content);justify-content:center;
-        max-width:none;gap:calc(var(--c)*24);margin-top:calc(var(--c)*2)}
-      .feats li{font-size:calc(var(--c)*13.5)}
-      .rule{height:calc(var(--c)*20);margin:calc(var(--c)*10) auto 0}
-      .foot{font-size:calc(var(--c)*13)}
-    }
-
-    /* --- B2. TABLET CANVAS --- */
-    @media (min-width:600px) and (min-height:430px){
-      :root{--c:min(calc(100vw / 860), calc(100vh / 1120))}
-      body{padding:calc(env(safe-area-inset-top) + calc(var(--c)*40)) calc(var(--c)*44)
-                 calc(env(safe-area-inset-bottom) + calc(var(--c)*36))}
-      .brand svg{width:calc(var(--c)*34)}
-      #word{font-size:calc(var(--c)*30)}
-      .burger{width:calc(var(--c)*60);height:calc(var(--c)*44)}
-      .burger svg{width:calc(var(--c)*27);stroke-width:1.2}
-      .navpanel{width:min(calc(var(--c)*330), 56vw);padding:calc(var(--c)*16);
-                border-radius:calc(var(--c)*26);gap:calc(var(--c)*4)}
-      .navpanel .menu a,.navpanel .login{font-size:calc(var(--c)*20);
-        padding:calc(var(--c)*13) calc(var(--c)*15);border-radius:calc(var(--c)*15);
-        gap:calc(var(--c)*10)}
-      .navpanel .caret{width:calc(var(--c)*13)}
-      .navpanel .navarrow{width:calc(var(--c)*14)}
-      .navpanel .pill{margin-top:calc(var(--c)*10);
-        padding:calc(var(--c)*14) calc(var(--c)*20);font-size:calc(var(--c)*19)}
-      .hero{gap:calc(var(--c)*26)}
-      .title{font-size:calc(var(--c)*46);line-height:1.15;max-width:none}
-      .title span{display:block}
-      .sub{font-size:calc(var(--c)*21);line-height:1.34;max-width:none}
-      .sub span{display:block}
-      .cta{gap:calc(var(--c)*14);padding:calc(var(--c)*18) calc(var(--c)*34);
-           font-size:calc(var(--c)*21)}
-      .cta .arrow{width:calc(var(--c)*20);height:calc(var(--c)*14)}
-      .feats{grid-template-columns:repeat(2,max-content);justify-content:center;
-        gap:calc(var(--c)*22) calc(var(--c)*54);max-width:none;
-        margin-top:calc(var(--c)*12)}
-      .feats li{gap:calc(var(--c)*12);font-size:calc(var(--c)*16)}
-      .feats .chev{width:calc(var(--c)*12);height:calc(var(--c)*21)}
-      .rule{height:calc(var(--c)*46);margin:calc(var(--c)*30) auto 0}
-      .foot{font-size:calc(var(--c)*16)}
-
-      /* landscape tablets */
-      @media (min-aspect-ratio:1/1){
-        :root{--c:min(calc(100vw / 1040), calc(100vh / 780))}
-        .feats{grid-template-columns:repeat(4,max-content);gap:calc(var(--c)*40)}
-      }
-    }
-  }
-
-  /* ============ 9. DYNAMIC VIEWPORT OVERRIDE ============ */
-  @supports (height:100dvh){
-    @media (max-width:1199px),(max-height:559px),(max-aspect-ratio:100/95){
-      :root{--c:min(calc(100vw / 430), calc(100dvh / 860))}
-      body{height:100dvh}
-      @media (max-width:599px),(max-height:429px){
-        :root{--c:min(calc(100vw / 360), calc(100dvh / 770), 1px)}}
-      @media (max-height:429px) and (min-aspect-ratio:1/1){
-        :root{--c:min(calc(100vw / 760), calc(100dvh / 430))}}
-      @media (min-width:600px) and (min-height:430px){
-        :root{--c:min(calc(100vw / 860), calc(100dvh / 1120))}
-        @media (min-aspect-ratio:1/1){
-          :root{--c:min(calc(100vw / 1040), calc(100dvh / 780))}}}
-    }
-  }
-</style>
-</head>
-<body>
-
-  <video class="art" autoplay muted loop playsinline preload="auto" aria-hidden="true"
-    poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/130837c4-0244-4f37-9c61-8d801d93fd29.jpg"
-    src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260912_104303_0c6d60b2-9353-408e-9449-585108a22fb5.mp4"></video>
-
-  <div class="veil"></div>
-
-  <header class="bar">
-    <a class="brand" href="#">
-      <svg viewBox="0 0 23 17" aria-hidden="true" focusable="false">
-        <path d="M8.15 0.9 L4.55 0.9 L0.5 9.3 L4.1 9.3 Z"/>
-        <path d="M17.0 0 L13.4 0 L6.15 16.4 L9.75 16.4 Z"/>
-        <path d="M22.9 0 L19.3 0 L15.0 7.6 L18.6 7.6 Z"/>
-        <path d="M22.6 6.9 L19.0 6.9 L14.05 16.4 L17.65 16.4 Z"/>
-      </svg>
-      <span id="word">PHOTONLEDGER</span>
-    </a>
-
-    <input class="navtoggle" type="checkbox" id="nav-open" aria-label="Menu">
-
-    <label class="scrim" for="nav-open" aria-hidden="true"></label>
-
-    <label class="burger" for="nav-open" aria-label="Menu">
-      <svg viewBox="0 0 22 14" aria-hidden="true" focusable="false">
-        <path class="b1" d="M1 1 H21"/>
-        <path class="b2" d="M1 7 H21"/>
-        <path class="b3" d="M1 13 H21"/>
-      </svg>
-    </label>
-
-    <div class="navpanel">
-      <nav class="menu" aria-label="Navigasi utama">
-        <a href="2026-11-19.html"><span id="about">Edisi #41</span></a>
-        <a href="2026-11-18.html"><span id="product">Edisi #40</span></a>
-        <a href="https://github.com/PhotonLedgertech/photonledger-digest"><span id="solutions">Arsip lengkap</span>
-          <svg class="caret" viewBox="0 0 9 6" aria-hidden="true" focusable="false">
-            <path d="M0.7 1.1 L4.5 4.6 L8.3 1.1"/>
-          </svg></a>
-      </nav>
-      <a class="login" href="https://www.instagram.com/photonledgertech36"><span id="login">Instagram</span>
-        <svg class="navarrow" viewBox="0 0 10 9" aria-hidden="true" focusable="false">
-          <path d="M0 4.5 H9.1 M5.4 0.9 L9.2 4.5 L5.4 8.1"/></svg></a>
-      <a class="pill" href="2026-11-20.html"><span id="contact">Baca edisi #42</span></a>
-    </div>
-  </header>
-
-  <main class="hero">
-    <h1 class="title"><span id="h1a">Berita AI &amp; luar angkasa,</span>
-      <span id="h1b">diringkas jadi satu halaman.</span></h1>
-    <p class="sub"><span id="sub1">280 berita dirangkum</span>
-          <span id="sub2">dari 42 edisi.</span></p>
-        <a class="cta" href="2026-11-20.html"><span id="cta">Baca edisi #42</span>
-      <svg class="arrow" viewBox="0 0 16 11" aria-hidden="true" focusable="false">
-        <path d="M0 5.5 H14.6 M10.3 1.2 L14.9 5.5 L10.3 9.8"/></svg></a>
-    <ul class="feats">
-      <li><svg class="chev" viewBox="0 0 11 20" aria-hidden="true" focusable="false"><path d="M1.15 1.15 L9.6 10 L1.15 18.85"/></svg><span id="f1">Tayang 19:00 WIB</span></li>
-      <li><svg class="chev" viewBox="0 0 11 20" aria-hidden="true" focusable="false"><path d="M1.15 1.15 L9.6 10 L1.15 18.85"/></svg><span id="f2">41 edisi arsip</span></li>
-      <li><svg class="chev" viewBox="0 0 11 20" aria-hidden="true" focusable="false"><path d="M1.15 1.15 L9.6 10 L1.15 18.85"/></svg><span id="f3">72 poster eksklusif</span></li>
-      <li><svg class="chev" viewBox="0 0 11 20" aria-hidden="true" focusable="false"><path d="M1.15 1.15 L9.6 10 L1.15 18.85"/></svg><span id="f4">Gratis, tanpa paywall</span></li>
-    </ul>
-    <span class="rule" aria-hidden="true"></span>
-  </main>
-
-  <footer class="foot">
-    <span id="foot1">Digest harian AI &amp; luar angkasa oleh PhotonLedger. · <a href="tentang.html" style="color:inherit;text-decoration:underline">Tentang</a> · <a href="privasi.html" style="color:inherit;text-decoration:underline">Kebijakan Privasi</a> · <a href="kontak.html" style="color:inherit;text-decoration:underline">Kontak</a></span>
-    <span id="foot2">2026</span>
-  </footer>
-
-  <script>
-    (function(){
-      var q=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)'),
-          v=document.querySelector('video.art');
-      if(!q||!v)return;
-      function sync(){ if(q.matches){v.pause();}
-                       else{var p=v.play();if(p)p.catch(function(){});} }
-      sync();
-      q.addEventListener ? q.addEventListener('change',sync) : q.addListener(sync);
-    })();
-
-    (function(){
-      var foot=document.getElementById('foot2'),done=false,t;
-      function finish(){
-        if(done)return;done=true;
-        if(t)clearTimeout(t);
-        if(foot)foot.removeEventListener('animationend',onEnd);
-        document.documentElement.classList.add('is-entered');
-      }
-      function onEnd(e){
-        if(e.animationName==='en-lift')finish();
-      }
-      if(foot)foot.addEventListener('animationend',onEnd);
-      t=setTimeout(finish,4000);
-    })();
-  </script>
-</body>
-</html>
+<script src="assets/site.js"></script>
