@@ -1,0 +1,29 @@
+{
+ "date": "2026-11-26",
+ "items": [
+  {
+   "match_title": "FCC setujui SpaceX luncurkan hingga 1 juta satelit data center AI 'Starmind'",
+   "lead": "Komisi Komunikasi Federal AS (FCC) resmi mengotorisasi SpaceX untuk menyebarkan hingga satu juta satelit ber-chip AI sebagai bagian dari inisiatif 'Starmind' — izin pertama yang pernah diberikan regulator untuk konstelasi pusat data antariksa skala penuh.",
+   "points": [
+    "Izin mewajibkan SpaceX mengorbitkan minimal 1 satelit pada 2033 dan menyelesaikan target 1 juta unit pada 2040.",
+    "Tiap unit satelit AI1 dirancang dengan bentang sayap panel surya 75 meter, tinggi 30 meter, dan daya komputasi puncak 250 kW.",
+    "Data komputasi dikirim kembali ke Bumi menggunakan jaringan laser optik berkecepatan tinggi yang terhubung langsung ke Starlink.",
+    "FCC menolak permintaan SpaceX membuang satelit di atas 600 km ke 'graveyard orbit' karena rencana pembuangan belum cukup rinci."
+   ],
+   "explain": "Mengapa langkah ini krusial? Di Bumi, ekspansi pusat data AI menghadapi tembok besar: keterbatasan daya listrik dan air pendingin. Badan Energi AS memproyeksikan konsumsi listrik pusat data bisa melonjak hingga 12% dari total daya nasional pada 2030. Di orbit sinkron matahari, satelit Starmind memanfaatkan energi surya tanpa henti dan ruang hampa sebagai pembuang panas alami. Namun izin satu juta satelit memicu alarm baru bagi komunitas astronomi dan keselamatan orbit: risiko tabrakan antariksa (Kessler Syndrome) dan polusi cahaya berpotensi berlipat ganda jika regulasi mitigasi puing tidak ditegakkan ketat.",
+   "background": "SpaceX telah mengajukan permohonan konstelasi Starmind sejak awal 2026, bersaing dengan inisiatif serupa dari Google dan Blue Origin yang juga mengincar pusat data di luar angkasa."
+  },
+  {
+   "match_title": "Neuralink raih persetujuan FDA untuk uji klinis pivotal pertama di AS",
+   "lead": "Badan Pengawas Obat dan Makanan AS (FDA) memberikan izin resmi kepada Neuralink untuk menggelar 'LINK Pivotal Study', uji klinis tahap penentu pertama untuk antarmuka otak-komputer (BCI) implan di Amerika Serikat pada pasien kelumpuhan berat akibat ALS.",
+   "points": [
+    "Studi pivotal ini menjadi tolok ukur utama keamanan dan efektivitas BCI sebelum Neuralink diizinkan masuk ke pasar medis komersial.",
+    "Membangun data dari lebih 30 peserta studi awal di AS, Kanada, dan Inggris yang telah mengumpulkan ribuan jam penggunaan nyata.",
+    "Peserta telah menggunakan implan untuk mengendalikan kursor laptop, bermain game, dan mengarahkan kursi roda murni lewat pikiran.",
+    "Pendaftaran partisipan baru kini resmi dibuka secara publik melalui situs Neuralink."
+   ],
+   "explain": "Dalam regulasi medis AS, persetujuan untuk uji 'pivotal' setara dengan lampu hijau uji klinis fase akhir. Ini menandakan transisi penting dari sekadar eksperimen teknologi bukti-konsep menjadi perangkat medis formal yang dievaluasi dengan standar klinis ketat. Bagi pasien Amyotrophic Lateral Sclerosis (ALS) yang kehilangan kendali otot motorik, BCI bukan sekadar gawai futuristik melainkan satu-satunya jembatan untuk mempertahankan komunikasi mandiri dengan keluarga dan dunia luar. Tantangan terbesar Neuralink ke depan adalah membuktikan ketahanan biokompatibilitas jangka panjang elektroda benang mikro di dalam jaringan otak manusia.",
+   "background": "Neuralink pertama kali menanamkan chip Telepathy pada manusia (Noland Arbaugh) pada awal 2024, disusul oleh pasien kedua (Alex) yang berhasil mengendalikan perangkat lunak desain 3D murni menggunakan pikiran."
+  }
+ ]
+}
