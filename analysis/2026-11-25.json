@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-25",
+ "items": [
+  {
+   "match_title": "1. Dragonfly dapat &quot;mata&quot; buat misi Titan — NASA pasang 7 kamera DragonCam (dibuat",
+   "analysis": "Memasang kamera memang langkah rutin, tapi detailnya membuka hal yang jarang dibahas: DragonCam menembus jendela busa di kendaraan yang harus selamat dari -179°C. Yang menarik, foto pertama yang 'kekuningan' mengingatkan kita bahwa setiap instrumen punya bias sensor — bahkan 'mata' robot pun melihat dunia berbeda dari manusia. Juli 2028 masih terasa jauh, tapi integrasi instrumen seperti ini adalah fase paling menentukan dari misi 6 tahun ke Titan."
+  },
+  {
+   "match_title": "1. GPT-6 OpenAI diklaim bisa desain protein baru tanpa model biologi khusus — Cukup",
+   "analysis": "Hit rate 10,9% untuk minibinder terdengar kecil, tapi dalam konteks desain protein eksperimental itu angka yang layak diperdebatkan — dan justru keterbukaan OpenAI soal batas klaim (belum de novo end-to-end) yang membedakan rilis ini dari hype biasa. Pertanyaan besarnya: kalau model umum benar-benar bisa menyaingi AlphaFold-class tools, arsitektur 'model spesialis' yang selama ini jadi standar biologi komputasional bisa dipertanyakan. Klaim harus diuji ulang komunitas, tapi arahnya jelas."
+  }
+ ]
+}
